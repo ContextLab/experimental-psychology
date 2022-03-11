@@ -32,27 +32,26 @@ Form.  Compute the observed number of people with the same
   4. Propose how you're going to solve the mystery (or make progress towards solving it).
   What budget/equipment/resources are you going to need?  How long will it take?  How hard is it going to be?
 
-  Presentation:
-    - Create an (up to) 5 minute pitch-- could be a youtube video that you make,
+###  Presentation:
+ - Create an (up to) 5 minute pitch-- could be a youtube video that you make,
     a slideshow, a soapbox speech or lecture, a drawing on the chalkboard, an
     interpretive dance, a demonstration...the format is up to you.
-    - Each pitch will be followed by an open Q&A session (up to 10 minutes)
+ - Each pitch will be followed by an open Q&A session (up to 10 minutes)
 
-  Evaluation:
-    - For each group (including your own), evaluate on a scale of 1--10:
-      - How CLEAR was the pitch?  E.g., was the main idea/question communicated clearly?
-      - How INTERESTING was the pitch?  E.g., did the pitch succeed at capturing your interest?
-      - How EFFICIENT was the pitch?  Too long or too short (1)?  Just right (10)?
-      - How effective was the chosen FORMAT of the pitch?
-    - Upload ratings to a spreadsheet (1 group per row, 1 column for each of clarity, interest, efficiency, and format)
+###  Evaluation:
+ - For each group (including your own), evaluate on a scale of 1--10:
+  - How CLEAR was the pitch?  E.g., was the main idea/question communicated clearly?
+  - How INTERESTING was the pitch?  E.g., did the pitch succeed at capturing your interest?
+  - How EFFICIENT was the pitch?  Too long or too short (1)?  Just right (10)?
+  - How effective was the chosen FORMAT of the pitch?
+  - Upload ratings to a spreadsheet (1 group per row, 1 column for each of clarity, interest, efficiency, and format)
+  - Rank groups (including your own) by how effective the pitches were
     
-    - Rank groups (including your own) by how effective the pitches were
-
-  Write up:
-    - A summary of your pitch
-    - Which aspects of the pitch were successful vs. not
-    - Use group feedback (spreadsheets) and rankings to back up any claims (figures, stats)
-    - Make an argument for your favorite pitch (could be your own) and why it beats the other pitches/ideas.
+###  Write up:
+  - A summary of your pitch
+  - Which aspects of the pitch were successful vs. not
+  - Use group feedback (spreadsheets) and rankings to back up any claims (figures, stats)
+  - Make an argument for your favorite pitch (could be your own) and why it beats the other pitches/ideas.
   
 ## Draw a picture!  writing effective methods descriptions
 
@@ -85,9 +84,9 @@ Part 3: evaluate the instructions
     included (or did not include) evidence that the given step was followed.
       - Create a spreadsheet with 1 row per group and 1 column per step.  Note a "1" if the given step was followed correctly and "0" if the given step was not followed correctly by that group.
       - If specific assumptions were stated by the given group (but were not specified in the instructions), you should evaluate whether the step was carried out taking those assumptions into account.  In other words, if you meant for a line to be blue, but didn't specify it, and if the other group assumed it was supposed to be black (and stated this) then you should still mark the step as "correct" if they drew a black line.
-        - Create a second spreadsheet with 1 row per group and 2 columns:
-          1. Total number of assumptions made about your drawing
-          2. Number of assumptions made about your drawing, divided by the total number of instructions
+      - Create a second spreadsheet with 1 row per group and 2 columns:
+        1. Total number of assumptions made about your drawing
+        2. Number of assumptions made about your drawing, divided by the total number of instructions
   - For each OTHER group's drawings:
     1. Look at the intended drawing and compare it to your reproduced drawing.
     2. Look at the intended label and compare them to your estimated label.
@@ -98,27 +97,25 @@ Part 3: evaluate the instructions
       - How EFFICIENT the instructions were (e.g., could the instructions have been simplified?)
     4. Enter all of this information into a spreadsheet with 1 row per group and 1 column per evaluation metric (e.g., appearance, meaning, clarity, efficiency, and assumptions)
   
-  Part 4: revised methods
-    - Write up your original methods section
-    - Figure 1: 
+ Part 4: revised methods
+  - Write up your original methods section
+  - Figure 1: 
       - Panel A: your intended drawing
       - Panel B: your own group's reproduced drawing
-      - Panel C: other group's attempts at creating your drawing
-  
-    - Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to judge how effective your instructions were:
+      - Panel C: other group's attempts at creating your drawing  
+  - Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to judge how effective your instructions were:
       - How many groups were able to reproduce your drawing as intended?
       - How many groups accurately followed your instructions?
       - How many assumptions did other groups need to make?
       - How many assumptions did other groups need to make, accounting for how many instructions you had overall?
       - Which aspects of your instructions were particularly effective or ineffective?
-    - Create figures to help illustrate any key points and use statistical tests to support your claims.
-    
-    - Propose a revised methods section that addresses any weaknesses you identified in your analyses
+  - Create figures to help illustrate any key points and use statistical tests to support your claims
+  - Propose a revised methods section that addresses any weaknesses you identified in your analyses
 
 
 ## Results section: What conclusions can (or *can't*) you draw from data?
-    - 3 teams: A, B, C
-    - Each group/team creates (or finds) a dataset-- can be fake or real; should be interesting
+ - 3 teams: A, B, C
+ - Each group/team creates (or finds) a dataset-- can be fake or real; should be interesting
        - TA should help to make the dataset sufficiently detailed:
          - Several "features" -- at least 5
          - Many "observations" -- at least 500
@@ -127,23 +124,23 @@ Part 3: evaluate the instructions
            - How were the data collected? (briefly explain-- 1-2 paragraphs)
            - What do the features mean, in plain English?
            - What are the observations?  (E.g., timepoints?  People?  Trials?)
-    - Each group/team (working with TA) should come up with 5 questions:
+ - Each group/team (working with TA) should come up with 5 questions:
       - All questions should seem plausible
       - At least 1 question should be possible to explore/answer using the dataset
       - At least 1 question should be *im*possible to explore/answer using the dataset
       - All other questions can either be possible or impossible to explore/answer using the dataset
       - Note which questions can/can't be answered with the dataset, but keep those labels hidden
-    - Now share the data with another group: A --> B, B --> C, C --> A
-    - Each group uses any analyses they want to answer as many questions as possible, as clearly as possible.  Figures, stats, etc., are encouraged.
-    - Explain how each question will answered by the given analyses, how the results are interpreted, and what conclusions can or cannot be drawn from the results.
+ - Now share the data with another group: A --> B, B --> C, C --> A
+ - Each group uses any analyses they want to answer as many questions as possible, as clearly as possible.  Figures, stats, etc., are encouraged.
+ - Explain how each question will answered by the given analyses, how the results are interpreted, and what conclusions can or cannot be drawn from the results.
     - If a question is deemed impossible to answer, explain why-- and what you'd need (from the dataset, analytic tools, etc.) in order to be able to answer that question.
     
-    - Compile a set of figures (one per question)
-    - For each figure, write a caption describing what's in the figure, and 
+ - Compile a set of figures (one per question)
+ - For each figure, write a caption describing what's in the figure, and 
       ~1 paragraph briefly describing the key analysis and result.
-    - Organize the paragraphs so that they tell a "story" about the data, and
+ - Organize the paragraphs so that they tell a "story" about the data, and
     add transition sentences as needed
-    - Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found
+ - Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found
 
     
 # Discussions: how does your work fit within the broader literature?
