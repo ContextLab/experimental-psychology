@@ -116,24 +116,24 @@ Part 3: evaluate the instructions
 ## Results section: What conclusions can (or *can't*) you draw from data?
  - 3 teams: A, B, C
  - Each group/team creates (or finds) a dataset-- can be fake or real; should be interesting
-       - TA should help to make the dataset sufficiently detailed:
-         - Several "features" -- at least 5
-         - Many "observations" -- at least 500
-         - Documentation:
-           - Where did the data come from?  (Can be made up, but should be explained)
-           - How were the data collected? (briefly explain-- 1-2 paragraphs)
-           - What do the features mean, in plain English?
-           - What are the observations?  (E.g., timepoints?  People?  Trials?)
+ - TA should help to make the dataset sufficiently detailed:
+    - Several "features" -- at least 5
+    - Many "observations" -- at least 500
+    - Documentation:
+     - Where did the data come from?  (Can be made up, but should be explained)
+     - How were the data collected? (briefly explain-- 1-2 paragraphs)
+     - What do the features mean, in plain English?
+     - What are the observations?  (E.g., timepoints?  People?  Trials?)
  - Each group/team (working with TA) should come up with 5 questions:
-      - All questions should seem plausible
-      - At least 1 question should be possible to explore/answer using the dataset
-      - At least 1 question should be *im*possible to explore/answer using the dataset
-      - All other questions can either be possible or impossible to explore/answer using the dataset
-      - Note which questions can/can't be answered with the dataset, but keep those labels hidden
+  - All questions should seem plausible
+  - At least 1 question should be possible to explore/answer using the dataset
+  - At least 1 question should be *im*possible to explore/answer using the dataset
+  - All other questions can either be possible or impossible to explore/answer using the dataset
+  - Note which questions can/can't be answered with the dataset, but keep those labels hidden
  - Now share the data with another group: A --> B, B --> C, C --> A
  - Each group uses any analyses they want to answer as many questions as possible, as clearly as possible.  Figures, stats, etc., are encouraged.
  - Explain how each question will answered by the given analyses, how the results are interpreted, and what conclusions can or cannot be drawn from the results.
-    - If a question is deemed impossible to answer, explain why-- and what you'd need (from the dataset, analytic tools, etc.) in order to be able to answer that question.
+   - If a question is deemed impossible to answer, explain why-- and what you'd need (from the dataset, analytic tools, etc.) in order to be able to answer that question.
     
  - Compile a set of figures (one per question)
  - For each figure, write a caption describing what's in the figure, and 
