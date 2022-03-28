@@ -37,6 +37,13 @@ For Dartmouth students who are enrolled in PSYC 11, we will use [Slack](http://p
 
 You will be using your laptop computer to collect, analyze, or present nearly every day of the course.  You should bring your laptop with you to every class meeting.
 
+## Slides
+
+| Date | Topic | Keynote link | PDF link |
+|------|-------|--------------|----------|
+| March 28, 2022 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
+
+
 # Assignments
 
 All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
