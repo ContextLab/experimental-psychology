@@ -11,7 +11,8 @@ While I strive for 100% accuracy in my courses, I recognize that I am very unlik
 # Table of contents
 
 1. [Orientation](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#orientation)
-2. [Assignments](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#assignments)
+2. [Materials](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#materials)
+3. [Assignments](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#assignments)
 
 # Orientation
 
@@ -29,6 +30,12 @@ Why should you care about learning to write a scientific article if your goal is
 In the first 5(ish) weeks of the course, you'll do roughly one lab exercise per week.  Aside from the first lab (which is intended to gently introduce you to the course), each lab will be organized around one section of a scientific article.
 
 During the second half of the course, you'll carry out a complete study with a small group.  At that point, you'll have all of the tools you need to do "real science": you'll effectively formulate your question, design and implement an experiment, collect and analyze data, interpret your results, and wrap everything up into your own scientific article.  You'll also present an overview of your findings in a poster session, attended by students and faculty in the Department of Psychological and Brain Sciences.  (There's an award for the best poster!)  You'll even have a (modest) research budget that you can use to carry out your study, purchase supplies or equipment, etc.
+
+# Materials
+
+For Dartmouth students who are enrolled in PSYC 11, we will use [Slack](http://psyc11.slack.com) to organize notes, files, and other communications related to the course.  You can gain access to the class workspace by clicking the link and logging in with your Dartmouth credentials.
+
+You will be using your laptop computer to collect, analyze, or present nearly every day of the course.  You should bring your laptop with you to every class meeting.
 
 # Assignments
 
