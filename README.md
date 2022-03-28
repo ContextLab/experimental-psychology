@@ -32,7 +32,7 @@ During the second half of the course, you'll carry out a complete study with a s
 
 # Assignments
 
-All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Point values are indicated in parentheses.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
+All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
 The one exception to this is your final paper, which may be co-authored by your entire research team.
 
 Note: Only assignments marked *active* are guarantee to be in their final form-- *inactive* assignments are provided to help set expectations about future assignments, but they may be edited or changed prior to be formally assigned.  *Expired* assignments are past their due date (and therefore may no longer be handed in for credit).
