@@ -1,10 +1,12 @@
 ---
-title: PSYC 11  Birthday Matching Lab
+title: PSYC 11 Birthday Matching Lab
 author: Jeremy R. Manning
 date: March 28, 2022
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
+linkcolor: green
+fontsize: 12pt
 header-includes:
   - '`\usepackage{emoji}`{=latex}'
 ---
@@ -33,11 +35,11 @@ This laboratory exercise is intended to help you:
 
 ## \emoji{cupcake} Step 1: data collection
 
-Please fill out our class's [birthday survey](https://forms.gle/rXVBtfNXLKewrZtL6) with your birth month and day.  Once all students have submitted their responses, a spreadsheet containing the collected data will be available [here](https://docs.google.com/spreadsheets/d/1VkNjgUe0bf-RObDgtnnvVJb_xhHa-39nLz53k9Nk_HE/edit?usp=sharing).  Important note: *do not "peek" at the data before you have completed Steps 2 and 3, below!*.
+Please fill out our class's [birthday survey](https://forms.gle/rXVBtfNXLKewrZtL6) with your birth month and day.  Once all students have submitted their responses, a spreadsheet containing the collected data will be available [here](https://docs.google.com/spreadsheets/d/1VkNjgUe0bf-RObDgtnnvVJb_xhHa-39nLz53k9Nk_HE/edit?usp=sharing).  Important note: *do not "peek" at the data before you have completed Steps 2 and 3, below*!
 
 ## \emoji{cupcake} Step 2: formulate your questions as testable hypotheses
 
-For today's lab, we will be exploring 3 questions:
+In this lab, we will be exploring 3 questions:
 
   1. How many students in our class share the same birthday (month and day)?
   2. How many students in our class share the same birth *month* (i.e., excluding the day)?
@@ -57,8 +59,8 @@ Drawing on your prior knowledge of statistics (also feel free to Google and/or
 consult with your lab leader!), try to write out one or more formal tests of
 your hypothesized "answers" to the questions in Step 2.  For example:
 
-  - Will you be using a $t$-test?  An ANOVA?  A $\chi^2$ test?  A correlation?
-  - How many tests will you need to carry out?  Will all three tests look the same?
+  - Will you be using a $t$-test?  An ANOVA?  A $\chi^2$-test?  A correlation?  Something else?
+  - How many tests will you need to carry out?  If you run multiple tests, will all of the tests be set up the same way?  Do you need to account for multiple comparisons if you're running multiple tests?  (And if so, how would you do that?)
   - Consider the possible *outcomes* of your test(s).  What would it look like if your hypotheses are correct versus incorrect?
 
 ## \emoji{cupcake} Step 4: implement your statistical test(s)
@@ -78,3 +80,26 @@ Work with your group to interpret the results of the tests you ran.  For example
   - How might you formally study and/or test your new hypothesis (if appropriate)?
 
 Plan with your group how to briefly communicate your approach and findings to the class.
+
+# \emoji{birthday-cake} Closing discussion points
+
+Consider what you and your classmates have learned from the birthday data we've collected in this lab.  Think about how the conclusions about "matching" between students might compare if we had instead collected data about one or more of the the following:
+
+  - Street numbers (digits only) of a childhood residence
+  - "Randomly" (privately) chosen numbers between 1 and 100
+  - Favorite colors
+  - Favorite foods
+  - Last digit of childhood phone number or zip code
+
+Finally, think about how the questions we've considered in this lab might compare to higher-level questions about psychology.  For example:
+
+  - Are people better at remembering other people's names or their faces?
+  - What makes some movies scary (or funny, sad, exciting, engaging, etc.)?
+  - How many things can people think about simultaneously?
+  - How effectively can two people communicate if they don't share any common languages?
+  - Do all people have the same basic set of feelings and emotions?
+  - Can people learn to get better at learning?
+
+In other words: how might you turn high-level *qualitative* questions about abstract aspects of the human mind (or the human experience) into *quantitative*
+questions that we can turn into formal, testable, hypotheses?  Are there general
+strategies we can use, or is every question unique?  Can "anything" be quantified or turned into a testable question, or are there limits to what we can ask scientifically?
