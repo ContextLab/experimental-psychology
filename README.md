@@ -11,8 +11,7 @@ While I strive for 100% accuracy in my courses, I recognize that I am very unlik
 # Table of contents
 
 1. [Orientation](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#orientation)
-2. [Materials](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#materials)
-3. [Assignments](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#assignments)
+2. [Assignments](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#assignments)
 
 # Orientation
 
