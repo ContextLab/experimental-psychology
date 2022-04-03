@@ -44,6 +44,7 @@ You will be using your laptop computer to collect, analyze, or present nearly ev
 | March 28, 2022 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
 | March 30, 2022 | Statistical building blocks | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/statistical_building_blocks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/statistical_building_blocks.pdf) |
 | April 1, 2022 | Data wrangling | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_wrangling.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_wrangling.pdf) |
+| April 4, 2022 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
 
 # Assignments
 
@@ -54,17 +55,17 @@ Note: Only assignments marked *active* are guarantee to be in their final form--
 
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
-| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *Active* | N/A |
-| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *Inactive* | April 11, 2022 |
-| Picture drawing lab | 10 points | *Inactive* | -- |
-| Data sleuthing lab | 10 points | *Inactive* | -- |
-| Literature review lab | 10 points | *Inactive* | -- |
-| Poster presentation | 15 points | *Inactive* | -- |
-| Weekly snippet 1 | 1 point | *Inactive* | -- |
-| Weekly snippet 2 | 1 point | *Inactive* | -- |
-| Weekly snippet 3 | 1 point | *Inactive* | -- |
-| Weekly snippet 4 | 1 point | *Inactive* | -- |
-| Weekly snippet 5 | 1 point | *Inactive* | -- |
-| Final paper | 40 points | *Inactive* | -- |
-| Group contributions statement | 0 points | *Inactive* | -- |
+| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *Expired* | N/A |
+| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | **Active** | April 11, 2022 |
+| Picture drawing lab | 10 points | *Inactive* | April 18, 2022 |
+| Data sleuthing lab | 10 points | *Inactive* | April 25, 2022 |
+| Literature review lab | 10 points | *Inactive* | May 2, 2022 |
+| Weekly snippet 1 | 1 point | *Inactive* | May 2, 2022 |
+| Weekly snippet 2 | 1 point | *Inactive* | May 9, 2022 |
+| Weekly snippet 3 | 1 point | *Inactive* | May 16, 2022 |
+| Weekly snippet 4 | 1 point | *Inactive* | May 23, 2022 |
+| Weekly snippet 5 | 1 point | *Inactive* | May 30, 2022 |
+| Poster presentation | 15 points | *Inactive* | June 1, 2022 |
+| Final paper | 40 points | *Inactive* | June 7, 2022 |
+| Group contributions statement | 0 points | *Inactive* | June 7, 2022 |
 
