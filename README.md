@@ -45,6 +45,7 @@ You will be using your laptop computer to collect, analyze, or present nearly ev
 | March 30, 2022 | Statistical building blocks | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/statistical_building_blocks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/statistical_building_blocks.pdf) |
 | April 1, 2022 | Data wrangling | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_wrangling.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_wrangling.pdf) |
 | April 4, 2022 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
+| April 8, 2022 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
 
 # Assignments
 
