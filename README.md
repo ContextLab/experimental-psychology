@@ -11,7 +11,7 @@ While I strive for 100% accuracy in my courses, I recognize that I am very unlik
 # Table of contents
 
 1. [Orientation](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#orientation)
-2. [Materials](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#materials)
+2. [Materials and slides](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#materials)
 3. [Assignments](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#assignments)
 
 # Orientation
@@ -46,19 +46,20 @@ You will be using your laptop computer to collect, analyze, or present nearly ev
 | April 1, 2022 | Data wrangling | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_wrangling.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_wrangling.pdf) |
 | April 4, 2022 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
 | April 8, 2022 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
+| April 11, 2022 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
 
 # Assignments
 
 All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
 The one exception to this is your final paper, which may be co-authored by your entire research team.
 
-Note: Only assignments marked *active* are guarantee to be in their final form-- *inactive* assignments are provided to help set expectations about future assignments, but they may be edited or changed prior to be formally assigned.  *Expired* assignments are past their due date (and therefore may no longer be handed in for credit).
+Note: Only assignments marked *active* are guarantee to be in their final form-- *inactive* assignments are provided to help set expectations about future assignments, but they may be edited or changed prior to be formally assigned.  *Expired* assignments are past their due date (and therefore may no longer be handed in for credit).  All assignments are due at "midnight" (i.e., 11:59 PM, Hanover time) on their indicated due dates.
 
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
 | [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *Expired* | N/A |
 | [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | **Active** | April 11, 2022 |
-| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *Inactive* | April 18, 2022 |
+| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | **Active** | April 18, 2022 |
 | Data sleuthing lab | 10 points | *Inactive* | April 25, 2022 |
 | Literature review lab | 10 points | *Inactive* | May 2, 2022 |
 | Weekly snippet 1 | 1 point | *Inactive* | May 2, 2022 |
