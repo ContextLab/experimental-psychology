@@ -39,6 +39,8 @@ You will be using your laptop computer to collect, analyze, or present nearly ev
 
 ## Slides
 
+Note that not every course meeting has associated slides (or an associated lecture).
+
 | Date | Topic | Keynote link | PDF link |
 |------|-------|--------------|----------|
 | March 28, 2022 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
@@ -47,6 +49,7 @@ You will be using your laptop computer to collect, analyze, or present nearly ev
 | April 4, 2022 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
 | April 8, 2022 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
 | April 11, 2022 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
+| April 15, 2022 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
 
 # Assignments
 
@@ -58,7 +61,7 @@ Note: Only assignments marked *active* are guarantee to be in their final form--
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
 | [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *Expired* | N/A |
-| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | **Active** | April 11, 2022 |
+| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *Expired* | April 11, 2022 |
 | [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | **Active** | April 18, 2022 |
 | Data sleuthing lab | 10 points | *Inactive* | April 25, 2022 |
 | Literature review lab | 10 points | *Inactive* | May 2, 2022 |
