@@ -50,6 +50,7 @@ Note that not every course meeting has associated slides (or an associated lectu
 | April 8, 2022 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
 | April 11, 2022 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
 | April 15, 2022 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
+| April 18, 2022 | Creating data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_creation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_creation.pdf) |
 
 # Assignments
 
