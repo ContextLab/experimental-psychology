@@ -51,6 +51,7 @@ Note that not every course meeting has associated slides (or an associated lectu
 | April 11, 2022 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
 | April 15, 2022 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
 | April 18, 2022 | Creating data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_creation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_creation.pdf) |
+| April 20, 2022 | Data exploration and understanding | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration.pdf) |
 
 # Assignments
 
