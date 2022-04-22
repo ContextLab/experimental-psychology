@@ -52,6 +52,7 @@ Note that not every course meeting has associated slides (or an associated lectu
 | April 15, 2022 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
 | April 18, 2022 | Creating data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_creation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_creation.pdf) |
 | April 20, 2022 | Exploring and understanding data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration.pdf) |
+| April 22, 2022 | Quick-start guide to digging into data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration_hacks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration_hacks.pdf) |
 
 # Assignments
 
@@ -64,7 +65,7 @@ Note: Only assignments marked *active* are guarantee to be in their final form--
 |------------|-------------|--------|----------|
 | [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *Expired* | N/A |
 | [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *Expired* | April 12, 2022 |
-| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | **Active** | April 20, 2022 |
+| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *Expired* | April 20, 2022 |
 | [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | **Active** | April 25, 2022 |
 | Literature review lab | 10 points | *Inactive* | May 2, 2022 |
 | Weekly snippet 1 | 1 point | *Inactive* | May 2, 2022 |
