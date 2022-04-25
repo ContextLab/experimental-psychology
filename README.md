@@ -69,11 +69,11 @@ Note: Only assignments marked *active* are guarantee to be in their final form--
 | [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *Expired* | April 20, 2022 |
 | [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | **Active** | April 25, 2022 |
 | [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | **Active** | May 2, 2022 |
-| Weekly snippet 1 | 1 point | *Inactive* | May 2, 2022 |
-| Weekly snippet 2 | 1 point | *Inactive* | May 9, 2022 |
-| Weekly snippet 3 | 1 point | *Inactive* | May 16, 2022 |
-| Weekly snippet 4 | 1 point | *Inactive* | May 23, 2022 |
-| Weekly snippet 5 | 1 point | *Inactive* | May 30, 2022 |
+| [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 2, 2022 |
+| [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 9, 2022 |
+| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 16, 2022 |
+| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 23, 2022 |
+| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 30, 2022 |
 | Poster presentation | 15 points | *Inactive* | June 1, 2022 |
 | Final paper | 40 points | *Inactive* | June 7, 2022 |
 | Group contributions statement | 0 points | *Inactive* | June 7, 2022 |
