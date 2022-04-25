@@ -7,9 +7,11 @@ geometry: margin=1in
 colorlinks: true
 linkcolor: green
 fontsize: 12pt
+header-includes:
+  - '`\usepackage{emoji}`{=latex}'
 ---
 
-# Overview
+# \emoji{stopwatch} Overview
 
 >> "The future is not set.  There is no fate but what we make for ourselves"
 >>
@@ -38,7 +40,7 @@ followed up on the original, explored similar questions, or used similar approac
 Then, unlike real-world you, the time-traveling scientist version of yourself will get
 to re-frame your original study, but with the benefit of foresight.
 
-# Learning objectives
+# \emoji{stopwatch} Learning objectives
 
 The major goal of this lab is to explore the "discussion" section of scientific papers.
 The primary goal of the discussion section is to situate
@@ -54,7 +56,7 @@ In particular, you will:
   - Practice synthesizing key findings across multiple papers and studies
   - Practice communicating clearly and directly
 
-# Procedure
+# \emoji{stopwatch} Procedure
 
 Each group will begin the lab exercise by finding, reading, and summarizing
 a 10--30 year old scientific paper.  This paper will serve as a sort of "template," in that
@@ -84,7 +86,7 @@ provide an opportunity to potentially re-interpret the template study's key find
 discuss new pitfalls and limitations not raised in the original paper, and re-think
 future directions, all with the benefit of knowing the "future" relative to the original paper (i.e., hindsight relative to today, but foresight relative to the template paper's original time of writing-- isn't time travel fun?).
 
-## Part 1: Find an (old) paper to use as a "template"
+## \emoji{luggage} Part 1: Find an (old) paper to use as a "template"
 
 The first thing you'll need (as a group) is a paper.  To make this lab exercise work, you should find something
 with the following characteristics:
@@ -121,7 +123,7 @@ in the [#literature-review-lab](https://psyc11.slack.com/archives/C03CSKEU684)
 channel.  Think of this paper's time of writing as the moment your group is
 time-traveling back to.
 
-## Part 2: Find papers that cite your template paper
+## \emoji{luggage} Part 2: Find papers that cite your template paper
 
 Your next job is to find 5 papers that *cite* your (original) template paper.  If you
 find your template paper on Google Scholar, you can easily find other papers
@@ -143,7 +145,7 @@ Share PDFs of your group's set of 5 papers on Slack in the
 [#literature-review-lab](https://psyc11.slack.com/archives/C03CSKEU684)
 channel.
 
-## Part 3: Find a related paper that does *not* cite your template paper
+## \emoji{luggage} Part 3: Find a related paper that does *not* cite your template paper
 
 The seventh paper in your collection should be about a similar topic as your
 template paper, but should *not* cite the original template paper.  (It's OK
@@ -163,7 +165,7 @@ Share a PDF of this last paper in the
 [#literature-review-lab](https://psyc11.slack.com/archives/C03CSKEU684)
 channel on Slack.
 
-## Part 4: Summarize everything
+## \emoji{luggage} Part 4: Summarize everything
 
 However your group deems appropriate, create a brief summary of each of the seven papers
 you found (original, 5 citing papers, 1 non-citing paper).  Everyone should read the
@@ -178,7 +180,7 @@ for your own internal use.)  Some suggestions:
   - Describe or discuss any relevant overlap with the template paper-- e.g., similarities and differences
   in the overall approach, findings, interpretation, etc.
 
-## Part 5: Discuss and brainstorm
+## \emoji{luggage} Part 5: Discuss and brainstorm
 
 As a group, think about the set of papers you've added to your collection.
 Using the post-2011 papers as a guide, consider the questions like the following:
@@ -192,7 +194,7 @@ Using the post-2011 papers as a guide, consider the questions like the following
   - What do you think it all *means*?  For example, what do you think the *true* answer to the question posted in the original "template" paper is?
   - Also come up with some still-unanswered questions and discuss how they could be studied in future (e.g., post-today) work
 
-# Writing your lab report
+# \emoji{stopwatch} Writing your lab report
 
 Your lab report (recommended length: roughly 2--5 pages) should take the form of a formal discussion section in a scientific paper.
 You should write as though *you* had carried out the original study (the one in
@@ -207,7 +209,7 @@ Propose an interpretation of your findings (this can match the original paper's 
   - Describe some still unanswered questions and propose how they might be studied in future work.
   - Make sure to include a bibliography!
 
-# Closing discussion points
+# \emoji{stopwatch} Closing discussion points
 
 This lab marks the end of our explorations of formal scientific papers:
 
