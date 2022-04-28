@@ -54,6 +54,8 @@ Note that not every course meeting has associated slides (or an associated lectu
 | April 20, 2022 | Exploring and understanding data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration.pdf) |
 | April 22, 2022 | Quick-start guide to digging into data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration_hacks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration_hacks.pdf) |
 | April 25, 2022 | Searching and reviewing the relevant scientific literature | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/literature_reviews.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/literature_reviews.pdf) |
+| April 29, 2022 | Synthesizing across studies (and findings) | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/synthesizing_across_studies.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/synthesizing_across_studies.pdf) |
+| April 29, 2022 | Logistics and announcements | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/logistics_week_5.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/logistics_week_5.pdf) |
 
 # Assignments
 
