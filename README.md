@@ -56,6 +56,7 @@ Note that not every course meeting has associated slides (or an associated lectu
 | April 25, 2022 | Searching and reviewing the relevant scientific literature | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/literature_reviews.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/literature_reviews.pdf) |
 | April 29, 2022 | Synthesizing across studies (and findings) | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/synthesizing_across_studies.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/synthesizing_across_studies.pdf) |
 | April 29, 2022 | Logistics and announcements | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/logistics_week_5.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/logistics_week_5.pdf) |
+| May 2, 2022 | Final project: getting started | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/final_project_initiation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/final_project_initiation.pdf) |
 
 # Assignments
 
