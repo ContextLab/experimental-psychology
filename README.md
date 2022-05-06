@@ -60,6 +60,17 @@ Note that not every course meeting has associated slides (or an associated lectu
 | May 4, 2022 | Quick-start guide to experimental design | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/experimental_design_quickstart.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/experimental_design_quickstart.pdf) |
 | May 6, 2022 | Project management | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/project_management.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/project_management.pdf) |
 
+### Human subjects research materials
+
+Please view the materials below *before* collecting data from human participants.
+
+| Description | Link and filetype |
+|-------------|-------------------|
+| Protection of Human Subjects (CPHS) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) |
+| Belmont Report | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/readings/Belmont_Report.pdf) |
+| Nuremburg Code | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/readings/Nuremburg_Code.pdf) |
+| Jesse's Intent | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/readings/Jesse_Intent.pdf) |
+
 # Assignments
 
 All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
@@ -76,6 +87,8 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *Expired* | May 3, 2022 |
 | [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 4, 2022 |
 | [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | **Active** | May 9, 2022 |
+| Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#humansubjectsresearchmaterials) | 0 points | **Active** | May 11, 2022 |
+| Attend CPHS training session (virtual) | 0 points | **Active** | May 13, 2022 |
 | [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 16, 2022 |
 | [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 23, 2022 |
 | [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 30, 2022 |
