@@ -41,7 +41,7 @@ You will be using your laptop computer to collect, analyze, or present nearly ev
 
 Note that not every course meeting has associated slides (or an associated lecture).
 
-| Date | Topic | Keynote link | PDF link |
+| Date | Topic | Link to editable slides | PDF link |
 |------|-------|--------------|----------|
 | March 28, 2022 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
 | March 30, 2022 | Statistical building blocks | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/statistical_building_blocks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/statistical_building_blocks.pdf) |
@@ -59,6 +59,8 @@ Note that not every course meeting has associated slides (or an associated lectu
 | May 2, 2022 | Final project: getting started | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/final_project_initiation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/final_project_initiation.pdf) |
 | May 4, 2022 | Quick-start guide to experimental design | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/experimental_design_quickstart.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/experimental_design_quickstart.pdf) |
 | May 6, 2022 | Project management | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/project_management.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/project_management.pdf) |
+| May 13, 2022 | [Protection of Human Subjects (CPHS)](https://youtu.be/pkX3qcnPOQs) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pdf) |
+| May 18, 2022 | Introduction to poster presentations | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/poster_presentations.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf) |
 
 ### Human subjects research materials
 
