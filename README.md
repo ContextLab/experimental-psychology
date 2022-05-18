@@ -88,10 +88,10 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *Expired* | April 25, 2022 |
 | [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *Expired* | May 3, 2022 |
 | [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 4, 2022 |
-| [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | **Active** | May 9, 2022 |
-| Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | **Active** | May 11, 2022 |
-| Attend CPHS training session (virtual) | 0 points | **Active** | May 13, 2022 |
-| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 16, 2022 |
+| [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 9, 2022 |
+| Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *Expired* | May 11, 2022 |
+| Attend CPHS training session (virtual) | 0 points | *Expired* | May 13, 2022 |
+| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | **Active** | May 16, 2022 |
 | [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 23, 2022 |
 | [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 30, 2022 |
 | Poster presentation | 15 points | *Inactive* | June 1, 2022 |
