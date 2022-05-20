@@ -129,7 +129,7 @@ your official submission of your project.  This can take several forms:
   - A video recording of a presentation (e.g., while standing in front of the poster or screen sharing)
   - A pre-recorded PowerPoint or Keynote presentation that can be (easily) auto-played
 
-Your recording will be due by **11:59PM on Monday, May 30, 2022**.
+Your recording will be due by **11:59PM on Wednesday, June 1, 2022**.
 
 ## \emoji{bar-chart} Public presentation
 
