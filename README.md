@@ -93,8 +93,8 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *Expired* | May 11, 2022 |
 | Attend CPHS training session (virtual) | 0 points | *Expired* | May 13, 2022 |
 | [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 16, 2022 |
-| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | **Active** | May 23, 2022 |
-| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Inactive* | May 30, 2022 |
+| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 23, 2022 |
+| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | **Active** | May 30, 2022 |
 | [Poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | **Active** | June 1, 2022 |
 | Final paper | 40 points | *Inactive* | June 7, 2022 |
 | Group contributions statement | 0 points | *Inactive* | June 7, 2022 |
