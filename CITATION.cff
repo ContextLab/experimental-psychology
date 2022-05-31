@@ -1,0 +1,9 @@
+cff-version: 1.0
+message: "If you use this course, please cite it as below."
+authors:
+  - family-names: Manning
+    given-names: Jeremy
+    orcid: https://orcid.org/0000-0001-7613-4732
+title: Laboratory in Psychological Science: v1.0 (Spring, 2022)
+version: v1.0
+date-released: 2022-05-30
