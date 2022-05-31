@@ -2,6 +2,8 @@
 
 Welcome!  This repository contains course materials for the Dartmouth undergraduate course [Laboratory in Psychological Science (PSYC 11)](https://pbs.dartmouth.edu/undergraduate/courses-and-syllabi/introductory-courses-2021-2022).  The syllabus may be found [here](https://github.com/ContextLab/experimental-psychology/blob/main/admin/syllabus/PSYC_11_EXPERIMENTAL_PSYCHOLOGY.PDF).  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  If you are a course instructor, you may feel free to use these materials in your own courses (attribution is appreciated).
 
+[![DOI](https://zenodo.org/badge/459250616.svg)](https://zenodo.org/badge/latestdoi/459250616)
+
 <img src=https://www.oxford-royale.com/wp-content/uploads/2021/02/Hero-Banner-Psychology-Summer-School-Oxford-1536x640.jpg width="500">
 
 ## Contributing
