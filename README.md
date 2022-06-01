@@ -96,7 +96,7 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | Attend CPHS training session (virtual) | 0 points | *Expired* | May 13, 2022 |
 | [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 16, 2022 |
 | [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 23, 2022 |
-| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | **Active** | May 30, 2022 |
+| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *Expired* | May 30, 2022 |
 | [Poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | **Active** | June 1, 2022 |
 | [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | **Active** | June 7, 2022 |
 | [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | **Active** | June 7, 2022 |
