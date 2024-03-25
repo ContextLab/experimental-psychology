@@ -1,7 +1,7 @@
 ---
 title: PSYC 11 Data sleuthing lab
 author: Jeremy R. Manning
-date: April 18, 2022
+date: April 15, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true

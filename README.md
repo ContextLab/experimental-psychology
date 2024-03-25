@@ -85,7 +85,7 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
-| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *inactive* | N/A |
+| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *active* | N/A |
 | [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *inactive* | April 8, 2024 |
 | [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *inactive* | April 15, 2024 |
 | [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *inactive* | April 22, 2024 |

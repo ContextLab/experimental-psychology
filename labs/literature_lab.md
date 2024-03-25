@@ -1,7 +1,7 @@
 ---
 title: PSYC 11 Time traveling literature review lab
 author: Jeremy R. Manning
-date: April 25, 2022
+date: April 22, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true

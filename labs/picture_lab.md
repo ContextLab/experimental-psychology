@@ -1,7 +1,7 @@
 ---
 title: PSYC 11 Picture Lab!
 author: Jeremy R. Manning
-date: April 11, 2022
+date: April 8, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
