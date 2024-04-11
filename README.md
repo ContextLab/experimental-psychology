@@ -85,9 +85,9 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
-| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *active* | N/A |
-| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *inactive* | April 8, 2024 |
-| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *inactive* | April 15, 2024 |
+| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *expired* | N/A |
+| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *expired* | April 8, 2024 |
+| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *active* | April 15, 2024 |
 | [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *inactive* | April 22, 2024 |
 | [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *inactive* | April 29, 2024 |
 | Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *inactive* | May 3, 2024 |
