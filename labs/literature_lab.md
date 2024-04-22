@@ -198,7 +198,7 @@ Using the post-2011 papers as a guide, consider the questions like the following
 
 Your lab report (recommended length: roughly 2--5 pages) should take the form of a formal discussion section in a scientific paper.
 You should write as though *you* had carried out the original study (the one in
-described in your template paper) today, in 2022.  Use the papers you found
+described in your template paper) today, in 2024.  Use the papers you found
 in parts 2 and 3 to situate "your" study within the broader literature.
 Describe strengths and weaknesses of your approach relative to other potential approaches.
 Propose an interpretation of your findings (this can match the original paper's interpretations, but it doesn't *need* to match the original).  Also discuss potential alternative interpretations, and their relative merits and shortcomings.  Your discussion section should take the following form:
