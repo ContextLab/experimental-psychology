@@ -1,7 +1,7 @@
 ---
 title: PSYC 11 Poster presentation
 author: Jeremy R. Manning
-date: Spring, 2022
+date: Winter, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
@@ -88,12 +88,9 @@ facilitate printing.  Your poster's PDF will also become part of your group's po
 ## \emoji{bar-chart} Printing your poster
 
 After creating a PDF of your poster (and checking it over super carefully!)
-you're ready to bring it into the real world!  You should schedule a time to
-print your poster at the [Evans Map
-Room](https://www.dartmouth.edu/library/maproom/) in Baker library.  Printing
-costs may be charged to our class's [chart string](https://www.dartmouth.edu/finance/financial-management/accounting/chart_of_accounts/).  One person from each group should reach out to me (or the TAs) on Slack to get access to the relevant account information.  You should schedule your
-printing appointment several business days before the last day of class in order to
-ensure that you will have enough time to create the poster before you present it.
+you're ready to bring it into the real world!  You should print your poster
+using the [poster printer](https://students.dartmouth.edu/ugar/news-events/wetterhahn-science-symposium/posters/printing-your-poster)
+in the Bucci Lounge on the second floor of Moore Hall.
 
 If you don't plan sufficiently well, you may need to have your poster printed
 at a local professional printing facility (e.g., FedEx Kinkos, Staples, etc.).  If you
@@ -129,13 +126,13 @@ your official submission of your project.  This can take several forms:
   - A video recording of a presentation (e.g., while standing in front of the poster or screen sharing)
   - A pre-recorded PowerPoint or Keynote presentation that can be (easily) auto-played
 
-Your recording will be due by **11:59PM on Wednesday, June 1, 2022**.
+Your recording will be due by **11:59PM on Wednesday, May 29, 2024**.
 
 ## \emoji{bar-chart} Public presentation
 
 Your group will present your poster to the faculty, students, and staff of the
 Department of Psychological and Brain Sciences during our last class meeting (on
-**Wednesday, June 1, 2022**). The attendees may also include members of the
+**Wednesday, May 29, 2024**). The attendees may also include members of the
 broader Dartmouth community.  The poster session will take place in Moore Hall,
 in the hallway outside of our usual classroom (B03).
 

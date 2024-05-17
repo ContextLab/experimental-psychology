@@ -1,7 +1,7 @@
 ---
 title: PSYC 11 Final paper
 author: Jeremy R. Manning
-date: Spring, 2022
+date: Winter, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
