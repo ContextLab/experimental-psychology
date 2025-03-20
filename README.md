@@ -4,8 +4,6 @@ Welcome!  This repository contains course materials for the Dartmouth undergradu
 
 [![DOI](https://zenodo.org/badge/459250616.svg)](https://zenodo.org/badge/latestdoi/459250616)
 
-<img src=https://www.oxford-royale.com/wp-content/uploads/2021/02/Hero-Banner-Psychology-Summer-School-Oxford-1536x640.jpg width="500">
-
 ## Contributing
 
 While I strive for 100% accuracy in my courses, I recognize that I am very unlikely to achieve that goal.  If you notice inaccuracies, inefficiencies, and/or if you have any other suggestions, feature requests, questions, comments, concerns, etc. pertaining to this course, I encourage you to [open an issue](https://github.com/ContextLab/experimental-psychology/issues) and/or submit a [pull request](https://github.com/ContextLab/experimental-psychology/pulls).  This course is continually evolving as I attempt to maintain its currency and relevance in a rapidly developing field; your help, feedback, and contributions are much appreciated!
