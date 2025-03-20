@@ -1,7 +1,6 @@
 ---
 title: PSYC 11 Poster presentation
 author: Jeremy R. Manning
-date: Winter, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
@@ -126,13 +125,13 @@ your official submission of your project.  This can take several forms:
   - A video recording of a presentation (e.g., while standing in front of the poster or screen sharing)
   - A pre-recorded PowerPoint or Keynote presentation that can be (easily) auto-played
 
-Your recording will be due by **11:59PM on Wednesday, May 29, 2024**.
+Your recording will be due by **11:59PM on Wednesday, June 4, 2025**.
 
 ## \emoji{bar-chart} Public presentation
 
 Your group will present your poster to the faculty, students, and staff of the
 Department of Psychological and Brain Sciences during our last class meeting (on
-**Wednesday, May 29, 2024**). The attendees may also include members of the
+**Wednesday, June 4, 2025**). The attendees may also include members of the
 broader Dartmouth community.  The poster session will take place in Moore Hall,
 in the hallway outside of our usual classroom (B03).
 
