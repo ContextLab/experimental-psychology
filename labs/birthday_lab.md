@@ -1,7 +1,6 @@
 ---
 title: PSYC 11 Birthday Matching Lab
 author: Jeremy R. Manning
-date: March 25, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
