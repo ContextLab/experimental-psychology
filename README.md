@@ -45,25 +45,25 @@ Note that not every course meeting has associated slides (or an associated lectu
 
 | Date | Topic | Link to editable slides | PDF link |
 |------|-------|--------------|----------|
-| March 25, 2024 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
-| March 27, 2024 | Statistical building blocks | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/statistical_building_blocks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/statistical_building_blocks.pdf) |
-| March 29, 2024 | Data wrangling | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_wrangling.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_wrangling.pdf) |
-| April 1, 2024 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
-| April 5, 2024 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
-| April 8, 2024 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
-| April 12, 2024 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
-| April 15, 2024 | Creating data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_creation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_creation.pdf) |
-| April 17, 2024 | Exploring and understanding data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration.pdf) |
-| April 19, 2024 | Quick-start guide to digging into data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration_hacks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration_hacks.pdf) |
-| April 22, 2024 | Searching and reviewing the relevant scientific literature | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/literature_reviews.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/literature_reviews.pdf) |
-| April 26, 2024 | Synthesizing across studies (and findings) | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/synthesizing_across_studies.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/synthesizing_across_studies.pdf) |
-| April 26, 2024 | Logistics and announcements | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/logistics_week_5.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/logistics_week_5.pdf) |
-| April 29, 2024 | Final project: getting started | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/final_project_initiation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/final_project_initiation.pdf) |
-| May 1, 2024 | Quick-start guide to experimental design | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/experimental_design_quickstart.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/experimental_design_quickstart.pdf) |
-| May 3, 2024 | Project management | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/project_management.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/project_management.pdf) |
-| May 6, 2024 | [Protection of Human Subjects (CPHS)](https://youtu.be/pkX3qcnPOQs) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pdf) |
-| May 15, 2024 | Introduction to poster presentations | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/poster_presentations.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf) |
-| May 17, 2024 | Effective scientific writing | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_writing.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_writing.pdf) |
+| March 31, 2025 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
+| April 2, 2025 | Statistical building blocks | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/statistical_building_blocks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/statistical_building_blocks.pdf) |
+| April 4, 2025 | Data wrangling | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_wrangling.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_wrangling.pdf) |
+| April 7, 2025 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
+| April 9, 2025 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
+| April 11, 2025 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
+| April 14, 2025 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
+| April 16, 2025 | Creating data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_creation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_creation.pdf) |
+| April 18, 2025 | Exploring and understanding data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration.pdf) |
+| April 21, 2025 | Quick-start guide to digging into data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration_hacks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration_hacks.pdf) |
+| April 23, 2025 | Searching and reviewing the relevant scientific literature | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/literature_reviews.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/literature_reviews.pdf) |
+| April 25, 2025 | Synthesizing across studies (and findings) | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/synthesizing_across_studies.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/synthesizing_across_studies.pdf) |
+| April 30, 2025 | Logistics and announcements | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/logistics_week_5.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/logistics_week_5.pdf) |
+| May 2, 2025 | Final project: getting started | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/final_project_initiation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/final_project_initiation.pdf) |
+| May 5, 2025 | Quick-start guide to experimental design | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/experimental_design_quickstart.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/experimental_design_quickstart.pdf) |
+| May 7, 2025 | Project management | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/project_management.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/project_management.pdf) |
+| May 8, 2025 | [Protection of Human Subjects (CPHS)](https://youtu.be/pkX3qcnPOQs) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pdf) |
+| May 19, 2025 | Introduction to poster presentations | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/poster_presentations.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf) |
+| May 26, 2025 | Effective scientific writing | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_writing.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_writing.pdf) |
 
 ### Human subjects research materials
 
@@ -85,18 +85,18 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
-| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *expired* | N/A |
-| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *expired* | April 8, 2024 |
-| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *expired* | April 15, 2024 |
-| [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *expired* | April 22, 2024 |
-| [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *expired* | April 29, 2024 |
-| Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *expired* | May 6, 2024 |
-| Attend CPHS training session (virtual) | 0 points | *expired* | May 6, 2024 |
-| [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 3, 2024 |
-| [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 10, 2024 |
-| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *active* | May 17, 2024 |
-| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 24, 2024 |
-| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 29, 2024 |
-| [Poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *inactive* | May 29, 2024 |
-| [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | *inactive* | May 31, 2024 |
-| [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | *inactive* | May 31, 2024 |
+| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *inactive* | N/A |
+| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *inactive* | April 7, 2025 |
+| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *inactive* | April 14, 2025 |
+| [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *inactive* | April 21, 2025 |
+| [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *inactive* | April 28, 2025 |
+| Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *inactive* | May 5, 2025 |
+| Attend CPHS training session (virtual) | 0 points | *expired* | May 8, 2025 |
+| [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 2, 2025 |
+| [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 9, 2025 |
+| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 16, 2025 |
+| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 23, 2025 |
+| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 30, 2025 |
+| [Poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *inactive* | June 4, 2025 |
+| [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | *inactive* | June 4, 2025 |
+| [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | *inactive* | June 4, 2025 |
