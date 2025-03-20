@@ -1,7 +1,6 @@
 ---
 title: PSYC 11 Pitch Session Lab
 author: Jeremy R. Manning
-date: April 1, 2024
 mainfont: Palatino
 geometry: margin=1in
 colorlinks: true
