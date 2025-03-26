@@ -35,6 +35,8 @@ During the second half of the course, you'll carry out a complete study with a s
 
 For Dartmouth students who are enrolled in PSYC 11, we will use [Slack](http://psyc11.slack.com) to organize notes, files, and other communications related to the course.  You can gain access to the class workspace by clicking the link and logging in with your Dartmouth credentials.
 
+All assignments should be submitted through [Canvas](https://canvas.dartmouth.edu/courses/72058) unless otherwise noted.
+
 You will be using your laptop computer to collect, analyze, or present nearly every day of the course.  You should bring your laptop with you to every class meeting.
 
 ## Slides
