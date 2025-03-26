@@ -79,7 +79,7 @@ Please view the materials below *before* collecting data from human participants
 All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
 The one exception to this is your final paper, which may be co-authored by your entire research team.
 
-Note: Only assignments marked *active* are guaranteed to be in their final form-- *inactive* assignments are provided to help set expectations about future assignments, but they may be edited or changed prior to be formally assigned.  *Expired* assignments are past their due date (and therefore may no longer be handed in for credit).  All assignments are due at "midnight" (i.e., 11:59 PM, Hanover time) on their indicated due dates.
+Note: Only assignments marked *active* are guaranteed to be in their final form-- *inactive* assignments are provided to help set expectations about future assignments, but they may be edited or changed prior to be formally assigned.  *Expired* assignments are past their due date (and therefore may no longer be handed in for credit).  Unless otherwise noted, all assignments are due at "midnight" (i.e., 11:59 PM, Hanover time) on their indicated due dates.
 
 | Assignment | Point value | Status | Due date |
 |------------|-------------|--------|----------|
@@ -94,7 +94,8 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 12, 2025 |
 | [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 19, 2025 |
 | [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 26, 2025 |
+| [Public poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 0 points | *inactive* | May 30, 2025 (during class) |
 | [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | June 2, 2025 |
-| [Poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *inactive* | June 4, 2025 |
+| [Poster presentation PDF and video](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *inactive* | June 4, 2025 |
 | [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | *inactive* | June 6, 2025 |
 | [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | *inactive* | June 6, 2025 |
