@@ -116,6 +116,24 @@ choose, but in general you should aim to include the following information:
 Your script is likely to be most effective if you can refer to specific
 components of your poster as you are taking your audience through your project.
 
+## \emoji{bar-chart} Public presentation
+
+Your group will present your poster to the faculty, students, and staff of the
+Department of Psychological and Brain Sciences during our class meeting on
+**Friday, May 30, 2025**. The attendees may also include members of the
+broader Dartmouth community.  The poster session will take place in Moore Hall,
+in the hallway outside of our usual classroom (B03).
+
+During the poster session, each group will mount their poster on an an easel
+provided by the department. Group members will stand in front of their poster.
+As poster session attendees walk by, they'll ask to hear about your project.
+You can use the script you've prepared to help guide your presentations, but
+you should also be prepared to go off-script. Poster presentations are often
+dynamic and highly interactive. It is normal for presentations to be
+interrupted frequently, be cut short (or go long if there are lots of
+questions), restart several times as new people filter by, and so on.
+
+
 ## \emoji{bar-chart} Recorded presentation
 
 You should create a 3--5 minute recording of your group's presentation to be included in
@@ -127,19 +145,6 @@ your official submission of your project.  This can take several forms:
 
 Your recording will be due by **11:59PM on Wednesday, June 4, 2025**.
 
-## \emoji{bar-chart} Public presentation
-
-Your group will present your poster to the faculty, students, and staff of the
-Department of Psychological and Brain Sciences during our last class meeting (on
-**Wednesday, June 4, 2025**). The attendees may also include members of the
-broader Dartmouth community.  The poster session will take place in Moore Hall,
-in the hallway outside of our usual classroom (B03).
-
-During the poster session, each group will mount their poster on an an easel provided
-by the department.  Group members will stand in front of their poster.  As poster session attendees walk by, they'll ask to hear about your project.  You can use the script you've prepared
-to help guide your presentations, but you should also be prepared to go off-script. 
-Poster presentations are often dynamic and highly interactive.  It is normal for
-presentations to be interrupted frequently, be cut short (or go long if there are lots of questions), restart several times as new people filter by, and so on.
 
 ### \emoji{trophy} Best poster competition
 
