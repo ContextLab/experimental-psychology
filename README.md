@@ -63,6 +63,10 @@ Note that not every course meeting has associated slides (or an associated lectu
 | May 19, 2025 | Introduction to poster presentations | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/poster_presentations.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf) |
 | May 26, 2025 | Effective scientific writing | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_writing.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_writing.pdf) |
 
+### Statistics tutorials
+
+[Professor Emeritus John Pfister](https://pbs.dartmouth.edu/people/john-f-pfister) has put together some fantastic [tutorial materials](https://canvas.dartmouth.edu/courses/68954) to help students refresh and broaden their statistics knowledge.  I highly encourage you to check them out!
+
 ### Human subjects research materials
 
 Please view the materials below *before* collecting data from human participants.
