@@ -158,7 +158,7 @@ US Presidents, 10 Olympic Medalists, and myriad other world leaders.
 
 # \emoji{teacher} Submitting your poster presentation
 
-One member from each group should upload the following materials on [Canvas](https://canvas.dartmouth.edu/courses/52416/assignments/351675):
+One member from each group should upload the following materials on [Canvas](https://canvas.dartmouth.edu/courses/72058/assignments/515766):
 
   - A document listing all group members' names
   - A PDF of your group's poster
