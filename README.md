@@ -92,8 +92,8 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *expired* | N/A |
 | [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *expired* | April 14, 2025 |
 | [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *expired* | April 21, 2025 |
-| [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *active* | April 28, 2025 |
-| [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *inactive* | May 5, 2025 |
+| [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *expired* | April 28, 2025 |
+| [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *active* | May 5, 2025 |
 | [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 5, 2025 |
 | Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *inactive* | May 7, 2025 |
 | Attend CPHS training session (virtual) | 0 points | *inactive* | May 8, 2025 |
