@@ -63,7 +63,7 @@ Note that not every course meeting has associated slides (or an associated lectu
 | May 8, 2025 | [Protection of Human Subjects (CPHS)](https://youtu.be/pkX3qcnPOQs) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pdf) |
 | May 9, 2025 | Project management | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/project_management.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/project_management.pdf) |
 | May 19, 2025 | Introduction to poster presentations | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/poster_presentations.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf) |
-| May 26, 2025 | Effective scientific writing | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_writing.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_writing.pdf) |
+| May 28, 2025 | Effective scientific writing | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_writing.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_writing.pdf) |
 
 ### Statistics tutorials
 
@@ -98,8 +98,8 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *expired* | May 12, 2025 |
 | Attend CPHS training session (virtual) | 0 points | *expired* | May 12, 2025 |
 | [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 12, 2025 |
-| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *active* | May 19, 2025 |
-| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | May 26, 2025 |
+| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 19, 2025 |
+| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *active* | May 27, 2025 |
 | [Public poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 0 points | *inactive* | May 30, 2025 (during class) |
 | [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | June 2, 2025 |
 | [Poster presentation PDF and video](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *inactive* | June 4, 2025 |
