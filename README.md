@@ -99,9 +99,9 @@ Note: Only assignments marked *active* are guaranteed to be in their final form-
 | Attend CPHS training session (virtual) | 0 points | *expired* | May 12, 2025 |
 | [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 12, 2025 |
 | [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 19, 2025 |
-| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *active* | May 27, 2025 |
-| [Public poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 0 points | *inactive* | May 30, 2025 (during class) |
-| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *inactive* | June 2, 2025 |
-| [Poster presentation PDF and video](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *inactive* | June 4, 2025 |
-| [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | *inactive* | June 6, 2025 |
-| [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | *inactive* | June 6, 2025 |
+| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 27, 2025 |
+| [Public poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 0 points | *active* | May 30, 2025 (during class) |
+| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *active* | June 2, 2025 |
+| [Poster presentation PDF and video](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *active* | June 6, 2025 |
+| [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | *active* | June 6, 2025 |
+| [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | *active* | June 6, 2025 |
