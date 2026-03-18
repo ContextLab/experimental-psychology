@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'css/**'
       - 'slides/**'
       - 'assignments/**'
       - 'syllabus/**'
@@ -61,6 +62,7 @@ jobs:
           mkdir -p _site
           touch _site/.nojekyll
           [ -f index.html ] && cp index.html _site/
+          [ -d css ] && cp -r css _site/
           [ -d slides ] && cp -r slides _site/
           [ -d assignments ] && cp -r assignments _site/
           [ -d syllabus ] && cp -r syllabus _site/
