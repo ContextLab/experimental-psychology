@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory in Psychological Science - PSYC 11</title>
+    <meta name="description" content="Course materials for PSYC 11: Laboratory in Psychological Science - Dartmouth College">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/theme.css">
+
+    <style>
+        /* Navigation - matching demos page style */
+        .course-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            z-index: var(--z-fixed);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .course-nav.scrolled {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .course-nav .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .course-nav .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .course-nav .nav-links a:hover,
+        .course-nav .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .course-nav .theme-toggle {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-full);
+            width: 40px;
+            height: 40px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .course-nav .theme-toggle:hover {
+            background: var(--surface-hover);
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .meta-item .icon {
+            font-size: 1.2rem;
+        }
+
+        /* DOI Badge */
+        .doi-badge {
+            margin-top: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        /* Course Info Section */
+        .course-info {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 0;
+            animation: fadeInUp 0.8s ease 0.5s both;
+        }
+
+        .course-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+        }
+
+        .info-card h4 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .info-card p, .info-card a {
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .info-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Quick Links Bar */
+        .quick-links {
+            background: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 60px;
+            z-index: 100;
+        }
+
+        .quick-links-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .week-pill {
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-base);
+            text-decoration: none;
+        }
+
+        .week-pill:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .week-pill.active {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Week Section */
+        .week-section {
+            margin-bottom: 2rem;
+            scroll-margin-top: 140px;
+        }
+
+        .week-header {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .week-header:hover {
+            border-color: var(--primary-color);
+            background: var(--surface-hover);
+        }
+
+        .week-header.expanded {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-color: transparent;
+        }
+
+        .week-header-content {
+            flex: 1;
+        }
+
+        .week-number {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .week-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .week-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .expand-icon {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            transition: transform 0.3s ease;
+        }
+
+        .week-header.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .week-content {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-bottom-left-radius: var(--radius-lg);
+            border-bottom-right-radius: var(--radius-lg);
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.3s ease;
+        }
+
+        .week-content.expanded {
+            max-height: 5000px;
+            padding: 1.5rem 2rem;
+        }
+
+        /* Lecture Card */
+        .lecture-card {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .lecture-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .lecture-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .lecture-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .lecture-day {
+            background: var(--surface-hover);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .lecture-day.xhour {
+            background: rgba(139, 92, 246, 0.2);
+            color: #a78bfa;
+        }
+
+        .lecture-day.absent {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            font-style: italic;
+        }
+
+        .lecture-day.holiday {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            font-style: italic;
+        }
+
+        .lecture-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .lecture-title.absent {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .lecture-title.holiday {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Resource Links */
+        .resource-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .resource-group {
+            margin-bottom: 0.75rem;
+        }
+
+        .resource-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .resource-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.4rem 0.75rem;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .resource-link:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .resource-link.primary {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }
+
+        .resource-link.primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+            color: white;
+        }
+
+        .resource-link .icon {
+            font-size: 1rem;
+        }
+
+        /* No Class Notice */
+        .no-class-notice {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: center;
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }
+
+        .no-class-notice h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .no-class-notice p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Assignments Table */
+        .assignments-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 2rem;
+        }
+
+        .assignments-section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .assignments-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }
+
+        .assignments-table th {
+            background: var(--bg-color);
+            color: var(--text-primary);
+            padding: 1rem 1.5rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .assignments-table td {
+            padding: 0.85rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .assignments-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .assignments-table tr:hover td {
+            background: var(--surface-hover);
+        }
+
+        .assignments-table a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .assignments-table a:hover {
+            text-decoration: underline;
+        }
+
+        /* Resources Section */
+        .resources-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 3rem;
+        }
+
+        .resources-section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .resource-card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .resource-card:hover {
+            border-color: var(--primary-color);
+        }
+
+        .resource-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .resource-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resource-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-card li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .resource-card li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        .footer-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .course-nav .nav-links {
+                gap: 1rem;
+            }
+
+            .course-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .quick-links {
+                padding: 0.75rem 1rem;
+            }
+
+            .week-pill {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            .week-header {
+                padding: 1rem 1.5rem;
+            }
+
+            .week-title {
+                font-size: 1.25rem;
+            }
+
+            .lecture-header {
+                flex-direction: column;
+            }
+
+            .course-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .assignments-table {
+                font-size: 0.85rem;
+            }
+
+            .assignments-table th,
+            .assignments-table td {
+                padding: 0.65rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="course-nav" id="navbar">
+        <div class="logo">PSYC 11</div>
+        <div class="nav-links">
+            <a href="./" class="active">Outline</a>
+            <a href="./syllabus/">Syllabus</a>
+            <a href="./assignments/">Assignments</a>
+            <a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span id="themeIcon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Laboratory in Psychological Science</h1>
+        <p>PSYC 11 &mdash; Dartmouth College</p>
+        <div class="course-meta">
+            <div class="meta-item">
+                <span class="icon"><i class="fa-regular fa-calendar"></i></span>
+                <span>MWF 10:10-11:15 AM</span>
+            </div>
+            <div class="meta-item">
+                <span class="icon"><i class="fa-solid fa-book"></i></span>
+                <span>X-Hour: Thu 12:15-1:05 PM</span>
+            </div>
+            <div class="meta-item">
+                <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span>Spring 2026</span>
+            </div>
+            <div class="meta-item">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <span>Moore B03</span>
+            </div>
+        </div>
+        <div class="doi-badge">
+            <a href="https://zenodo.org/badge/latestdoi/459250616" target="_blank"><img src="https://zenodo.org/badge/459250616.svg" alt="DOI"></a>
+        </div>
+    </section>
+
+    <div class="course-info">
+        <div class="course-info-grid">
+            <div class="info-card">
+                <h4>Instructor</h4>
+                <p><strong>Jeremy R. Manning</strong></p>
+                <p><a href="https://context-lab.com/scheduler" target="_blank"><i class="fa-regular fa-calendar-check"></i> Office Hours</a></p>
+            </div>
+            <div class="info-card">
+                <h4>Teaching Assistants</h4>
+                <p>Yifan Fang</p>
+                <p>Yuqi Zhang</p>
+                <p>Eunhye Choe</p>
+            </div>
+            <div class="info-card">
+                <h4>Rooms</h4>
+                <p><strong>Main:</strong> Moore B03</p>
+                <p><strong>Breakout:</strong> Moore 302, 303, 150</p>
+            </div>
+            <div class="info-card">
+                <h4>Quick Links</h4>
+                <p><a href="./syllabus/"><i class="fa-solid fa-file-lines"></i> Syllabus</a></p>
+                <p><a href="./assignments/"><i class="fa-solid fa-clipboard-list"></i> Assignments</a></p>
+                <p><a href="https://canvas.dartmouth.edu" target="_blank"><i class="fa-solid fa-chalkboard"></i> Canvas</a></p>
+                <p><a href="https://psyc11.slack.com" target="_blank"><i class="fa-brands fa-slack"></i> Slack</a></p>
+                <p><a href="https://github.com/ContextLab/experimental-psychology" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <div class="quick-links-container" id="quick-links-container">
+            <a href="#week1" class="week-pill">Week 1</a>
+            <a href="#week2" class="week-pill">Week 2</a>
+            <a href="#week3" class="week-pill">Week 3</a>
+            <a href="#week4" class="week-pill">Week 4</a>
+            <a href="#week5" class="week-pill">Week 5</a>
+            <a href="#week6" class="week-pill">Week 6</a>
+            <a href="#week7" class="week-pill">Week 7</a>
+            <a href="#week8" class="week-pill">Week 8</a>
+            <a href="#week9" class="week-pill">Week 9</a>
+            <a href="#week10" class="week-pill">Week 10</a>
+        </div>
+    </div>
+
+    <main class="container" id="weeks-container">
+
+        <!-- Week 1 -->
+        <section class="week-section" id="week1">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 1</span>
+                    <h2 class="week-title">Introduction</h2>
+                    <p class="week-subtitle">Mar 30</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon Mar 30</span>
+                    </div>
+                    <h3 class="lecture-title">Introduction and overview</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week1/lecture1.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day absent">Wed Apr 1</span>
+                    </div>
+                    <h3 class="lecture-title absent">NO CLASS (instructor away)</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day absent xhour">Thu Apr 2 (X)</span>
+                    </div>
+                    <h3 class="lecture-title absent">NO X-hour (instructor away)</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day absent">Fri Apr 3</span>
+                    </div>
+                    <h3 class="lecture-title absent">NO CLASS (instructor away)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 2 -->
+        <section class="week-section" id="week2">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 2</span>
+                    <h2 class="week-title">Asking Scientific Questions</h2>
+                    <p class="week-subtitle">Apr 6&ndash;10</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon Apr 6</span>
+                    </div>
+                    <h3 class="lecture-title">Statistical building blocks</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week2/lecture2.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed Apr 8</span>
+                    </div>
+                    <h3 class="lecture-title">Data wrangling</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week2/lecture3.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day xhour">Thu Apr 9 (X)</span>
+                    </div>
+                    <h3 class="lecture-title">Week 1 makeup</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week2/lecture1b.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri Apr 10</span>
+                    </div>
+                    <h3 class="lecture-title">Motivating your science</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week2/lecture4.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 3 -->
+        <section class="week-section" id="week3">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 3</span>
+                    <h2 class="week-title">Introduction Section</h2>
+                    <p class="week-subtitle">Apr 13&ndash;17</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon Apr 13</span>
+                    </div>
+                    <h3 class="lecture-title">Limits of data and stats</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week3/lecture5.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed Apr 15</span>
+                    </div>
+                    <h3 class="lecture-title">Effective explaining</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week3/lecture6.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri Apr 17</span>
+                    </div>
+                    <h3 class="lecture-title">Evaluating methods</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week3/lecture7.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 4 -->
+        <section class="week-section" id="week4">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 4</span>
+                    <h2 class="week-title">Methods Section</h2>
+                    <p class="week-subtitle">Apr 20&ndash;25</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon Apr 20</span>
+                    </div>
+                    <h3 class="lecture-title">Creating data</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week4/lecture8.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day absent">Wed Apr 22</span>
+                    </div>
+                    <h3 class="lecture-title absent">NO CLASS (instructor away)</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day xhour">Thu Apr 23 (X)</span>
+                    </div>
+                    <h3 class="lecture-title">Makeup: Exploring data</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week4/lecture9.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri Apr 25</span>
+                    </div>
+                    <h3 class="lecture-title">Quick-start guide to data</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week4/lecture10.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 5 -->
+        <section class="week-section" id="week5">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 5</span>
+                    <h2 class="week-title">Results &amp; Discussion</h2>
+                    <p class="week-subtitle">Apr 27&ndash;May 1</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon Apr 27</span>
+                    </div>
+                    <h3 class="lecture-title">Literature reviews</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week5/lecture11.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed Apr 29</span>
+                    </div>
+                    <h3 class="lecture-title">Synthesizing across studies</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week5/lecture12.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri May 1</span>
+                    </div>
+                    <h3 class="lecture-title">Logistics and announcements</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week5/lecture13.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 6 -->
+        <section class="week-section" id="week6">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 6</span>
+                    <h2 class="week-title">Starting Final Project</h2>
+                    <p class="week-subtitle">May 4&ndash;8</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon May 4</span>
+                    </div>
+                    <h3 class="lecture-title">Final project: getting started</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week6/lecture14.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed May 6</span>
+                    </div>
+                    <h3 class="lecture-title">Experimental design quickstart</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week6/lecture15.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day xhour">Thu May 7 (X)</span>
+                    </div>
+                    <h3 class="lecture-title">CPHS training</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/CPHS_presentation.pdf" class="resource-link primary"><span class="icon"><i class="fa-solid fa-file-pdf"></i></span> Slides (PDF)</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri May 8</span>
+                    </div>
+                    <h3 class="lecture-title">Project management</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week6/lecture16.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 7 -->
+        <section class="week-section" id="week7">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 7</span>
+                    <h2 class="week-title">Group Project Work</h2>
+                    <p class="week-subtitle">May 11&ndash;15</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon May 11</span>
+                    </div>
+                    <h3 class="lecture-title">Group project work session</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed May 13</span>
+                    </div>
+                    <h3 class="lecture-title">Group project work session</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri May 15</span>
+                    </div>
+                    <h3 class="lecture-title">Group project work session</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 8 -->
+        <section class="week-section" id="week8">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 8</span>
+                    <h2 class="week-title">Presentations &amp; Writing</h2>
+                    <p class="week-subtitle">May 18&ndash;22</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon May 18</span>
+                    </div>
+                    <h3 class="lecture-title">Poster presentations</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week8/lecture17.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed May 20</span>
+                    </div>
+                    <h3 class="lecture-title">Group project work session</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Fri May 22</span>
+                    </div>
+                    <h3 class="lecture-title">Group project work session</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 9 -->
+        <section class="week-section" id="week9">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 9</span>
+                    <h2 class="week-title">Final Presentations</h2>
+                    <p class="week-subtitle">May 25&ndash;29</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day holiday">Mon May 25</span>
+                    </div>
+                    <h3 class="lecture-title holiday">NO CLASS (Memorial Day)</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed May 27</span>
+                    </div>
+                    <h3 class="lecture-title">Effective scientific writing</h3>
+                    <div class="resource-section">
+                        <div class="resource-group"><div class="resource-label">Slides</div><div class="resource-links">
+                            <a href="slides/week9/lecture18.html" class="resource-link primary"><span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>
+                        </div></div>
+                    </div>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day xhour">Thu May 28 (X)</span>
+                    </div>
+                    <h3 class="lecture-title">Makeup session</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day absent">Fri May 29</span>
+                    </div>
+                    <h3 class="lecture-title absent">NO CLASS (instructor away)</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 10 -->
+        <section class="week-section" id="week10">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week 10</span>
+                    <h2 class="week-title">Wrap-up</h2>
+                    <p class="week-subtitle">Jun 1&ndash;3</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Mon Jun 1</span>
+                    </div>
+                    <h3 class="lecture-title">Public poster presentation</h3>
+                </div>
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="lecture-day">Wed Jun 3</span>
+                    </div>
+                    <h3 class="lecture-title">Course wrap-up</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Assignments -->
+    <section class="assignments-section">
+        <h2>Assignments</h2>
+        <table class="assignments-table">
+            <thead>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Points</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="assignments/birthday_lab/">Birthday lab</a></td>
+                    <td>0 pts</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/pitch_session_lab/">Pitch session lab</a></td>
+                    <td>10 pts</td>
+                    <td>Apr 13</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/picture_lab/">Picture lab</a></td>
+                    <td>10 pts</td>
+                    <td>Apr 20</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/data_sleuthing_lab/">Data sleuthing lab</a></td>
+                    <td>10 pts</td>
+                    <td>Apr 27</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/literature_lab/">Literature lab</a></td>
+                    <td>10 pts</td>
+                    <td>May 4</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/weekly_snippet/">Weekly snippets (5 &times; 1 pt)</a></td>
+                    <td>5 pts</td>
+                    <td>Weekly</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/make_a_poster/">Poster presentation</a></td>
+                    <td>15 pts</td>
+                    <td>Jun 5</td>
+                </tr>
+                <tr>
+                    <td><a href="assignments/final_paper/">Final paper</a></td>
+                    <td>40 pts</td>
+                    <td>Jun 5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Resources -->
+    <section class="resources-section">
+        <h2>Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <h3><i class="fa-solid fa-user-shield"></i> Human Subjects Research</h3>
+                <ul>
+                    <li><a href="slides/CPHS_presentation.pdf"><i class="fa-solid fa-file-pdf"></i> CPHS Training (PDF)</a></li>
+                    <li><a href="readings/Belmont_Report.pdf"><i class="fa-solid fa-file-pdf"></i> Belmont Report</a></li>
+                    <li><a href="readings/Nuremburg_Code.pdf"><i class="fa-solid fa-file-pdf"></i> Nuremberg Code</a></li>
+                    <li><a href="readings/Jesse_Intent.pdf"><i class="fa-solid fa-file-pdf"></i> Jesse's Intent</a></li>
+                </ul>
+            </div>
+            <div class="resource-card">
+                <h3><i class="fa-solid fa-chart-bar"></i> Statistics Tutorials</h3>
+                <ul>
+                    <li><a href="https://canvas.dartmouth.edu/courses/68954" target="_blank"><i class="fa-solid fa-link"></i> Professor Pfister's statistics tutorials</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
+            <p>PSYC 11: Laboratory in Psychological Science</p>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // COURSE WEEK DATES - Spring 2026
+        // ============================================
+        var COURSE_WEEK_STARTS = {
+            1: new Date('2026-03-30'),
+            2: new Date('2026-04-06'),
+            3: new Date('2026-04-13'),
+            4: new Date('2026-04-20'),
+            5: new Date('2026-04-27'),
+            6: new Date('2026-05-04'),
+            7: new Date('2026-05-11'),
+            8: new Date('2026-05-18'),
+            9: new Date('2026-05-25'),
+            10: new Date('2026-06-01')
+        };
+        var COURSE_END = new Date('2026-06-06');
+
+        function getCurrentWeek() {
+            var now = new Date();
+            if (now < COURSE_WEEK_STARTS[1]) return 1;
+            if (now >= COURSE_END) return 10;
+            for (var week = 10; week >= 1; week--) {
+                if (now >= COURSE_WEEK_STARTS[week]) return week;
+            }
+            return 1;
+        }
+
+        // ============================================
+        // ACCORDION TOGGLE
+        // ============================================
+        function toggleWeek(header) {
+            var content = header.nextElementSibling;
+            var isExpanded = header.classList.contains('expanded');
+            if (isExpanded) {
+                header.classList.remove('expanded');
+                content.classList.remove('expanded');
+            } else {
+                header.classList.add('expanded');
+                content.classList.add('expanded');
+            }
+        }
+
+        // ============================================
+        // WEEK PILL NAVIGATION
+        // ============================================
+        function setupQuickLinks() {
+            document.querySelectorAll('.week-pill').forEach(function(pill) {
+                pill.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = pill.getAttribute('href').substring(1);
+                    var targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        var header = targetSection.querySelector('.week-header');
+                        var content = targetSection.querySelector('.week-content');
+                        if (header && !header.classList.contains('expanded')) {
+                            header.classList.add('expanded');
+                            content.classList.add('expanded');
+                        }
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        }
+
+        // ============================================
+        // SCROLL SPY - ACTIVE WEEK PILL
+        // ============================================
+        function updateActiveWeek() {
+            var weekPills = document.querySelectorAll('.week-pill');
+            var weekSections = document.querySelectorAll('.week-section');
+            var scrollPos = window.scrollY + 200;
+
+            weekSections.forEach(function(section, index) {
+                var top = section.offsetTop;
+                var bottom = top + section.offsetHeight;
+                if (scrollPos >= top && scrollPos < bottom) {
+                    weekPills.forEach(function(pill) { pill.classList.remove('active'); });
+                    if (weekPills[index]) weekPills[index].classList.add('active');
+                }
+            });
+        }
+
+        // ============================================
+        // FADE-IN ANIMATIONS
+        // ============================================
+        function setupAnimations() {
+            var observerOptions = { threshold: 0.1 };
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.week-section').forEach(function(section) {
+                section.style.opacity = '0';
+                observer.observe(section);
+            });
+        }
+
+        // ============================================
+        // THEME TOGGLE
+        // ============================================
+        var themeToggle = document.getElementById('themeToggle');
+        var themeIcon = document.getElementById('themeIcon');
+        var htmlEl = document.documentElement;
+
+        var currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '\uD83C\uDF19' : '\u2600\uFE0F';
+
+        themeToggle.addEventListener('click', function() {
+            var current = htmlEl.getAttribute('data-theme');
+            var newTheme = current === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '\uD83C\uDF19' : '\u2600\uFE0F';
+        });
+
+        // ============================================
+        // NAVBAR SCROLL EFFECT
+        // ============================================
+        var navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            updateActiveWeek();
+        });
+
+        // ============================================
+        // AUTO-EXPAND CURRENT WEEK
+        // ============================================
+        function autoExpandCurrentWeek() {
+            var currentWeekNum = getCurrentWeek();
+            var weekId = 'week' + currentWeekNum;
+            var section = document.getElementById(weekId);
+            if (section) {
+                var header = section.querySelector('.week-header');
+                var content = section.querySelector('.week-content');
+                if (header && content) {
+                    header.classList.add('expanded');
+                    content.classList.add('expanded');
+                }
+            }
+            // Highlight the corresponding pill
+            var pills = document.querySelectorAll('.week-pill');
+            if (pills[currentWeekNum - 1]) {
+                pills[currentWeekNum - 1].classList.add('active');
+            }
+        }
+
+        // ============================================
+        // INITIALIZE
+        // ============================================
+        setupQuickLinks();
+        setupAnimations();
+        autoExpandCurrentWeek();
+    </script>
+</body>
+</html>

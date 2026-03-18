@@ -15,6 +15,7 @@ REPO_ROOT = Path(__file__).parent.parent
 # Emoji mapping for LaTeX \emoji{name} commands
 EMOJI_MAP = {
     "birthday-cake": "\U0001F382",
+    "cupcake": "\U0001F9C1",
     "party-popper": "\U0001F389",
     "tada": "\U0001F389",
     "memo": "\U0001F4DD",
@@ -480,6 +481,7 @@ def get_page_template(title, nav_active, content, depth=1):
     <meta name="description" content="{title} for PSYC 11: Laboratory in Psychological Science">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{prefix}css/theme.css">
     <style>
         :root {{
             --primary-color: #00693e;
