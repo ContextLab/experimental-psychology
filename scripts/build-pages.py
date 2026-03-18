@@ -456,7 +456,7 @@ THEME_SCRIPT = """
 
 
 def get_page_template(title, nav_active, content, depth=1):
-    """Generate full HTML page with navigation and styling."""
+    """Generate full HTML page matching the index.html theme."""
     prefix = "../" * depth
 
     nav_items = [
@@ -480,43 +480,10 @@ def get_page_template(title, nav_active, content, depth=1):
     <title>{title} - PSYC 11</title>
     <meta name="description" content="{title} for PSYC 11: Laboratory in Psychological Science">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{prefix}css/theme.css">
     <style>
-        :root {{
-            --primary-color: #00693e;
-            --primary-light: #267aba;
-            --accent-color: #ffa00f;
-            --bg-color: #0f172a;
-            --surface-color: #1e293b;
-            --surface-hover: #334155;
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --border-color: #334155;
-            --gradient-primary: linear-gradient(135deg, #00693e, #267aba);
-            --radius-md: 8px;
-            --radius-lg: 12px;
-            --radius-full: 9999px;
-            --spacing-md: 1rem;
-            --spacing-xl: 2rem;
-            --z-fixed: 100;
-        }}
-        [data-theme="light"] {{
-            --bg-color: #ffffff;
-            --surface-color: #f8fafc;
-            --surface-hover: #f1f5f9;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --border-color: #e2e8f0;
-        }}
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{
-            font-family: 'Cormorant Garamond', Georgia, serif;
-            background: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }}
-        .page-nav {{
+        /* Nav — matches index.html .course-nav */
+        .course-nav {{
             position: fixed; top: 0; left: 0; right: 0;
             display: flex; justify-content: space-between; align-items: center;
             padding: var(--spacing-md) var(--spacing-xl);
@@ -525,25 +492,31 @@ def get_page_template(title, nav_active, content, depth=1):
             z-index: var(--z-fixed);
             backdrop-filter: blur(10px);
         }}
-        .page-nav .logo {{
+        .course-nav .logo {{
             font-size: 1.5rem; font-weight: 700;
             background: var(--gradient-primary);
             -webkit-background-clip: text; background-clip: text;
             -webkit-text-fill-color: transparent;
         }}
-        .page-nav .nav-links {{ display: flex; gap: 2rem; align-items: center; }}
-        .page-nav .nav-links a {{
+        .course-nav .nav-links {{ display: flex; gap: 2rem; align-items: center; }}
+        .course-nav .nav-links a {{
             color: var(--text-secondary); text-decoration: none;
             font-weight: 500; transition: color 0.3s ease;
         }}
-        .page-nav .nav-links a:hover, .page-nav .nav-links a.active {{ color: var(--primary-color); }}
-        .page-nav .theme-toggle {{
+        .course-nav .nav-links a:hover,
+        .course-nav .nav-links a.active {{ color: var(--primary-color); }}
+        .course-nav .theme-toggle {{
             background: var(--surface-color); border: 1px solid var(--border-color);
             border-radius: var(--radius-full); width: 40px; height: 40px;
             font-size: 1.25rem; cursor: pointer;
             display: flex; align-items: center; justify-content: center;
+            transition: all var(--transition-fast);
         }}
-        .page-nav .theme-toggle:hover {{ background: var(--surface-hover); border-color: var(--primary-color); }}
+        .course-nav .theme-toggle:hover {{
+            background: var(--surface-hover); border-color: var(--primary-color);
+            transform: scale(1.05);
+        }}
+        /* Page header */
         .page-header {{
             margin-top: 70px; padding: 3rem 2rem 2rem; text-align: center;
             background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
@@ -554,42 +527,72 @@ def get_page_template(title, nav_active, content, depth=1):
             -webkit-background-clip: text; background-clip: text;
             -webkit-text-fill-color: transparent;
         }}
+        /* Content area */
         .content {{ max-width: 900px; margin: 0 auto; padding: 2rem; }}
         .content h1 {{ font-size: 2rem; font-weight: 800; color: var(--text-primary); margin: 2rem 0 1rem; }}
-        .content h2 {{ font-size: 1.75rem; font-weight: 700; color: var(--text-primary); margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }}
+        .content h2 {{
+            font-size: 1.75rem; font-weight: 700; color: var(--text-primary);
+            margin: 2rem 0 1rem; padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }}
         .content h3 {{ font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }}
         .content h4 {{ font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin: 1.25rem 0 0.5rem; }}
         .content p {{ color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; }}
         .content ul, .content ol {{ color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem; }}
         .content li {{ margin-bottom: 0.5rem; line-height: 1.6; }}
-        .content a {{ color: var(--primary-light); text-decoration: none; }}
+        .content a {{ color: var(--primary-color); text-decoration: none; }}
         .content a:hover {{ text-decoration: underline; }}
         .content strong {{ color: var(--text-primary); }}
         .content hr {{ border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }}
-        .content table {{ width: 100%; border-collapse: collapse; margin: 1.5rem 0; }}
-        .content th, .content td {{ padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-color); }}
-        .content th {{ background: var(--surface-color); color: var(--text-primary); font-weight: 600; }}
-        .content td {{ color: var(--text-secondary); }}
-        .content tr:hover {{ background: var(--surface-color); }}
-        .content code {{ background: var(--surface-color); padding: 0.2em 0.4em; border-radius: 4px; font-family: 'Fira Code', monospace; font-size: 0.9em; color: var(--primary-light); }}
-        .content pre {{ background: var(--surface-color); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto; margin: 1rem 0; border: 1px solid var(--border-color); }}
-        .content pre code {{ background: none; padding: 0; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; }}
+        .content table {{
+            width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg); overflow: hidden;
+        }}
+        .content th {{
+            background: var(--bg-color); color: var(--text-primary);
+            padding: 1rem 1.5rem; text-align: left; font-weight: 600;
+            font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+        }}
+        .content td {{
+            padding: 0.85rem 1.5rem; border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary); font-size: 0.95rem;
+        }}
+        .content tr:last-child td {{ border-bottom: none; }}
+        .content tr:hover td {{ background: var(--surface-hover); }}
+        .content code {{
+            background: var(--surface-color); padding: 0.2em 0.4em; border-radius: 4px;
+            font-family: 'Fira Code', monospace; font-size: 0.9em; color: var(--primary-color);
+        }}
+        .content pre {{
+            background: var(--surface-color); padding: 1rem; border-radius: var(--radius-md);
+            overflow-x: auto; margin: 1rem 0; border: 1px solid var(--border-color);
+        }}
+        .content pre code {{
+            background: none; padding: 0; color: var(--text-secondary);
+            font-size: 0.875rem; line-height: 1.6;
+        }}
+        /* Footer — matches index.html */
         footer {{
             background: var(--surface-color); border-top: 1px solid var(--border-color);
             padding: 2rem; text-align: center;
         }}
-        footer p {{ color: var(--text-secondary); margin: 0.5rem 0; }}
-        footer a {{ color: var(--primary-light); text-decoration: none; }}
-        footer a:hover {{ text-decoration: underline; }}
-        @media (max-width: 768px) {{ .page-nav .nav-links {{ gap: 1rem; font-size: 0.9rem; }} }}
+        .footer-content {{ max-width: 1400px; margin: 0 auto; }}
+        .footer-content p {{ color: var(--text-secondary); margin: 0.5rem 0; }}
+        .footer-content a {{ color: var(--primary-color); text-decoration: none; }}
+        .footer-content a:hover {{ text-decoration: underline; }}
+        @media (max-width: 768px) {{
+            .course-nav .nav-links {{ gap: 1rem; font-size: 0.9rem; }}
+        }}
     </style>
 </head>
 <body>
-    <nav class="page-nav">
+    <nav class="course-nav">
         <div class="logo">PSYC 11</div>
         <div class="nav-links">
             {nav_html}<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <span id="themeIcon">\U0001F319</span>
+                <span id="themeIcon"></span>
             </button>
         </div>
     </nav>
@@ -603,10 +606,10 @@ def get_page_template(title, nav_active, content, depth=1):
     </main>
 
     <footer>
-        <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
-        <p>PSYC 11: Laboratory in Psychological Science &mdash; Dartmouth College</p>
-        <p><a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a> &middot;
-           <a href="https://zenodo.org/badge/latestdoi/459250616" target="_blank">DOI</a></p>
+        <div class="footer-content">
+            <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
+            <p>PSYC 11: Laboratory in Psychological Science</p>
+        </div>
     </footer>
 
     {THEME_SCRIPT}
