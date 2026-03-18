@@ -18,23 +18,32 @@ Spring 2026
 
 # Staying on track
 
+<div class="note-box" data-title="Managing long-term deadlines">
+
 - When big team deadlines are far away, how can you know if you are on track?
 - Break down your big tasks into smaller tasks and set interim deadlines
 - Define points of accountability
 - Use frequent updates and audits
 
+</div>
+
 ---
 
 # How do you decide what to work on "next"?
 
-- Think: weekly snippets!
+<div class="tip-box" data-title="Think: weekly snippets!">
+
 - What have I **already done**?
 - What are the **next milestones**?
 - Is there anything I'm **stuck on**?
 
+</div>
+
 ---
 
 # Key milestones
+
+<div class="important-box" data-title="Project progress tracker">
 
 - :check_mark: Find a group (ideal: 3ish students)
 - :check_mark: Brainstorm project ideas
@@ -44,40 +53,46 @@ Spring 2026
 - Analyze data
 - Interpret, present, and write up results
 
----
-
-# Project boards
-
-![Trello board overview](../figs/project_management/trello-small-15880.png)
+</div>
 
 ---
 
 # Project boards
 
-![Trello card with checklist](../figs/project_management/Screen Shot 2022-05-06 at 11.17.29 AM-small-15893.png)
+<img src="../figs/project_management/trello-small-15880.png" width="600">
 
 ---
 
 # Project boards
 
-![Trello card item actions](../figs/project_management/Screen Shot 2022-05-06 at 11.18.15 AM-small-15898.png)
+<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.17.29 AM-small-15893.png" width="600">
+
+---
+
+# Project boards
+
+<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.18.15 AM-small-15898.png" width="600">
 
 ---
 
 # Accountability
 
-![Trello card with members](../figs/project_management/Screen Shot 2022-05-06 at 11.20.18 AM-small-15908.png)
+<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.20.18 AM-small-15908.png" width="600">
 
 ---
 
 # Status overview
 
-![Trello board status overview](../figs/project_management/Screen Shot 2022-05-06 at 11.22.07 AM-small-15921.png)
+<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.22.07 AM-small-15921.png" width="600">
 
 ---
 
 # Other tips and tricks
 
+<div class="warning-box" data-title="Keep these in mind">
+
 - Tasks are associated with **products** -- a task isn't "done" until you have something tangible to show for it
 - When you accept/assign a task, make sure it's clear what that task's product will be
 - Life happens-- communicate with your team if expectations shift
+
+</div>

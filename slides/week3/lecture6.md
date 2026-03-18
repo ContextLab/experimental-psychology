@@ -16,7 +16,11 @@ Spring 2026
 
 ---
 
+<!-- _class: scale-90 -->
+
 # Empathy: the core of (most) effective explanations
+
+<div class="note-box" data-title="Know Your Audience">
 
 - Think about your intended audience
 - What do they already know and what do they need to know?
@@ -24,31 +28,45 @@ Spring 2026
 - What tools (resources, data, etc.) does your audience need to carry out your instructions?
 - How much time/space will you have to explain?
 
+</div>
+
 ---
 
 # Necessary and sufficient details
+
+<div class="important-box" data-title="Reproducibility">
 
 - Our (stated) goal in scientific research is often to enable others to **exactly** reproduce our study
 - But what does "exact" really mean?
 - Some aspects of your study will be critical to reproducing your procedure--- that's what you need to communicate
 - Other details are unimportant--- you can leave those details out
 
----
-
-# Drawing lab
-
-- Goal: understand and explore how to effectively communicate written procedural instructions (i.e., methods sections)
+</div>
 
 ---
 
 # Drawing lab
 
-- Today: each group draws a picture and writes out instructions for reproducing it
-- Wednesday: follow each others' instructions and evaluate performance
-- Friday: analyze data
+<div class="definition-box" data-title="Goal">
+
+Understand and explore how to effectively communicate written procedural instructions (i.e., methods sections)
+
+</div>
 
 ---
 
 # Drawing lab
 
-![QR code for drawing lab](../figs/effective_explaining/qr-code-14557.png)
+<div class="tip-box" data-title="Schedule">
+
+- **Today:** each group draws a picture and writes out instructions for reproducing it
+- **Wednesday:** follow each others' instructions and evaluate performance
+- **Friday:** analyze data
+
+</div>
+
+---
+
+# Drawing lab
+
+<img src="../figs/effective_explaining/qr-code-14557.png" width="500">

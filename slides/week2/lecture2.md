@@ -16,57 +16,84 @@ Spring 2026
 
 ---
 
-![Expanding brain meme about stats](../figs/statistical_building_blocks/pasted-image-14274.png)
+<img src="../figs/statistical_building_blocks/pasted-image-14274.png" width="700">
 
 ---
 
 # The "intro to stats" view of stats
 
-- You have several options to choose from:
-  - Want to compare the means of distributions? Use t-tests or ANOVAs
-  - Want to compare trends? Use correlations or regressions
-  - Etc.
+<div class="note-box" data-title="Choosing a test">
+
+You have several options to choose from:
+- Want to compare the means of distributions? Use t-tests or ANOVAs
+- Want to compare trends? Use correlations or regressions
+- Etc.
+
+</div>
 
 ---
 
 # Where do those tests come from?
 
-- Consider what sorts of values your observations can take on:
-  - Real numbers?
-  - Counts?
-  - Probabilities?
-  - Sets of numbers that sum to 1?
+<div class="note-box" data-title="Types of observations">
+
+Consider what sorts of values your observations can take on:
+- Real numbers?
+- Counts?
+- Probabilities?
+- Sets of numbers that sum to 1?
+
+</div>
 
 ---
 
 # Where do those tests come from?
 
-- Then we can ask: under different (typically very simple) assumptions about where the numbers came from, how likely would it be to see something like our actual data?
+<div class="important-box" data-title="Key idea">
+
+Then we can ask: under different (typically very simple) assumptions about where the numbers came from, how likely would it be to see something like our actual data?
+
+</div>
 
 ---
 
 # Where do those tests come from?
 
-- Example: [-1.2, 2.04, 0.087, -0.1, ...]
-- How unexpected would these numbers be if:
-  - We thought the numbers came from a Normal distribution with mean = 0, var = 1
-  - We thought the numbers came from a Normal distribution with mean = 100, var = 1
+<div class="example-box" data-title="Example">
+
+**Data:** [-1.2, 2.04, 0.087, -0.1, ...]
+
+How unexpected would these numbers be if:
+- We thought the numbers came from a Normal distribution with mean = 0, var = 1
+- We thought the numbers came from a Normal distribution with mean = 100, var = 1
+
+</div>
 
 ---
 
 # Where do those tests come from?
+
+<div class="note-box" data-title="Building tests from distributions">
 
 - To create the different tests you learn about in introductory stats courses, people have solved out the probabilities of observing different (sets of) values under different assumptions
 - The p-value we get out tells us how unlikely it was that the observed data came from some "null" distribution
+
+</div>
 
 ---
 
 # Making your own statistical tests
 
+<div class="note-box" data-title="Distributions and parameters">
+
 - Different distributions can produce different types of draws-- Real numbers, counts, etc.
 - Each distribution is typically controlled by one or more parameters-- mean/variance, probabilities, etc.
 
+</div>
+
 ---
+
+<!-- _class: scale-78 -->
 
 # Probability distributions
 
@@ -82,27 +109,43 @@ Spring 2026
 ---
 
 # Making your own statistical tests
+
+<div class="tip-box" data-title="Recipe for a statistical test">
 
 1. Pick an appropriate distribution
 2. Pick parameters that correspond to your "null hypothesis" (e.g., that the distribution has a mean of 0, that the values are equally likely, etc.)
 3. Take a bunch of samples from your distribution
 4. Compare the values of those samples to your actual data
 
----
-
-# Example: is a coin fair?
-
-- Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
-- How could you figure out whether the coin is fair (e.g., explainable by 0 and 1 being equally likely)?
+</div>
 
 ---
 
 # Example: is a coin fair?
 
-- Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
-- First, we need an appropriate distribution
+<div class="example-box" data-title="Setting up the problem">
+
+Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
+
+How could you figure out whether the coin is fair (e.g., explainable by 0 and 1 being equally likely)?
+
+</div>
 
 ---
+
+# Example: is a coin fair?
+
+<div class="note-box" data-title="Step 1: Choose a distribution">
+
+Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
+
+First, we need an appropriate distribution
+
+</div>
+
+---
+
+<!-- _class: scale-78 -->
 
 # Probability distributions
 
@@ -119,22 +162,30 @@ Spring 2026
 
 # Example: is a coin fair?
 
+<div class="example-box" data-title="Step 2: Set up the null hypothesis">
+
 - Suppose you observe 12 coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]
 - For a fair coin, p(1) = 0.5
 - We know that the number of "events" is 12 (i.e., the number of flips)
 - Now we can ask: what's the probability of observing 3 or fewer 1s if the coin is fair?
 
+</div>
+
 ---
 
 # Example: is a coin fair?
+
+<div class="example-box" data-title="Step 3: Compute the p-value">
 
 - Suppose you observe 12 coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]
 - Parameters: N = 12, p(x = 1) = 0.5
 - Now take a bunch of draws from the binomial distribution. Let's take 1,000,000 draws and ask: what proportion of those draws have a count less than or equal to 3?
 - That's our p-value!
 
+</div>
+
 ---
 
 # Demo
 
-![Binomial demo QR code](../figs/statistical_building_blocks/binomial_demo_qr-14834.png)
+<img src="../figs/statistical_building_blocks/binomial_demo_qr-14834.png" width="500">
