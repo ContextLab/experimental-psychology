@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs brainstorm - PSYC 11</title>
+    <meta name="description" content="Labs brainstorm for PSYC 11: Laboratory in Psychological Science">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        /* Nav — matches index.html .course-nav */
+        .course-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            z-index: var(--z-fixed);
+            backdrop-filter: blur(10px);
+        }
+        .course-nav .logo {
+            font-size: 1.5rem; font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .course-nav .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .course-nav .nav-links a {
+            color: var(--text-secondary); text-decoration: none;
+            font-weight: 500; transition: color 0.3s ease;
+        }
+        .course-nav .nav-links a:hover,
+        .course-nav .nav-links a.active { color: var(--primary-color); }
+        .course-nav .theme-toggle {
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: var(--radius-full); width: 40px; height: 40px;
+            font-size: 1.25rem; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        .course-nav .theme-toggle:hover {
+            background: var(--surface-hover); border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        /* Page header */
+        .page-header {
+            margin-top: 70px; padding: 3rem 2rem 2rem; text-align: center;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Content area */
+        .content { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .content h1 { font-size: 2rem; font-weight: 800; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .content h2 {
+            font-size: 1.75rem; font-weight: 700; color: var(--text-primary);
+            margin: 2rem 0 1rem; padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .content h3 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .content h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin: 1.25rem 0 0.5rem; }
+        .content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; }
+        .content ul, .content ol { color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .content a { color: var(--primary-color); text-decoration: none; }
+        .content a:hover { text-decoration: underline; }
+        .content strong { color: var(--text-primary); }
+        .content hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+        .content table {
+            width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg); overflow: hidden;
+        }
+        .content th {
+            background: var(--bg-color); color: var(--text-primary);
+            padding: 1rem 1.5rem; text-align: left; font-weight: 600;
+            font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .content td {
+            padding: 0.85rem 1.5rem; border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary); font-size: 0.95rem;
+        }
+        .content tr:last-child td { border-bottom: none; }
+        .content tr:hover td { background: var(--surface-hover); }
+        .content code {
+            background: var(--surface-color); padding: 0.2em 0.4em; border-radius: 4px;
+            font-family: 'Fira Code', monospace; font-size: 0.9em; color: var(--primary-color);
+        }
+        .content pre {
+            background: var(--surface-color); padding: 1rem; border-radius: var(--radius-md);
+            overflow-x: auto; margin: 1rem 0; border: 1px solid var(--border-color);
+        }
+        .content pre code {
+            background: none; padding: 0; color: var(--text-secondary);
+            font-size: 0.875rem; line-height: 1.6;
+        }
+        /* Footer — matches index.html */
+        footer {
+            background: var(--surface-color); border-top: 1px solid var(--border-color);
+            padding: 2rem; text-align: center;
+        }
+        .footer-content { max-width: 1400px; margin: 0 auto; }
+        .footer-content p { color: var(--text-secondary); margin: 0.5rem 0; }
+        .footer-content a { color: var(--primary-color); text-decoration: none; }
+        .footer-content a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .course-nav .nav-links { gap: 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="course-nav">
+        <div class="logo">PSYC 11</div>
+        <div class="nav-links">
+            <a href="../../">Outline</a>
+            <a href="../../syllabus/">Syllabus</a>
+            <a href="../../assignments/" class="active">Assignments</a>
+            <a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span id="themeIcon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Labs brainstorm</h1>
+    </header>
+
+    <main class="content">
+        <h1 id="labs-brainstorm">Labs brainstorm</h1>
+<h2 id="birthday-match-introduction-to-asking-questions-in-a-scientific-way">Birthday match: Introduction to asking questions in a scientific way</h2>
+<ul>
+<li>Generate a hypothesis: estimate the number of people in the room with</li>
+</ul>
+the same birthday (month, day, month + day)
+<ul>
+<li>Collect data: each person enters their birth day and month into a Google</li>
+</ul>
+Form.  Compute the observed number of people with the same
+  birthday (month, day, month + day).
+<ul>
+<li>Test hypothesis: first, was the observed the number of people with matching</li>
+</ul>
+  birthdays (month, day, month + day) greater than or less than what you expected?
+  Second, come up with a statistical test to determine whether the differences
+  are significant (and carry out the tests).
+<ul>
+<li>Interpret results: what do you think might explain the observed data?  Did</li>
+</ul>
+  you confirm or refute your hypothesis?  Can you generate a new hypothesis?
+  Make a brief suggestion for a follow-up study that could test your new
+  hypothesis.
+  
+<h3 id="variants">Variants:</h3>
+<ul>
+<li>Street numbers (digits only) of a childhood residence</li>
+<li>People (privately) choose numbers between 1 and 100</li>
+<li>Favorite colors</li>
+<li>Favorite foods</li>
+<li>Last digit of childhood phone number/zip code</li>
+  
+</ul>
+<h2 id="writing-introductions-motivation-and-background-pitch-session">Writing introductions: motivation and background "pitch session"</h2>
+<p>Pick any field, research area, question, or experiment.  Your job is to pitch it to the class and try to get your classmates interested in "solving the mystery".  It should be something that you're not familiar with but that you think might be fun or interesting.  It should also be something related (at least peripherally) to psychology or neuroscience-- so something about people's brains or behaviors, including how people act individually and/or in groups.</p>
+<ol>
+<li>State your idea as clearly and directly as possible</li>
+<li>Explain why it's important and why people should care.  Is it a societal problem?  Is it relevant to people's everyday lives?  Is it beneficial to the future of humanity?  Is it fundamentally interesting?  Why?</li>
+<li>Explain the key mystery-- e.g., what's already known, what's not known.  If it's challenging to study, explain why.  Or if nobody's solved the mystery before, explain that too.  Has nobody tried?  Has nobody cared?  Has nobody thought of it?</li>
+<li>Propose how you're going to solve the mystery (or make progress towards solving it).</li>
+</ol>
+  What budget/equipment/resources are you going to need?  How long will it take?  How hard is it going to be?
+<h3 id="presentation"> Presentation:</h3>
+<ul>
+<li>Create an (up to) 5 minute pitch-- could be a youtube video that you make,</li>
+</ul>
+    a slideshow, a soapbox speech or lecture, a drawing on the chalkboard, an
+    interpretive dance, a demonstration...the format is up to you.
+<ul>
+<li>Each pitch will be followed by an open Q&A session (up to 10 minutes)</li>
+</ul>
+<h3 id="evaluation"> Evaluation:</h3>
+<ul>
+<li>For each group (including your own), evaluate on a scale of 1--10:
+<ul>
+<li>How CLEAR was the pitch?  E.g., was the main idea/question communicated clearly?</li>
+<li>How INTERESTING was the pitch?  E.g., did the pitch succeed at capturing your interest?</li>
+<li>How EFFICIENT was the pitch?  Too long or too short (1)?  Just right (10)?</li>
+<li>How effective was the chosen FORMAT of the pitch?</li>
+<li>Upload ratings to a spreadsheet (1 group per row, 1 column for each of clarity, interest, efficiency, and format)</li>
+<li>Rank groups (including your own) by how effective the pitches were</li>
+    
+</ul>
+</li>
+</ul>
+<h3 id="write-up"> Write up:</h3>
+<ul>
+<li>A summary of your pitch</li>
+<li>Which aspects of the pitch were successful vs. not</li>
+<li>Use group feedback (spreadsheets) and rankings to back up any claims (figures, stats)</li>
+<li>Make an argument for your favorite pitch (could be your own) and why it beats the other pitches/ideas.</li>
+  
+</ul>
+<h2 id="draw-a-picture-writing-effective-methods-descriptions">Draw a picture!  writing effective methods descriptions</h2>
+Part 1: create instructions
+<ul>
+<li>Draw a simple picture on a piece of paper. Don't show your picture to any other group.</li>
+<li>The picture should have the following elements:
+<ol>
+<li>At least one of each of the following geometric shapes: circle, square, oval, diamond, triangle, star</li>
+<li>Up to 10 distinct lines (straight or curved, paths can be open or closed)</li>
+<li>Up to 10 shaded areas (e.g., portions of the image that are colored in</li>
+</ol>
+</li>
+</ul>
+      using a particular pattern, color, etc.)
+<ul>
+<li>Write down, as specifically as possible, how to draw the picture.  You cannot</li>
+</ul>
+  assign meaningful names to objects or elements of the drawing, outside of their
+  precise geometric descriptions-- e.g. you can refer to a circle on top of a triangle,
+  but you can't refer to an ice cream scoop on top of an ice cream cone.  You could
+  also group objects to make the descriptions more efficient.  For example you could say that the triangle + circle on top is object A.  Then you could say to draw another instance of object A to the right of the first instance.  But you cannot say "draw two ice cream cones next to each other"
+<ul>
+<li>The instructions should be specified as a numbered list that someone could follow in order to reproduce the drawing you made.</li>
+<li>Each group produces 1 drawing + 1 description + 1 hidden label (not shared with any other group) describing the image in a few words.</li>
+</ul>
+Part 2: follow the instructions
+<ul>
+<li>Each group now needs to re-produce the drawings from (a) their own group and (b) all other groups, using only the descriptions.</li>
+<li>After reading through all of the instructions to get a full understanding of the procedure, follow the instructions in order, and as carefully as possible.  State any assumptions (e.g., in step 3 the pen color wasn't specified; we assume that the pen colored should be black).  Provide a guess about what the drawing is.</li>
+<li>In this part, each group produces: one drawing for each group (including their own),</li>
+</ul>
+  and one estimated description per drawing.  all drawings should be scanned in and shared with the class as JPG images.
+  
+Part 3: evaluate the instructions
+<ul>
+<li>For your OWN group's drawing:
+<ol>
+<li>"Grade" each group's reconstruction of your drawing (including your own group's reconstruction of your own drawing).  Specifically,</li>
+</ol>
+</li>
+</ul>
+    for each instruction, determine whether other group's (a) did or (b) did not
+    follow that instruction.  You should NOT evaluate whether or not the instruction was followed out as INTENDED.  You can only evaluate whether the drawing in question
+    included (or did not include) evidence that the given step was followed.
+<ul>
+<li>Create a spreadsheet with 1 row per group and 1 column per step.  Note a "1" if the given step was followed correctly and "0" if the given step was not followed correctly by that group.</li>
+<li>If specific assumptions were stated by the given group (but were not specified in the instructions), you should evaluate whether the step was carried out taking those assumptions into account.  In other words, if you meant for a line to be blue, but didn't specify it, and if the other group assumed it was supposed to be black (and stated this) then you should still mark the step as "correct" if they drew a black line.</li>
+<li>Create a second spreadsheet with 1 row per group and 2 columns:
+<ol>
+<li>Total number of assumptions made about your drawing</li>
+<li>Number of assumptions made about your drawing, divided by the total number of instructions</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li>For each OTHER group's drawings:
+<ol>
+<li>Look at the intended drawing and compare it to your reproduced drawing.</li>
+<li>Look at the intended label and compare them to your estimated label.</li>
+<li>Evaluate (1--10 unless otherwise stated):
+<ul>
+<li>How closely the APPEARANCE of the reproduced drawing matched the intended drawing</li>
+<li>How similar in MEANING the estimated label was to the intended label</li>
+<li>How CLEAR the instructions were (e.g., were they easy to follow?  were they written in plain easy-to-understand language?  were there lots of ambiguities in how different steps were described?  was the language and/or notation consistent across steps?)</li>
+<li>How EFFICIENT the instructions were (e.g., could the instructions have been simplified?)</li>
+</ul>
+</li>
+<li>Enter all of this information into a spreadsheet with 1 row per group and 1 column per evaluation metric (e.g., appearance, meaning, clarity, efficiency, and assumptions)</li>
+  
+</ol>
+</li>
+</ul>
+ Part 4: revised methods
+<ul>
+<li>Write up your original methods section</li>
+<li>Figure 1: 
+<ul>
+<li>Panel A: your intended drawing</li>
+<li>Panel B: your own group's reproduced drawing</li>
+<li>Panel C: other group's attempts at creating your drawing  </li>
+</ul>
+</li>
+<li>Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to judge how effective your instructions were:
+<ul>
+<li>How many groups were able to reproduce your drawing as intended?</li>
+<li>How many groups accurately followed your instructions?</li>
+<li>How many assumptions did other groups need to make?</li>
+<li>How many assumptions did other groups need to make, accounting for how many instructions you had overall?</li>
+<li>Which aspects of your instructions were particularly effective or ineffective?</li>
+</ul>
+</li>
+<li>Create figures to help illustrate any key points and use statistical tests to support your claims</li>
+<li>Propose a revised methods section that addresses any weaknesses you identified in your analyses</li>
+</ul>
+<h2 id="results-section-what-conclusions-can-or-cant-you-draw-from-data">Results section: What conclusions can (or <em>can't</em>) you draw from data?</h2>
+<ul>
+<li>3 teams: A, B, C</li>
+<li>Each group/team creates (or finds) a dataset-- can be fake or real; should be interesting</li>
+<li>TA should help to make the dataset sufficiently detailed:
+<ul>
+<li>Several "features" -- at least 5</li>
+<li>Many "observations" -- at least 500</li>
+<li>Documentation:
+<ul>
+<li>Where did the data come from?  (Can be made up, but should be explained)</li>
+<li>How were the data collected? (briefly explain-- 1-2 paragraphs)</li>
+<li>What do the features mean, in plain English?</li>
+<li>What are the observations?  (E.g., timepoints?  People?  Trials?)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Each group/team (working with TA) should come up with 5 questions:
+<ul>
+<li>All questions should seem plausible</li>
+<li>At least 1 question should be possible to explore/answer using the dataset</li>
+<li>At least 1 question should be <em>im</em>possible to explore/answer using the dataset</li>
+<li>All other questions can either be possible or impossible to explore/answer using the dataset</li>
+<li>Note which questions can/can't be answered with the dataset, but keep those labels hidden</li>
+</ul>
+</li>
+<li>Now share the data with another group: A --> B, B --> C, C --> A</li>
+<li>Each group uses any analyses they want to answer as many questions as possible, as clearly as possible.  Figures, stats, etc., are encouraged.</li>
+<li>Explain how each question will answered by the given analyses, how the results are interpreted, and what conclusions can or cannot be drawn from the results.
+<ul>
+<li>If a question is deemed impossible to answer, explain why-- and what you'd need (from the dataset, analytic tools, etc.) in order to be able to answer that question.</li>
+    
+</ul>
+</li>
+<li>Compile a set of figures (one per question)</li>
+<li>For each figure, write a caption describing what's in the figure, and </li>
+</ul>
+      ~1 paragraph briefly describing the key analysis and result.
+<ul>
+<li>Organize the paragraphs so that they tell a "story" about the data, and</li>
+</ul>
+    add transition sentences as needed
+<ul>
+<li>Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found</li>
+</ul>
+<h1 id="discussions-how-does-your-work-fit-within-the-broader-literature">Discussions: how does your work fit within the broader literature?</h1>
+<ul>
+<li>Each group finds any psychology paper written in the 1990--2010 range.  Summarize the main finding and why it's interesting.</li>
+<li>Now find 5 papers written in the 2011--2021 range that cite the original paper and study similar questions.  Describe how those newer papers help to contextualize the original paper.  For example:
+<ul>
+<li>Were there follow-up studies?</li>
+<li>Unanswered questions from the original study that have now been explored further?</li>
+<li>Were the original conclusions criticized or interpreted differently by later studies?</li>
+</ul>
+</li>
+<li>Find a sixth paper (written after the original paper) that does <em>not</em> cite the original paper, but that either attempts to answer a similar question or uses a similar experimental paradigm:
+<ul>
+<li>Were the approaches similar?  What were some strengths and weaknesses of each approach?</li>
+<li>Were the conclusions similar?  Are the conclusions compatible?</li>
+</ul>
+</li>
+<li>Now that you've read 7 papers, and with the benefit of knowledge of a future that the authors of the original study never got to see, write your discussion section (as if you were an author of that study that got to read "future" literature):
+<ul>
+<li>First, summarize the key finding of the original study</li>
+<li>Next discuss other related work, and describe how it compares or contrasts with the original study's approach, findings, interpretations, etc.</li>
+<li>Draw your conclusions about what you think it all <em>means</em> (e.g., what do you think the "true" answer to the key question is?)</li>
+<li>Describe some still unanswered questions and propose how they might be studied in future work.</li>
+</ul>
+</li>
+</ul>
+<h1 id="final-project">Final project</h1>
+<ul>
+<li>Work in groups-- pitch session to brainstorm ideas</li>
+<li>Each group has a $100 budget, to be spent in any way they choose.  Could be on equipment, participant payments or incentives, computing budget, etc.</li>
+<li>Workshops: implement an experiment (week 6), collect data (week 7), analyze data (week 8), interpret results (week 8--9)</li>
+<li>Create a poster (and present it) -- week 9--10</li>
+<li>Write a final paper (week 9--10):
+<ul>
+<li>Abstract</li>
+<li>Introduction</li>
+<li>Methods</li>
+<li>Results</li>
+<li>Discussion</li>
+</ul>
+</li>
+</ul>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
+            <p>PSYC 11: Laboratory in Psychological Science</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlEl = document.documentElement;
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '\u{1F319}' : '\u{2600}';
+        themeToggle.addEventListener('click', () => {
+            const current = htmlEl.getAttribute('data-theme');
+            const newTheme = current === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '\u{1F319}' : '\u{2600}';
+        });
+    </script>
+
+</body>
+</html>

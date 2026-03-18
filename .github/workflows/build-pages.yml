@@ -1,0 +1,52 @@
+name: Build Course Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'admin/syllabus.md'
+      - 'assignments/**/*.md'
+      - 'labs/**/*.md'
+      - 'scripts/build-pages.py'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build HTML pages from markdown
+        run: python scripts/build-pages.py
+
+      - name: Generate PDFs with pandoc
+        run: |
+          sudo apt-get update && sudo apt-get install -y pandoc texlive-luatex texlive-latex-extra texlive-fonts-extra
+          for md in assignments/*.md labs/*.md; do
+            [ -f "$md" ] || continue
+            name=$(basename "$md" .md)
+            echo "Generating PDF: $md -> assignments/${name}.pdf"
+            pandoc "$md" --pdf-engine=lualatex -o "assignments/${name}.pdf" || echo "Warning: PDF generation failed for $md"
+          done
+          if [ -f admin/syllabus.md ]; then
+            echo "Generating syllabus PDF"
+            pandoc admin/syllabus.md --pdf-engine=lualatex -o admin/syllabus.pdf || echo "Warning: Syllabus PDF generation failed"
+          fi
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "build: auto-generate HTML and PDF from markdown sources"
+            git push
+          fi

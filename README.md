@@ -1,107 +1,47 @@
 # Laboratory in Psychological Science
 
-Welcome!  This repository contains course materials for the Dartmouth undergraduate course [Laboratory in Psychological Science (PSYC 11)](https://pbs.dartmouth.edu/undergraduate/courses-and-syllabi/introductory-courses-2023-2024).  The syllabus may be found [here](https://github.com/ContextLab/experimental-psychology/blob/main/admin/syllabus/PSYC_11_EXPERIMENTAL_PSYCHOLOGY.PDF).  Feel free to follow along with the course materials (whether you are officially enrolled in the course or just visiting!), submit comments and suggestions, etc.  If you are a course instructor, you may feel free to use these materials in your own courses (attribution is appreciated).
+Course materials for [PSYC 11: Laboratory in Psychological Science](https://contextlab.github.io/experimental-psychology/) at Dartmouth College.
 
 [![DOI](https://zenodo.org/badge/459250616.svg)](https://zenodo.org/badge/latestdoi/459250616)
 
+## Course Website
+
+**All course materials are available at the course website:**
+
+**[https://contextlab.github.io/experimental-psychology/](https://contextlab.github.io/experimental-psychology/)**
+
+The site includes the complete course outline, lecture slides, assignments, syllabus, and resources.
+
+## About
+
+This course teaches students how to carry out psychological research by working through each element of a real study: experiment design, implementation, data collection, analysis, interpretation, and writeup/presentation.
+
+- **First half**: Weekly labs covering each section of a research paper (Introduction, Methods, Results, Discussion)
+- **Second half**: Group research projects culminating in a poster session and final paper
+
+## Current Offering
+
+- **Term**: Spring 2026
+- **Schedule**: MWF 10:10-11:15 AM, X-hour Th 12:15-1:05 PM
+- **Location**: Moore B03
+- **Instructor**: [Dr. Jeremy R. Manning](https://context-lab.com)
+
 ## Contributing
 
-While I strive for 100% accuracy in my courses, I recognize that I am very unlikely to achieve that goal.  If you notice inaccuracies, inefficiencies, and/or if you have any other suggestions, feature requests, questions, comments, concerns, etc. pertaining to this course, I encourage you to [open an issue](https://github.com/ContextLab/experimental-psychology/issues) and/or submit a [pull request](https://github.com/ContextLab/experimental-psychology/pulls).  This course is continually evolving as I attempt to maintain its currency and relevance in a rapidly developing field; your help, feedback, and contributions are much appreciated!
+If you notice inaccuracies or have suggestions, please [open an issue](https://github.com/ContextLab/experimental-psychology/issues) or submit a [pull request](https://github.com/ContextLab/experimental-psychology/pulls). If you are a course instructor, you may use these materials in your own courses (attribution appreciated).
 
-# Table of contents
+## Development
 
-1. [Orientation](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#orientation)
-2. [Materials and slides](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#materials)
-3. [Assignments](https://github.com/ContextLab/experimental-psychology/blob/main/README.md#assignments)
+The site is built automatically via GitHub Actions:
 
-# Orientation
+- **Slide decks**: Marp markdown compiled via [cdl-slides](https://github.com/ContextLab/cdl-slides)
+- **Assignments/Syllabus**: Markdown converted to HTML+PDF via `scripts/build-pages.py` and pandoc
+- **Deployment**: Static site assembled and deployed to GitHub Pages
 
-**Start here!** The bulk of your learning in this course will occur from your participation laboratory exercises.  There are no exams, and you won't need to "study" the material in the traditional sense.  Rather, you will build out your skill set through direct applications of the material.
+To build locally:
 
-The "point" of this course is to teach you how to carry out psychological research.  In practice, this essentially comes down to being able to write a scientific article.  Specifically, you'll learn to:
-  - Ask questions in a scientific way (e.g., figuring out what your question *is* and how to effectively formulate it)
-  - Motivate your research question (this corresponds to the "Introduction" section of a scientific article)
-  - Describe how you studied your question (this corresponds to the "Methods" section of a scientific article)
-  - Describe and interpret your findings (this corresponds to the "Results" section of a scientific article)
-  - Situate your work within the broader literature (this corresponds to the "Discussion" section of a scientific article)
-
-Why should you care about learning to write a scientific article if your goal is to learn about how to carry out scientific work?  There are a few reasons.  First, to carry out research effectively, you need to be able to formulate your question and approach clearly and systematically.  Putting your thoughts into a formal written document can help with this.  Second, science is only useful to humanity as a species (or society, etc.) to the extent that it can be communicated to other people.  You can have the most profound, brilliant, amazing thought anyone has ever had-- but if you can't communicate it with someone else, that potential contribution will be lost to history.  Third, scientific articles are the most common (and most trusted) way for scientists to share their research.  A key part of learning how to "do science" is understanding how *other* people have done science (e.g., approached similar or related questions, communicated their findings, collected data, etc.).  When you deeply understand what the key parts of a scientific article are, you'll be able to more effectively read and critically evaluate other scientists' primary findings--- not as filtered or interpreted through newspapers or a quick blurb in an advertisement, but based on the *original report, from the people who actually carried out the work*.
-
-In the first 5(ish) weeks of the course, you'll do roughly one lab exercise per week.  Aside from the first lab (which is intended to gently introduce you to the course), each lab will be organized around one section of a scientific article.
-
-During the second half of the course, you'll carry out a complete study with a small group.  At that point, you'll have all of the tools you need to do "real science": you'll effectively formulate your question, design and implement an experiment, collect and analyze data, interpret your results, and wrap everything up into your own scientific article.  You'll also present an overview of your findings in a poster session, attended by students and faculty in the Department of Psychological and Brain Sciences.  (There's an award for the best poster!)  You'll even have a (modest) research budget that you can use to carry out your study, purchase supplies or equipment, etc.
-
-# Materials
-
-For Dartmouth students who are enrolled in PSYC 11, we will use [Slack](http://psyc11.slack.com) to organize notes, files, and other communications related to the course.  You can gain access to the class workspace by clicking the link and logging in with your Dartmouth credentials.
-
-All assignments should be submitted through [Canvas](https://canvas.dartmouth.edu/courses/72058) unless otherwise noted.
-
-You will be using your laptop computer to collect, analyze, or present nearly every day of the course.  You should bring your laptop with you to every class meeting.
-
-## Slides
-
-Note that not every course meeting has associated slides (or an associated lecture).  Dates are approximate and subject to change.
-
-| Date | Topic | Link to editable slides | PDF link |
-|------|-------|--------------|----------|
-| March 31, 2025 | Introduction and overview | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/intro_and_overview.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/intro_and_overview.pdf) |
-| April 2, 2025 | Statistical building blocks | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/statistical_building_blocks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/statistical_building_blocks.pdf) |
-| April 4, 2025 | Data wrangling | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_wrangling.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_wrangling.pdf) |
-| April 7, 2025 | Motivating your science | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/motivating_people_about_your_science.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/motivating_people_about_your_science.pdf) |
-| April 11, 2025 | What are the limits of data and stats? | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/limits_of_data.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/limits_of_data.pdf) |
-| April 14, 2025 | Effective explaining | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_explaining.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_explaining.pdf) |
-| April 18, 2025 | Evaluating methods | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/evaluating_methods.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/evaluating_methods.pdf) |
-| April 21, 2025 | Creating data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_creation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_creation.pdf) |
-| April 23, 2025 | Exploring and understanding data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration.pdf) |
-| April 25, 2025 | Quick-start guide to digging into data | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/data_exploration_hacks.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/data_exploration_hacks.pdf) |
-| April 28, 2025 | Searching and reviewing the relevant scientific literature | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/literature_reviews.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/literature_reviews.pdf) |
-| April 30, 2025 | Synthesizing across studies (and findings) | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/synthesizing_across_studies.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/synthesizing_across_studies.pdf) |
-| May 2, 2025 | Logistics and announcements | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/logistics_week_5.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/logistics_week_5.pdf) |
-| May 5, 2025 | Final project: getting started | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/final_project_initiation.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/final_project_initiation.pdf) |
-| May 7, 2025 | Quick-start guide to experimental design | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/experimental_design_quickstart.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/experimental_design_quickstart.pdf) |
-| May 8, 2025 | [Protection of Human Subjects (CPHS)](https://youtu.be/pkX3qcnPOQs) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pdf) |
-| May 9, 2025 | Project management | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/project_management.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/project_management.pdf) |
-| May 19, 2025 | Introduction to poster presentations | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/poster_presentations.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf) |
-| May 28, 2025 | Effective scientific writing | [KEY](https://github.com/ContextLab/experimental-psychology/raw/main/slides/effective_writing.key) | [PDF](https://github.com/ContextLab/experimental-psychology/blob/main/slides/effective_writing.pdf) |
-
-### Statistics tutorials
-
-[Professor Emeritus John Pfister](https://pbs.dartmouth.edu/people/john-f-pfister) has put together some fantastic [tutorial materials](https://canvas.dartmouth.edu/courses/68954) to help students refresh and broaden their statistics knowledge.  I highly encourage you to check them out!
-
-### Human subjects research materials
-
-Please view the materials below *before* collecting data from human participants.
-
-| Description | Link and filetype |
-|-------------|-------------------|
-| Protection of Human Subjects (CPHS) | [PPTX](https://github.com/ContextLab/experimental-psychology/raw/main/slides/CPHS_presentation.pptx) |
-| Belmont Report | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/readings/Belmont_Report.pdf) |
-| Nuremburg Code | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/readings/Nuremburg_Code.pdf) |
-| Jesse's Intent | [PDF](https://github.com/ContextLab/experimental-psychology/raw/main/readings/Jesse_Intent.pdf) |
-
-# Assignments
-
-All assignments should be submitted via the [course Canvas page](https://canvas.dartmouth.edu/courses/52363) unless otherwise specified.  Many of the lab exercises will be carried out in groups.  While you are encouraged to communicate with other students (in your group or in the class more broadly), ultimately you need to write up your own version of each assignment (e.g., in your own words, using your own ideas, etc.).
-The one exception to this is your final paper, which may be co-authored by your entire research team.
-
-Note: Only assignments marked *active* are guaranteed to be in their final form-- *inactive* assignments are provided to help set expectations about future assignments, but they may be edited or changed prior to be formally assigned.  *Expired* assignments are past their due date (and therefore may no longer be handed in for credit).  Unless otherwise noted, all assignments are due at "midnight" (i.e., 11:59 PM, Hanover time) on their indicated due dates.
-
-| Assignment | Point value | Status | Due date |
-|------------|-------------|--------|----------|
-| [Birthday lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/birthday_lab.pdf) | 0 points | *expired* | N/A |
-| [Pitch session lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf) | 10 points | *expired* | April 14, 2025 |
-| [Picture drawing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf) | 10 points | *expired* | April 21, 2025 |
-| [Data sleuthing lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf) | 10 points | *expired* | April 28, 2025 |
-| [Literature review lab](https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf) | 10 points | *expired* | May 5, 2025 |
-| [Weekly snippet 1](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 5, 2025 |
-| Review [CHPS training materials](https://github.com/ContextLab/experimental-psychology#human-subjects-research-materials) | 0 points | *expired* | May 12, 2025 |
-| Attend CPHS training session (virtual) | 0 points | *expired* | May 12, 2025 |
-| [Weekly snippet 2](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 12, 2025 |
-| [Weekly snippet 3](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 19, 2025 |
-| [Weekly snippet 4](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | May 27, 2025 |
-| [Public poster presentation](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 0 points | *expired* | May 30, 2025 (during class) |
-| [Weekly snippet 5](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/weekly_snippet.pdf) | 1 point | *expired* | June 2, 2025 |
-| [Poster presentation PDF and video](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/make_a_poster.pdf) | 15 points | *expired* | June 6, 2025 |
-| [Final paper](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 40 points | *expired* | June 6, 2025 |
-| [Group contributions statement](https://github.com/ContextLab/experimental-psychology/blob/main/assignments/final_paper.pdf) | 0 points | *expired* | June 6, 2025 |
+```bash
+pip install cdl-slides
+python scripts/build-pages.py          # Build assignment/syllabus HTML
+./slides/compile_all_slides.sh         # Compile all slide decks
+```

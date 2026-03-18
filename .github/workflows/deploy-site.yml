@@ -1,0 +1,88 @@
+name: Deploy Course Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'css/**'
+      - 'slides/**'
+      - 'assignments/**'
+      - 'syllabus/**'
+      - 'labs/**'
+      - 'readings/**'
+      - 'figures/**'
+      - 'fonts/**'
+      - '.github/workflows/deploy-site.yml'
+  workflow_run:
+    workflows: ["Build Course Pages"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install cdl-slides
+        run: pip install "cdl-slides>=1.2.0"
+
+      - name: Setup cdl-slides (install Marp CLI)
+        run: cdl-slides setup
+
+      - name: Compile all slides
+        run: |
+          cd slides
+          for md in week*/lecture*.md; do
+            [ -f "$md" ] || continue
+            dir=$(dirname "$md")
+            base=$(basename "$md")
+            echo "Compiling: $md"
+            cd "$dir"
+            cdl-slides compile "$base" || echo "Warning: compilation failed for $md"
+            cd ..
+          done
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          touch _site/.nojekyll
+          [ -f index.html ] && cp index.html _site/
+          [ -d css ] && cp -r css _site/
+          [ -d slides ] && cp -r slides _site/
+          [ -d assignments ] && cp -r assignments _site/
+          [ -d syllabus ] && cp -r syllabus _site/
+          [ -d readings ] && cp -r readings _site/
+          [ -d figures ] && cp -r figures _site/
+          [ -d fonts ] && cp -r fonts _site/
+          [ -d admin ] && cp -r admin _site/
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

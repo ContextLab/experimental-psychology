@@ -1,0 +1,78 @@
+Compilation Report - Wed Mar 18 11:15:42 EDT 2026
+======================================
+
+
+File: /Users/jmanning/experimental-psychology/slides/week1/lecture1.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week2/lecture2.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week2/lecture3.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week2/lecture4.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week3/lecture5.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week3/lecture6.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week3/lecture7.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week4/lecture10.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week4/lecture8.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week4/lecture9.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week5/lecture11.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week5/lecture12.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week5/lecture13.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week6/lecture14.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week6/lecture15.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week6/lecture16.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week8/lecture17.md
+---
+  ✓ Success
+
+File: /Users/jmanning/experimental-psychology/slides/week9/lecture18.md
+---
+  ✓ Success
+
+======================================
+Total: 18 | Success: 18 | Failed: 0

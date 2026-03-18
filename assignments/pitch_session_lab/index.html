@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSYC 11 Pitch Session Lab - PSYC 11</title>
+    <meta name="description" content="PSYC 11 Pitch Session Lab for PSYC 11: Laboratory in Psychological Science">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        /* Nav — matches index.html .course-nav */
+        .course-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            z-index: var(--z-fixed);
+            backdrop-filter: blur(10px);
+        }
+        .course-nav .logo {
+            font-size: 1.5rem; font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .course-nav .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .course-nav .nav-links a {
+            color: var(--text-secondary); text-decoration: none;
+            font-weight: 500; transition: color 0.3s ease;
+        }
+        .course-nav .nav-links a:hover,
+        .course-nav .nav-links a.active { color: var(--primary-color); }
+        .course-nav .theme-toggle {
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: var(--radius-full); width: 40px; height: 40px;
+            font-size: 1.25rem; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        .course-nav .theme-toggle:hover {
+            background: var(--surface-hover); border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        /* Page header */
+        .page-header {
+            margin-top: 70px; padding: 3rem 2rem 2rem; text-align: center;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Content area */
+        .content { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .content h1 { font-size: 2rem; font-weight: 800; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .content h2 {
+            font-size: 1.75rem; font-weight: 700; color: var(--text-primary);
+            margin: 2rem 0 1rem; padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .content h3 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .content h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin: 1.25rem 0 0.5rem; }
+        .content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; }
+        .content ul, .content ol { color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .content a { color: var(--primary-color); text-decoration: none; }
+        .content a:hover { text-decoration: underline; }
+        .content strong { color: var(--text-primary); }
+        .content hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+        .content table {
+            width: 100%; border-collapse: collapse; margin: 1.5rem 0;
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg); overflow: hidden;
+        }
+        .content th {
+            background: var(--bg-color); color: var(--text-primary);
+            padding: 1rem 1.5rem; text-align: left; font-weight: 600;
+            font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+        }
+        .content td {
+            padding: 0.85rem 1.5rem; border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary); font-size: 0.95rem;
+        }
+        .content tr:last-child td { border-bottom: none; }
+        .content tr:hover td { background: var(--surface-hover); }
+        .content code {
+            background: var(--surface-color); padding: 0.2em 0.4em; border-radius: 4px;
+            font-family: 'Fira Code', monospace; font-size: 0.9em; color: var(--primary-color);
+        }
+        .content pre {
+            background: var(--surface-color); padding: 1rem; border-radius: var(--radius-md);
+            overflow-x: auto; margin: 1rem 0; border: 1px solid var(--border-color);
+        }
+        .content pre code {
+            background: none; padding: 0; color: var(--text-secondary);
+            font-size: 0.875rem; line-height: 1.6;
+        }
+        /* Footer — matches index.html */
+        footer {
+            background: var(--surface-color); border-top: 1px solid var(--border-color);
+            padding: 2rem; text-align: center;
+        }
+        .footer-content { max-width: 1400px; margin: 0 auto; }
+        .footer-content p { color: var(--text-secondary); margin: 0.5rem 0; }
+        .footer-content a { color: var(--primary-color); text-decoration: none; }
+        .footer-content a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .course-nav .nav-links { gap: 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="course-nav">
+        <div class="logo">PSYC 11</div>
+        <div class="nav-links">
+            <a href="../../">Outline</a>
+            <a href="../../syllabus/">Syllabus</a>
+            <a href="../../assignments/" class="active">Assignments</a>
+            <a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span id="themeIcon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>PSYC 11 Pitch Session Lab</h1>
+    </header>
+
+    <main class="content">
+        <h1 id="speaking-head-overview">[speaking-head] Overview</h1>
+<p>How can you convince someone else that your idea is interesting or worth
+studying?  Your job in this laboratory exercise is to "pitch" your classmates on
+a question by trying to get them interested in "solving the mystery".  This lab
+is intended to help get you thinking about how to motivate your scientific
+inquiries and capture your audience's interest.</p>
+<h1 id="speaking-head-learning-objectives">[speaking-head] Learning objectives</h1>
+<p>This laboratory exercise is intended to help you:</p>
+<ul>
+<li>Practice communicating clearly and directly</li>
+<li>Improve your understanding of how you can get other people interested in a topic of your choosing</li>
+<li>Practice constructing logical arguments</li>
+<li>Practice turning a "question" into a "mystery"</li>
+<li>Practice thinking about study design, resources, effort allocation, and time management</li>
+</ul>
+<h1 id="speaking-head-procedure">[speaking-head] Procedure</h1>
+<h2 id="teacher-step-1-pick-your-topic">[teacher] Step 1: pick your topic</h2>
+<p>Together with your group, pick any field, research area, question, or experiment.  It should be something you're not already (very) familiar with, but that you think might be fun or interesting.  It should also be something (at least peripherally) related to psychology or neuroscience-- i.e., something about people's minds, brains, behaviors (how people act individually and/or in groups), etc.</p>
+<h2 id="teacher-step-2-plan-your-pitch">[teacher] Step 2: plan your pitch</h2>
+<p>Your pitch will comprise the following elements:</p>
+<ol>
+<li>State your idea as clearly and directly as possible</li>
+<li>Explain why it's important and why people should care.  Is it a societal problem?  Is it relevant to people's everyday lives?  Is it beneficial to the future of humanity?  Is it fundamentally interesting?  Why?</li>
+<li>Explain the key mystery-- e.g., what's already known, what's not known.  If it's challenging to study, explain why.  Or if nobody's solved the mystery before, explain that too.  Has nobody tried?  Has nobody cared?  Has nobody thought of it?</li>
+<li>Propose how you're going to solve the mystery (or make progress towards solving it).</li>
+</ol>
+  What budget, equipment, and/or resources are you going to need?  How long will it take?  How hard is it going to be?
+<p>Brainstorm each of these elements with your group.</p>
+<h2 id="teacher-step-3-make-your-pitch">[teacher] Step 3: make your pitch</h2>
+<p>You'll present your "pitch" in (up to) 5 minutes, to the class.  Your pitch can take any form you choose, including (but not limited to):</p>
+<ul>
+<li>A YouTube video that you make</li>
+<li>A slideshow (e.g., PowerPoint, Keynote, Prezi, etc.)</li>
+<li>A spoken presentation (with or without visual prompts)</li>
+<li>A drawing on the chalkboard</li>
+<li>An interpretive dance or improve sketch</li>
+<li>A demonstration</li>
+  
+</ul>
+The format is totally up to you!  Do whatever feels like the best fit for your
+group's (and idea's) personality.  Each presentation will be followed by a discussion of (up to) 10 minutes.
+<h2 id="teacher-step-4-generate-data">[teacher] Step 4: generate data!</h2>
+For each group (including your own!), use <a href="https://forms.gle/eVUf5XSZqnruhfVc8" target="_blank">this survey</a> to provide feedback.  You will rate the following on a scale of 1--10:
+  
+<ul>
+<li>How CLEAR was the pitch?  E.g., was the main idea/question communicated clearly?</li>
+<li>How INTERESTING was the pitch?  E.g., did the pitch succeed at capturing your interest?</li>
+<li>How EFFICIENT was the pitch?  Too long or too short (1)?  Just right (10)?</li>
+<li>How effective was the chosen FORMAT of the pitch?</li>
+</ul>
+The resulting spreadsheet will contain one row per submitted rating and one column per rating dimension (plus two additional columns: one containing the times the given ratings were submitted and the other containing the group identities-- A, B, C, or D).  The spreadsheet will be made available <a href="https://docs.google.com/spreadsheets/d/1f4EbN5AtnR53CynJoMfJO2Ydni8-XPb8a4Y7IH0dBZw/edit?usp=sharing" target="_blank">here</a>.
+<h2 id="teacher-step-5-data-wrangling-and-analysis">[teacher] Step 5: data wrangling and analysis</h2>
+<p>Using the ratings data (however you deem appropriate), rank the four groups according to how effective their pitches were.  Create a figure of some sort to display the results in a way that conveys your findings clearly.</p>
+<h1 id="speaking-head-write-up-your-findings">[speaking-head] Write up your findings</h1>
+Write up your results (in roughly 2--3 pages, double spaced) to communicate your findings succinctly and clearly.  You should include (at minimum) the following:
+  
+<ul>
+<li>A summary of your pitch</li>
+<li>A discussion about which aspects of your group's pitch were successful versus not</li>
+<li>Choose the pitch or idea you think was best (it could be your group's, but it doesn't need to be) and discuss why it is better than the other pitches and/or ideas.</li>
+<li>Use of group feedback (spreadsheet) and rankings to back up any claims.  Figures and/or stats are highly recommended!</li>
+</ul>
+<h1 id="speaking-head-closing-discussion-points">[speaking-head] Closing discussion points</h1>
+<p>This lab is designed to get you thinking about writing the "Introduction" sections of scientific articles, but you didn't actually write an Introduction section!  Why do you think this might be?  Is it a bug or a feature?</p>
+<p>An effective paper introduction will introduce your question or idea to your audience, discuss any relevant background information, and briefly explain your approach.  Think about how the different elements of this lab might relate to introducing a paper.</p>
+<p>Finally, I'd like you to think about how the questions we've considered in this lab might pertain to other aspects of scientific research:</p>
+<ul>
+<li>What are some strategies you might use to get someone else excited about your research project?</li>
+<li>What are some different formats that your "pitch" could take?</li>
+<li>How might your approach differ under different circumstances?
+<ul>
+<li>The classic "30 second elevator pitch" (e.g., imagine you're riding in an elevator with a prospective investor, company CEO, or someone else you want to impress or convince)</li>
+<li>Talking to a group of first graders at a local school</li>
+<li>Describing your work to other scientists at an international conference</li>
+<li>Telling a stranger about your idea during a social event (e.g., party, cocktail hour, formal reception, etc.)</li>
+<li>Describing your research to a prospective employer</li>
+<li>Describing your research to a prospective employee</li>
+<li>Trying to convince a donor to fund your research</li>
+</ul>
+</li>
+</ul>
+Remember that there is no one "right way" to pitch your idea.  Be flexible (e.g., adapt with changing circumstances), have fun (let your enthusiasm show through!), and don't over-sell (let your ideas speak for themselves-- sometimes "less is more").
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
+            <p>PSYC 11: Laboratory in Psychological Science</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlEl = document.documentElement;
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '\u{1F319}' : '\u{2600}';
+        themeToggle.addEventListener('click', () => {
+            const current = htmlEl.getAttribute('data-theme');
+            const newTheme = current === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '\u{1F319}' : '\u{2600}';
+        });
+    </script>
+
+</body>
+</html>
