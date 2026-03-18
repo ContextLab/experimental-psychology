@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSYC 11 Poster presentation - PSYC 11</title>
+    <meta name="description" content="PSYC 11 Poster presentation for PSYC 11: Laboratory in Psychological Science">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00693e;
+            --primary-light: #267aba;
+            --accent-color: #ffa00f;
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --surface-hover: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --gradient-primary: linear-gradient(135deg, #00693e, #267aba);
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-full: 9999px;
+            --spacing-md: 1rem;
+            --spacing-xl: 2rem;
+            --z-fixed: 100;
+        }
+        [data-theme="light"] {
+            --bg-color: #ffffff;
+            --surface-color: #f8fafc;
+            --surface-hover: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        .page-nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            z-index: var(--z-fixed);
+            backdrop-filter: blur(10px);
+        }
+        .page-nav .logo {
+            font-size: 1.5rem; font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .page-nav .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .page-nav .nav-links a {
+            color: var(--text-secondary); text-decoration: none;
+            font-weight: 500; transition: color 0.3s ease;
+        }
+        .page-nav .nav-links a:hover, .page-nav .nav-links a.active { color: var(--primary-color); }
+        .page-nav .theme-toggle {
+            background: var(--surface-color); border: 1px solid var(--border-color);
+            border-radius: var(--radius-full); width: 40px; height: 40px;
+            font-size: 1.25rem; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .page-nav .theme-toggle:hover { background: var(--surface-hover); border-color: var(--primary-color); }
+        .page-header {
+            margin-top: 70px; padding: 3rem 2rem 2rem; text-align: center;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .content h1 { font-size: 2rem; font-weight: 800; color: var(--text-primary); margin: 2rem 0 1rem; }
+        .content h2 { font-size: 1.75rem; font-weight: 700; color: var(--text-primary); margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border-color); }
+        .content h3 { font-size: 1.25rem; font-weight: 600; color: var(--text-primary); margin: 1.5rem 0 0.75rem; }
+        .content h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin: 1.25rem 0 0.5rem; }
+        .content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; }
+        .content ul, .content ol { color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content li { margin-bottom: 0.5rem; line-height: 1.6; }
+        .content a { color: var(--primary-light); text-decoration: none; }
+        .content a:hover { text-decoration: underline; }
+        .content strong { color: var(--text-primary); }
+        .content hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+        .content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+        .content th, .content td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+        .content th { background: var(--surface-color); color: var(--text-primary); font-weight: 600; }
+        .content td { color: var(--text-secondary); }
+        .content tr:hover { background: var(--surface-color); }
+        .content code { background: var(--surface-color); padding: 0.2em 0.4em; border-radius: 4px; font-family: 'Fira Code', monospace; font-size: 0.9em; color: var(--primary-light); }
+        .content pre { background: var(--surface-color); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto; margin: 1rem 0; border: 1px solid var(--border-color); }
+        .content pre code { background: none; padding: 0; color: var(--text-secondary); font-size: 0.875rem; line-height: 1.6; }
+        footer {
+            background: var(--surface-color); border-top: 1px solid var(--border-color);
+            padding: 2rem; text-align: center;
+        }
+        footer p { color: var(--text-secondary); margin: 0.5rem 0; }
+        footer a { color: var(--primary-light); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) { .page-nav .nav-links { gap: 1rem; font-size: 0.9rem; } }
+    </style>
+</head>
+<body>
+    <nav class="page-nav">
+        <div class="logo">PSYC 11</div>
+        <div class="nav-links">
+            <a href="../../">Outline</a>
+            <a href="../../syllabus/">Syllabus</a>
+            <a href="../../assignments/" class="active">Assignments</a>
+            <a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span id="themeIcon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>PSYC 11 Poster presentation</h1>
+    </header>
+
+    <main class="content">
+        <h1 id="teacher-overview">[teacher] Overview</h1>
+<p><a href="https://en.wikipedia.org/wiki/Poster_session" target="_blank">Poster presentations</a> are a
+cornerstone of scientific meetings.  A typical poster is created by printing out
+a static "slide" on a large piece of posterboard and mounting it on a display
+stand.  The "presenter" then stands to the side of the poster, describing its
+contents to people who wander by.  At scientific meetings, the audience of
+poster presentations are typically the meeting's attendees (i.e., other
+scientists interested in the meeting's topic or theme). For this course, your
+group will present your final project in a "public" poster session.</p>
+<h1 id="teacher-learning-objectives">[teacher] Learning objectives</h1>
+<p>This assignment is intended to help you practice:</p>
+<ul>
+<li>Distilling your project down to its essential elements</li>
+<li>Summarizing complex information efficiently, concisely, and clearly</li>
+<li>Gauging audience interest and practicing your "pitching" skills</li>
+<li>Graphic design</li>
+<li>Scientific communication with a broad audience</li>
+</ul>
+<h1 id="teacher-creating-a-poster">[teacher] Creating a poster</h1>
+<p>There is no one "correct" way to make a poster, although posters (for PSYC 11)
+tend to share some core characteristics:</p>
+<ul>
+<li>Posters generally contain the following sections: Information bar, Motivation, Approach, Results, and Discussion</li>
+<li>Posters need to fit on the mounting panels provided to students during the poster session (maximum size: 36" $\times$ 50")</li>
+<li>Your poster should be visually pleasing, free from typos, and organized in a logical way</li>
+<li>Your poster should serve as an effective visual aid to help you tell your project's "story"</li>
+</ul>
+Some general tips and tricks for creating posters, along with additional
+descriptions of each of the suggested sections above, may be found in <a href="https://github.com/ContextLab/experimental-psychology/blob/main/slides/poster_presentations.pdf" target="_blank">these
+slides</a>.
+You should treat these suggestions as <em>guidelines</em> rather than  hard and fast
+<em>rules</em>.  The suggestions I've made follow from my own experiences presenting
+posters and from tips and tricks that were shared with me over the years.
+However,  ultimately you should design your poster in whatever way you think it
+will be most effective at helping you to communicate with your audience about
+your project.
+<h2 id="suggested-software-tools">📊 Suggested software tools</h2>
+<p>Most scientists use one or more of the following tools to create posters:</p>
+<ol>
+<li><strong>Slide presentation software</strong>.  If you think about a poster as a sort of printed "slide", it makes sense that slide presentation software would be well-suited to creating</li>
+</ol>
+posters.  As a Dartmouth student, <a href="https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=64846" target="_blank">Microsoft Powerpoint</a>, <a href="https://www.apple.com/keynote/" target="_blank">Keynote</a>, <a href="https://www.openoffice.org/" target="_blank">OpenOffice</a>,
+<a href="https://docs.google.com/presentation/u/0/" target="_blank">Google Slides</a>, and other professional slide presentation software is available to you at no cost.  If you choose to create a poster using one of these programs, you may find it useful to watch <a href="https://www.youtube.com/watch?v=_WnhoIbfcoM" target="_blank">this tutorial</a> on creating scientific posters in PowerPoint.
+<ol>
+<li><strong>Vector-based illustration tools</strong>.  Because posters are typically printed on</li>
+</ol>
+large format paper, it's important to create posters in a way that scales well to
+large format media.  Vector-based illustrations are "infinitely scaleable" in that
+they appear equally well-defined no matter how much you zoom in.  As a Dartmouth student,
+<a href="https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=104159" target="_blank">Adobe Illustrator</a>, <a href="https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=104159" target="_blank">Adobe InDesign</a>, <a href="https://inkscape.org/" target="_blank">Inkscape</a>, and <a href="https://www.figma.com/" target="_blank">Figma</a> are all 
+available to you at no cost.  My personal go-to tool for creating posters is Adobe Illustrator.
+If you're interested in learning more about Illustrator, Adobe has created a series of
+high-quality tutorials for <a href="https://www.youtube.com/watch?v=wNGEzoscslw" target="_blank">getting started with Adobe Illustrator</a>, and <a href="https://www.youtube.com/watch?v=797-M5De_lA" target="_blank">this tutorial</a>
+goes through the process of creating a scientific poster in Illustrator.
+<ol>
+<li><strong>Typesetting (coding) languages</strong>.  Professional publishers need to repeatedly lay out</li>
+</ol>
+huge amounts of text and graphics.  Typesetting languages such as <a href="https://www.latex-project.org/" target="_blank">\LaTeX</a>, <a href="https://www.markdownguide.org/" target="_blank">Markdown</a>, and <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a> are designed to separate the <em>content</em> of a document from its <em>appearance</em>.  The purpose
+of these tools is to enable content creators to specify what material should be displayed (without worrying about the specifics of how it will appear).  While these tools generally provide
+sensible default layout choices that work well in most cases, it is also possible
+for designers to customize how material is displayed (without worrying about the specific content).
+The two easiest-to-learn typesetting tools are <a href="https://ctan.org/pkg/beamer?lang=en" target="_blank">beamer</a> (which is a class designed for creating slides and posters in \LaTeX) and <a href="https://rmarkdown.rstudio.com/" target="_blank">R Markdown</a>.  If you want to try out beamer, <a href="https://www.overleaf.com" target="_blank">Overleaf</a> provides a browser-based editor and many <a href="https://www.overleaf.com/gallery/tagged/poster" target="_blank">poster templates</a> that may be easily customized with your project's content.  The easiest way to
+create a poster in R Markdown is to use the <a href="https://github.com/brentthorne/posterdown/wiki" target="_blank">posterdown</a> package.  Another (less popular) option, if you are the adventurous sort,
+  is the <a href="https://github.com/RelaxedJS" target="_blank">ReLaXed</a> framework.  ReLaXed enables you to define the content of your poster
+  using a "Markdown-like" language, and it can create some very <a href="https://github.com/RelaxedJS/ReLaXed-examples" target="_blank">visually pleasing</a> results.  While \LaTeX, R Markdown, and ReLaXed all have steeper learning curves than the non-coding approaches,
+they also require far less work to actually create the poster than the other typical options (since
+  layout and formatting are done for you automatically).
+  
+Whichever tool(s) you use to create your poster, you should save your final document as a PDF to
+facilitate printing.  Your poster's PDF will also become part of your group's poster submission.
+  
+<h2 id="printing-your-poster">📊 Printing your poster</h2>
+<p>After creating a PDF of your poster (and checking it over super carefully!)
+you're ready to bring it into the real world!  You should print your poster
+using the <a href="https://students.dartmouth.edu/ugar/news-events/wetterhahn-science-symposium/posters/printing-your-poster" target="_blank">poster printer</a>
+in the Bucci Lounge on the second floor of Moore Hall.</p>
+<p>If you don't plan sufficiently well, you may need to have your poster printed
+at a local professional printing facility (e.g., FedEx Kinkos, Staples, etc.).  If you
+choose an off-campus option for printing your poster, you'll need to pay any associated costs yourself.  Generally printing a full-sized poster costs around \$100 (plus rush charges depending on how quickly you need it ready).</p>
+<h1 id="teacher-presenting-your-poster">[teacher] Presenting your poster</h1>
+<p>You will present your poster in two ways: (a) as a recorded presentation that you'll submit
+for a grade and share with other PSYC 11 students and (b) as a public presentation for people
+outside of PSYC 11.</p>
+<h2 id="creating-your-script">📊 Creating your script</h2>
+<p>Although poster sessions are typically interactive, you should prepare a 3--5
+minute "script" for explaining your project to people who visit your poster.
+Your script can take any form you choose, and involve any group member(s) you
+choose, but in general you should aim to include the following information:</p>
+<ul>
+<li>Explain what your main question is and show why it's interesting</li>
+<li>Show how you studied the question</li>
+<li>Show what you found</li>
+<li>Explain what you think it means</li>
+</ul>
+Your script is likely to be most effective if you can refer to specific
+components of your poster as you are taking your audience through your project.
+<h2 id="public-presentation">📊 Public presentation</h2>
+<p>Your group will present your poster to the faculty, students, and staff of the
+Department of Psychological and Brain Sciences during our class meeting on
+<strong>Friday, May 30, 2025</strong>. The attendees may also include members of the
+broader Dartmouth community.  The poster session will take place in Moore Hall,
+in the hallway outside of our usual classroom (B03).</p>
+<p>During the poster session, each group will mount their poster on an an easel
+provided by the department. Group members will stand in front of their poster.
+As poster session attendees walk by, they'll ask to hear about your project.
+You can use the script you've prepared to help guide your presentations, but
+you should also be prepared to go off-script. Poster presentations are often
+dynamic and highly interactive. It is normal for presentations to be
+interrupted frequently, be cut short (or go long if there are lots of
+questions), restart several times as new people filter by, and so on.</p>
+<h2 id="recorded-presentation">📊 Recorded presentation</h2>
+<p>You should create a 3--5 minute recording of your group's presentation to be included in
+your official submission of your project.  This can take several forms:</p>
+<ul>
+<li>An auditory recording</li>
+<li>A video recording of a presentation (e.g., while standing in front of the poster or screen sharing)</li>
+<li>A pre-recorded PowerPoint or Keynote presentation that can be (easily) auto-played</li>
+</ul>
+Your recording will be due by <strong>11:59PM on Wednesday, June 4, 2025</strong>.
+<h3 id="best-poster-competition">🏆 Best poster competition</h3>
+<p>Non-student attendees of the public poster session will have the opportunity to
+"vote" on their favorite poster using <a href="https://forms.gle/QFLXSqfjkD6BMfbM6" target="_blank">this
+form</a>. The group with the top-rated poster
+will receive a small (material) prize, along with eternal glory associated with
+membership in the elite club of past and future "Best PSYC 11 Poster" winners.
+Past membership in this exclusive group may have included 17 Nobel Laureates, 3
+US Presidents, 10 Olympic Medalists, and myriad other world leaders.</p>
+<h1 id="teacher-submitting-your-poster-presentation">[teacher] Submitting your poster presentation</h1>
+<p>One member from each group should upload the following materials on <a href="https://canvas.dartmouth.edu/courses/72058/assignments/515766" target="_blank">Canvas</a>:</p>
+<ul>
+<li>A document listing all group members' names</li>
+<li>A PDF of your group's poster</li>
+<li>A recording of your group's presentation</li>
+</ul>
+<h1 id="teacher-concluding-remarks">[teacher] Concluding remarks</h1>
+<p>Effective poster presentations must both attract interest (so that there is
+someone to present to) and clearly communicate (so that the audience takes
+something away from the experience).  Consider what you've learned in the lab
+exercises:</p>
+<ul>
+<li>Which approaches to motivating an audience have tended to be most engaging or interesting (e.g., in the <a href="https://github.com/ContextLab/experimental-psychology/blob/main/labs/pitch_session_lab.pdf" target="_blank">Pitch Session Lab</a>)?</li>
+<li>What strategies have worked well for clearly communicating your approach (e.g., in the <a href="https://github.com/ContextLab/experimental-psychology/blob/main/labs/picture_lab.pdf" target="_blank">Picture Lab</a>) and/or results (e.g., in the <a href="https://github.com/ContextLab/experimental-psychology/blob/main/labs/data_sleuthing_lab.pdf" target="_blank">Data Sleuthing Lab</a>)?</li>
+<li>How can you situate your findings within the context of the broader literature (e.g., as in the <a href="https://github.com/ContextLab/experimental-psychology/blob/main/labs/literature_lab.pdf" target="_blank">Literature Review Lab</a>)?</li>
+</ul>
+As you've likely internalized by this point in the course, there is no
+"right" way to present a poster or (more generally) to tell someone about your
+scientific projects. What has worked for other projects <em>may</em> work well for you,
+but you might also think of a never-before-tried approach that works even
+better!
+<p>Finally, it is important to keep in mind that you have worked hard on your
+project-- be confident and proud of what you've done!  It's not easy to do
+science from scratch, especially on a tight schedule.  Good science isn't about
+doing everything <em>perfectly</em> (that's impossible in finite time and with finite
+resources).  It's about <em>balancing</em> your approach against the time and resources
+you have.  Science is an ongoing endeavor, to be shared by all of humanity.
+Most scientists  never fully answer a question or "finish" a line of research.
+Rather, our goal as scientists is to <em>contribute</em> to the collective pool of
+knowledge.  If we contribute high-quality work to that knowledge pool, and if
+we've done our best to communicate our findings effectively to other people,
+then we've done our jobs as scientists.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
+        <p>PSYC 11: Laboratory in Psychological Science &mdash; Dartmouth College</p>
+        <p><a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a> &middot;
+           <a href="https://zenodo.org/badge/latestdoi/459250616" target="_blank">DOI</a></p>
+    </footer>
+
+    
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const htmlEl = document.documentElement;
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '\u{1F319}' : '\u{2600}';
+        themeToggle.addEventListener('click', () => {
+            const current = htmlEl.getAttribute('data-theme');
+            const newTheme = current === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '\u{1F319}' : '\u{2600}';
+        });
+    </script>
+
+</body>
+</html>

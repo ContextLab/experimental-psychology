@@ -1,3 +1,21 @@
 .DS_Store
 .webui_secret_key
 */.DS_Store
+
+# Site build artifacts
+_site/
+node_modules/
+
+# Sensitive files
+*.env
+*credentials*
+*secret*
+*grades*
+*roster*
+
+# Editor/OS
+.vscode/
+.idea/
+*.swp
+*.tmp
+Thumbs.db
