@@ -6,6 +6,11 @@
 _site/
 node_modules/
 
+# cdl-slides compilation artifacts
+slides/*/images/
+slides/*/themes/
+slides/compilation_report.txt
+
 # Sensitive files
 *.env
 *credentials*
