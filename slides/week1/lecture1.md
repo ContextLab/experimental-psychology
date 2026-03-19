@@ -117,7 +117,7 @@ Spring 2026
 
 <div style="text-align: center;">
 
-<img src="../figs/intro_and_overview/CDL_Logo_FINAL-small-14265.png" width="600">
+<img src="../figs/intro_and_overview/CDL_Logo_FINAL-small-14265.png" style="max-height: 350px;">
 
 </div>
 

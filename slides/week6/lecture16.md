@@ -59,7 +59,7 @@ Spring 2026
 
 # Project boards
 
-<img src="../figs/project_management/trello-small-15880.png" width="600">
+<img src="../figs/project_management/trello-small-15880.png" style="max-height: 350px;">
 
 ---
 

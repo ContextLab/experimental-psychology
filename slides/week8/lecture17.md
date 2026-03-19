@@ -16,9 +16,11 @@ Spring 2026
 
 ---
 
+<!-- _class: scale-90 -->
+
 # What is a poster presentation?
 
-<img src="../figs/poster_presentations/pasted-image-15986.png" width="800">
+<img src="../figs/poster_presentations/pasted-image-15986.png" style="max-height: 350px;">
 
 ---
 

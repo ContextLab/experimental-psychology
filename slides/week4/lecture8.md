@@ -139,7 +139,7 @@ Worldbank
 
 # Random number generators
 
-<img src="../figs/data_creation/random_numpy-small-15194.png" width="500">
+<img src="../figs/data_creation/random_numpy-small-15194.png" style="max-height: 350px;">
 
 NumPy Random
 
@@ -200,4 +200,4 @@ Memesis
 
 # This week's lab
 
-<img src="../figs/data_creation/data%20sleuthing%20lab-small-15360.png" width="500">
+<img src="../figs/data_creation/data%20sleuthing%20lab-small-15360.png" style="max-height: 350px;">
