@@ -207,13 +207,13 @@ Spring 2026
 
 # PsychoPy
 
-<img src="../figs/experimental_design_quickstart/psychopy-small-15619.png" width="600">
+<img src="../figs/experimental_design_quickstart/psychopy-small-15619.png" style="max-height: 350px;">
 
 ---
 
 # jsPsych
 
-<img src="../figs/experimental_design_quickstart/jspsych-small-15642.png" width="600">
+<img src="../figs/experimental_design_quickstart/jspsych-small-15642.png" style="max-height: 350px;">
 
 ---
 

@@ -28,7 +28,7 @@ Spring 2026
 
 ---
 
-<!-- _class: scale-80 -->
+<!-- _class: scale-70 -->
 
 # Pitch session lab
 
@@ -85,7 +85,7 @@ Spring 2026
 
 ---
 
-<!-- _class: scale-80 -->
+<!-- _class: scale-70 -->
 
 # Survival of the fittest
 

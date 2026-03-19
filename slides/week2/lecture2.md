@@ -16,7 +16,7 @@ Spring 2026
 
 ---
 
-<img src="../figs/statistical_building_blocks/pasted-image-14274.png" width="700">
+<img src="../figs/statistical_building_blocks/pasted-image-14274.png" style="max-height: 450px; width: auto;">
 
 ---
 
@@ -142,21 +142,6 @@ Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
 First, we need an appropriate distribution
 
 </div>
-
----
-
-<!-- _class: scale-78 -->
-
-# Probability distributions
-
-| **Distribution name** | **Parameter(s)** | **What you get out** | **Example draws** |
-|-|-|-|-|
-| **Gaussian (Normal)** | Mean, variance | Real numbers | -0.2, -10.923, 45.08, -6.4545 |
-| **Bernoulli** | Probability that x = 1 | Results of "coin flips" | 0, 1, 1, 0, 1, 0, 0, 0 |
-| **Binomial** | Number of observations, probability that each observation is 1 | The number of observations where x = 1 | 10, 5, 38, 0, 267 |
-| **Multinomial** | Number of observations, probability that each *feature* in each observation is 1 | The per-feature counts showing how many times each feature was 1 | [3, 10, 2, 27], [46, 5, 4, 0] |
-| **Uniform** | Start and end points (Real numbers) | A number between the start and end points | 0.2, 0.7532, 0.00000123 |
-| **Von Mises** | Circular mean and concentration | Angles | 3.6, 186, 240, 359.98 |
 
 ---
 

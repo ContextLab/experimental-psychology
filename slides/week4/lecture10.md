@@ -32,4 +32,4 @@ Spring 2026
 
 # Demo
 
-<img src="../figs/data_exploration_hacks/exploration-small-15727.png" width="500">
+<img src="../figs/data_exploration_hacks/exploration-small-15727.png" style="max-height: 350px;">

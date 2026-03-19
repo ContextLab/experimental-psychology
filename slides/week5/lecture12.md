@@ -18,7 +18,7 @@ Spring 2026
 
 # How can we know the "direction" of a field?
 
-<img src="../figs/synthesizing_across_studies/pasted-image-small-16368.png" width="600">
+<img src="../figs/synthesizing_across_studies/pasted-image-small-16368.png" width="450" style="max-height: 350px;">
 
 ---
 

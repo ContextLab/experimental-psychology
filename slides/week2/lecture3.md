@@ -84,6 +84,8 @@ Data wrangling means organizing or transforming your data into a format that is 
 
 ---
 
+<!-- _class: scale-70 -->
+
 # Next week: "pitch session" lab
 
 <div class="note-box" data-title="Coming up">
@@ -95,4 +97,4 @@ Data wrangling means organizing or transforming your data into a format that is 
 
 </div>
 
-<img src="../figs/data_wrangling/pitch_lab-14568.png" width="300">
+<img src="../figs/data_wrangling/pitch_lab-14568.png" width="150">
