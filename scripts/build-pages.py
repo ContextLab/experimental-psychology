@@ -8,6 +8,7 @@ Laboratory in Psychological Science.
 
 import re
 import os
+import subprocess
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
@@ -73,6 +74,14 @@ EMOJI_MAP = {
     "desktop-computer": "\U0001F5A5\uFE0F",
     "printer": "\U0001F5A8\uFE0F",
     "mouse": "\U0001F5B1\uFE0F",
+    "speaking-head": "\U0001F5E3\uFE0F",
+    "teacher": "\U0001F9D1\u200D\U0001F3EB",
+    "paintbrush": "\U0001F58C\uFE0F",
+    "detective": "\U0001F575\uFE0F",
+    "stopwatch": "\u23F1\uFE0F",
+    "luggage": "\U0001F9F3",
+    "framed-picture": "\U0001F5BC\uFE0F",
+    "scroll": "\U0001F4DC",
 }
 
 
@@ -635,6 +644,78 @@ def build_syllabus():
     print(f"Built: {dest}")
 
 
+
+# Assignment ordering by course schedule (labs first in order, then assignments)
+ASSIGNMENT_ORDER = [
+    "birthday_lab",       # Week 1: Psychology of Everyday Life Survey Lab
+    "pitch_session_lab",  # Week 2: Pitch Session Lab
+    "picture_lab",        # Week 3: Picture Lab
+    "data_sleuthing_lab", # Week 4: Data Sleuthing Lab
+    "literature_lab",     # Week 5: Literature Review Lab
+    "brainstorm",         # Week 6: Brainstorm
+    "weekly_snippet",     # Ongoing: Weekly Snippets
+    "make_a_poster",      # Week 9-10: Poster Presentation
+    "final_paper",        # Week 9-10: Final Paper
+]
+
+
+def get_assignment_sort_key(name):
+    """Return sort key for assignment ordering by course schedule."""
+    try:
+        return ASSIGNMENT_ORDER.index(name)
+    except ValueError:
+        return len(ASSIGNMENT_ORDER)
+
+
+def prepare_markdown_for_pdf(md_file):
+    """Prepare markdown for pandoc PDF generation by converting LaTeX emojis
+    to Unicode and stripping the emoji package header-include."""
+    text = md_file.read_text()
+    # Convert \emoji{name} to Unicode
+    text = convert_latex_emoji(text)
+    # Remove the header-includes that loads the LaTeX emoji package
+    text = re.sub(
+        r"header-includes:\s*\n\s*-\s*'`\\usepackage\{emoji\}`\{=latex\}'\s*\n",
+        "",
+        text,
+    )
+    return text
+
+
+def build_assignment_pdf(md_file, output_path):
+    """Generate PDF from markdown using pandoc."""
+    try:
+        # Prepare markdown with Unicode emojis instead of LaTeX \emoji{}
+        prepared_md = prepare_markdown_for_pdf(md_file)
+
+        cmd = [
+            "pandoc",
+            "-f", "markdown",
+            "-o", str(output_path),
+            "--pdf-engine=xelatex",
+            "-V", "geometry:margin=1in",
+            "-V", "mainfont:Palatino",
+            "-V", "fontsize:12pt",
+            "-V", "colorlinks:true",
+            "-V", "linkcolor:green",
+        ]
+        result = subprocess.run(
+            cmd, input=prepared_md, capture_output=True, text=True, timeout=60
+        )
+        if result.returncode == 0:
+            print(f"PDF:   {output_path}")
+            return True
+        else:
+            print(f"PDF failed for {md_file.name}: {result.stderr[:200]}")
+            return False
+    except FileNotFoundError:
+        print(f"Warning: pandoc not found, skipping PDF for {md_file.name}")
+        return False
+    except subprocess.TimeoutExpired:
+        print(f"Warning: PDF generation timed out for {md_file.name}")
+        return False
+
+
 def build_assignment_hub():
     """Build the main assignments hub page listing all assignments and labs."""
     dest = REPO_ROOT / "assignments" / "index.html"
@@ -657,6 +738,9 @@ def build_assignment_hub():
 
             name = md_file.stem
             assignments.append((title, name, md_dir))
+
+    # Sort by course schedule order
+    assignments.sort(key=lambda x: get_assignment_sort_key(x[1]))
 
     hub_md = "# Assignments and Labs\n\n"
     hub_md += "All assignments for PSYC 11: Laboratory in Psychological Science.\n\n"
@@ -705,6 +789,10 @@ def build_individual_assignments():
             dest_dir.mkdir(exist_ok=True)
             dest.write_text(html)
             print(f"Built: {dest}")
+
+            # Generate PDF
+            pdf_dest = output_base / f"{name}.pdf"
+            build_assignment_pdf(md_file, pdf_dest)
 
 
 def main():

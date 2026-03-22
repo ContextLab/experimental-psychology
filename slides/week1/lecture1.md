@@ -146,20 +146,20 @@ Spring 2026
 
 ---
 
-# Birthday lab!
+# Psychology of Everyday Life survey lab!
 
 <div class="example-box" data-title="Scientific Thinking">
 
 - Gentle introduction to asking questions in a scientific way (aside: how is this different from a "regular" question?)
-- Does anyone **know** they have a birthday twin in the room?
-- How many people would you **expect** to have matching birthdays?
+- How do you think your everyday habits (sleep, stress, screen time) compare to your classmates'?
+- What patterns would you **expect** to see in how people rate their happiness, stress, and daily routines?
 - What makes a "good" hypothesis vs. a "bad" hypothesis?
 
 </div>
 
 ---
 
-# Birthday lab!
+# Psychology of Everyday Life survey lab!
 
 <div class="important-box" data-title="Today's Task">
 
@@ -170,7 +170,7 @@ Spring 2026
 <div style="display: flex; gap: 2em; justify-content: center;">
 <div style="text-align: center;">
 
-<img src="../figs/intro_and_overview/birthday_survey_QR-14827.png" width="350">
+<img src="../figs/intro_and_overview/survey_form_qr.png" width="350">
 
 </div>
 <div style="text-align: center;">

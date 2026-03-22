@@ -1,1 +1,2 @@
 cdl-slides>=1.2.0
+qrcode[pil]>=8.0

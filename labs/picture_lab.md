@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Picture Lab!
+title: Picture Lab
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -222,6 +222,27 @@ Your lab report should comprise the following elements:
       - Etc.
   4. Create figures to help illustrate any key points and use statistical tests to support your claims
   5.  Propose a revised set of instructions that addresses any weaknesses you identified through your explorations, analyses, and self reflections.
+  6. A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether AI helped you see ambiguities you would have otherwise missed.
+
+# \emoji{artist-palette} Using GenAI in this lab
+
+Generative AI offers a fascinating way to test the clarity of your instructions from a completely different perspective.
+
+## \emoji{paintbrush} GenAI Challenge: Can AI Follow Your Instructions?
+
+After your group has written your drawing instructions (Part 2), try this:
+
+  1. **Have GenAI execute your instructions**: Using a text-to-image model (see the [companion notebook](https://colab.research.google.com/github/ContextLab/experimental-psychology/blob/main/notebooks/drawing_lab_genai.ipynb)), feed your written instructions to an AI image generator.  The notebook will help you run an appropriate model to produce an image from your text description.
+  2. **Compare the AI's drawing to human drawings**: How does the AI-generated image compare to what other groups drew from your instructions?  Is it more or less accurate?
+  3. **Have GenAI guess what the image is**: Show the AI-generated image (or your original drawing) to a multimodal AI (e.g., ChatGPT with vision, Claude) and ask it to describe what it sees.  Does it identify the same label your group chose?
+  4. **Analyze ambiguity**: Ask a text-based AI to read your instructions and identify every ambiguous phrase or unstated assumption.  Compare this list to the assumptions that human groups actually made.
+  5. **Reflect**:
+     - Where did AI succeed or fail at following your instructions compared to humans?
+     - Did AI struggle with the same steps that humans found confusing, or different ones?
+     - What does this tell you about the difference between how AI and humans process written instructions?
+     - How might these insights apply to writing methods sections for real scientific papers?
+
+This exercise connects directly to the core lesson of the lab: understanding what makes instructions clear enough for *any* reader-- human or machine-- to follow.
 
 # \emoji{artist-palette} Closing discussion points
 

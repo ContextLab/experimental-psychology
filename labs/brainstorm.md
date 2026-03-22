@@ -1,4 +1,9 @@
-# Labs brainstorm
+---
+title: Brainstorm
+author: Jeremy R. Manning
+---
+
+# Brainstorm
 
 ## Birthday match: Introduction to asking questions in a scientific way
   - Generate a hypothesis: estimate the number of people in the room with
@@ -159,6 +164,16 @@ Part 3: evaluate the instructions
   - Draw your conclusions about what you think it all *means* (e.g., what do you think the "true" answer to the key question is?)
   - Describe some still unanswered questions and propose how they might be studied in future work.
 
+
+# Using GenAI
+
+Generative AI can help you explore research ideas more broadly and deeply:
+
+  - Use AI to **brainstorm research questions** — generate a wide range of possibilities, then narrow down to the most interesting and feasible
+  - Use AI to **find related studies** — discover what's already been done in your area of interest and identify gaps
+  - Use AI to **identify methodological approaches** — learn about different experimental designs, measurement tools, and analytical strategies
+
+The brainstorming process itself must involve **genuine group discussion** and personal intellectual engagement.  Use AI to expand your horizons, not to shortcut the creative process.
 
 # Final project
 

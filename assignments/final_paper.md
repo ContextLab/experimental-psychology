@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Final paper
+title: Final Paper
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -227,6 +227,20 @@ made per group.
 In addition to the PDF of your group's final paper (to be submitted by a
 single student, nominated by your group), each student should also submit 
 a separate group contributions statement (as a DOCX file or PDF).
+
+# Using GenAI
+
+Generative AI can be a powerful tool for improving the quality of your final paper:
+
+  - Use AI to help with **literature searches** — finding relevant papers, understanding their key contributions, and identifying how they relate to your study
+  - Use AI to help **debug analysis code** — if you're using Python, R, or other tools for your analyses, AI can help you troubleshoot errors and optimize your approach
+  - Use AI to **improve writing clarity** — ask AI to identify unclear passages, suggest more precise language, or restructure paragraphs for better flow
+
+However, your paper must reflect *your* understanding:
+
+  - You must be able to **explain and defend** every analysis, interpretation, and conclusion in your paper
+  - AI-generated text must be **substantially revised** in your own voice — copying AI output verbatim is not acceptable
+  - Include a brief **GenAI reflection** paragraph at the end of your paper describing how you used AI and what you learned from the interaction
 
 # \emoji{memo} Concluding remarks
 
