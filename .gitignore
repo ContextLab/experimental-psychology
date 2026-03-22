@@ -18,6 +18,13 @@ slides/compilation_report.txt
 *grades*
 *roster*
 
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
 # Editor/OS
 .vscode/
 .idea/

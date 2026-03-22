@@ -75,6 +75,7 @@ jobs:
           [ -d figures ] && cp -r figures _site/
           [ -d fonts ] && cp -r fonts _site/
           [ -d admin ] && cp -r admin _site/
+          [ -d notebooks ] && cp -r notebooks _site/
 
       - uses: actions/configure-pages@v4
 

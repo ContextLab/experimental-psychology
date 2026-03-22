@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Pitch Session Lab
+title: Pitch Session Lab
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -83,6 +83,29 @@ Write up your results (in roughly 2--3 pages, double spaced) to communicate your
   - A discussion about which aspects of your group's pitch were successful versus not
   - Choose the pitch or idea you think was best (it could be your group's, but it doesn't need to be) and discuss why it is better than the other pitches and/or ideas.
   - Use of group feedback (spreadsheet) and rankings to back up any claims.  Figures and/or stats are highly recommended!
+  - A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether the AI's suggestions improved your pitch.
+
+# \emoji{speaking-head} Using GenAI in this lab
+
+Generative AI can help you think more deeply about science communication.  Here are some ways to leverage AI:
+
+  - **Research your topic's scientific background**: Ask AI to help you find key studies, statistics, and theoretical frameworks related to your chosen mystery.  Go beyond Wikipedia-- use AI to understand the *state of the art*.
+  - **Brainstorm counterarguments**: Ask AI to play devil's advocate.  What are the strongest objections to your proposed approach?
+
+## \emoji{teacher} GenAI Challenge: Human vs. AI Pitches
+
+After your group has completed the pitch process manually (Steps 1--3), try this exercise:
+
+  1. **Have GenAI brainstorm**: Give a GenAI tool the same topic your group chose.  Ask it to brainstorm a pitch, including the idea, why it matters, the key mystery, and a proposed approach.
+  2. **Have GenAI execute**: Ask the AI to write out a complete 5-minute pitch script based on its brainstorm.
+  3. **Have GenAI refine**: Share your group's pitch with the AI and ask it to suggest improvements.  Then share the AI's pitch with your group and discuss: what's better about each version?
+  4. **Compare and reflect**:
+     - Is the AI-generated pitch more or less compelling than what your group created?  Why?
+     - What does the AI pitch lack that yours has (or vice versa)?  Think about authenticity, passion, creativity, and audience connection.
+     - Did the AI's suggestions actually improve your pitch, or did they make it more generic?
+     - What aspects of science communication are fundamentally *human* and hard for AI to replicate?
+
+This exercise will help you understand what AI is good at (structure, breadth, polish) versus what humans bring to communication (passion, authenticity, improvisation, genuine curiosity).
 
 # \emoji{speaking-head} Closing discussion points
 

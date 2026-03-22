@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Poster presentation
+title: Poster Presentation
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -163,6 +163,18 @@ One member from each group should upload the following materials on [Canvas](htt
   - A document listing all group members' names
   - A PDF of your group's poster
   - A recording of your group's presentation
+
+# Using GenAI
+
+Generative AI can help you create a more polished and effective poster:
+
+  - Use AI for **design suggestions** — ask about layout principles, color choices, and visual hierarchy for scientific posters
+  - Use AI for **text drafting** — generate concise summaries of your methods, results, and conclusions, then revise in your own words
+  - Use AI for **figure refinement** — get suggestions for the most effective chart types, labels, and annotations
+
+Keep in mind that the poster session requires **live Q&A** — you must understand every element of your poster and be prepared to explain your reasoning, defend your conclusions, and discuss limitations.  AI cannot do this for you.
+
+Include a brief note on your poster (or in your submission) describing how you used GenAI in the poster creation process.
 
 # \emoji{teacher} Concluding remarks
 

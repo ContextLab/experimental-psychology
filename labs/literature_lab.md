@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Time traveling literature review lab
+title: Time Traveling Literature Review Lab
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -207,6 +207,34 @@ Propose an interpretation of your findings (this can match the original paper's 
   - Draw your conclusions about what you think it all *means* (e.g., what do you think the "true" answer to the key question is?)
   - Describe some still unanswered questions and propose how they might be studied in future work.
   - Make sure to include a bibliography!
+  - Include a brief paragraph reflecting on how you used generative AI during this lab.  Did AI help you find papers or insights you would have missed?  Were there cases where AI-generated summaries were inaccurate or misleading?
+
+# \emoji{stopwatch} Using GenAI in this lab
+
+Generative AI has powerful research capabilities-- but how much can you actually trust it?
+
+## \emoji{luggage} GenAI Challenge: Deep Research Accuracy Audit
+
+After your group has completed the manual literature search (Parts 1--3), try this:
+
+  1. **Use "deep research"**: Use the deep research function of your preferred GenAI model (suggested: ChatGPT's deep research mode or Claude) to research your template paper's topic.  Ask it to find the original paper, summarize its findings, identify papers that cite it, and describe how the field has evolved.
+  2. **Spot-check for accuracy**: Carefully compare the AI's output against the papers you actually read.  For each claim the AI makes:
+     - Did you find the paper it references?  Does the paper actually exist?
+     - Is the AI's summary of the paper accurate?  Did it get the key findings right?
+     - Did the AI miss any important nuances or caveats?
+     - Did it invent any "hallucinated" papers, authors, or findings?
+  3. **Evaluate reliability at different stakes**: Reflect on how much you would trust this AI-generated research summary for different purposes:
+     - A **personal hobby project** (e.g., learning about a topic for fun)?
+     - An **assignment for a course** (where accuracy matters for your grade)?
+     - A **financial decision** (e.g., researching a major purchase)?
+     - A **life-or-death decision** (e.g., evaluating medical treatments)?
+  4. **Reflect on what you learned**:
+     - How many errors or hallucinations did you find?
+     - Were the errors obvious or subtle?
+     - Would you have caught them if you hadn't already read the papers yourself?
+     - What does this tell you about the role of AI in scientific literature review?
+
+This exercise is designed to help you develop a calibrated sense of when and how much to trust AI-generated research summaries-- a skill that will only become more important as these tools improve.
 
 # \emoji{stopwatch} Closing discussion points
 

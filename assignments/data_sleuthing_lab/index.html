@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSYC 11 Data sleuthing lab - PSYC 11</title>
-    <meta name="description" content="PSYC 11 Data sleuthing lab for PSYC 11: Laboratory in Psychological Science">
+    <title>Data Sleuthing Lab - PSYC 11</title>
+    <meta name="description" content="Data Sleuthing Lab for PSYC 11: Laboratory in Psychological Science">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../css/theme.css">
     <style>
@@ -128,11 +128,11 @@
     </nav>
 
     <header class="page-header">
-        <h1>PSYC 11 Data sleuthing lab</h1>
+        <h1>Data Sleuthing Lab</h1>
     </header>
 
     <main class="content">
-        <h1 id="detective-overview">[detective] Overview</h1>
+        <h1 id="overview">🕵️ Overview</h1>
 <p>What can (and <em>can't</em>!) data tell us? In this lab, your team will explore this
 important issue by playing two roles: <strong>data creator</strong> and <strong>data sleuth</strong>. Your
 job in the "creator" role will be to (as the name implies)  <em>create</em> a dataset
@@ -140,7 +140,7 @@ to be shared with another team.  Later, once you've passed off your team's
 dataset and received a new one from another team, your team will transition
 into a "sleuth" role, where you'll examine and analyze different aspects of the
 dataset.</p>
-<h1 id="detective-learning-objectives">[detective] Learning objectives</h1>
+<h1 id="learning-objectives">🕵️ Learning objectives</h1>
 <p>The goal of this lab is to learn about the "results" sections of scientific
 articles.  In general, results sections report the <em>results</em> of the analyses
 described in the paper's methods section.  A good results section will also help
@@ -155,7 +155,7 @@ interpreted.  To that end, you'll:</p>
 <li>Practice interpreting results</li>
 <li>Practice thinking about study design, resources, effort allocation, and time management</li>
 </ul>
-<h1 id="detective-procedure">[detective] Procedure</h1>
+<h1 id="procedure">🕵️ Procedure</h1>
 <p>We'll divide the class into three teams: A, B, and C.  Each team will begin by
 finding or creating a dataset, following some specific guidelines (outlined
 below).  You'll also create some "documentation" for the dataset.  As part of
@@ -232,7 +232,7 @@ approach you deem appropriate.  Figures and stats are encouraged!</p>
 <li>If you think a particular question is impossible to answer, explain why-- and what you'd need (from the dataset, analytic tools, etc.) in order to be able to answer that question.  You should still carry out <em>some</em> sort of analysis for each question; the idea is to notice and document when the insights possible to attain from a particular analysis fall short of the question(s) you're trying to answer about the data.</li>
 </ul>
 Your team can share a common document and set of analyses, figures, stats, etc.
-<h1 id="detective-writing-your-lab-report">[detective] Writing your lab report</h1>
+<h1 id="writing-your-lab-report">🕵️ Writing your lab report</h1>
 <p>Your writeup for this lab will mimic a "results section" of a scientific article,
 about the dataset you analyzed with your team.  You should include the following elements:</p>
 <ul>
@@ -248,9 +248,36 @@ about the dataset you analyzed with your team.  You should include the following
 <ul>
 <li>Organize the questions and paragraphs so that they tell a "story" about the dataset.</li>
 <li>Add transition sentences as needed.</li>
-<li>Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found.  </li>
+<li>Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found.</li>
+<li>Include a brief paragraph reflecting on how you used generative AI during this lab.  What analytical suggestions did AI provide?  Were they useful?  Did AI help you see the data differently?</li>
 </ul>
-<h1 id="detective-closing-discussion-points">[detective] Closing discussion points</h1>
+<h1 id="using-genai-in-this-lab">🕵️ Using GenAI in this lab</h1>
+<p>Generative AI can be a powerful analytical partner-- but only if you know how to verify its work.</p>
+<h2 id="genai-challenge-ai-assisted-analysis-with-sanity-checks">🔎 GenAI Challenge: AI-Assisted Analysis with Sanity Checks</h2>
+<p>Work through this process with your group:</p>
+<ol>
+<li><strong>Brainstorm as a group first</strong>: Before involving AI, discuss with your team: which analyses and figures will help you answer each question most directly?  Sketch out your analytical plan on paper or a whiteboard.</li>
+<li><strong>Use GenAI to help implement</strong>: Open a <a href="https://colab.research.google.com/" target="_blank">Colab notebook</a> and use a GenAI tool to help you write the code for your planned analyses.  Be specific in your prompts-- describe the dataset structure, the question you're trying to answer, and the type of analysis you want.</li>
+<li><strong>Develop sanity checks</strong>: This is the critical step.  For every figure and analysis that AI helps you create, develop ways to verify the results are correct:
+<ul>
+<li>Do the numbers add up?  (e.g., do group means and the overall mean relate correctly?)</li>
+<li>Do the axes and labels match what you expect?</li>
+<li>If you change the data slightly, does the output change in the direction you'd predict?</li>
+<li>Can you reproduce a simple version of the analysis by hand (e.g., calculate one mean manually)?</li>
+<li>Does the statistical test the AI chose actually match the type of data and question?</li>
+</ul>
+</li>
+<li><strong>Document what you found</strong>: In your writeup, describe:
+<ul>
+<li>Which AI-generated analyses were correct on the first try</li>
+<li>Which had errors, and what the errors were</li>
+<li>How you caught and fixed them</li>
+<li>What you learned about trusting (and verifying) AI-generated code and analyses</li>
+</ul>
+</li>
+</ol>
+The ability to use AI as an analytical tool <em>while maintaining rigorous verification</em> is one of the most valuable skills you can develop as a scientist.  AI can do the computational heavy lifting, but <em>you</em> must be the one who knows whether the results make sense.
+<h1 id="closing-discussion-points">🕵️ Closing discussion points</h1>
 <p>The results section of a scientific paper is, in many ways, its core.  The "merit" of a paper
 typically rests on how accurately and effectively it communicates the main findings of
 the study.  For example:</p>

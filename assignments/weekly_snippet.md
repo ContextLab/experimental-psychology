@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Weekly snippets
+title: Weekly Snippets
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -75,6 +75,16 @@ rubber bands.
   - I accidentally defined the paper size for my group's poster in units of millimeters instead of inches.  We will
   need to re-print the poster using the corrected scaling.
 
+
+# Using GenAI
+
+You may use generative AI to help organize your thoughts and draft your weekly snippets.  However:
+
+  - Snippets must reflect **your genuine understanding** of your group project's progress and your personal contributions
+  - Generic, boilerplate AI-generated summaries are **not acceptable** — your snippet should contain specific details that only someone actively involved in the project would know
+  - Use AI to help you **articulate** what you've learned, not to *replace* the reflection process
+
+The weekly snippet is a low-stakes opportunity to practice honest self-assessment and clear communication about ongoing work.
 
 # Additional notes
 

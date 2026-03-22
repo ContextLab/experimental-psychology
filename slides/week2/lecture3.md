@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Data wrangling: birthday matching lab
+# Data wrangling: Psychology of Everyday Life survey lab
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -18,11 +18,11 @@ Spring 2026
 
 # Posing your questions
 
-<div class="note-box" data-title="Birthday matching questions">
+<div class="note-box" data-title="Survey data questions">
 
-- How many students share the same birth month and day?
-- How many share the same birth month?
-- How many share the same birth day (excluding month)?
+- How do students' sleep habits relate to their reported stress levels?
+- Are there patterns in screen time, happiness, or daily routines across the class?
+- Which everyday habits show the most variation among students?
 
 </div>
 
@@ -78,9 +78,9 @@ Data wrangling means organizing or transforming your data into a format that is 
 
 ---
 
-# Example analysis of the birthday data
+# Example analysis of the survey data
 
-<img src="../figs/data_wrangling/birthday_analysis_qr-14485.png" width="500">
+<img src="../figs/data_wrangling/survey_analysis_qr.png" width="500">
 
 ---
 

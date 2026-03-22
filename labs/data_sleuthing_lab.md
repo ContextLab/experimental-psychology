@@ -1,5 +1,5 @@
 ---
-title: PSYC 11 Data sleuthing lab
+title: Data Sleuthing Lab
 author: Jeremy R. Manning
 mainfont: Palatino
 geometry: margin=1in
@@ -119,7 +119,32 @@ about the dataset you analyzed with your team.  You should include the following
       relevant interpretations, etc.  For example, describe "answers" or "insights" into the question that you gained through your analyses, or describe how the question is impossible to answer given the data, etc.
   - Organize the questions and paragraphs so that they tell a "story" about the dataset.
   - Add transition sentences as needed.
-  - Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found.  
+  - Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found.
+  - Include a brief paragraph reflecting on how you used generative AI during this lab.  What analytical suggestions did AI provide?  Were they useful?  Did AI help you see the data differently?
+
+# \emoji{detective} Using GenAI in this lab
+
+Generative AI can be a powerful analytical partner-- but only if you know how to verify its work.
+
+## \emoji{magnifying-glass-tilted-right} GenAI Challenge: AI-Assisted Analysis with Sanity Checks
+
+Work through this process with your group:
+
+  1. **Brainstorm as a group first**: Before involving AI, discuss with your team: which analyses and figures will help you answer each question most directly?  Sketch out your analytical plan on paper or a whiteboard.
+  2. **Use GenAI to help implement**: Open a [Colab notebook](https://colab.research.google.com/) and use a GenAI tool to help you write the code for your planned analyses.  Be specific in your prompts-- describe the dataset structure, the question you're trying to answer, and the type of analysis you want.
+  3. **Develop sanity checks**: This is the critical step.  For every figure and analysis that AI helps you create, develop ways to verify the results are correct:
+     - Do the numbers add up?  (e.g., do group means and the overall mean relate correctly?)
+     - Do the axes and labels match what you expect?
+     - If you change the data slightly, does the output change in the direction you'd predict?
+     - Can you reproduce a simple version of the analysis by hand (e.g., calculate one mean manually)?
+     - Does the statistical test the AI chose actually match the type of data and question?
+  4. **Document what you found**: In your writeup, describe:
+     - Which AI-generated analyses were correct on the first try
+     - Which had errors, and what the errors were
+     - How you caught and fixed them
+     - What you learned about trusting (and verifying) AI-generated code and analyses
+
+The ability to use AI as an analytical tool *while maintaining rigorous verification* is one of the most valuable skills you can develop as a scientist.  AI can do the computational heavy lifting, but *you* must be the one who knows whether the results make sense.
 
 # \emoji{detective} Closing discussion points
 
