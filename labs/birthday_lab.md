@@ -34,7 +34,7 @@ This laboratory exercise is intended to help you:
 
 ## \emoji{test-tube} Step 1: Take the class survey
 
-Fill out our class's [Psychology of Everyday Life survey](https://forms.gle/PLACEHOLDER_SURVEY) with honest responses about your daily habits and attitudes.  The survey asks about things like:
+Fill out our class's [Psychology of Everyday Life survey](https://forms.gle/WzY6GNiJHyQKNJcs5) with honest responses about your daily habits and attitudes.  The survey asks about things like:
 
   - How many hours of sleep you typically get
   - Your general stress level
@@ -45,7 +45,7 @@ Fill out our class's [Psychology of Everyday Life survey](https://forms.gle/PLAC
   - How many hours per week you study
   - How socially active you are
 
-The survey should take about 10 minutes.  Once everyone has submitted their responses, the collected data will be available [here](https://docs.google.com/spreadsheets/d/PLACEHOLDER_SHEET).
+The survey should take about 10 minutes.  Once everyone has submitted their responses, the collected data will be available [here](https://docs.google.com/spreadsheets/d/1MvZoEIU5OdAOVtUTw8QoYQdoz1HcOhInSqeZcE0wQgg/edit?usp=sharing).
 
 **Important**: Do NOT look at the data before completing Steps 2 and 3!
 
@@ -83,7 +83,7 @@ Write down your planned tests for each hypothesis.
 
 ## \emoji{test-tube} Step 4: Analyze the data
 
-Now you can look at the data!  Make a copy of the [class dataset](https://docs.google.com/spreadsheets/d/PLACEHOLDER_SHEET) and carry out the statistical tests you planned in Step 3.  You can use [Google Colaboratory](https://colab.research.google.com/), Google Sheets, SPSS, R, [VassarStats](http://vassarstats.net/), or any other tool you're comfortable with.
+Now you can look at the data!  Make a copy of the [class dataset](https://docs.google.com/spreadsheets/d/1MvZoEIU5OdAOVtUTw8QoYQdoz1HcOhInSqeZcE0wQgg/edit?usp=sharing) and carry out the statistical tests you planned in Step 3.  You can use [Google Colaboratory](https://colab.research.google.com/), Google Sheets, SPSS, R, [VassarStats](http://vassarstats.net/), or any other tool you're comfortable with.
 
 For each test, record:
 
