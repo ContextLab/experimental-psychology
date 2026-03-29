@@ -647,7 +647,7 @@ def build_syllabus():
 
 # Assignment ordering by course schedule (labs first in order, then assignments)
 ASSIGNMENT_ORDER = [
-    "birthday_lab",       # Week 1: Psychology of Everyday Life Survey Lab
+    "survey_lab",         # Week 1: Psychology of Everyday Life Survey Lab
     "pitch_session_lab",  # Week 2: Pitch Session Lab
     "picture_lab",        # Week 3: Picture Lab
     "data_sleuthing_lab", # Week 4: Data Sleuthing Lab
