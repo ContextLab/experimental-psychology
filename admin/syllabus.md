@@ -48,27 +48,78 @@ You will need your laptop computer to collect, log, and analyze data during clas
 
 The design of this course is substantially different from other more traditional courses you may be familiar with. Specifically, this course is self-driven in the sense that instructor-led lectures comprise only a small part of the course. Most of your learning will come from hands-on training where you carry out experiments in small groups. Your TAs and I will be available throughout the term to help if you encounter issues, and there are some safeguards in place to keep you on track, but the system will work best if you **recognize when you have questions and proactively seek out help when you need it**.
 
-During (roughly) the first five weeks of the course, we will use guided experiments to practice thinking about and constructing the major elements of a research paper. Each week (approximately) will be designed around a central theme:
+## Course Schedule
 
-- Theme 1: Asking questions in a scientific way
-- Theme 2: Research motivation and background: writing an effective *Introduction* section
-- Theme 3: Describing what you did (and why): writing an effective *Methods* section
-- Theme 4: Interpreting your analyses and describing what you found: writing an effective *Results* section
-- Theme 5: Situating your work within the broader literature: writing an effective *Discussion* section
+### Week 1 (Mar 30 -- Apr 4): Survey Lab
 
-During the remaining weeks of the course, you will carry out a final project in a way that synthesizes content from the first part of the course. Each group will receive a small research budget to carry out a real-world research study. Groups will present their findings in a "conference-style" poster session that is open to the Dartmouth community, and will also write a final paper:
+- **M 3/30:** Intro + Survey Lab + Data collection
+- **W 4/2:** Statistical building blocks
+- **F 4/4:** *No class (instructor away)*
 
-- Week 6: Implement an experiment
-- Week 7: Collect data
-- Week 8: Analyze data
-- Week 9: Interpret results
-- Week 10: Project presentations and wrap up (final poster and paper due)
+### Week 2 (Apr 7 -- 11): Pitch Lab
 
-*Note: the above schedule reflects a rough estimate and is subject to change.*
+- **M 4/7:** Motivating science intro + Pitch lab starts
+- **W 4/9:** Present pitches + fill out evals
+- **Th 4/10 (X-hour):** Data wrangling + Vibe coding tutorial
+- **F 4/11:** How far can you get with data and stats?
+
+### Week 3 (Apr 14 -- 18): Drawing Lab
+
+- **M 4/14:** Effective explaining + Drawing lab starts
+- **W 4/16:** Data collection -- reproduce drawings
+- **Th 4/17 (X-hour):** Stats refresher
+- **F 4/18:** Analyzing drawing lab data
+
+### Week 4 (Apr 21 -- 25): Data Sleuthing Lab
+
+- **M 4/21:** Creating data + Data sleuthing lab starts
+- **W 4/23:** Exploring and understanding data
+- **Th 4/24 (X-hour):** Additional office hours (sign up)
+- **F 4/25:** Quick start guide to digging into data
+
+### Week 5 (Apr 28 -- May 2): Literature Review Lab
+
+- **M 4/28:** Searching and reviewing the literature + Lit review lab starts
+- **W 4/30:** Synthesizing across studies/findings
+- **Th 5/1 (X-hour):** Additional office hours (sign up)
+- **F 5/2:** Logistics + announcements for weeks 6--10, then group work on lit review lab wrap up
+
+### Week 6 (May 5 -- 9): Final Projects Begin
+
+- **M 5/5:** Getting started with final projects: find a group, brainstorm idea
+- **W 5/7:** Design your study
+- **Th 5/8 (X-hour):** Additional office hours (sign up)
+- **F 5/9:** Experiment implementation tips + Human subjects training (complete at home over the weekend)
+
+### Week 7 (May 12 -- 16): Human Subjects Training + Data Collection
+
+- No formal class sessions. Run instructor through your study and confirm human subjects training was completed. TAs and instructor available to help.
+- **Th 5/15 (X-hour):** Additional office hours (sign up)
+
+### Week 8 (May 19 -- 23): Data Analysis + Interpretation
+
+- **M 5/19:** Groups work on data analysis ideas (no formal lecture)
+- **W 5/21:** Introduction to poster presentations + analysis work time
+- **Th 5/22 (X-hour):** Poster creation workshop
+- **F 5/23:** Interpretation + start working on posters
+
+### Week 9 (May 26 -- 30): Posters + Papers
+
+- **M 5/26:** *No class (Memorial Day)*
+- **W 5/28:** Effective scientific writing + continue working on posters/paper
+- **Th 5/29:** *No office hours (instructor away)*
+- **F 5/30:** *No class (instructor away)*
+
+### Week 10 (Jun 2 -- 4): Final Week
+
+- **M 6/2:** Wrap up projects (TAs/instructor available to help)
+- **W 6/4 (last day of class):** Public poster session + final paper/poster/presentation recording due
+
+*Note: the above schedule is subject to change.*
 
 ## X-hours and Office Hours
 
-We won't generally use the X-hours for this course. However, X-hours **will** be used for makeup sessions on the following dates due to instructor absences: **April 9**, **April 23**, and **May 28**. As needed, we may also use one or more additional X-hours to schedule informal tutorials or workshops organized around some skill or theme related to the course material.
+X-hours will be used throughout the term as noted in the schedule above -- for tutorials, workshops, and additional office hours. See the weekly schedule for specific X-hour activities.
 
 My office hours will be scheduled by appointment. You can schedule an appointment with me at [https://context-lab.com/scheduler](https://context-lab.com/scheduler). When you sign up for a meeting time, you should specify whether you would like to meet in person or over Zoom.
 

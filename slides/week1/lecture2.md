@@ -20,74 +20,63 @@ Spring 2026
 
 ---
 
-# The "intro to stats" view of stats
+# What is a distribution?
 
-<div class="note-box" data-title="Choosing a test">
+<div class="note-box" data-title="Core Intuition">
 
-You have several options to choose from:
-- Want to compare the means of distributions? Use t-tests or ANOVAs
-- Want to compare trends? Use correlations or regressions
-- Etc.
-
-</div>
-
----
-
-# Where do those tests come from?
-
-<div class="note-box" data-title="Types of observations">
-
-Consider what sorts of values your observations can take on:
-- Real numbers?
-- Counts?
-- Probabilities?
-- Sets of numbers that sum to 1?
+- A distribution describes what values are likely (or unlikely) when we observe something
+- Different distributions produce different types of data: real numbers, counts, coin flips, etc.
+- Each distribution has **parameters** that control its shape (e.g., mean, variance, probability)
 
 </div>
 
 ---
 
-# Where do those tests come from?
+# What is a p-value, really?
 
-<div class="important-box" data-title="Key idea">
+<div class="important-box" data-title="Key Idea">
 
-Then we can ask: under different (typically very simple) assumptions about where the numbers came from, how likely would it be to see something like our actual data?
-
-</div>
-
----
-
-# Where do those tests come from?
-
-<div class="example-box" data-title="Example">
-
-**Data:** [-1.2, 2.04, 0.087, -0.1, ...]
-
-How unexpected would these numbers be if:
-- We thought the numbers came from a Normal distribution with mean = 0, var = 1
-- We thought the numbers came from a Normal distribution with mean = 100, var = 1
+- A p-value answers: "If nothing interesting were happening, how surprised should I be by this data?"
+- Low p-value = the data would be very unlikely under the "boring" (null) explanation
+- It does **not** tell you the probability that your hypothesis is true!
 
 </div>
 
 ---
 
-# Where do those tests come from?
+# Discussion: Hypotheses
 
-<div class="note-box" data-title="Building tests from distributions">
+<div class="example-box" data-title="Your Turn">
 
-- To create the different tests you learn about in introductory stats courses, people have solved out the probabilities of observing different (sets of) values under different assumptions
-- The p-value we get out tells us how unlikely it was that the observed data came from some "null" distribution
+- Give an example of a hypothesis you could test with data from this class
+- What would your "null" hypothesis be? What outcome would make you reject it?
+- Share with a neighbor and compare
 
 </div>
 
 ---
 
-# Making your own statistical tests
+# The recipe for any statistical test
 
-<div class="note-box" data-title="Distributions and parameters">
+<div class="tip-box" data-title="How Tests Work">
 
-- Different distributions can produce different types of draws-- Real numbers, counts, etc.
-- Each distribution is typically controlled by one or more parameters-- mean/variance, probabilities, etc.
+1. Pick a distribution that matches your data type
+2. Choose "null" parameters (e.g., mean = 0, coin is fair)
+3. Simulate many draws from that null distribution
+4. Compare your actual data to those simulations -- how unusual is it?
+
+</div>
+
+---
+
+# Example: Is a coin fair?
+
+<div class="example-box" data-title="Worked Example">
+
+- You flip a coin 12 times and get 3 heads
+- Null hypothesis: p(heads) = 0.5
+- Simulate 1,000,000 sets of 12 flips with a fair coin
+- What fraction give 3 or fewer heads? That fraction is your p-value!
 
 </div>
 
@@ -95,79 +84,14 @@ How unexpected would these numbers be if:
 
 <!-- _class: scale-78 -->
 
-# Probability distributions
+# Common distributions (reference)
 
-| **Distribution name** | **Parameter(s)** | **What you get out** | **Example draws** |
-|-|-|-|-|
-| **Gaussian (Normal)** | Mean, variance | Real numbers | -0.2, -10.923, 45.08, -6.4545 |
-| **Bernoulli** | Probability that x = 1 | Results of "coin flips" | 0, 1, 1, 0, 1, 0, 0, 0 |
-| **Binomial** | Number of observations, probability that each observation is 1 | The number of observations where x = 1 | 10, 5, 38, 0, 267 |
-| **Multinomial** | Number of observations, probability that each *feature* in each observation is 1 | The per-feature counts showing how many times each feature was 1 | [3, 10, 2, 27], [46, 5, 4, 0] |
-| **Uniform** | Start and end points (Real numbers) | A number between the start and end points | 0.2, 0.7532, 0.00000123 |
-| **Von Mises** | Circular mean and concentration | Angles | 3.6, 186, 240, 359.98 |
-
----
-
-# Making your own statistical tests
-
-<div class="tip-box" data-title="Recipe for a statistical test">
-
-1. Pick an appropriate distribution
-2. Pick parameters that correspond to your "null hypothesis" (e.g., that the distribution has a mean of 0, that the values are equally likely, etc.)
-3. Take a bunch of samples from your distribution
-4. Compare the values of those samples to your actual data
-
-</div>
-
----
-
-# Example: is a coin fair?
-
-<div class="example-box" data-title="Setting up the problem">
-
-Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
-
-How could you figure out whether the coin is fair (e.g., explainable by 0 and 1 being equally likely)?
-
-</div>
-
----
-
-# Example: is a coin fair?
-
-<div class="note-box" data-title="Step 1: Choose a distribution">
-
-Suppose you observe some coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, ...]
-
-First, we need an appropriate distribution
-
-</div>
-
----
-
-# Example: is a coin fair?
-
-<div class="example-box" data-title="Step 2: Set up the null hypothesis">
-
-- Suppose you observe 12 coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]
-- For a fair coin, p(1) = 0.5
-- We know that the number of "events" is 12 (i.e., the number of flips)
-- Now we can ask: what's the probability of observing 3 or fewer 1s if the coin is fair?
-
-</div>
-
----
-
-# Example: is a coin fair?
-
-<div class="example-box" data-title="Step 3: Compute the p-value">
-
-- Suppose you observe 12 coin flips: [0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0]
-- Parameters: N = 12, p(x = 1) = 0.5
-- Now take a bunch of draws from the binomial distribution. Let's take 1,000,000 draws and ask: what proportion of those draws have a count less than or equal to 3?
-- That's our p-value!
-
-</div>
+| **Distribution** | **Parameter(s)** | **What you get out** |
+|-|-|-|
+| **Gaussian (Normal)** | Mean, variance | Real numbers |
+| **Bernoulli** | Probability that x = 1 | Coin flips (0 or 1) |
+| **Binomial** | N observations, probability | Count of successes |
+| **Uniform** | Start and end points | Number in that range |
 
 ---
 

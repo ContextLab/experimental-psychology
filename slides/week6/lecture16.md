@@ -28,131 +28,54 @@ Spring 2026
 
 ---
 
-# What "counts" as an experiment?
+# Two big design philosophies
 
-<div class="definition-box" data-title="Types of experiments">
+<div class="important-box" data-title="Classic vs. Naturalistic">
 
-- Observing something happening without manipulating it
-- Self-reflection or self-report
-- Constructing a scenario in which the process you want to study occurs
-- Running a simulation (via real-life or computation)
-
-</div>
-
----
-<!-- _class: scale-90 -->
-
-# Observational studies
-
-<div class="note-box" data-title="Observe without interfering">
-
-- **Prime directive:** do not interfere
-- Go out into the world and collect data
-- Examples:
-  - Studying an animal colony
-  - Watch how people interact at a party
-  - Record facial expressions as people enter and exit a movie screening
-  - Measure highway traffic density at different times of day
+- **Classic (maximize control):** simplify the phenomenon, carefully manipulate specific factors across conditions, measure behavioral differences
+- **Naturalistic (maximize realism):** create a rich, realistic scenario, measure as much as possible, mine the data for patterns
+- Most studies fall somewhere on this spectrum -- where does yours?
 
 </div>
 
 ---
 
-# Self-report
+# The key ingredients
 
-<div class="note-box" data-title="Trust people to report their experiences">
+<div class="definition-box" data-title="Core design elements">
 
-- Socrates: "To know thyself is the beginning of wisdom"
-- Trust people to accurately report their opinions, thoughts, feelings, and behaviors
-- Examples:
-  - Voter preference/opinion surveys
-  - Mental health screening forms
-  - Feedback surveys
-  - Personal narratives
+- **Independent variable (IV):** what you **manipulate** or compare across groups
+- **Dependent variable (DV):** what you **measure**
+- **Controls:** what you keep the **same** so you can isolate the effect of your IV
+- **Participants:** who are you studying, and how many?
 
 </div>
 
 ---
 
-# Constructed scenarios
+# Discussion: what's your IV/DV?
 
-<div class="important-box" data-title="Two main approaches">
+<div class="warning-box" data-title="Activity (10 minutes)">
 
-- In general, there are two widely used approaches:
-  - **Classic:** maximize **control**
-  - **Naturalistic:** maximize **realism**
-
-</div>
-
----
-
-# Classic experiments
-
-<div class="note-box" data-title="Maximizing control">
-
-- Figure out the simplest possible version of the process or phenomenon you're interested in
-- If you think the process depends on participants' experiences (e.g., stimuli, framing, effort, etc.), carefully control those factors across several conditions
-- Use behaviors (across conditions if needed) as a stand-in for the "real thing"
+- In your project groups, identify:
+  - What is your **IV**? (What are you manipulating or comparing?)
+  - What is your **DV**? (What are you measuring?)
+  - What needs to be **controlled**?
+- If you are doing an observational study, what are your key **variables of interest**?
+- Be ready to share with the class
 
 </div>
 
 ---
 
-# Classic experiments: examples
+# Common pitfalls
 
-<div class="example-box" data-title="Simplified paradigms">
+<div class="tip-box" data-title="Watch out for these">
 
-- **Vision:** can you see this tiny spot of light?
-- **Audition:** what word do you hear when I play this sound?
-- **Memory:** which images in this set do you recognize?
-- **Cognitive control:** how tightly can you regulate your responses to a cue?
-
-</div>
-
----
-
-# Naturalistic experiments
-
-<div class="note-box" data-title="Maximizing realism">
-
-- Create a scenario that closely approximates the real-world process you want to study
-- Measure as much stuff as possible about people's behaviors
-- Mine the data for patterns
-
-</div>
-
----
-
-# Naturalistic experiments: examples
-
-<div class="example-box" data-title="Rich, real-world paradigms">
-
-- **Vision:** where do you fixate at each moment while moving around in a VR environment?
-- **Memory:** how you describe "what happened" in a movie?
-- **Motor control:** how do people adjust their gait on different terrains?
-
-</div>
-
----
-
-# Simulations
-
-<div class="definition-box" data-title="Two types of simulations">
-
-- **Real-world:** use props, actors, and technology to make it seem like the participant is in a particular situation, or that the world works a particular way
-- **Simulated:** change the properties of a simulated environment and study an artificial agent's behaviors
-
-</div>
-
----
-
-# Simulations: examples
-
-<div class="example-box" data-title="Simulation paradigms">
-
-- Confederate experiments
-- Misleading participants about the situation or rules
-- Simulating how robots of different configurations complete obstacle courses under different gravitational loads
+- **Confounds:** something other than your IV that differs between conditions
+- **Demand characteristics:** participants guess what you expect and change their behavior
+- **Too many variables at once:** keep it simple -- one clear comparison is better than five murky ones
+- **Forgetting a baseline:** what does "normal" look like without your manipulation?
 
 </div>
 
@@ -162,68 +85,22 @@ Spring 2026
 
 <div class="note-box" data-title="Tools for building experiments">
 
-- Notebooks, audiovisual recordings
-- Google forms, qualtrics
-- Slideshows
-- PsychoPy, jsPsych
-- Google Colaboratory
+- **Low-tech:** notebooks, audiovisual recordings, Google Forms
+- **Mid-tech:** slideshows, Qualtrics surveys
+- **High-tech:** PsychoPy, jsPsych, Google Colaboratory
+- Use what you already know -- simplicity is your friend
 
 </div>
 
 ---
 
-# Notebooks and recordings
+# Practical advice
 
-<div class="tip-box" data-title="Low-tech data collection">
+<div class="tip-box" data-title="Keep these in mind">
 
-- Good for observational studies
-- Collect lots of richly structured data!
-- No setup required!
-- Can be tough to analyze (either time-consuming to annotate, or tricky to design effective automated approaches)
-
-</div>
-
----
-
-# Google forms and qualtrics
-
-<div style="display: flex; gap: 2em;"><div>
-
-<img src="../figs/experimental_design_quickstart/forms-small-15574.png" width="300">
-
-</div><div>
-
-<img src="../figs/experimental_design_quickstart/qualtrics-small-15578.png" width="200">
-
-</div></div>
-
----
-
-# Slideshows
-
-<img src="../figs/experimental_design_quickstart/Screen Shot 2022-05-03 at 4.05.44 PM-small-15561.png" width="600">
-
----
-
-# PsychoPy
-
-<img src="../figs/experimental_design_quickstart/psychopy-small-15619.png" style="max-height: 350px;">
-
----
-
-# jsPsych
-
-<img src="../figs/experimental_design_quickstart/jspsych-small-15642.png" style="max-height: 350px;">
-
----
-
-# Other considerations
-
-<div class="tip-box" data-title="Practical advice">
-
-- Use what you already know
 - Simplicity: the art of maximizing the amount of work **not** done
-- Work together
-- Ask for help
+- Pilot test early -- run your study on a friend before collecting real data
+- Work together and ask for help
+- You have **3--4 weeks** -- scope accordingly!
 
 </div>

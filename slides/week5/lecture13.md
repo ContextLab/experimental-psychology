@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Synthesizing across studies (and findings)
+# Synthesizing across studies
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,55 +16,41 @@ Spring 2026
 
 ---
 
-# How can we know the "direction" of a field?
+# When studies agree (and when they don't)
 
-<img src="../figs/synthesizing_across_studies/pasted-image-small-16368.png" width="450" style="max-height: 350px;">
+<div class="note-box" data-title="Convergence and Divergence">
 
----
-
-# How do we guess at "truth"?
-
-<div class="note-box" data-title="Convergence and divergence">
-
-- When many studies **agree**, our confidence in them increases
-- When studies **disagree**, how can we know which is right?
+- When many studies **agree**, our confidence increases
+- When studies **disagree**, we need strategies to figure out what's going on
+- Disagreement is often more informative than agreement
 
 </div>
 
 ---
 
-# Strategies
+# Strategies for synthesis
 
-<div class="note-box" data-title="Four approaches to synthesis">
+<div class="tip-box" data-title="Four Approaches">
 
-- Occam's razor
-- Look for hidden "logic gaps"
-- Create a narrative
-- Trust your intuitions
-
-</div>
-
----
-
-# Occam's razor
-
-<div class="definition-box" data-title="The principle of parsimony">
-
-- William of Ockham (13th century philosopher): "pluralitas non est ponenda sine necessitate" -- plurality should not be posited without necessity
-- Given two alternatives that explain the data similarly well, prefer the simpler explanation
-- Extraordinary claims require extraordinary evidence
+- **Occam's razor:** prefer the simpler explanation
+- **Look for logic gaps:** are there hidden assumptions or missing steps?
+- **Create a narrative:** tell a coherent story that accounts for the evidence
+- **Trust your intuitions:** if it doesn't make sense to you, it won't make sense to others
 
 </div>
 
 ---
 
-# Logic gaps
+# Discussion: Do these papers agree or disagree?
 
-<div class="warning-box" data-title="Watch for gaps in reasoning">
+<div class="example-box" data-title="Breakout Groups (15 min)">
 
-- Think about mathematical proofs-- each step starts exactly where the prior step left off
-- When we use imprecise (non-quantitative) language, gaps between "steps" can be harder to notice
-- When gaps exist, they reflect potential challenges for an explanation
+- Each group: take the 2-3 papers you've been reading for the lit review lab
+- For each pair of papers, discuss:
+  - Do the findings **support** each other, **contradict** each other, or address **different questions**?
+  - If they disagree, which do you find more convincing, and why?
+  - How would you tell a unified story that accounts for both?
+- Be ready to share one interesting agreement or disagreement with the class
 
 </div>
 
@@ -72,34 +58,46 @@ Spring 2026
 
 # Creating a narrative
 
-<div class="tip-box" data-title="Storytelling as synthesis">
+<div class="tip-box" data-title="Storytelling as Synthesis">
 
-- Think about how you'd tell someone about the phenomenon you're studying
-- What key elements of the story do you need? Background/motivation, connect key "plot points" into a cohesive logically sound story, conclude with a clear message, etc.
+- Think about how you'd explain the phenomenon to a friend
+- What key elements do you need? Background, key findings, connections, conclusion
+- A good narrative makes the reader feel like each finding **follows naturally** from the last
+
+</div>
+
+---
+
+# Being honest about uncertainty
+
+<div class="important-box" data-title="Limitations Matter">
+
+- Be open about what the evidence supports vs. what is speculation
+- Flag alternative interpretations
+- Identify what **future work** could resolve the remaining questions
 
 </div>
 
 ---
 
-# Trust your intuitions
+# Where to find good synthesis writing
 
-<div class="important-box" data-title="Your gut matters">
+<div class="note-box" data-title="Examples to Learn From">
 
-- If your story doesn't make sense to **you**, then it won't make sense to others either
-- If your interpretations could go in multiple directions, think about what you'd **guess** is most likely
-- Be open and honest about limitations: what should your audience trust vs. what is only speculation?
+- **High-impact journals** (Nature, Science, PNAS): written for a broad audience
+- **Review papers and opinion pieces** (TICS, Nature Reviews Neuroscience): extended synthesis
+- **Long-format articles** (Psych Review, JEP: General): in-depth theoretical arguments
 
 </div>
 
 ---
-<!-- _class: scale-90 -->
 
-# Examples
+# Apply it to your lab work
 
-<div class="example-box" data-title="Where to find good synthesis writing">
+<div class="important-box" data-title="Today's Goal">
 
-- **High-impact factor articles** (in Nature, Science, PNAS, etc.) are often well-written for a (relatively) broad audience
-- **Long-format journal articles** (Psych Review, JEP: General, etc.) often go into substantially more depth than typical articles
-- **Review papers, opinion papers, and book chapters** are kind of like "extended" discussion sections (TICS, Nature Reviews Neuroscience, Current Opinions, edited volumes)
+- Continue working on your literature review
+- Focus on **synthesizing** across your sources, not just summarizing each one
+- Draft the narrative thread that connects your papers
 
 </div>

@@ -16,15 +16,13 @@ Spring 2026
 
 ---
 
-# Final projects
+# Final projects start next week!
 
-<div class="important-box" data-title="Getting ready for final projects">
+<div class="important-box" data-title="Getting Ready">
 
-- Starting next week!
 - Start brainstorming **ideas** and **skills**
-- **Review** slides and labs
+- Review slides and labs from the first 5 weeks
 - On Monday you'll **pitch ideas** (1 min max, no slides) and form 2--3 person groups
-- **Weekly snippet** due Monday
 
 </div>
 
@@ -32,12 +30,11 @@ Spring 2026
 
 # Weekly snippets
 
-<div class="note-box" data-title="What are weekly snippets?">
+<div class="note-box" data-title="Starting Monday">
 
-- Quick (5 minute) check-in, submitted via Canvas
-- Worth 1 point-- credit or no credit
+- Quick (5 minute) check-in, submitted via Canvas -- worth 1 point (credit/no credit)
 - Answer 3 questions (2--4 sentences each):
-  - What did you work on last week (first week: skip this!)
+  - What did you work on last week?
   - What are you planning to work on this week?
   - What are you stuck on?
 
@@ -45,14 +42,26 @@ Spring 2026
 
 ---
 
-# Approximate schedule
+# Remaining schedule
 
-<div class="tip-box" data-title="Remaining weeks">
+<div class="tip-box" data-title="Weeks 6--10">
 
 - **Week 6:** implement your experiment
 - **Week 7:** human subjects training, collect data
 - **Week 8:** analyze data
 - **Week 9:** interpreting results + public poster presentation
 - **Week 10:** wrap-up (paper and final poster)
+
+</div>
+
+---
+
+# Use today for group work
+
+<div class="note-box" data-title="Today's Plan">
+
+- Wrap up your literature review lab
+- Start thinking about final project ideas
+- Use this time to ask questions and get help from TAs
 
 </div>

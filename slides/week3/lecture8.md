@@ -18,71 +18,74 @@ Spring 2026
 
 # What makes a "good" methods section?
 
-<div class="note-box" data-title="Criteria for Good Methods">
+<div class="note-box" data-title="Criteria">
 
-- It resulted in the intended outcome
-- People following the instructions understood what they were doing
-- The procedure was not overly complex or time consuming
+- It produced the intended outcome
+- People following the instructions understood what to do
+- The procedure wasn't overly complex or time-consuming
 
 </div>
 
 ---
 
-<!-- _class: scale-90 -->
+# Discussion: How did your instructions hold up?
+
+<div class="example-box" data-title="Group Discussion">
+
+- Did the reproduced drawings match the originals? Where did they diverge?
+- What assumptions did people make when following your instructions?
+- What would you change about your instructions if you could rewrite them?
+
+</div>
+
+---
 
 # What data do we have?
 
-<div class="example-box" data-title="Available Data">
+<div class="tip-box" data-title="Available Data">
 
 - Original drawings and instructions
 - Reproduced drawings (images)
 - Lists of assumptions made about each set of instructions
 - Ratings of how closely instructions were followed
-- Evaluations of quality of instructions
+- Evaluations of instruction quality
 
 </div>
 
 ---
 
-# What might we want do with our data?
-
-<div class="tip-box" data-title="Analysis Goals">
-
-- Understand something about how effective different instructions were
-- Learn about potential differences between how we **think** our instructions will be perceived vs. how they **are** perceived
-- Understand what it's like to follow instructions, including the role of assumptions
-
-</div>
-
----
-
-# Original vs. reproduced drawings
-
-<img src="../figs/evaluating_methods/Screen%20Shot%202022-04-14%20at%203.58.55%20PM-14707.png" width="500">
-
----
-
-<!-- _class: scale-90 -->
-
-# Assumptions data
+# What assumptions tell us
 
 <div class="warning-box" data-title="Interpreting Assumptions">
 
-- Instructions that require making more assumptions **could** be more ambiguous
-  - If the end product is still "correct" those ambiguities might not matter much
-  - More complex instructions (e.g., more steps, more to do per step, etc.) might require making more assumptions, but they also might convey more information
+- More assumptions **could** mean more ambiguity
+- But more complex instructions might also require more assumptions while conveying more information
+- If the end product is still correct, those ambiguities might not matter much
 
 </div>
 
 ---
 
-# Ratings and evaluations
+# Discussion: Evaluating your own vs. others' work
 
-<div class="important-box" data-title="Discussion Questions">
+<div class="important-box" data-title="Reflection Questions">
 
-- When you rated or evaluated, which criteria did you use? What specific components of the instructions (or products) were you considering?
+- When you rated or evaluated, which criteria did you use?
 - What can evaluations of your **own** group's instructions tell you?
 - What can evaluations from **other** groups tell you?
+- How does this connect to peer review in science?
+
+</div>
+
+---
+
+# Framing for the lab report
+
+<div class="note-box" data-title="Writing Your Report">
+
+- Your lab report should connect these data to a broader question about communication and methods
+- Think about: What did this exercise teach you about writing for reproducibility?
+- Use data and examples to support your conclusions
 
 </div>
 

@@ -18,152 +18,96 @@ Spring 2026
 
 # What is this course about?
 
-<div class="note-box" data-title="Course Goals">
+<div class="note-box" data-title="The Big Picture">
 
-- Learn how to carry out psychological research
-- Doing research vs. writing a (complete) scientific article
-
-</div>
-
-<div class="definition-box" data-title="Sections of a Scientific Article">
-
-- **Introduction:** motivate your research question
-- **Methods:** describe how you studied the question
-- **Results:** describe what you found
-- **Discussion:** situate your findings in the broader literature
+- Learn to carry out psychological research **by doing it**
+- Each lab maps to a section of a scientific article: Introduction, Methods, Results, Discussion
+- First ~5 weeks: guided labs. Last ~5 weeks: your own study!
 
 </div>
 
 ---
 
-# Why should you care about writing?
+# Key questions we'll explore this term
 
-<div class="important-box" data-title="Writing Matters">
+<div class="important-box" data-title="Questions to Keep in Mind">
 
-- Formulate your question and approach
-- Share what you did and found
-- Learn to read and critically evaluate other work
-
-</div>
-
----
-
-# Organization
-
-<div class="note-box" data-title="Course Structure">
-
-- **First 5(ish) weeks:** in-class labs, each focused on teaching you about one section of scientific articles
-- **Last 5(ish) weeks:** carry out your own research study
-- **Goal:** leave this course with a deep understanding of how psychological research is "done"
+- How do we turn curiosity into a testable hypothesis?
+- What makes evidence convincing (or misleading)?
+- How do we communicate science clearly and honestly?
 
 </div>
 
 ---
 
-# Logistics
+<!-- _class: scale-90 -->
 
-<div class="note-box" data-title="Course Resources">
+# Logistics (the short version)
 
-- All materials, including assignments, readings, etc, are provided on the course **[GitHub page](https://github.com/ContextLab/experimental-psychology)**
-- We'll use **[Slack](https://psyc11.slack.com)** to communicate, share materials and data, etc.
-- You should bring your laptop to every class
+<div class="tip-box" data-title="Essentials">
+
+- All materials on **[GitHub](https://github.com/ContextLab/experimental-psychology)** -- Communication via **[Slack](https://psyc11.slack.com)**
+- Bring your laptop to every class
+- Office hours by appointment: [context-lab.youcanbook.me](https://context-lab.youcanbook.me)
+- TAs: Sarah Kerns, Yeongji Lee, Zizhuang Miao
+- Full policies are in the **syllabus** -- read it!
 
 </div>
 
 <div style="display: flex; gap: 2em; justify-content: center;">
 <div style="text-align: center;">
 
-<img src="../figs/intro_and_overview/github_qr-14879.png" width="300">
+<img src="../figs/intro_and_overview/github_qr-14879.png" width="250">
 
 </div>
 <div style="text-align: center;">
 
-<img src="../figs/intro_and_overview/slack-14876.png" width="300">
+<img src="../figs/intro_and_overview/slack-14876.png" width="250">
 
 </div>
 </div>
 
 ---
-<!-- _class: scale-90 -->
 
-# Logistics
+# Discussion: What do you want to know?
 
-<div class="tip-box" data-title="Office Hours">
+<div class="example-box" data-title="Think-Pair-Share">
 
-- I'll hold **office hours** by appointment on Mondays and Thursdays. Schedule through: [context-lab.youcanbook.me](https://context-lab.youcanbook.me) (or email me).
+- What is one question about human behavior or the mind that you find genuinely interesting?
+- Share with a neighbor -- do your questions overlap? How are they different?
 
-</div>
-
-<div class="note-box" data-title="Communication">
-
-- If you post questions on Slack, I'll answer them (usually within 1-2 business days).
-- If you have any comments, questions, concerns, etc., **please let me know** (via Slack DMs or email: [jeremy@dartmouth.edu](mailto:jeremy@dartmouth.edu)).
-
-</div>
-
----
-
-# Teaching assistants
-
-<div class="note-box" data-title="TAs">
-
-- Sarah Kerns
-- Yeongji Lee
-- Zizhuang Miao
-
-</div>
-
----
-
-<div style="text-align: center;">
-
-<img src="../figs/intro_and_overview/CDL_Logo_FINAL-small-14265.png" style="max-height: 350px;">
-
-</div>
-
----
-
-# Contextual Dynamics Lab
-
-<div style="display: flex; gap: 2em;">
-<div>
-
-<div class="note-box" data-title="What We Do">
-
-- Build brain models to understand how our brain structures interact during learning and memory
-- Computational models, data science tools
-- More info: [www.context-lab.com](https://www.context-lab.com)
-
-</div>
-
-</div>
-<div>
-
-<img src="../figs/intro_and_overview/CDL_Logo_FINAL-small-14265.png" width="400">
-
-</div>
 </div>
 
 ---
 
 # Psychology of Everyday Life survey lab!
 
-<div class="example-box" data-title="Scientific Thinking">
+<div class="note-box" data-title="Scientific Thinking">
 
 - Gentle introduction to asking questions in a scientific way (aside: how is this different from a "regular" question?)
 - How do you think your everyday habits (sleep, stress, screen time) compare to your classmates'?
 - What patterns would you **expect** to see in how people rate their happiness, stress, and daily routines?
-- What makes a "good" hypothesis vs. a "bad" hypothesis?
 
 </div>
 
 ---
 
-# Psychology of Everyday Life survey lab!
+# What makes a "good" hypothesis?
 
-<div class="important-box" data-title="Today's Task">
+<div class="important-box" data-title="Discussion">
 
-- Today's job: collect some data!
+- What distinguishes a testable hypothesis from a vague guess?
+- Come up with one hypothesis about this class's survey data -- what would you predict?
+
+</div>
+
+---
+
+# Let's collect some data!
+
+<div class="tip-box" data-title="Today's Task">
+
+- Fill out the survey and review the lab instructions
 
 </div>
 

@@ -20,180 +20,107 @@ Spring 2026
 
 <div class="note-box" data-title="Standard paper sections">
 
-- Title
-- Abstract
-- Introduction
-- Methods
-- Results
-- Discussion
-- Bibliography
+- **Title:** one-line take-home message that attracts interest
+- **Abstract:** 250--500 word summary (question, approach, findings)
+- **Introduction:** your question, why it matters, what is already known
+- **Methods:** what you did (participants, experiment, analyses)
+- **Results:** what you found (figures + stats that tell a story)
+- **Discussion:** what it means, broader context, future directions
 
 </div>
 
 ---
 
-# Title
+# The common thread
 
-<div class="tip-box" data-title="Serves two purposes">
+<div class="important-box" data-title="Every section tells the same story">
 
-- One line take-home message
-- Attracts interest in your paper
-
-</div>
-
----
-
-# Abstract
-
-<div class="note-box" data-title="A concise summary (250--500 words)">
-
-- Summarize your question
-- Summarize your approach
-- Summarize your most critical findings
+- Every section reminds the reader of the **question**, the **approach**, and the **key findings**
+- Different sections emphasize different aspects
+- A reader should be able to get the gist from **any single section**
 
 </div>
 
 ---
 
-# Introduction
-
-<div class="example-box" data-title="Think: Pitch lab">
-
-- Usually 2--3 pages
-- Describe your question and why it's interesting
-- Summarize what's already known about your question
-- Set up your approach
-- Briefly foreshadow what you found
-
-</div>
-
----
-
-# Methods
-
-<div class="note-box" data-title="Think: Drawing lab">
-
-- Usually 2--5 pages (succinctly describe everything critical)
-- Describe what you did (and sometimes why you did it)
-
-</div>
-
----
-
-<!-- _class: scale-90 -->
-
-# Methods: key subsections
-
-<div class="definition-box" data-title="What to include">
-
-- **Participants:** Who did you test? How did you motivate them to participate?
-- **Experiment:** What was your experiment? How did you implement it?
-- **Analyses:** What were the goals of each analysis? Describe the underlying logic. If there were any important considerations (e.g., multiple comparisons, statistical assumptions), describe those too
-
-</div>
-
----
-
-# Results
-
-<div class="important-box" data-title="Think: Data sleuthing lab">
-
-- Usually 3--5 pages
-- Start with an overview of what your question was and how you approached it
-- Then go through each result in turn (usually Figure + 1--2 paragraphs, including some stats)
-- Tell the "story" of your data
-
-</div>
-
----
-
-# Figures
-
-<div class="tip-box" data-title="Key elements of a good figure">
-
-- Labeled axes
-- Legend
-- Visually pleasing
-- Consistency across panels/figures
-
-</div>
-
----
-
-# Figure captions
-
-<div class="note-box" data-title="What to include in captions">
-
-- Figure number
-- Bolded title summarizing the key message
-- Describe what the figure is showing
-
-</div>
-
----
-
-# Discussion
-
-<div class="example-box" data-title="Think: Literature review lab">
-
-- Usually 2--3 pages
-- Summarize (again) your question, what you did, and what you found
-- Situate your findings within the context of the broader literature
-- Point out interesting future directions
-- End with some sort of "inspiring" message
-
-</div>
-
----
-
-# Recap
-
-<div class="important-box" data-title="The common thread">
-
-- Every section of a paper reminds the reader of the question, approach, and key findings
-- Different sections emphasize different aspects of the study
-
-</div>
-
----
-
-# What makes an effective paper?
+# What makes writing effective?
 
 <div class="tip-box" data-title="Qualities of good scientific writing">
 
-- Easy to read
-- Easy to follow
-- Interesting
-- Trustworthy
-- Logically consistent
+- **Easy to read:** clear sentences, logical flow
+- **Empathetic:** written for the reader, not the author
+- **Concise:** say what you need to say and then stop
+- **Trustworthy:** claims are supported by evidence
+- **Interesting:** the reader wants to keep going
 
 </div>
 
 ---
-
-# Empathy
-
-<div class="definition-box" data-title="Write for your reader">
-
-- As an **author**, you should put yourself into the **reader's** position
-- What would you want to read about?
-- What would you find interesting, convincing, worth your time, etc.?
-
-</div>
-
----
-
-<!-- _class: scale-90 -->
 
 # How much should you write?
 
 <div class="warning-box" data-title="Less is more">
 
 - Never write to "fill space"
-- Say what you need to say and then stop
-- Rule of thumb-- include if (and only if):
+- Include something if (and only if) it is:
   - Directly relevant to your core message
-  - Necessary for someone to reproduce or understand what you did/found
-  - Adds a specific tangible element to your story
+  - Necessary for someone to reproduce or understand what you did
+  - Adding a specific tangible element to your story
+- When in doubt, cut it
+
+</div>
+
+---
+
+# Discussion: read this paragraph
+
+<div class="example-box" data-title="Activity (10 minutes)">
+
+> "In this study, we were basically interested in looking at whether or not there might be some kind of relationship between the amount of sleep that college students get and their ability to remember things that they learned in class. We think this is important because sleep is something that affects a lot of people and memory is also very important for students."
+
+- What is **wrong** with this paragraph?
+- How would you **rewrite** it to be clearer and more concise?
+- Discuss with a partner, then we will share revisions as a class
+
+</div>
+
+---
+
+# Principles for revision
+
+<div class="tip-box" data-title="Editing checklist">
+
+- **Cut filler words:** "basically," "some kind of," "whether or not"
+- **Be specific:** replace vague claims with concrete ones
+- **Use active voice:** "we examined" not "it was examined by us"
+- **One idea per sentence:** if a sentence does two things, split it
+- **Read it aloud:** if you stumble, your reader will too
+
+</div>
+
+---
+
+# Empathy as a writing strategy
+
+<div class="definition-box" data-title="Write for your reader">
+
+- Put yourself in the **reader's** position
+- What would **you** want to read about?
+- What would you find interesting, convincing, worth your time?
+- The best scientific writing feels like a **conversation** with a knowledgeable friend
+
+</div>
+
+---
+
+# Your paper: getting started
+
+<div class="important-box" data-title="Next steps">
+
+- Start with an **outline** -- map your story before writing sentences
+- Write the **Methods** section first (you already know what you did)
+- Then **Results**, then **Introduction**, then **Discussion**
+- The **Abstract** comes last
+- Bring a draft to your TA for feedback early and often
 
 </div>

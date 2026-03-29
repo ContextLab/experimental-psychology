@@ -16,37 +16,27 @@ Spring 2026
 
 ---
 
-# Data sleuthing lab
+# What makes a good dataset?
 
-<div class="note-box" data-title="Your Two Roles">
+<div class="definition-box" data-title="Key Properties">
 
-- You'll play two roles: **data creator** and **data sleuth**
-- First your group will **create** a dataset to be passed off to another group
-- Next, your group will **explore** a dataset given to you by another group
-
-</div>
-
----
-
-# Major objective: learn about "results" sections
-
-<div class="important-box" data-title="Learning Goals">
-
-- What goes into creating a dataset?
-- What can vs. can't you conclude from a given dataset?
-- Wrangle/analyze data, create figures, run statistical tests
-- Interpret results
+- Tells us about something we care about
+- Has enough observations to draw conclusions
+- Includes the right features to test hypotheses
+- Is organized so others can work with it
 
 </div>
 
 ---
 
-# What's the "point" of data?
+# Discussion: "What would you want to measure?"
 
-<div class="definition-box" data-title="Why Data Matters">
+<div class="example-box" data-title="Breakout Groups (10 min)">
 
-- Tells us about something we're interested in
-- Compare conditions and test hypotheses
+- Pick a topic your group finds interesting (e.g., sleep, social media, climate, sports)
+- Brainstorm: what **features** would you measure? How many observations would you need?
+- What questions could you answer with that data? What questions would be **impossible** to answer?
+- Be ready to share your top idea with the class
 
 </div>
 
@@ -54,150 +44,63 @@ Spring 2026
 
 # Where do data come from?
 
-<div class="example-box" data-title="Data Sources">
+<div class="tip-box" data-title="Three Approaches">
 
-- Measurements from sensors and devices
-- Self reports or observations
-- Simulations and equations
-
-</div>
-
----
-
-# How can you "create" a dataset?
-
-<div class="tip-box" data-title="Approaches">
-
-- Download an existing one!
-- Random number generators
-- Data spoofing libraries
+- **Find existing data:** Kaggle, Google Dataset Search, FiveThirtyEight, Awesome Public Datasets
+- **Generate synthetic data:** random number generators, data spoofing libraries (Faker, Mimesis)
+- **Collect new data:** surveys, sensors, observations
 
 </div>
 
 ---
 
-<!-- _class: scale-90 -->
+# What can go wrong?
 
-# Existing datasets
+<div class="warning-box" data-title="Common Pitfalls">
 
-<div style="display: flex; gap: 2em; justify-content: center; flex-wrap: wrap;">
-<div style="text-align: center;">
+- Too few observations or too few features
+- Missing data or inconsistent formatting
+- Data that **looks** like it answers your question but actually doesn't
+- Confusing correlation with causation
 
-<img src="../figs/data_creation/awesome_public_data-small-15187.png" width="150">
-
-Awesome public data
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/fivethirtyeight-small-15129.png" width="150">
-
-Fivethirtyeight
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/amazon-small-15106.png" width="150">
-
-Amazon Open Data
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/kaggle-small-15111.png" width="150">
-
-Kaggle
-
-</div>
-</div>
-
-<div style="display: flex; gap: 2em; justify-content: center; flex-wrap: wrap;">
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/google-small-15146.png" width="150">
-
-Google Data
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/who-small-15116.png" width="150">
-
-World Health Organization
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/worldbank-small-15124.png" width="150">
-
-Worldbank
-
-</div>
 </div>
 
 ---
 
-# Random number generators
+# Discussion: Answerable vs. unanswerable
 
-<img src="../figs/data_creation/random_numpy-small-15194.png" style="max-height: 350px;">
+<div class="note-box" data-title="Class Discussion">
 
-NumPy Random
+- Given a dataset of 1,000 college students with: GPA, major, sleep hours, and screen time...
+- Which questions **can** you answer? Which **can't** you answer?
+- What additional features would unlock new questions?
 
----
-
-# Data spoofing
-
-<div style="display: flex; gap: 2em; justify-content: center;">
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/faker-small-15223.png" width="300">
-
-Faker
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/data_creation/mimesis-small-15226.png" width="300">
-
-Memesis
-
-</div>
 </div>
 
 ---
 
-<!-- _class: scale-90 -->
+# Data sleuthing lab overview
 
-# This week's lab
+<div class="important-box" data-title="Your Two Roles">
 
-<div class="note-box" data-title="Monday: Create Your Dataset">
-
-- Today: find or generate a dataset + come up with 5 questions about the dataset
-  - Make the dataset (and questions) interesting!
+- You'll play two roles: **data creator** and **data sleuth**
+- **Monday:** find or generate a dataset + write 5 questions about it
   - At least 1 question must be **possible** to answer with the dataset
-  - At least 1 question must be **impossible** to answer with the dataset
-  - Organize into a spreadsheet for easy analysis
-  - At least 5 "features" per observation
-  - At least 500 observations
+  - At least 1 question must be **impossible** to answer
+  - At least 5 features per observation, at least 500 observations
+- **Wednesday:** hand off datasets (A->B, B->C, C->A) and explore
+- **Friday:** wrap up analysis and discussion
 
 </div>
 
 ---
 
-# This week's lab
+# Let's get started!
 
-<div class="note-box" data-title="Wednesday and Friday">
+<div class="tip-box" data-title="Today's Goal">
 
-- Wednesday: hand off datasets to another group, explore your received dataset:
-
-  (A --> B, B--> C, C --> A)
-
-- Friday: wrap up data analysis, discussion
+- Form your groups and start brainstorming your dataset
+- Think about what will make it **interesting** for the other group to explore
+- Organize everything into a clean spreadsheet
 
 </div>
-
----
-
-# This week's lab
-
-<img src="../figs/data_creation/data%20sleuthing%20lab-small-15360.png" style="max-height: 350px;">

@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Searching and reviewing the relevant scientific literature
+# Searching the scientific literature
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,176 +16,87 @@ Spring 2026
 
 ---
 
-# What's the point of doing science?
+# Why search the literature?
 
-<div class="note-box" data-title="Why do we do science?">
+<div class="important-box" data-title="Science Is Cumulative">
 
-- Satisfy our curiosity
-- Make stuff
-- Contribute to human knowledge
-
-</div>
-
----
-
-# Think about which you'd expect to be more impactful:
-
-<div class="example-box" data-title="Compare these two scenarios">
-
-- A "perfect" study carried out in secret, never shared
-- A "good" study carried out in public, widely discussed, peer reviewed, published
+- You don't want to re-invent the wheel
+- Contextualizing your work makes it more impactful
+- Writing a good Discussion section requires knowing what others have found
 
 </div>
 
 ---
 
-# Contributing requires sharing
+# How to find relevant papers
 
-<div class="important-box" data-title="Science as a communal endeavor">
+<div class="tip-box" data-title="Key Tools">
 
-- When you do your own science, **you** can benefit
-- **Others** only benefit if you share what you learned or found
-
-</div>
-
----
-
-# Sharing improves efficiency
-
-<div class="note-box" data-title="Standing on the shoulders of giants">
-
-- Consider everything we know, as a species
-- How long did it take us to acquire that knowledge?
-- How long would it take you to re-derive that knowledge?
+- **Google Scholar:** broad, includes citations and "cited by" links
+- **Semantic Scholar:** AI-powered recommendations, related papers
+- **Reference chaining:** find one good paper, then follow its references (and who cited it)
 
 </div>
 
 ---
 
-# Contextualizing improves impact
+# Evaluating what you find
 
-<div class="example-box" data-title="Two ways to present a finding">
+<div class="warning-box" data-title="Not All Papers Are Equal">
 
-- **Scenario 1:** we found something interesting! It's unrelated to anything people have done before.
-- **Scenario 2:** we found something interesting! Here's how it fits in with other things you might know or care about.
+- **Recency:** Is this finding current, or has it been superseded?
+- **Source:** Peer-reviewed journal? Preprint? Blog post?
+- **Sample size and methods:** Does the study actually support its claims?
+- **Citations:** How has the field responded to this work?
 
 </div>
 
 ---
 
-# The "Discussion" section
+# How deeply should you read?
 
-<div class="definition-box" data-title="What goes in a Discussion section?">
+<div class="note-box" data-title="Matching Depth to Relevance">
+
+- **Quick skim (30 sec -- 2 min):** title + abstract + key terms (10--50 papers)
+- **Quick read (5 min):** abstract + figures + captions + discussion (5--10 papers)
+- **Deep read (hours):** multiple passes, method-by-method, figure-by-figure (1--3 papers)
+
+</div>
+
+---
+
+# Discussion: Finding the right papers
+
+<div class="example-box" data-title="Breakout Groups (10 min)">
+
+- Pick a research question your group is interested in
+- Each person: spend 3 minutes searching Google Scholar
+- Compare what you found: did you use the same search terms? Find the same papers?
+- Which paper looks most relevant, and why?
+
+</div>
+
+---
+
+# The Discussion section
+
+<div class="definition-box" data-title="What Goes in a Discussion?">
 
 - Summarize what you did and what you found
 - Describe how your work **fits in with the broader literature**
 - Describe what you think the **next steps** are
+- Be honest about limitations
 
 </div>
 
 ---
 
-# The "Discussion" section
+# This week's lab: literature review
 
-<div class="important-box" data-title="Key skill">
-
-- Writing a good discussion section requires mining the literature for relevant material
-
-</div>
-
----
-
-# Where can you find relevant articles
-
-<div class="note-box" data-title="Finding the literature">
-
-- **Old:** go to a library and physically move papers around
-- **New:** Google Scholar, Semantic Scholar
-
-</div>
-
----
-
-# Google scholar
-
-<img src="../figs/literature_reviews/Screen Shot 2022-04-24 at 5.43.46 PM-small-16030.png" width="700">
-
----
-
-# Google scholar
-
-<img src="../figs/literature_reviews/Screen Shot 2022-04-24 at 5.46.03 PM-small-16058.png" width="700">
-
----
-
-# How to (very quickly) skim an article
-
-<div class="tip-box" data-title="Quick skim (30 seconds -- 2 minutes)">
-
-- Read the title
-- Skim the abstract
-- Quickly look up key terms as needed
-- Skip everything else
-
-</div>
-
----
-
-# How to (quickly) read an article
-
-<div class="tip-box" data-title="Quick read (target: 5 minutes)">
-
-- Read the title
-- Read the abstract
-- Skim the introduction
-- Look at the figures:
-  - Read the captions, paper text as needed
-- Skim the discussion section as needed
-
-</div>
-
----
-<!-- _class: scale-90 -->
-
-# How to (deeply) read an article
-
-<div class="tip-box" data-title="Deep read (target: several hours or more)">
-
-- **First pass:** Read from top to bottom; highlight any key points or questions as you go
-- **Second pass:** Focus on methods
-  - Make sure you understand every sentence; if not, write down questions
-- **Third pass:** Focus on results
-  - Make sure you understand every figure; if not, write down questions
-- Briefly summarize the main point and key findings
-- Now re-read a final time to verify you've understood everything
-
-</div>
-
----
-
-# What's the appropriate reading depth?
-
-<div class="note-box" data-title="Matching depth to relevance">
-
-- If a paper is tangential to your main point, very quickly skim (10--50 papers)
-- If the paper is moderately related to your main point, read it quickly (5--10 papers)
-- If the paper is central to your study, read in depth (1--3 papers)
-
-</div>
-
----
-
-# This week's lab: literature search and discussion
-
-<div class="important-box" data-title="Lab assignment">
+<div class="important-box" data-title="Lab Assignment">
 
 - Find a "template" paper and several related papers
-- Re-factor the template's discussion section, taking the other papers into account
+- Re-factor the template's Discussion section, taking the other papers into account
+- Goal: practice synthesizing findings across multiple sources
 
 </div>
-
----
-
-# This week's lab: literature search and discussion
-
-<img src="../figs/literature_reviews/literature_review-small-16344.png" width="500">
