@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Project management
+# Quick-start guide to experimental design
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,83 +16,91 @@ Spring 2026
 
 ---
 
-# Staying on track
+# What is the purpose of running an experiment?
 
-<div class="note-box" data-title="Managing long-term deadlines">
+<div class="note-box" data-title="Goals of experimentation">
 
-- When big team deadlines are far away, how can you know if you are on track?
-- Break down your big tasks into smaller tasks and set interim deadlines
-- Define points of accountability
-- Use frequent updates and audits
-
-</div>
-
----
-
-# How do you decide what to work on "next"?
-
-<div class="tip-box" data-title="Think: weekly snippets!">
-
-- What have I **already done**?
-- What are the **next milestones**?
-- Is there anything I'm **stuck on**?
+- Understand or explore how something works
+- Distinguish between several potential alternatives
+- Get more information (data!)
 
 </div>
 
 ---
 
-# Key milestones
+# Two big design philosophies
 
-<div class="important-box" data-title="Project progress tracker">
+<div class="important-box" data-title="Classic vs. Naturalistic">
 
-- :check_mark: Find a group (ideal: 3ish students)
-- :check_mark: Brainstorm project ideas
-- :arrow_right: Plan your study
-- :arrow_right: Implement an experiment
-- Collect data
-- Analyze data
-- Interpret, present, and write up results
+- **Classic (maximize control):** simplify the phenomenon, carefully manipulate specific factors across conditions, measure behavioral differences
+- **Naturalistic (maximize realism):** create a rich, realistic scenario, measure as much as possible, mine the data for patterns
+- Most studies fall somewhere on this spectrum -- where does yours?
 
 </div>
 
 ---
 
-# Project boards
+# The key ingredients
 
-<img src="../figs/project_management/trello-small-15880.png" style="max-height: 350px;">
+<div class="definition-box" data-title="Core design elements">
 
----
+- **Independent variable (IV):** what you **manipulate** or compare across groups
+- **Dependent variable (DV):** what you **measure**
+- **Controls:** what you keep the **same** so you can isolate the effect of your IV
+- **Participants:** who are you studying, and how many?
 
-# Project boards
-
-<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.17.29 AM-small-15893.png" width="600">
-
----
-
-# Project boards
-
-<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.18.15 AM-small-15898.png" width="600">
+</div>
 
 ---
 
-# Accountability
+# Discussion: what's your IV/DV?
 
-<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.20.18 AM-small-15908.png" width="600">
+<div class="warning-box" data-title="Activity (10 minutes)">
+
+- In your project groups, identify:
+  - What is your **IV**? (What are you manipulating or comparing?)
+  - What is your **DV**? (What are you measuring?)
+  - What needs to be **controlled**?
+- If you are doing an observational study, what are your key **variables of interest**?
+- Be ready to share with the class
+
+</div>
 
 ---
 
-# Status overview
+# Common pitfalls
 
-<img src="../figs/project_management/Screen Shot 2022-05-06 at 11.22.07 AM-small-15921.png" width="600">
+<div class="tip-box" data-title="Watch out for these">
+
+- **Confounds:** something other than your IV that differs between conditions
+- **Demand characteristics:** participants guess what you expect and change their behavior
+- **Too many variables at once:** keep it simple -- one clear comparison is better than five murky ones
+- **Forgetting a baseline:** what does "normal" look like without your manipulation?
+
+</div>
 
 ---
 
-# Other tips and tricks
+# Implementation tools
 
-<div class="warning-box" data-title="Keep these in mind">
+<div class="note-box" data-title="Tools for building experiments">
 
-- Tasks are associated with **products** -- a task isn't "done" until you have something tangible to show for it
-- When you accept/assign a task, make sure it's clear what that task's product will be
-- Life happens-- communicate with your team if expectations shift
+- **Low-tech:** notebooks, audiovisual recordings, Google Forms
+- **Mid-tech:** slideshows, Qualtrics surveys
+- **High-tech:** PsychoPy, jsPsych, Google Colaboratory
+- Use what you already know -- simplicity is your friend
+
+</div>
+
+---
+
+# Practical advice
+
+<div class="tip-box" data-title="Keep these in mind">
+
+- Simplicity: the art of maximizing the amount of work **not** done
+- Pilot test early -- run your study on a friend before collecting real data
+- Work together and ask for help
+- You have **3--4 weeks** -- scope accordingly!
 
 </div>

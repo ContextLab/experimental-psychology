@@ -16,17 +16,40 @@ Spring 2026
 
 ---
 
+# Why do methods matter?
+
+<div class="important-box" data-title="Reproducibility">
+
+- Science depends on other people being able to **reproduce** what you did
+- A methods section is your recipe -- if it's unclear, no one can replicate your work
+- The challenge: what details are critical vs. what can you leave out?
+
+</div>
+
+---
+
+# Discussion: The peanut butter sandwich test
+
+<div class="example-box" data-title="Breakout Activity">
+
+- In your group, write step-by-step instructions for making a peanut butter sandwich
+- Be as precise as you think you need to be (2 min)
+- Now trade instructions with another group and follow them **literally** -- what did they leave out? What assumptions did you have to make?
+
+</div>
+
+---
+
 <!-- _class: scale-90 -->
 
-# Empathy: the core of (most) effective explanations
+# Know your audience
 
-<div class="note-box" data-title="Know Your Audience">
+<div class="note-box" data-title="Empathy in Explanation">
 
-- Think about your intended audience
-- What do they already know and what do they need to know?
-- What sort of language will they respond to best?
-- What tools (resources, data, etc.) does your audience need to carry out your instructions?
-- How much time/space will you have to explain?
+- What does your audience already know vs. need to know?
+- What language will they respond to best?
+- What tools or resources do they need?
+- How much space do you have to explain?
 
 </div>
 
@@ -34,12 +57,11 @@ Spring 2026
 
 # Necessary and sufficient details
 
-<div class="important-box" data-title="Reproducibility">
+<div class="tip-box" data-title="The Sweet Spot">
 
-- Our (stated) goal in scientific research is often to enable others to **exactly** reproduce our study
-- But what does "exact" really mean?
-- Some aspects of your study will be critical to reproducing your procedure--- that's what you need to communicate
-- Other details are unimportant--- you can leave those details out
+- Include details that are **critical** to reproducing your procedure
+- Leave out details that don't affect the outcome
+- When in doubt, ask: "If someone changed this detail, would the results change?"
 
 </div>
 
@@ -55,11 +77,11 @@ Understand and explore how to effectively communicate written procedural instruc
 
 ---
 
-# Drawing lab
+# Drawing lab schedule
 
-<div class="tip-box" data-title="Schedule">
+<div class="note-box" data-title="Plan">
 
-- **Today:** each group draws a picture and writes out instructions for reproducing it
+- **Today:** each group draws a picture and writes instructions for reproducing it
 - **Wednesday:** follow each others' instructions and evaluate performance
 - **Friday:** analyze data
 

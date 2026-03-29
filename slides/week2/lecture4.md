@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Motivating your science
+# Data wrangling + Vibe coding tutorial
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,13 +16,148 @@ Spring 2026
 
 ---
 
-# Want help?
+# Posing your questions
 
-<div class="tip-box" data-title="Resources available">
+<div class="note-box" data-title="Survey data questions">
 
-- Stats tutorials on canvas!
-- Stats Q&A session: X-hour this week
-- Sign up for office hours with me or your TAs
+- How do students' sleep habits relate to their reported stress levels?
+- Are there patterns in screen time, happiness, or daily routines across the class?
+- Which everyday habits show the most variation among students?
+
+</div>
+
+---
+
+# Posing your questions
+
+<div class="note-box" data-title="Levels of sophistication">
+
+- Non-scientific framing: guess
+- Simple framing: just count and report!
+- More sophisticated: try to **explain** what you observed (stats!)
+
+</div>
+
+---
+
+# Statistical tests
+
+<div class="important-box" data-title="Why wrangle?">
+
+To actually carry out whatever tests or analyses you decide on, you need to **wrangle** your data
+
+</div>
+
+---
+
+# Data wrangling
+
+<div class="definition-box" data-title="Data wrangling">
+
+Data wrangling means organizing or transforming your data into a format that is more convenient for you to work with
+
+</div>
+
+---
+
+# What do we have?
+
+<img src="../figs/data_wrangling/Screen Shot 2022-03-31 at 6.40.46 PM-14409.png" width="700">
+
+---
+
+# Discuss (with your group)
+
+<div class="tip-box" data-title="Discussion questions">
+
+- Are there any **challenges** to analyzing the data in its current form?
+- What data format do you **want**?
+- How can you "wrangle" the dataset into a more convenient format? (Try it!)
+
+</div>
+
+---
+
+# Example analysis of the survey data
+
+<img src="../figs/data_wrangling/survey_analysis_qr.png" width="500">
+
+---
+
+# Vibe coding: using AI to analyze data
+
+<div class="definition-box" data-title="What is vibe coding?">
+
+Vibe coding means using AI tools to help you write code by describing what you want in natural language. You don't need to be a programmer — you just need to clearly describe your analysis goals.
+
+</div>
+
+---
+<!-- _class: scale-80 -->
+
+# Free AI tools for data analysis
+
+<div class="note-box" data-title="Tools you can use right now">
+
+- [**Google Colab AI**](https://colab.research.google.com): built-in AI coding assistance — just click the "Generate" button in any code cell
+- [**GitHub Copilot**](https://github.com/education/students): free for students — great for code completion
+- [**Dartmouth GenAI**](https://chat.dartmouth.edu): free access to Claude, ChatGPT, and other models
+- [**ChatGPT**](https://chat.openai.com) / [**Claude**](https://claude.ai): paste your data questions and get analysis code back
+
+</div>
+
+<div class="tip-box" data-title="Pro tip">
+
+Google Colab is the easiest starting point — no installation needed, and the AI features are built right in.
+
+</div>
+
+---
+
+# The key to effective vibe coding
+
+<div class="important-box" data-title="Describe → Check → Iterate">
+
+1. **Describe clearly**: tell the AI exactly what data you have and what you want to learn
+2. **Check the output**: never trust AI-generated code blindly — run it, inspect the results, verify it makes sense
+3. **Iterate**: if the result isn't right, describe what's wrong and ask for a fix
+
+</div>
+
+<div class="warning-box" data-title="The #1 mistake">
+
+Accepting AI output without checking it. AI can produce code that runs but gives wrong answers. Always sanity-check your results!
+
+</div>
+
+---
+<!-- _class: scale-80 -->
+
+# Example: analyzing survey data with AI
+
+<div class="example-box" data-title="What to say to the AI">
+
+"I have a CSV file with columns: sleep_hours, stress_level, happiness, screen_time, exercise_frequency, caffeine_intake, study_hours, social_activity. All are numeric. I want to: (1) create a correlation heatmap of all variables, (2) run a t-test comparing stress levels between high-sleep (>=7 hrs) and low-sleep (<7 hrs) groups, (3) make a scatter plot of screen_time vs happiness with a regression line."
+
+</div>
+
+<div class="tip-box" data-title="What makes this prompt effective?">
+
+It specifies the data format, column names, data types, and exactly what analyses to perform. The more specific you are, the better the code you'll get.
+
+</div>
+
+---
+
+# Discussion: when should you trust AI-generated code?
+
+<div class="note-box" data-title="Breakout group activity (10 min)">
+
+Discuss with your group:
+- How would you verify that a correlation heatmap is correct?
+- If an AI gives you a p-value, what sanity checks would you run?
+- When is it OK to use AI-generated code without fully understanding every line?
+- When is it NOT OK?
 
 </div>
 
@@ -30,75 +165,15 @@ Spring 2026
 
 <!-- _class: scale-70 -->
 
-# Pitch session lab
+# Next week: "pitch session" lab
 
-<div class="note-box" data-title="How it works">
+<div class="note-box" data-title="Coming up">
 
-- We'll separate the class into 4 groups
-- Each group's job is to come up with a science-related idea to "pitch" to the class
-- On Wednesday you'll present your pitches (each pitch = 5 mins max + 10 mins discussion, max)
-- Everyone will evaluate each group's pitches, and on Friday we'll dig into the data
-- Idea: learn some effective approaches to getting people excited about scientific ideas
-- Secretly, we'll be learning about "Introduction" sections of scientific articles
+- Goal: learn about how to motivate an idea or question
+- Each group will come up with an idea to pitch to the class (Monday)
+- You'll present your pitches and evaluate each other (Wednesday)
+- Then we'll discuss which strategies were effective
 
 </div>
 
----
-
-# What makes an idea "good" or "interesting"?
-
-<div class="note-box" data-title="Qualities of good ideas">
-
-- People can relate to it
-- People can see how it's useful
-- The "logic" (e.g., re: how it works or why it's useful, etc.) is clear
-- It's communicated in an entertaining or clever way
-- It's "new" (ish)
-- You trust it
-- Etc.
-
-</div>
-
----
-
-# Leaders vs. ideas
-
-<div class="important-box" data-title="Leadership and ideas">
-
-- Good **leaders** can get other people to want to follow them
-- Good **ideas** can motivate people to follow them too!
-- Many of the properties that make a good leader also apply to good ideas
-
-</div>
-
----
-
-# Things to think about
-
-<div class="tip-box" data-title="Reflect on these">
-
-- Times when someone changed your mind
-- Arguments/approaches you find effective (i.e., they've worked on you, or you've used them on other people)
-- Think of a scientific finding you learned about that has "stuck with you" -- why do you think that was?
-
-</div>
-
----
-
-<!-- _class: scale-70 -->
-
-# Survival of the fittest
-
-<div class="note-box" data-title="Group activity process">
-
-- Have each person in your group contribute to the "idea pool" by quickly outlining an idea (30 sec)
-- After everyone has contributed, have each person weigh in about which idea they liked best. Discuss for a few minutes until some consensus is reached (narrow down to 1-3 ideas).
-- Then repeat this process, iterating off of the current best ideas in each round. Repeat until the group converges on an idea you're all (mostly) happy with.
-
-</div>
-
----
-
-# Pitch lab (link)
-
-<img src="../figs/motivating_people_about_your_science/qr-code-15317.png" width="500">
+<img src="../figs/data_wrangling/pitch_lab-14568.png" width="150">

@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Data wrangling: Psychology of Everyday Life survey lab
+# Motivating your science
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,85 +16,84 @@ Spring 2026
 
 ---
 
-# Posing your questions
+# Why does science matter?
 
-<div class="note-box" data-title="Survey data questions">
+<div class="important-box" data-title="The Big Questions">
 
-- How do students' sleep habits relate to their reported stress levels?
-- Are there patterns in screen time, happiness, or daily routines across the class?
-- Which everyday habits show the most variation among students?
-
-</div>
-
----
-
-# Posing your questions
-
-<div class="note-box" data-title="Levels of sophistication">
-
-- Non-scientific framing: guess
-- Simple framing: just count and report!
-- More sophisticated: try to **explain** what you observed (stats!)
+- Science is how we move from "I wonder..." to "Here's evidence that..."
+- But evidence alone isn't enough -- you need to **motivate** people to care
+- This is exactly what the Introduction section of a paper does
 
 </div>
 
 ---
 
-# Statistical tests
+# Discussion: What mystery would you want to solve?
 
-<div class="important-box" data-title="Why wrangle?">
+<div class="example-box" data-title="Think-Pair-Share">
 
-To actually carry out whatever tests or analyses you decide on, you need to **wrangle** your data
-
-</div>
-
----
-
-# Data wrangling
-
-<div class="definition-box" data-title="Data wrangling">
-
-Data wrangling means organizing or transforming your data into a format that is more convenient for you to work with
+- If you could answer **one** question about the mind or human behavior, what would it be?
+- Why does that question matter to you? Why should it matter to others?
+- Share with a neighbor -- whose question intrigued you most?
 
 </div>
 
 ---
 
-# What do we have?
+# What makes a question interesting?
 
-<img src="../figs/data_wrangling/Screen Shot 2022-03-31 at 6.40.46 PM-14409.png" width="700">
+<div class="note-box" data-title="Qualities of Good Ideas">
 
----
-
-# Discuss (with your group)
-
-<div class="tip-box" data-title="Discussion questions">
-
-- Are there any **challenges** to analyzing the data in its current form?
-- What data format do you **want**?
-- How can you "wrangle" the dataset into a more convenient format? (Try it!)
+- People can relate to it
+- The logic is clear and easy to follow
+- It's communicated in an engaging way
+- It feels new (or puts a new spin on something familiar)
+- You trust it
 
 </div>
 
 ---
 
-# Example analysis of the survey data
+# Leaders vs. ideas
 
-<img src="../figs/data_wrangling/survey_analysis_qr.png" width="500">
+<div class="important-box" data-title="Persuasion">
+
+- Good **leaders** get people to follow them; good **ideas** do the same
+- Think about: a time someone changed your mind -- what made their argument effective?
+- A scientific finding that has "stuck with you" -- why?
+
+</div>
+
+---
+
+# Want help with stats?
+
+<div class="tip-box" data-title="Resources Available">
+
+- Stats tutorials on Canvas
+- Stats Q&A session: X-hour this week
+- Office hours with me or your TAs
+
+</div>
 
 ---
 
 <!-- _class: scale-70 -->
 
-# Next week: "pitch session" lab
+# Pitch session lab
 
-<div class="note-box" data-title="Coming up">
+<div class="note-box" data-title="How It Works">
 
-- Goal: learn about how to motivate an idea or question
-- Each group will come up with an idea to pitch to the class (Monday)
-- You'll present your pitches and evaluate each other (Wednesday)
-- Then we'll discuss which strategies were effective
+- We'll separate the class into 4 groups
+- Each group's job: come up with a science-related idea to "pitch" to the class
+- Wednesday: present pitches (5 min each + 10 min discussion)
+- Everyone evaluates each pitch; Friday we dig into the data
+- Secretly, we're learning about Introduction sections of scientific articles
 
 </div>
 
-<img src="../figs/data_wrangling/pitch_lab-14568.png" width="150">
+---
+
+# Pitch lab (link)
+
+<img src="../figs/motivating_people_about_your_science/qr-code-15317.png" width="500">

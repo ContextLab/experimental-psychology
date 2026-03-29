@@ -9,6 +9,8 @@ node_modules/
 # cdl-slides compilation artifacts
 slides/*/images/
 slides/*/themes/
+slides/*/cdl-theme-*/
+slides/*/.lecture*_processed_*.md
 slides/compilation_report.txt
 
 # Sensitive files

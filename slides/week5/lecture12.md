@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Synthesizing across studies (and findings)
+# Searching the scientific literature
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,90 +16,87 @@ Spring 2026
 
 ---
 
-# How can we know the "direction" of a field?
+# Why search the literature?
 
-<img src="../figs/synthesizing_across_studies/pasted-image-small-16368.png" width="450" style="max-height: 350px;">
+<div class="important-box" data-title="Science Is Cumulative">
 
----
-
-# How do we guess at "truth"?
-
-<div class="note-box" data-title="Convergence and divergence">
-
-- When many studies **agree**, our confidence in them increases
-- When studies **disagree**, how can we know which is right?
+- You don't want to re-invent the wheel
+- Contextualizing your work makes it more impactful
+- Writing a good Discussion section requires knowing what others have found
 
 </div>
 
 ---
 
-# Strategies
+# How to find relevant papers
 
-<div class="note-box" data-title="Four approaches to synthesis">
+<div class="tip-box" data-title="Key Tools">
 
-- Occam's razor
-- Look for hidden "logic gaps"
-- Create a narrative
-- Trust your intuitions
-
-</div>
-
----
-
-# Occam's razor
-
-<div class="definition-box" data-title="The principle of parsimony">
-
-- William of Ockham (13th century philosopher): "pluralitas non est ponenda sine necessitate" -- plurality should not be posited without necessity
-- Given two alternatives that explain the data similarly well, prefer the simpler explanation
-- Extraordinary claims require extraordinary evidence
+- **Google Scholar:** broad, includes citations and "cited by" links
+- **Semantic Scholar:** AI-powered recommendations, related papers
+- **Reference chaining:** find one good paper, then follow its references (and who cited it)
 
 </div>
 
 ---
 
-# Logic gaps
+# Evaluating what you find
 
-<div class="warning-box" data-title="Watch for gaps in reasoning">
+<div class="warning-box" data-title="Not All Papers Are Equal">
 
-- Think about mathematical proofs-- each step starts exactly where the prior step left off
-- When we use imprecise (non-quantitative) language, gaps between "steps" can be harder to notice
-- When gaps exist, they reflect potential challenges for an explanation
-
-</div>
-
----
-
-# Creating a narrative
-
-<div class="tip-box" data-title="Storytelling as synthesis">
-
-- Think about how you'd tell someone about the phenomenon you're studying
-- What key elements of the story do you need? Background/motivation, connect key "plot points" into a cohesive logically sound story, conclude with a clear message, etc.
+- **Recency:** Is this finding current, or has it been superseded?
+- **Source:** Peer-reviewed journal? Preprint? Blog post?
+- **Sample size and methods:** Does the study actually support its claims?
+- **Citations:** How has the field responded to this work?
 
 </div>
 
 ---
 
-# Trust your intuitions
+# How deeply should you read?
 
-<div class="important-box" data-title="Your gut matters">
+<div class="note-box" data-title="Matching Depth to Relevance">
 
-- If your story doesn't make sense to **you**, then it won't make sense to others either
-- If your interpretations could go in multiple directions, think about what you'd **guess** is most likely
-- Be open and honest about limitations: what should your audience trust vs. what is only speculation?
+- **Quick skim (30 sec -- 2 min):** title + abstract + key terms (10--50 papers)
+- **Quick read (5 min):** abstract + figures + captions + discussion (5--10 papers)
+- **Deep read (hours):** multiple passes, method-by-method, figure-by-figure (1--3 papers)
 
 </div>
 
 ---
-<!-- _class: scale-90 -->
 
-# Examples
+# Discussion: Finding the right papers
 
-<div class="example-box" data-title="Where to find good synthesis writing">
+<div class="example-box" data-title="Breakout Groups (10 min)">
 
-- **High-impact factor articles** (in Nature, Science, PNAS, etc.) are often well-written for a (relatively) broad audience
-- **Long-format journal articles** (Psych Review, JEP: General, etc.) often go into substantially more depth than typical articles
-- **Review papers, opinion papers, and book chapters** are kind of like "extended" discussion sections (TICS, Nature Reviews Neuroscience, Current Opinions, edited volumes)
+- Pick a research question your group is interested in
+- Each person: spend 3 minutes searching Google Scholar
+- Compare what you found: did you use the same search terms? Find the same papers?
+- Which paper looks most relevant, and why?
+
+</div>
+
+---
+
+# The Discussion section
+
+<div class="definition-box" data-title="What Goes in a Discussion?">
+
+- Summarize what you did and what you found
+- Describe how your work **fits in with the broader literature**
+- Describe what you think the **next steps** are
+- Be honest about limitations
+
+</div>
+
+---
+
+# This week's lab: literature review
+
+<div class="important-box" data-title="Lab Assignment">
+
+- Find a "template" paper and several related papers
+- Re-factor the template's Discussion section, taking the other papers into account
+- Goal: practice synthesizing findings across multiple sources
 
 </div>
