@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Evaluating methods
+# Stats refresher
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,78 +16,96 @@ Spring 2026
 
 ---
 
-# What makes a "good" methods section?
+# Today's goals
 
-<div class="note-box" data-title="Criteria for Good Methods">
+<div class="note-box" data-title="What We're Doing">
 
-- It resulted in the intended outcome
-- People following the instructions understood what they were doing
-- The procedure was not overly complex or time consuming
+Quick refresher on the stats concepts you'll need for the drawing lab analysis. This is about building **intuitions**, not memorizing formulas.
 
 </div>
 
+By the end of this session, you should feel comfortable **choosing the right test** for your data.
+
 ---
 
-<!-- _class: scale-90 -->
+# Descriptive statistics review
 
-# What data do we have?
+<div class="definition-box" data-title="Key Concepts">
 
-<div class="example-box" data-title="Available Data">
-
-- Original drawings and instructions
-- Reproduced drawings (images)
-- Lists of assumptions made about each set of instructions
-- Ratings of how closely instructions were followed
-- Evaluations of quality of instructions
+- **Mean ($\bar{x}$):** the average value in your dataset
+- **Standard deviation ($s$):** how spread out the values are
+- **Distribution:** the overall shape of your data (symmetric? skewed? bimodal?)
 
 </div>
 
+**Discussion:** If Group A followed 8/10 instructions correctly and Group B followed 6/10, is that a meaningful difference? How would you know?
+
 ---
 
-# What might we want do with our data?
+# Hypothesis testing refresher
 
-<div class="tip-box" data-title="Analysis Goals">
+<div class="note-box" data-title="The Logic of Hypothesis Testing">
 
-- Understand something about how effective different instructions were
-- Learn about potential differences between how we **think** our instructions will be perceived vs. how they **are** perceived
-- Understand what it's like to follow instructions, including the role of assumptions
+1. Start with a **null hypothesis** ($H_0$): there is no effect or difference
+2. Collect data and compute a **test statistic**
+3. Ask: how likely is this result if $H_0$ were true? That probability is the **p-value**
 
 </div>
 
----
-
-# Original vs. reproduced drawings
-
-<img src="../figs/evaluating_methods/Screen%20Shot%202022-04-14%20at%203.58.55%20PM-14707.png" width="500">
+**Discussion:** What does $p = 0.03$ actually mean? What does it **not** mean?
 
 ---
 
-<!-- _class: scale-90 -->
+# Choosing the right test
 
-# Assumptions data
+<div class="tip-box" data-title="Quick Reference">
 
-<div class="warning-box" data-title="Interpreting Assumptions">
-
-- Instructions that require making more assumptions **could** be more ambiguous
-  - If the end product is still "correct" those ambiguities might not matter much
-  - More complex instructions (e.g., more steps, more to do per step, etc.) might require making more assumptions, but they also might convey more information
+| Your question | Test to use |
+|-|-|
+| Comparing two group means | **t-test** |
+| Relationship between two continuous variables | **correlation** |
+| Association between categorical variables | **chi-square** |
 
 </div>
 
+The key is to think about **what kind of data you have** and **what question you're asking**.
+
 ---
 
-# Ratings and evaluations
+# Effect sizes
 
-<div class="important-box" data-title="Discussion Questions">
+<div class="warning-box" data-title="P-Values Aren't Enough">
 
-- When you rated or evaluated, which criteria did you use? What specific components of the instructions (or products) were you considering?
-- What can evaluations of your **own** group's instructions tell you?
-- What can evaluations from **other** groups tell you?
+A tiny effect can be "statistically significant" with a large enough sample. Always report **effect sizes** (e.g., Cohen's $d$, $r$, $r^2$).
 
 </div>
 
+- **Statistical significance** tells you whether an effect is likely real
+- **Effect size** tells you whether the effect is large enough to **matter**
+- Both are needed to draw meaningful conclusions
+
 ---
 
-# Sample analyses
+# Practice problems
 
-<img src="../figs/evaluating_methods/picture_lab_analysis_qr-14844.png" width="500">
+Work in your breakout groups. Your drawing lab data includes:
+
+**(a)** Accuracy scores for each group (e.g., how many instructions were followed correctly)
+
+**(b)** Number of assumptions made by each participant
+
+**(c)** Clarity ratings on a 1--10 scale for each set of instructions
+
+**For each variable:** What test would you use to analyze it, and why? What would your null hypothesis be?
+
+---
+
+# Questions?
+
+<div class="tip-box" data-title="Get in Touch">
+
+- **Email:** jeremy.r.manning@dartmouth.edu
+- **Office hours:** see Canvas for schedule and sign-up
+- **Course website:** [GitHub](https://github.com/ContextLab/experimental-psychology)
+
+</div>
