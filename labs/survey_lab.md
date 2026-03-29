@@ -28,7 +28,7 @@ This laboratory exercise is intended to help you:
   - Practice collecting data systematically using a survey instrument
   - Practice selecting and applying appropriate statistical tests
   - Practice interpreting results and drawing conclusions
-  - Practice communicating findings to others
+  - Practice collaborating with GenAI to refine an analysis plan and implement it
 
 # \emoji{brain} Procedure
 
@@ -81,59 +81,77 @@ For each of your 3 hypotheses, decide (before looking at the data!) which statis
 
 Write down your planned tests for each hypothesis.
 
-## \emoji{test-tube} Step 4: Analyze the data
+## \emoji{test-tube} Step 4: Analyze the data with GenAI
 
-Now you can look at the data!  Make a copy of the [class dataset](https://docs.google.com/spreadsheets/d/1MvZoEIU5OdAOVtUTw8QoYQdoz1HcOhInSqeZcE0wQgg/edit?usp=sharing) and carry out the statistical tests you planned in Step 3.  You can use [Google Colaboratory](https://colab.research.google.com/), Google Sheets, SPSS, R, [VassarStats](http://vassarstats.net/), or any other tool you're comfortable with.
-
-For each test, record:
-
-  - The test statistic and p-value
-  - The effect size (if applicable)
-  - Whether the result supports or contradicts your hypothesis
-
-## \emoji{test-tube} Step 5: Interpret and communicate
-
-Work with your group to interpret your results:
-
-  - Were the relationships you predicted actually present in the data?
-  - Were any results surprising?  Why might reality differ from your intuitions?
-  - What alternative explanations might account for your findings?
-  - What *can't* you conclude from this data?  (Think about confounds, sample size, and the limitations of correlational data.)
-  - If you could collect additional data, what would you want to measure and why?
-
-Prepare a brief presentation (2--3 minutes) for the class summarizing your group's most interesting finding.
+Now you can look at the data!  Make a copy of the [class dataset](https://docs.google.com/spreadsheets/d/1MvZoEIU5OdAOVtUTw8QoYQdoz1HcOhInSqeZcE0wQgg/edit?usp=sharing) and carry out the analyses described in the "Using GenAI" section below.
 
 # \emoji{brain} Using GenAI in this lab
 
-Generative AI is a powerful tool for expanding what you can accomplish in this lab.  Here are some specific ways to leverage AI:
+Generative AI is a core tool for this lab.  You'll use it to refine your analysis plan, implement your statistical tests, and sanity-check your results.  The goal is to learn how to *collaborate* with AI effectively-- treating it as a capable but imperfect research partner.
 
-  - **Explore multiple statistical approaches**: Ask AI to suggest 3--5 different ways to test your hypothesis, and have it explain the assumptions and tradeoffs of each.  You might discover that a test you hadn't considered is actually a better fit for your data.
-  - **Find published studies with similar designs**: Ask AI to find real psychology studies that investigated similar questions (e.g., the relationship between sleep and stress in college students).  How do their methods and findings compare to yours?
-  - **Generate visualizations**: Ask AI to help you create publication-quality figures that effectively communicate your findings.  Experiment with different chart types and see which tells the clearest story.
-  - **Brainstorm confounding variables**: Ask AI to help you think of variables that might explain away (or strengthen) the relationships you found.  This is excellent practice for thinking like a scientist.
+## \emoji{test-tube} Getting set up
 
-## \emoji{test-tube} GenAI Challenge: Real vs. Fake Data
+Dartmouth students have free access to several powerful AI tools:
 
-After you've completed your analysis of the real class data, try this:
+  - [**Dartmouth Chat**](https://chat.dartmouth.edu) — free for all Dartmouth community members. Includes GPT, Claude, Gemini, and Llama models. Log in with your Dartmouth credentials. This is the easiest starting point.
+  - [**Claude for Education**](https://claude.dartmouth.edu) — free Claude Pro access for Dartmouth students via the Anthropic partnership. Log in with your Dartmouth credentials for the first time.
+  - [**Google Gemini**](https://gemini.google/students/) — check if the student offer is still available, or access Gemini models through Dartmouth Chat.
 
-  1. **Generate a fake dataset**: Describe the survey to a GenAI tool and ask it to generate a realistic-looking dataset of the same size and format as the real class data.  Be specific about the variables and their ranges.
-  2. **Run the same analyses**: Apply your statistical tests and visualizations to the fake data.
-  3. **Compare**: Which patterns are similar between the real and fake datasets?  Which are different?  Can you tell which dataset is real and which is fake just by looking at the results?
-  4. **Reflect**: What does this tell you about how well AI "understands" human psychology?  Where does it get things right?  Where does it fall short?  What assumptions did the AI make about relationships between variables, and were those assumptions accurate?
+Pick whichever tool you're most comfortable with (or try more than one!).
 
-This exercise will sharpen your intuitions about what makes real human data different from plausible-sounding fabrications-- a critical skill in an era where AI-generated content is increasingly common.
+## \emoji{test-tube} The AI-assisted analysis workflow
 
-Remember: AI is most useful *after* you've done the hard work of thinking through your hypotheses and planned your analyses.  Use it to go deeper, not to skip the thinking.
+Follow these steps with your group:
 
-# \emoji{brain} Writing your lab report
+### 1. Come up with a plan
 
-Your lab report should include the following elements:
+Start by drafting an analysis plan *on your own* (with your group).  Based on your 3 hypotheses from Step 3, sketch out:
 
-  1. **Hypotheses**: State your 3 hypotheses clearly.  For each, explain how you refined it from a casual question into a testable prediction.
-  2. **Methods**: Describe the survey, sample (your class), and the statistical tests you chose.  Explain *why* you chose each test.
-  3. **Results**: Report the results of your 3 tests, including test statistics, p-values, and effect sizes.  Include at least one figure.
-  4. **Interpretation**: Discuss what your results mean.  Address surprises, limitations, confounds, and what you would do differently in a follow-up study.
-  5. **GenAI reflection**: Write a brief paragraph describing how you used generative AI during this lab.  What did you ask it?  What did you learn from the interaction?  Was the AI's output always accurate or useful?
+  - Which statistical tests you'll use for each hypothesis
+  - What figures or visualizations would help communicate your findings
+  - What you expect the results to look like if your hypotheses are correct (and if they're wrong)
+
+### 2. Refine, stress-test, and deepen with AI
+
+Share your analysis plan with a GenAI tool and ask it to help you improve it.  Here's the critical thing to watch out for:
+
+**GenAI tends to be highly sycophantic**-- it will very likely agree with whatever plan you suggest, even if your plan is logically flawed or uses the wrong test.  To get genuinely useful feedback, try prompting strategies like:
+
+  - *"Play devil's advocate: what's wrong with this analysis plan?"*
+  - *"What are 3 ways this plan could lead to misleading conclusions?"*
+  - *"Assume I've made at least one mistake in my plan. Find it."*
+  - *"If you were reviewing this plan as a skeptical peer reviewer, what would you flag?"*
+
+Use the AI's pushback to strengthen your plan.  Did it catch something you missed?  Did it suggest a better test or an additional control?
+
+### 3. Outline a robust analysis plan
+
+Based on your AI-refined thinking, write out a final analysis plan.  Collaborate with the AI on this-- ask it to help you organize the plan clearly:
+
+  - For each hypothesis: the exact test, the variables, what you'll report
+  - Which figures you'll create and what they should show
+  - Any additional exploratory analyses that might be interesting
+
+### 4. Implement the plan
+
+Use [Google Colaboratory](https://colab.research.google.com/) to implement your analysis.  You can ask your GenAI tool to help write the code-- describe what you need clearly (e.g., "I have a CSV with columns sleep_hours, stress_level, happiness... I want to run a t-test comparing stress between high and low sleepers and make a box plot").  The [companion analysis notebook](https://colab.research.google.com/github/ContextLab/experimental-psychology/blob/main/notebooks/survey_analysis.ipynb) provides templates to get started.
+
+### 5. Sanity check
+
+This is the most important step.  For every result and figure the AI helps you produce, ask yourself:
+
+  - **Do the results make sense?**  If the AI says the correlation between sleep and stress is r = 0.99, that's probably a bug.
+  - **Does the code do what you think it should?**  Even if you don't know Python, you can ask the AI: *"Explain this code line by line.  What is it actually doing?"*
+  - **Is there evidence of hallucination?**  Did the AI reference functions that don't exist, or produce numbers that don't match the data?
+  - **Try changing something small** (e.g., flip which group is "high" vs. "low") and see if the results change in the direction you'd expect.
+
+### 6. Refine presentation
+
+Work with the AI to polish your figures and results:
+
+  - Ask it to suggest better chart types, color schemes, or labels
+  - Have it help you write clear figure captions
+  - Ask for alternative ways to visualize the same finding-- which tells the story most effectively?
 
 # \emoji{brain} Closing discussion points
 
@@ -142,6 +160,7 @@ Think about what you and your classmates have learned from this survey exercise.
   - How did the process of *formalizing* your intuitions change them?  Did any of your casual questions turn out to be harder to test than you expected?
   - Were there questions you wanted to ask that the survey couldn't answer?  What would you need to collect to answer them?
   - How does our class sample compare to the general population?  What limits our ability to generalize?
+  - How useful was the AI as a collaborator?  Where did it help most?  Where did it fall short or lead you astray?
   - Think about how the skills you practiced today-- formulating hypotheses, choosing appropriate tests, interpreting results with appropriate caution-- apply to the *Introduction* section of a scientific paper.  A good introduction doesn't just state a question; it explains why the question is interesting, what's already known, and how the current study will add to that knowledge.
 
 Finally, consider the bigger picture: how do you turn high-level *qualitative* questions about people's minds and behaviors into *quantitative*, testable hypotheses?  Is there a general strategy, or is every question unique?  Can "anything" be studied scientifically, or are there limits to what we can ask?
