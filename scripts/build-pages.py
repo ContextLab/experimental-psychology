@@ -668,12 +668,18 @@ def get_assignment_sort_key(name):
 
 
 def prepare_markdown_for_pdf(md_file):
-    """Prepare markdown for pandoc PDF generation by converting LaTeX emojis
-    to Unicode and stripping the emoji package header-include."""
+    """Prepare markdown for pandoc PDF generation.
+
+    Converts \\emoji{name} to Unicode characters, strips variant selectors
+    and ZWJ sequences (which break lualatex), and removes the LaTeX emoji
+    package header-include.
+    """
     text = md_file.read_text()
-    # Convert \emoji{name} to Unicode
     text = convert_latex_emoji(text)
-    # Remove the header-includes that loads the LaTeX emoji package
+    # Strip Unicode variant selectors (U+FE0F) and ZWJ (U+200D) sequences
+    # that lualatex cannot handle — the base emoji still renders via the
+    # Apple Color Emoji fallback font
+    text = text.replace("\uFE0F", "").replace("\u200D", "")
     text = re.sub(
         r"header-includes:\s*\n\s*-\s*'`\\usepackage\{emoji\}`\{=latex\}'\s*\n",
         "",
@@ -683,25 +689,43 @@ def prepare_markdown_for_pdf(md_file):
 
 
 def build_assignment_pdf(md_file, output_path):
-    """Generate PDF from markdown using pandoc."""
+    """Generate PDF from markdown using pandoc + lualatex.
+
+    Uses lualatex with Unicode emoji characters (converted from LaTeX
+    \\emoji{} commands) and Apple Color Emoji as a fallback font for
+    emoji rendering on macOS.
+    """
     try:
-        # Prepare markdown with Unicode emojis instead of LaTeX \emoji{}
+        import tempfile
         prepared_md = prepare_markdown_for_pdf(md_file)
+
+        # Write LaTeX preamble that sets up emoji font fallback
+        preamble = (
+            "\\directlua{luaotfload.add_fallback(\"emojifallback\","
+            "{\"Apple Color Emoji:mode=harf;\"})"
+            "}\n"
+            "\\setmainfont{Palatino}[RawFeature={fallback=emojifallback}]\n"
+        )
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".tex", delete=False) as pf:
+            pf.write(preamble)
+            preamble_path = pf.name
 
         cmd = [
             "pandoc",
             "-f", "markdown",
             "-o", str(output_path),
-            "--pdf-engine=xelatex",
+            "--pdf-engine=lualatex",
             "-V", "geometry:margin=1in",
-            "-V", "mainfont:Palatino",
             "-V", "fontsize:12pt",
             "-V", "colorlinks:true",
             "-V", "linkcolor:green",
+            "-H", preamble_path,
         ]
+
         result = subprocess.run(
-            cmd, input=prepared_md, capture_output=True, text=True, timeout=60
+            cmd, input=prepared_md, capture_output=True, text=True, timeout=120
         )
+        os.unlink(preamble_path)
         if result.returncode == 0:
             print(f"PDF:   {output_path}")
             return True
