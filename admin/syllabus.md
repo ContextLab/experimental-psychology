@@ -52,42 +52,42 @@ The design of this course is substantially different from other more traditional
 
 | Week | Day | Date | Topic | Notes and links |
 |-|-|-|-|-|
-| **1: Survey Lab** | M | 3/30 | Intro + Survey Lab + Data collection | [Outline](https://context-lab.com/experimental-psychology/#week1) · [HTML](https://context-lab.com/experimental-psychology/slides/week1/lecture1.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week1/lecture1.pdf) |
+| [**1: Survey Lab**](https://context-lab.com/experimental-psychology/#week1) | M | 3/30 | Intro + Survey Lab + Data collection | [HTML](https://context-lab.com/experimental-psychology/slides/week1/lecture1.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week1/lecture1.pdf) |
 | | W | 4/1 | Statistical building blocks | [HTML](https://context-lab.com/experimental-psychology/slides/week1/lecture2.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week1/lecture2.pdf) |
 | | F | 4/3 | *No class* | Instructor away |
-| **2: Pitch Lab** | M | 4/6 | Motivating science intro + Pitch lab starts | [Outline](https://context-lab.com/experimental-psychology/#week2) · [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture3.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture3.pdf) |
+| [**2: Pitch Lab**](https://context-lab.com/experimental-psychology/#week2) | M | 4/6 | Motivating science intro + Pitch lab starts | [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture3.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture3.pdf) |
 | | W | 4/8 | Present pitches + fill out evals | No slides |
 | | Th | 4/9 | Data wrangling + Vibe coding tutorial | X-hour · [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture4.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture4.pdf) |
 | | F | 4/10 | How far can you get with data and stats? | [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture5.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture5.pdf) |
-| **3: Drawing Lab** | M | 4/13 | Effective explaining + Drawing lab starts | [Outline](https://context-lab.com/experimental-psychology/#week3) · [HTML](https://context-lab.com/experimental-psychology/slides/week3/lecture6.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week3/lecture6.pdf) |
+| [**3: Drawing Lab**](https://context-lab.com/experimental-psychology/#week3) | M | 4/13 | Effective explaining + Drawing lab starts | [HTML](https://context-lab.com/experimental-psychology/slides/week3/lecture6.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week3/lecture6.pdf) |
 | | W | 4/15 | Data collection -- reproduce drawings | No slides |
 | | Th | 4/16 | Stats refresher | X-hour · [HTML](https://context-lab.com/experimental-psychology/slides/week3/lecture7.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week3/lecture7.pdf) |
 | | F | 4/17 | Analyzing drawing lab data | [HTML](https://context-lab.com/experimental-psychology/slides/week3/lecture8.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week3/lecture8.pdf) |
-| **4: Data Sleuthing Lab** | M | 4/20 | Creating data + Data sleuthing lab starts | [Outline](https://context-lab.com/experimental-psychology/#week4) · [HTML](https://context-lab.com/experimental-psychology/slides/week4/lecture9.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week4/lecture9.pdf) |
+| [**4: Data Sleuthing Lab**](https://context-lab.com/experimental-psychology/#week4) | M | 4/20 | Creating data + Data sleuthing lab starts | [HTML](https://context-lab.com/experimental-psychology/slides/week4/lecture9.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week4/lecture9.pdf) |
 | | W | 4/22 | *No class* | Instructor away |
 | | Th | 4/23 | Exploring and understanding data | X-hour (moved from W) · [HTML](https://context-lab.com/experimental-psychology/slides/week4/lecture10.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week4/lecture10.pdf) |
 | | F | 4/24 | Quick start guide to digging into data | [HTML](https://context-lab.com/experimental-psychology/slides/week4/lecture11.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week4/lecture11.pdf) |
-| **5: Literature Review Lab** | M | 4/27 | Searching the literature + Lit review lab starts | [Outline](https://context-lab.com/experimental-psychology/#week5) · [HTML](https://context-lab.com/experimental-psychology/slides/week5/lecture12.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week5/lecture12.pdf) |
+| [**5: Literature Review Lab**](https://context-lab.com/experimental-psychology/#week5) | M | 4/27 | Searching the literature + Lit review lab starts | [HTML](https://context-lab.com/experimental-psychology/slides/week5/lecture12.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week5/lecture12.pdf) |
 | | W | 4/29 | Synthesizing across studies/findings | [HTML](https://context-lab.com/experimental-psychology/slides/week5/lecture13.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week5/lecture13.pdf) |
 | | Th | 4/30 | Additional office hours | X-hour (sign up) |
 | | F | 5/1 | Logistics + group work on lit review lab wrap up | [HTML](https://context-lab.com/experimental-psychology/slides/week5/lecture14.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week5/lecture14.pdf) |
-| **6: Final Projects Begin** | M | 5/4 | Getting started: find a group, brainstorm idea | [Outline](https://context-lab.com/experimental-psychology/#week6) · [HTML](https://context-lab.com/experimental-psychology/slides/week6/lecture15.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week6/lecture15.pdf) |
+| [**6: Final Projects Begin**](https://context-lab.com/experimental-psychology/#week6) | M | 5/4 | Getting started: find a group, brainstorm idea | [HTML](https://context-lab.com/experimental-psychology/slides/week6/lecture15.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week6/lecture15.pdf) |
 | | W | 5/6 | Design your study | [HTML](https://context-lab.com/experimental-psychology/slides/week6/lecture16.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week6/lecture16.pdf) |
 | | Th | 5/7 | Additional office hours | X-hour (sign up) |
 | | F | 5/8 | Experiment implementation tips + Human subjects training | Complete training at home over the weekend · [HTML](https://context-lab.com/experimental-psychology/slides/week6/lecture17.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week6/lecture17.pdf) |
-| **7: Data Collection** | M | 5/11 | Project work | [Outline](https://context-lab.com/experimental-psychology/#week7) |
+| [**7: Data Collection**](https://context-lab.com/experimental-psychology/#week7) | M | 5/11 | Project work | |
 | | W | 5/13 | Project work | |
 | | Th | 5/14 | Additional office hours | X-hour (sign up) |
 | | F | 5/15 | Project work | |
-| **8: Data Analysis** | M | 5/18 | Groups work on data analysis | [Outline](https://context-lab.com/experimental-psychology/#week8) · No formal lecture |
+| [**8: Data Analysis**](https://context-lab.com/experimental-psychology/#week8) | M | 5/18 | Groups work on data analysis | No formal lecture |
 | | W | 5/20 | Intro to poster presentations + analysis work | [HTML](https://context-lab.com/experimental-psychology/slides/week8/lecture18.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week8/lecture18.pdf) |
 | | Th | 5/21 | Poster creation workshop | X-hour · [HTML](https://context-lab.com/experimental-psychology/slides/week8/lecture19.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week8/lecture19.pdf) |
 | | F | 5/22 | Interpretation + start working on posters | |
-| **9: Posters + Papers** | M | 5/25 | *No class (Memorial Day)* | [Outline](https://context-lab.com/experimental-psychology/#week9) |
+| [**9: Posters + Papers**](https://context-lab.com/experimental-psychology/#week9) | M | 5/25 | *No class (Memorial Day)* | |
 | | W | 5/27 | Effective scientific writing + work time | [HTML](https://context-lab.com/experimental-psychology/slides/week9/lecture20.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week9/lecture20.pdf) |
 | | Th | 5/28 | *No office hours* | Instructor away |
 | | F | 5/29 | *No class* | Instructor away |
-| **10: Final Week** | M | 6/1 | Wrap up projects | [Outline](https://context-lab.com/experimental-psychology/#week10) · TAs/instructor available |
+| [**10: Final Week**](https://context-lab.com/experimental-psychology/#week10) | M | 6/1 | Wrap up projects | TAs/instructor available |
 | | W | 6/3 | **Public poster session** | Last day of class; final paper/poster/presentation recording due |
 
 *Note: the above schedule is subject to change.*

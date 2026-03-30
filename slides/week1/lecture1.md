@@ -29,6 +29,7 @@ Spring 2026
 <div class="important-box" data-title="Key questions we'll explore this term">
 
 - How do we turn curiosity into a testable hypothesis?
+- How can we turn a hypothesis into a rigorous experiment?
 - What makes evidence convincing (or misleading)?
 - How do we communicate science clearly and honestly?
 
@@ -131,8 +132,8 @@ Associate Professor | Psychological &amp; Brain Sciences | <img src="../figs/ins
 - Course webpage: **[context-lab.com/experimental-psychology](https://context-lab.com/experimental-psychology/)**
 - Communication via **[Slack](https://psyc11.slack.com)**
 - Bring your laptop to every class
-- Office hours: Tuesdays, sign up at [context-lab.com/scheduler](https://context-lab.com/scheduler)
-- Full policies are in the **syllabus** -- read it!
+- Office hours: **Tuesdays**, sign up at **[context-lab.com/scheduler](https://context-lab.com/scheduler)**
+- Full policies are in the **[syllabus](https://context-lab.com/experimental-psychology/syllabus)**; please read it!
 
 </div>
 
@@ -157,13 +158,23 @@ Slack
 
 # Teaching assistants
 
-<div class="note-box" data-title="Your TAs">
+<div class="note-box" data-title="Your amazing TAs!">
 
 - **Yifan Fang**
 - **Yuqi Zhang**
 - **Eunhye Choe**
 
-TAs will lead lab sections, hold office hours, and help with your projects. Don't hesitate to reach out!
+</div>
+
+<div class="tip-box" data-title="What do TAs do in this course?">
+
+TAs will lead breakout lab sections, hold weekly office hours, help with your labs and projects, and assist with grading assignments. They can be a *fantastic* resource; please take advantage of their expertise and support!
+
+</div>
+
+<div class="warning-box" data-title="What *don't* TAs do?">
+
+TAs are not responsible for course logistics, policies, content, or other administrative matters or interpersonal issues. Final grading decisions are made by me. Please reach out to me directly with any questions or concerns about these topics.
 
 </div>
 
