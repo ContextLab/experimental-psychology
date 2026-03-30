@@ -27,6 +27,14 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
+# Local tool state
+.claude/
+.omc/
+.playwright-mcp/
+
+# Speckit / planning files (local only)
+specs/
+
 # Editor/OS
 .vscode/
 .idea/
