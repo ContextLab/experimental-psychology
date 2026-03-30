@@ -172,7 +172,7 @@ TAs will lead breakout lab sections, hold weekly office hours, help with your la
 
 </div>
 
-<div class="warning-box" data-title="What *don't* TAs do?">
+<div class="warning-box" data-title="What don't TAs do?">
 
 TAs are not responsible for course logistics, policies, content, or other administrative matters or interpersonal issues. Final grading decisions are made by me. Please reach out to me directly with any questions or concerns about these topics.
 
@@ -180,12 +180,12 @@ TAs are not responsible for course logistics, policies, content, or other admini
 
 ---
 
-# Discussion: What do you want to know?
+# Discussion: what do you want to know?
 
-<div class="example-box" data-title="Think-Pair-Share">
+<div class="example-box" data-title="Think-pair-share">
 
 - What is one question about human behavior or the mind that you find genuinely interesting?
-- Share with a neighbor -- do your questions overlap? How are they different?
+- Share with a neighbor: do your questions overlap? How are they different?
 
 </div>
 
@@ -203,38 +203,41 @@ TAs are not responsible for course logistics, policies, content, or other admini
 
 <div class="important-box" data-title="Deeper Questions to Consider">
 
-- What's the difference between a "feeling" you have about people and a testable scientific claim?
-- If you found that students who sleep more are happier, what would you *actually* have learned? What *wouldn't* you know?
-- How would you design a study to distinguish "correlation" from "cause"?
+- What's the difference between a "feeling" you have versus a testable scientific claim?
+- If you found that students who slept more were happier, what would you *actually* have learned? What *wouldn't* you know?
+- How might you design a study to distinguish *correlation* from *causation*?
 - Can you think of a question about human behavior that *can't* be studied scientifically? Why not?
 
 </div>
 
 ---
 
-# Let's collect some data!
+# Let's collect some data (in breakout groups)!
 
-<div class="tip-box" data-title="Today's Task">
+<div class="tip-box" data-title="Today's task">
 
-- Fill out the survey and review the lab instructions
+- Read the lab instructions and fill out the survey form (both linked below and via QR codes)
+- Brainstorm some questions and hypotheses you could ask/test with this dataset
 
 </div>
 
 <div style="display: flex; gap: 2em; justify-content: center;">
 <div style="text-align: center;">
 
-<img src="../figs/intro_and_overview/survey_form_qr.png" width="300">
-
-Survey form
-
-</div>
-<div style="text-align: center;">
-
-<img src="../figs/intro_and_overview/lab_instructions_qr-14851.png" width="300">
+<img src="../figs/intro_and_overview/lab_instructions_qr-14851.png" width="200">
 
 Lab instructions
 
 </div>
+
+<div style="text-align: center;">
+
+<img src="../figs/intro_and_overview/survey_form_qr.png" width="200">
+
+Survey form
+
+</div>
+
 </div>
 
 ---
@@ -258,8 +261,8 @@ Lab instructions
 
 <div class="note-box" data-title="Up next...">
 
-- **Today**: collect data and form some hypotheses
-- **Wednesday**: thinking about data analysis
+- **Today**: collect data and form hypotheses
+- **Wednesday**: turning hypotheses into specific statistical tests
 - **X-hour and Friday**: I'll be away (no class). But we will use some of the X-hours to make up missed classes when I'll be traveling and for Memorial Day, including next week's X-hour.
 
 </div>
