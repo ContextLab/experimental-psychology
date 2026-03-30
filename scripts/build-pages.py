@@ -626,6 +626,1352 @@ def get_page_template(title, nav_active, content, depth=1):
 </html>'''
 
 
+def parse_outline_frontmatter(text):
+    """Parse YAML frontmatter from outline.md using regex (stdlib only).
+
+    Returns a dict with: title, code, term, instructor, teaching_assistants,
+    rooms, links, resources, assignments, start_date, end_date.
+    """
+    fm_match = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.DOTALL)
+    if not fm_match:
+        return {}
+    fm = fm_match.group(1)
+    data = {}
+
+    # Simple scalar fields
+    for key in ("title", "code", "term", "institution", "start_date", "end_date"):
+        m = re.search(rf"^{key}:\s*(.+)$", fm, re.MULTILINE)
+        if m:
+            data[key] = m.group(1).strip().strip('"').strip("'")
+
+    # Instructor
+    m_instr = re.search(r"^instructor:\s*\n((?:\s+.+\n)*)", fm, re.MULTILINE)
+    if m_instr:
+        instr_block = m_instr.group(1)
+        name_m = re.search(r"name:\s*(.+)", instr_block)
+        oh_m = re.search(r"office_hours_url:\s*(.+)", instr_block)
+        data["instructor"] = {
+            "name": name_m.group(1).strip() if name_m else "",
+            "office_hours_url": oh_m.group(1).strip() if oh_m else "",
+        }
+
+    # Teaching assistants (list of objects with name+email, or plain names)
+    m_ta = re.search(r"^teaching_assistants:\s*\n((?:\s+[-\s].+\n)*)", fm, re.MULTILINE)
+    if m_ta:
+        ta_block = m_ta.group(1)
+        ta_list = []
+        current_ta = {}
+        for line in ta_block.strip().split("\n"):
+            line = line.strip()
+            if line.startswith("- name:"):
+                if current_ta:
+                    ta_list.append(current_ta)
+                current_ta = {"name": line.split(":", 1)[1].strip()}
+            elif line.startswith("email:"):
+                current_ta["email"] = line.split(":", 1)[1].strip()
+            elif line.startswith("- ") and "name:" not in line:
+                # Simple format: just a name
+                ta_list.append({"name": line[2:].strip()})
+        if current_ta:
+            ta_list.append(current_ta)
+        data["teaching_assistants"] = ta_list
+
+    # Rooms
+    m_rooms = re.search(r"^rooms:\s*\n((?:\s+.+\n)*)", fm, re.MULTILINE)
+    if m_rooms:
+        rooms_block = m_rooms.group(1)
+        main_m = re.search(r"main:\s*(.+)", rooms_block)
+        breakout_m = re.search(r"breakout:\s*(.+)", rooms_block)
+        data["rooms"] = {
+            "main": main_m.group(1).strip() if main_m else "",
+            "breakout": breakout_m.group(1).strip() if breakout_m else "",
+        }
+
+    # Links
+    m_links = re.search(r"^links:\s*\n((?:\s+.+\n)*)", fm, re.MULTILINE)
+    if m_links:
+        links_block = m_links.group(1)
+        data["links"] = {}
+        for lm in re.finditer(r"(\w+):\s*(.+)", links_block):
+            data["links"][lm.group(1).strip()] = lm.group(2).strip()
+
+    # Resources (list of sections with items)
+    m_res = re.search(r"^resources:\s*\n((?:\s+.+\n)*)", fm, re.MULTILINE)
+    if m_res:
+        res_block = m_res.group(1)
+        data["resources"] = []
+        # Split on section markers
+        sections = re.split(r"  - section:", res_block)
+        for sec in sections:
+            if not sec.strip():
+                continue
+            lines = sec.strip().split("\n")
+            section_name = lines[0].strip().strip('"').strip("'")
+            icon_m = re.search(r"icon:\s*(.+)", sec)
+            icon = icon_m.group(1).strip() if icon_m else ""
+            items = []
+            item_blocks = re.split(r"      - label:", sec)
+            for ib in item_blocks[1:]:
+                label_val = ib.strip().split("\n")[0].strip().strip('"').strip("'")
+                url_m = re.search(r"url:\s*(.+)", ib)
+                icon_i_m = re.search(r"icon:\s*(.+)", ib)
+                ext_m = re.search(r"external:\s*(.+)", ib)
+                items.append({
+                    "label": label_val,
+                    "url": url_m.group(1).strip() if url_m else "",
+                    "icon": icon_i_m.group(1).strip() if icon_i_m else "",
+                    "external": ext_m.group(1).strip().lower() == "true" if ext_m else False,
+                })
+            data["resources"].append({
+                "section": section_name,
+                "icon": icon,
+                "items": items,
+            })
+
+    # Assignments (list of dicts)
+    m_asgn = re.search(r"^assignments:\s*\n((?:\s+.+\n)*)", fm, re.MULTILINE)
+    if m_asgn:
+        asgn_block = m_asgn.group(1)
+        data["assignments"] = []
+        entries = re.split(r"  - name:", asgn_block)
+        for entry in entries:
+            if not entry.strip():
+                continue
+            name_val = entry.strip().split("\n")[0].strip().strip('"').strip("'")
+            url_m = re.search(r"url:\s*(.+)", entry)
+            pts_m = re.search(r"points:\s*(.+)", entry)
+            due_m = re.search(r"due:\s*(.+)", entry)
+            data["assignments"].append({
+                "name": name_val,
+                "url": url_m.group(1).strip() if url_m else "",
+                "points": int(pts_m.group(1).strip()) if pts_m else 0,
+                "due": due_m.group(1).strip().strip('"').strip("'") if due_m else "",
+            })
+
+    return data
+
+
+def parse_outline_weeks(text):
+    """Parse the body of outline.md into week structures.
+
+    Returns list of dicts: {number, title, date_range, sessions: [{day, date, title, slides, assignment, xhour, absent, holiday}]}
+    """
+    # Get body after frontmatter
+    fm_match = re.match(r"^---\s*\n.*?\n---\s*\n", text, re.DOTALL)
+    body = text[fm_match.end():] if fm_match else text
+
+    # Split into week blocks by --- separator
+    week_blocks = re.split(r"\n---\s*\n", body)
+    weeks = []
+
+    for block in week_blocks:
+        block = block.strip()
+        if not block:
+            continue
+
+        # Parse week header: # Week N: Title
+        week_m = re.match(r"^#\s+Week\s+(\d+):\s*(.+)$", block, re.MULTILINE)
+        if not week_m:
+            continue
+
+        week_num = int(week_m.group(1))
+        week_title = week_m.group(2).strip()
+
+        # Parse date range: ## Date Range
+        date_m = re.search(r"^##\s+(.+)$", block, re.MULTILINE)
+        date_range = date_m.group(1).strip() if date_m else ""
+
+        # Parse sessions: ### Day Date: Title
+        sessions = []
+        session_blocks = re.split(r"(?=^### )", block, flags=re.MULTILINE)
+        for sb in session_blocks:
+            sess_m = re.match(r"^###\s+(\w+)\s+(\w+\s+\d+):\s*(.+)$", sb, re.MULTILINE)
+            if not sess_m:
+                continue
+            day = sess_m.group(1)
+            date = sess_m.group(2)
+            title = sess_m.group(3).strip()
+
+            slides = ""
+            assignment = ""
+            xhour = False
+            absent = False
+            holiday = False
+
+            pdf = ""
+
+            slides_m = re.search(r"^-\s+slides:\s*(.+)$", sb, re.MULTILINE)
+            if slides_m:
+                slides = slides_m.group(1).strip()
+
+            pdf_m = re.search(r"^-\s+pdf:\s*(.+)$", sb, re.MULTILINE)
+            if pdf_m:
+                pdf = pdf_m.group(1).strip()
+
+            asgn_m = re.search(r"^-\s+assignment:\s*(.+)$", sb, re.MULTILINE)
+            if asgn_m:
+                assignment = asgn_m.group(1).strip()
+
+            if re.search(r"^-\s+xhour:\s*true", sb, re.MULTILINE):
+                xhour = True
+            if re.search(r"^-\s+absent:\s*true", sb, re.MULTILINE):
+                absent = True
+            if re.search(r"^-\s+holiday:\s*true", sb, re.MULTILINE):
+                holiday = True
+
+            sessions.append({
+                "day": day,
+                "date": date,
+                "title": title,
+                "slides": slides,
+                "pdf": pdf,
+                "assignment": assignment,
+                "xhour": xhour,
+                "absent": absent,
+                "holiday": holiday,
+            })
+
+        weeks.append({
+            "number": week_num,
+            "title": week_title,
+            "date_range": date_range,
+            "sessions": sessions,
+        })
+
+    return weeks
+
+
+def build_outline_page():
+    """Build the main index.html course outline page from outline.md."""
+    source = REPO_ROOT / "outline.md"
+    dest = REPO_ROOT / "index.html"
+
+    if not source.exists():
+        print(f"Warning: {source} not found, skipping outline page")
+        return
+
+    text = source.read_text()
+    fm = parse_outline_frontmatter(text)
+    weeks = parse_outline_weeks(text)
+
+    # Build COURSE_WEEK_STARTS JS object from week date ranges
+    week_starts_js = ""
+    for w in weeks:
+        # Parse start date from date range like "Mar 30 -- Apr 3"
+        # or from session dates
+        if w["sessions"]:
+            first_date = w["sessions"][0]["date"]  # e.g. "Mar 30"
+            # Determine year from course start_date
+            start_year = fm.get("start_date", "2026-03-30")[:4]
+            month_str, day_str = first_date.split()
+            months = {"Jan": "01", "Feb": "02", "Mar": "03", "Apr": "04",
+                       "May": "05", "Jun": "06", "Jul": "07", "Aug": "08",
+                       "Sep": "09", "Oct": "10", "Nov": "11", "Dec": "12"}
+            month_num = months.get(month_str, "01")
+            iso_date = f"{start_year}-{month_num}-{day_str.zfill(2)}"
+            week_starts_js += f"            {w['number']}: new Date('{iso_date}'),\n"
+
+    # Compute COURSE_END from end_date
+    course_end = fm.get("end_date", "2026-06-05")
+    # Add one day to end_date for the COURSE_END sentinel
+    # Simple: just use the end_date + 1 day
+    end_parts = course_end.split("-")
+    end_day = int(end_parts[2]) + 1
+    course_end_js = f"{end_parts[0]}-{end_parts[1]}-{str(end_day).zfill(2)}"
+
+    num_weeks = len(weeks)
+
+    # Build week pills HTML
+    week_pills_html = ""
+    for w in weeks:
+        week_pills_html += f'            <a href="#week{w["number"]}" class="week-pill">Week {w["number"]}</a>\n'
+
+    # Build week sections HTML
+    weeks_html = ""
+    for w in weeks:
+        # Format date range for subtitle: "Mar 30 -- Apr 3" -> "Mar 30&ndash;Apr 3"
+        subtitle = w["date_range"].replace(" -- ", "&ndash;").replace("--", "&ndash;")
+
+        # Build session cards
+        cards_html = ""
+        for sess in w["sessions"]:
+            # Day span classes
+            day_classes = ["lecture-day"]
+            if sess["holiday"]:
+                day_classes.append("holiday")
+            elif sess["absent"]:
+                day_classes.append("absent")
+            if sess["xhour"]:
+                day_classes.append("xhour")
+
+            day_class_str = " ".join(day_classes)
+
+            # Day label
+            day_label = f'{sess["day"]} {sess["date"]}'
+            if sess["xhour"]:
+                day_label += " (X)"
+
+            # Title classes
+            title_classes = ["lecture-title"]
+            if sess["holiday"]:
+                title_classes.append("holiday")
+            elif sess["absent"]:
+                title_classes.append("absent")
+            title_class_str = " ".join(title_classes)
+
+            # Resource section
+            resource_html = ""
+            if sess["slides"] or sess["assignment"]:
+                resource_html = '\n                    <div class="resource-section">'
+                if sess["slides"]:
+                    pdf_link = ""
+                    if sess.get("pdf"):
+                        pdf_link = (
+                            f'\n                            <a href="{sess["pdf"]}" class="resource-link">'
+                            '<span class="icon"><i class="fa-solid fa-file-pdf"></i></span> PDF</a>'
+                        )
+                    resource_html += (
+                        '\n                        <div class="resource-group">'
+                        '<div class="resource-label">Slides</div>'
+                        '<div class="resource-links">'
+                        f'\n                            <a href="{sess["slides"]}" class="resource-link primary">'
+                        '<span class="icon"><i class="fa-solid fa-globe"></i></span> HTML</a>'
+                        f'{pdf_link}'
+                        '\n                        </div></div>'
+                    )
+                if sess["assignment"]:
+                    # Parse "Name | url" format
+                    if "|" in sess["assignment"]:
+                        parts = sess["assignment"].split("|", 1)
+                        asgn_name = parts[0].strip()
+                        asgn_url = parts[1].strip()
+                    else:
+                        asgn_name = sess["assignment"]
+                        asgn_url = "#"
+                    resource_html += (
+                        '\n                        <div class="resource-group">'
+                        '<div class="resource-label">Assignment</div>'
+                        '<div class="resource-links">'
+                        f'\n                            <a href="{asgn_url}" class="resource-link">'
+                        f'<span class="icon"><i class="fa-solid fa-flask"></i></span> {asgn_name}</a>'
+                        '\n                        </div></div>'
+                    )
+                resource_html += "\n                    </div>"
+
+            cards_html += f"""
+                <div class="lecture-card">
+                    <div class="lecture-header">
+                        <span class="{day_class_str}">{day_label}</span>
+                    </div>
+                    <h3 class="{title_class_str}">{sess["title"]}</h3>{resource_html}
+                </div>"""
+
+        weeks_html += f"""
+        <!-- Week {w["number"]} -->
+        <section class="week-section" id="week{w["number"]}">
+            <div class="week-header" onclick="toggleWeek(this)">
+                <div class="week-header-content">
+                    <span class="week-number">Week {w["number"]}</span>
+                    <h2 class="week-title">{w["title"]}</h2>
+                    <p class="week-subtitle">{subtitle}</p>
+                </div>
+                <span class="expand-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </div>
+            <div class="week-content">{cards_html}
+            </div>
+        </section>
+"""
+
+    # Build info cards
+    instructor = fm.get("instructor", {})
+    tas = fm.get("teaching_assistants", [])
+    rooms = fm.get("rooms", {})
+    links = fm.get("links", {})
+
+    tas_html = ""
+    for ta in tas:
+        if isinstance(ta, dict):
+            name = ta.get("name", "")
+            email = ta.get("email", "")
+            if email:
+                tas_html += f'                <p><a href="mailto:{email}">{name}</a></p>\n'
+            else:
+                tas_html += f"                <p>{name}</p>\n"
+        else:
+            tas_html += f"                <p>{ta}</p>\n"
+
+    # Build assignments table rows
+    assignments = fm.get("assignments", [])
+    asgn_rows = ""
+    for a in assignments:
+        asgn_rows += f"""                <tr>
+                    <td><a href="{a["url"]}">{a["name"]}</a></td>
+                    <td>{a["points"]} pts</td>
+                    <td>{a["due"]}</td>
+                </tr>
+"""
+
+    # Build resources section
+    resources = fm.get("resources", [])
+    resources_cards_html = ""
+    for rsec in resources:
+        items_html = ""
+        for item in rsec["items"]:
+            target = ' target="_blank"' if item.get("external") else ""
+            items_html += f'                    <li><a href="{item["url"]}"{target}><i class="{item["icon"]}"></i> {item["label"]}</a></li>\n'
+        resources_cards_html += f"""            <div class="resource-card">
+                <h3><i class="{rsec["icon"]}"></i> {rsec["section"]}</h3>
+                <ul>
+{items_html}                </ul>
+            </div>
+"""
+
+    html = f'''<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{fm.get("title", "Laboratory in Psychological Science")} - {fm.get("code", "PSYC 11")}</title>
+    <meta name="description" content="Course materials for {fm.get("code", "PSYC 11")}: {fm.get("title", "Laboratory in Psychological Science")} - {fm.get("institution", "Dartmouth College")}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/theme.css">
+
+    <style>
+        /* Navigation - matching demos page style */
+        .course-nav {{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            z-index: var(--z-fixed);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }}
+
+        .course-nav.scrolled {{
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }}
+
+        .course-nav .logo {{
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }}
+
+        .course-nav .nav-links {{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }}
+
+        .course-nav .nav-links a {{
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }}
+
+        .course-nav .nav-links a:hover,
+        .course-nav .nav-links a.active {{
+            color: var(--primary-color);
+        }}
+
+        .course-nav .theme-toggle {{
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-full);
+            width: 40px;
+            height: 40px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }}
+
+        .course-nav .theme-toggle:hover {{
+            background: var(--surface-hover);
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }}
+
+        /* Hero Section */
+        .hero {{
+            margin-top: 70px;
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+        }}
+
+        .hero h1 {{
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 0.8s ease;
+        }}
+
+        .hero p {{
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }}
+
+        .course-meta {{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }}
+
+        .meta-item {{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }}
+
+        .meta-item .icon {{
+            font-size: 1.2rem;
+        }}
+
+        /* DOI Badge */
+        .doi-badge {{
+            margin-top: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }}
+
+        /* Course Info Section */
+        .course-info {{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 0;
+            animation: fadeInUp 0.8s ease 0.5s both;
+        }}
+
+        .course-info-grid {{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }}
+
+        .info-card {{
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+        }}
+
+        .info-card h4 {{
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }}
+
+        .info-card p, .info-card a {{
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }}
+
+        .info-card a {{
+            color: var(--primary-color);
+            text-decoration: none;
+        }}
+
+        .info-card a:hover {{
+            text-decoration: underline;
+        }}
+
+        /* Quick Links Bar */
+        .quick-links {{
+            background: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 60px;
+            z-index: 100;
+        }}
+
+        .quick-links-container {{
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }}
+
+        .week-pill {{
+            background: var(--bg-color);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-base);
+            text-decoration: none;
+        }}
+
+        .week-pill:hover {{
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }}
+
+        .week-pill.active {{
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }}
+
+        /* Main Content */
+        .container {{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }}
+
+        /* Week Section */
+        .week-section {{
+            margin-bottom: 2rem;
+            scroll-margin-top: 140px;
+        }}
+
+        .week-header {{
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }}
+
+        .week-header:hover {{
+            border-color: var(--primary-color);
+            background: var(--surface-hover);
+        }}
+
+        .week-header.expanded {{
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-color: transparent;
+        }}
+
+        .week-header-content {{
+            flex: 1;
+        }}
+
+        .week-number {{
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }}
+
+        .week-title {{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }}
+
+        .week-subtitle {{
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }}
+
+        .expand-icon {{
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            transition: transform 0.3s ease;
+        }}
+
+        .week-header.expanded .expand-icon {{
+            transform: rotate(180deg);
+        }}
+
+        .week-content {{
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-bottom-left-radius: var(--radius-lg);
+            border-bottom-right-radius: var(--radius-lg);
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.3s ease;
+        }}
+
+        .week-content.expanded {{
+            max-height: 5000px;
+            padding: 1.5rem 2rem;
+        }}
+
+        /* Lecture Card */
+        .lecture-card {{
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }}
+
+        .lecture-card:last-child {{
+            margin-bottom: 0;
+        }}
+
+        .lecture-card:hover {{
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }}
+
+        .lecture-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }}
+
+        .lecture-day {{
+            background: var(--surface-hover);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }}
+
+        .lecture-day.xhour {{
+            background: rgba(139, 92, 246, 0.2);
+            color: #a78bfa;
+        }}
+
+        .lecture-day.absent {{
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            font-style: italic;
+        }}
+
+        .lecture-day.holiday {{
+            background: rgba(251, 191, 36, 0.15);
+            color: #fbbf24;
+            font-style: italic;
+        }}
+
+        .lecture-title {{
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }}
+
+        .lecture-title.absent {{
+            color: var(--text-muted);
+            font-style: italic;
+        }}
+
+        .lecture-title.holiday {{
+            color: var(--text-muted);
+            font-style: italic;
+        }}
+
+        /* Resource Links */
+        .resource-section {{
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }}
+
+        .resource-group {{
+            margin-bottom: 0.75rem;
+        }}
+
+        .resource-label {{
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }}
+
+        .resource-links {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }}
+
+        .resource-link {{
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.4rem 0.75rem;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }}
+
+        .resource-link:hover {{
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }}
+
+        .resource-link.primary {{
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }}
+
+        .resource-link.primary:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+            color: white;
+        }}
+
+        .resource-link .icon {{
+            font-size: 1rem;
+        }}
+
+        /* No Class Notice */
+        .no-class-notice {{
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            text-align: center;
+            color: #fbbf24;
+            margin-bottom: 1rem;
+        }}
+
+        .no-class-notice h4 {{
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }}
+
+        .no-class-notice p {{
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }}
+
+        /* Assignments Table */
+        .assignments-section {{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 2rem;
+        }}
+
+        .assignments-section h2 {{
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }}
+
+        .assignments-table {{
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+        }}
+
+        .assignments-table th {{
+            background: var(--bg-color);
+            color: var(--text-primary);
+            padding: 1rem 1.5rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+        }}
+
+        .assignments-table td {{
+            padding: 0.85rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }}
+
+        .assignments-table tr:last-child td {{
+            border-bottom: none;
+        }}
+
+        .assignments-table tr:hover td {{
+            background: var(--surface-hover);
+        }}
+
+        .assignments-table a {{
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }}
+
+        .assignments-table a:hover {{
+            text-decoration: underline;
+        }}
+
+        /* Resources Section */
+        .resources-section {{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 3rem;
+        }}
+
+        .resources-section h2 {{
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }}
+
+        .resources-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }}
+
+        .resource-card {{
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }}
+
+        .resource-card:hover {{
+            border-color: var(--primary-color);
+        }}
+
+        .resource-card h3 {{
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }}
+
+        .resource-card ul {{
+            list-style: none;
+            padding: 0;
+        }}
+
+        .resource-card li {{
+            margin-bottom: 0.5rem;
+        }}
+
+        .resource-card li a {{
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }}
+
+        .resource-card li a:hover {{
+            text-decoration: underline;
+        }}
+
+        /* Footer */
+        footer {{
+            background: var(--surface-color);
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            text-align: center;
+        }}
+
+        .footer-content {{
+            max-width: 1400px;
+            margin: 0 auto;
+        }}
+
+        .footer-content p {{
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }}
+
+        .footer-content a {{
+            color: var(--primary-color);
+            text-decoration: none;
+        }}
+
+        .footer-content a:hover {{
+            text-decoration: underline;
+        }}
+
+        /* Animations */
+        @keyframes fadeInUp {{
+            from {{
+                opacity: 0;
+                transform: translateY(30px);
+            }}
+            to {{
+                opacity: 1;
+                transform: translateY(0);
+            }}
+        }}
+
+        @keyframes spin {{
+            to {{ transform: rotate(360deg); }}
+        }}
+
+        /* Responsive */
+        @media (max-width: 768px) {{
+            .course-nav .nav-links {{
+                gap: 1rem;
+            }}
+
+            .course-meta {{
+                flex-direction: column;
+                gap: 0.75rem;
+            }}
+
+            .quick-links {{
+                padding: 0.75rem 1rem;
+            }}
+
+            .week-pill {{
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+            }}
+
+            .week-header {{
+                padding: 1rem 1.5rem;
+            }}
+
+            .week-title {{
+                font-size: 1.25rem;
+            }}
+
+            .lecture-header {{
+                flex-direction: column;
+            }}
+
+            .course-info-grid {{
+                grid-template-columns: repeat(2, 1fr);
+            }}
+
+            .assignments-table {{
+                font-size: 0.85rem;
+            }}
+
+            .assignments-table th,
+            .assignments-table td {{
+                padding: 0.65rem 1rem;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <nav class="course-nav" id="navbar">
+        <div class="logo">{fm.get("code", "PSYC 11")}</div>
+        <div class="nav-links">
+            <a href="./" class="active">Outline</a>
+            <a href="./syllabus/">Syllabus</a>
+            <a href="./assignments/">Assignments</a>
+            <a href="https://github.com/ContextLab/experimental-psychology" target="_blank">GitHub</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span id="themeIcon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>{fm.get("title", "Laboratory in Psychological Science")}</h1>
+        <p>{fm.get("code", "PSYC 11")} &mdash; {fm.get("institution", "Dartmouth College")}</p>
+        <div class="course-meta">
+            <div class="meta-item">
+                <span class="icon"><i class="fa-regular fa-calendar"></i></span>
+                <span>MWF 10:10-11:15 AM</span>
+            </div>
+            <div class="meta-item">
+                <span class="icon"><i class="fa-solid fa-book"></i></span>
+                <span>X-Hour: Thu 12:15-1:05 PM</span>
+            </div>
+            <div class="meta-item">
+                <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span>{fm.get("term", "Spring 2026")}</span>
+            </div>
+            <div class="meta-item">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <span>{rooms.get("main", "TBD")}</span>
+            </div>
+        </div>
+        <div class="doi-badge">
+            <a href="https://zenodo.org/badge/latestdoi/459250616" target="_blank"><img src="https://zenodo.org/badge/459250616.svg" alt="DOI"></a>
+        </div>
+    </section>
+
+    <div class="course-info">
+        <div class="course-info-grid">
+            <div class="info-card">
+                <h4>Instructor</h4>
+                <p><strong>{instructor.get("name", "")}</strong></p>
+                <p><a href="{instructor.get("office_hours_url", "#")}" target="_blank"><i class="fa-regular fa-calendar-check"></i> Office Hours</a></p>
+            </div>
+            <div class="info-card">
+                <h4>Teaching Assistants</h4>
+{tas_html}            </div>
+            <div class="info-card">
+                <h4>Rooms</h4>
+                <p><strong>Main:</strong> {rooms.get("main", "TBD")}</p>
+                <p><strong>Breakout:</strong> {rooms.get("breakout", "TBD")}</p>
+            </div>
+            <div class="info-card">
+                <h4>Quick Links</h4>
+                <p><a href="{links.get("syllabus", "./syllabus/")}"><i class="fa-solid fa-file-lines"></i> Syllabus</a></p>
+                <p><a href="{links.get("assignments", "./assignments/")}"><i class="fa-solid fa-clipboard-list"></i> Assignments</a></p>
+                <p><a href="{links.get("canvas", "#")}" target="_blank"><i class="fa-solid fa-chalkboard"></i> Canvas</a></p>
+                <p><a href="{links.get("slack", "#")}" target="_blank"><i class="fa-brands fa-slack"></i> Slack</a></p>
+                <p><a href="{links.get("github", "#")}" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <div class="quick-links-container" id="quick-links-container">
+{week_pills_html}        </div>
+    </div>
+
+    <main class="container" id="weeks-container">
+{weeks_html}
+    </main>
+
+    <!-- Assignments -->
+    <section class="assignments-section">
+        <h2>Assignments</h2>
+        <table class="assignments-table">
+            <thead>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Points</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+{asgn_rows}            </tbody>
+        </table>
+    </section>
+
+    <!-- Resources -->
+    <section class="resources-section">
+        <h2>Resources</h2>
+        <div class="resources-grid">
+{resources_cards_html}        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <a href="https://www.context-lab.com" target="_blank">Contextual Dynamics Lab</a></p>
+            <p>{fm.get("code", "PSYC 11")}: {fm.get("title", "Laboratory in Psychological Science")}</p>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // COURSE WEEK DATES - {fm.get("term", "Spring 2026")}
+        // ============================================
+        var COURSE_WEEK_STARTS = {{
+{week_starts_js}        }};
+        var COURSE_END = new Date('{course_end_js}');
+
+        function getCurrentWeek() {{
+            var now = new Date();
+            if (now < COURSE_WEEK_STARTS[1]) return 1;
+            if (now >= COURSE_END) return {num_weeks};
+            for (var week = {num_weeks}; week >= 1; week--) {{
+                if (now >= COURSE_WEEK_STARTS[week]) return week;
+            }}
+            return 1;
+        }}
+
+        // ============================================
+        // ACCORDION TOGGLE
+        // ============================================
+        function toggleWeek(header) {{
+            var content = header.nextElementSibling;
+            var isExpanded = header.classList.contains('expanded');
+            if (isExpanded) {{
+                header.classList.remove('expanded');
+                content.classList.remove('expanded');
+            }} else {{
+                header.classList.add('expanded');
+                content.classList.add('expanded');
+            }}
+        }}
+
+        // ============================================
+        // WEEK PILL NAVIGATION
+        // ============================================
+        function setupQuickLinks() {{
+            document.querySelectorAll('.week-pill').forEach(function(pill) {{
+                pill.addEventListener('click', function(e) {{
+                    e.preventDefault();
+                    var targetId = pill.getAttribute('href').substring(1);
+                    var targetSection = document.getElementById(targetId);
+                    if (targetSection) {{
+                        var header = targetSection.querySelector('.week-header');
+                        var content = targetSection.querySelector('.week-content');
+                        if (header && !header.classList.contains('expanded')) {{
+                            header.classList.add('expanded');
+                            content.classList.add('expanded');
+                        }}
+                        targetSection.scrollIntoView({{ behavior: 'smooth' }});
+                    }}
+                }});
+            }});
+        }}
+
+        // ============================================
+        // SCROLL SPY - ACTIVE WEEK PILL
+        // ============================================
+        function updateActiveWeek() {{
+            var weekPills = document.querySelectorAll('.week-pill');
+            var weekSections = document.querySelectorAll('.week-section');
+            var scrollPos = window.scrollY + 200;
+
+            weekSections.forEach(function(section, index) {{
+                var top = section.offsetTop;
+                var bottom = top + section.offsetHeight;
+                if (scrollPos >= top && scrollPos < bottom) {{
+                    weekPills.forEach(function(pill) {{ pill.classList.remove('active'); }});
+                    if (weekPills[index]) weekPills[index].classList.add('active');
+                }}
+            }});
+        }}
+
+        // ============================================
+        // FADE-IN ANIMATIONS
+        // ============================================
+        function setupAnimations() {{
+            var observerOptions = {{ threshold: 0.1 }};
+            var observer = new IntersectionObserver(function(entries) {{
+                entries.forEach(function(entry) {{
+                    if (entry.isIntersecting) {{
+                        entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                        observer.unobserve(entry.target);
+                    }}
+                }});
+            }}, observerOptions);
+
+            document.querySelectorAll('.week-section').forEach(function(section) {{
+                section.style.opacity = '0';
+                observer.observe(section);
+            }});
+        }}
+
+        // ============================================
+        // THEME TOGGLE
+        // ============================================
+        var themeToggle = document.getElementById('themeToggle');
+        var themeIcon = document.getElementById('themeIcon');
+        var htmlEl = document.documentElement;
+
+        var currentTheme = localStorage.getItem('theme') || 'dark';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        themeIcon.textContent = currentTheme === 'dark' ? '\\uD83C\\uDF19' : '\\u2600\\uFE0F';
+
+        themeToggle.addEventListener('click', function() {{
+            var current = htmlEl.getAttribute('data-theme');
+            var newTheme = current === 'dark' ? 'light' : 'dark';
+            htmlEl.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeIcon.textContent = newTheme === 'dark' ? '\\uD83C\\uDF19' : '\\u2600\\uFE0F';
+        }});
+
+        // ============================================
+        // NAVBAR SCROLL EFFECT
+        // ============================================
+        var navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function() {{
+            if (window.pageYOffset > 50) {{
+                navbar.classList.add('scrolled');
+            }} else {{
+                navbar.classList.remove('scrolled');
+            }}
+            updateActiveWeek();
+        }});
+
+        // ============================================
+        // AUTO-EXPAND CURRENT WEEK
+        // ============================================
+        function autoExpandCurrentWeek() {{
+            var currentWeekNum = getCurrentWeek();
+            var weekId = 'week' + currentWeekNum;
+            var section = document.getElementById(weekId);
+            if (section) {{
+                var header = section.querySelector('.week-header');
+                var content = section.querySelector('.week-content');
+                if (header && content) {{
+                    header.classList.add('expanded');
+                    content.classList.add('expanded');
+                }}
+            }}
+            // Highlight the corresponding pill
+            var pills = document.querySelectorAll('.week-pill');
+            if (pills[currentWeekNum - 1]) {{
+                pills[currentWeekNum - 1].classList.add('active');
+            }}
+        }}
+
+        // ============================================
+        // INITIALIZE
+        // ============================================
+        setupQuickLinks();
+        setupAnimations();
+        autoExpandCurrentWeek();
+    </script>
+</body>
+</html>'''
+
+    dest.write_text(html)
+    print(f"Built: {dest}")
+
+
 def build_syllabus():
     """Build the syllabus page from markdown."""
     source = REPO_ROOT / "admin" / "syllabus.md"
@@ -835,6 +2181,7 @@ def main():
     (REPO_ROOT / "syllabus").mkdir(exist_ok=True)
     (REPO_ROOT / "assignments").mkdir(exist_ok=True)
 
+    build_outline_page()
     build_syllabus()
     build_assignment_hub()
     build_individual_assignments()
