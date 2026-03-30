@@ -263,6 +263,6 @@ Survey form
 
 - **Today**: collect data and form hypotheses
 - **Wednesday**: turning hypotheses into specific statistical tests
-- **X-hour and Friday**: I'll be away (no class). But we will use some of the X-hours to make up missed classes when I'll be traveling and for Memorial Day, including next week's X-hour.
+- **X-hour and Friday**: I'll be away (no class). But we will use some of the X-hours (including next week!) to make up missed classes when I'll be traveling and for Memorial Day.
 
 </div>
