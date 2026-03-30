@@ -700,11 +700,19 @@ def build_assignment_pdf(md_file, output_path):
         prepared_md = prepare_markdown_for_pdf(md_file)
 
         # Write LaTeX preamble that sets up emoji font fallback
+        # Use Apple Color Emoji on macOS, Noto Color Emoji on Linux
+        import platform
+        if platform.system() == "Darwin":
+            emoji_font = "Apple Color Emoji"
+            main_font = "Palatino"
+        else:
+            emoji_font = "Noto Color Emoji"
+            main_font = "TeX Gyre Pagella"  # Palatino-equivalent on Linux
         preamble = (
-            "\\directlua{luaotfload.add_fallback(\"emojifallback\","
-            "{\"Apple Color Emoji:mode=harf;\"})"
-            "}\n"
-            "\\setmainfont{Palatino}[RawFeature={fallback=emojifallback}]\n"
+            f"\\directlua{{luaotfload.add_fallback(\"emojifallback\","
+            f"{{\"{emoji_font}:mode=harf;\"}})"
+            f"}}\n"
+            f"\\setmainfont{{{main_font}}}[RawFeature={{fallback=emojifallback}}]\n"
         )
         with tempfile.NamedTemporaryFile(mode="w", suffix=".tex", delete=False) as pf:
             pf.write(preamble)

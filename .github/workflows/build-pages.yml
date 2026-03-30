@@ -22,21 +22,21 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Build HTML pages from markdown
+      - name: Install pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-luatex texlive-latex-extra texlive-fonts-extra fonts-noto-color-emoji
+
+      - name: Build HTML pages and PDFs from markdown
         run: python scripts/build-pages.py
 
-      - name: Generate PDFs with pandoc
+      - name: Generate syllabus PDF
         run: |
-          sudo apt-get update && sudo apt-get install -y pandoc texlive-luatex texlive-latex-extra texlive-fonts-extra
-          for md in assignments/*.md labs/*.md; do
-            [ -f "$md" ] || continue
-            name=$(basename "$md" .md)
-            echo "Generating PDF: $md -> assignments/${name}.pdf"
-            pandoc "$md" --pdf-engine=lualatex -o "assignments/${name}.pdf" || echo "Warning: PDF generation failed for $md"
-          done
           if [ -f admin/syllabus.md ]; then
             echo "Generating syllabus PDF"
-            pandoc admin/syllabus.md --pdf-engine=lualatex -o admin/syllabus.pdf || echo "Warning: Syllabus PDF generation failed"
+            pandoc admin/syllabus.md --pdf-engine=lualatex -o admin/syllabus.pdf \
+              -V geometry:margin=1in -V fontsize:12pt -V colorlinks:true -V linkcolor:green \
+              || echo "Warning: Syllabus PDF generation failed"
           fi
 
       - name: Commit generated files
