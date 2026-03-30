@@ -95,7 +95,7 @@ Dartmouth students have free access to several powerful AI tools:
 
   - [**Dartmouth Chat**](https://chat.dartmouth.edu) — free for all Dartmouth community members. Includes GPT, Claude, Gemini, and Llama models. Log in with your Dartmouth credentials. This is the easiest starting point.
   - [**Claude for Education**](https://claude.dartmouth.edu) — free Claude Pro access for Dartmouth students via the Anthropic partnership. Log in with your Dartmouth credentials for the first time.
-  - [**Google Gemini**](https://gemini.google/students/) — check if the student offer is still available, or access Gemini models through Dartmouth Chat.
+  - [**Google Gemini**](https://gemini.google/students/) — free access for 1 year with a .edu email address.
 
 Pick whichever tool you're most comfortable with (or try more than one!).
 
@@ -115,14 +115,16 @@ Start by drafting an analysis plan *on your own* (with your group).  Based on yo
 
 Share your analysis plan with a GenAI tool and ask it to help you improve it.  Here's the critical thing to watch out for:
 
-**GenAI tends to be highly sycophantic**-- it will very likely agree with whatever plan you suggest, even if your plan is logically flawed or uses the wrong test.  To get genuinely useful feedback, try prompting strategies like:
+**GenAI tends to be highly sycophantic**-- it will very likely agree with whatever plan you suggest, even if your plan is logically flawed or uses the wrong tests.  To get genuinely useful feedback, try prompting strategies like:
 
   - *"Play devil's advocate: what's wrong with this analysis plan?"*
   - *"What are 3 ways this plan could lead to misleading conclusions?"*
   - *"Assume I've made at least one mistake in my plan. Find it."*
   - *"If you were reviewing this plan as a skeptical peer reviewer, what would you flag?"*
 
-Use the AI's pushback to strengthen your plan.  Did it catch something you missed?  Did it suggest a better test or an additional control?
+Use the AI's pushback to strengthen your plan.  Did it catch something you missed?  Did it suggest a better test or an additional control? If you don't understand the plan or feedback, ask the AI to explain it in more detail.
+
+Also use *human experts*-- ask your TA or instructor to review your plan and provide feedback.
 
 ### 3. Outline a robust analysis plan
 
