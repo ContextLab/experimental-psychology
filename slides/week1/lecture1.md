@@ -14,26 +14,6 @@ Jeremy R. Manning
 Dartmouth College
 Spring 2026
 
----
-
-# What is this course about?
-
-<div class="note-box" data-title="The big picture">
-
-- Learn to carry out psychological research **by doing it**
-- Each lab maps to a section of a scientific article: Introduction, Methods, Results, Discussion
-- First ~5 weeks: guided labs. Last ~5 weeks: your own study!
-
-</div>
-
-<div class="important-box" data-title="Key questions we'll explore this term">
-
-- How do we turn curiosity into a testable hypothesis?
-- How can we turn a hypothesis into a rigorous experiment?
-- What makes evidence convincing (or misleading)?
-- How do we communicate science clearly and honestly?
-
-</div>
 
 ---
 
@@ -123,6 +103,51 @@ Associate Professor | Psychological &amp; Brain Sciences | <img src="../figs/ins
 
 ---
 
+# Who are the other people in front of the room?
+
+<div class="note-box" data-title="Your amazing TAs!">
+
+- **Yifan Fang**
+- **Yuqi Zhang**
+- **Eunhye Choe**
+
+</div>
+
+<div class="tip-box" data-title="What do TAs do in this course?">
+
+TAs will lead breakout lab sections, hold weekly office hours, help with your labs and projects, and assist with grading assignments. Get to know them&mdash;they can be a *fantastic* resource; please take advantage of their expertise and support!
+
+</div>
+
+<div class="warning-box" data-title="What don't TAs do?">
+
+TAs are not responsible for course logistics, policies, content, or other administrative matters or interpersonal issues. Final grading decisions are made by me. Please reach out to me directly with any questions or concerns about any of these topics.
+
+</div>
+
+---
+
+# What is this course about?
+
+<div class="note-box" data-title="The big picture">
+
+- Learn to carry out psychological research **by doing it**
+- Each lab maps to a section of a scientific article: Introduction, Methods, Results, Discussion
+- First ~5 weeks: guided labs. Last ~5 weeks: your own study!
+
+</div>
+
+<div class="important-box" data-title="Key questions we'll explore this term">
+
+- How do we turn curiosity into a testable hypothesis?
+- How can we turn a hypothesis into a rigorous experiment?
+- What makes evidence convincing (or misleading)?
+- How do we communicate science clearly and honestly?
+
+</div>
+
+---
+
 <!-- _class: scale-90 -->
 
 # Logistics (the short version)
@@ -152,30 +177,6 @@ Course webpage
 Slack
 
 </div>
-</div>
-
----
-
-# Teaching assistants
-
-<div class="note-box" data-title="Your amazing TAs!">
-
-- **Yifan Fang**
-- **Yuqi Zhang**
-- **Eunhye Choe**
-
-</div>
-
-<div class="tip-box" data-title="What do TAs do in this course?">
-
-TAs will lead breakout lab sections, hold weekly office hours, help with your labs and projects, and assist with grading assignments. They can be a *fantastic* resource; please take advantage of their expertise and support!
-
-</div>
-
-<div class="warning-box" data-title="What don't TAs do?">
-
-TAs are not responsible for course logistics, policies, content, or other administrative matters or interpersonal issues. Final grading decisions are made by me. Please reach out to me directly with any questions or concerns about these topics.
-
 </div>
 
 ---
