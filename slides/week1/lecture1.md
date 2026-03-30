@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Course overview and Introduction
+# Course overview and introduction
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -18,7 +18,7 @@ Spring 2026
 
 # What is this course about?
 
-<div class="note-box" data-title="The Big Picture">
+<div class="note-box" data-title="The big picture">
 
 - Learn to carry out psychological research **by doing it**
 - Each lab maps to a section of a scientific article: Introduction, Methods, Results, Discussion
@@ -26,11 +26,7 @@ Spring 2026
 
 </div>
 
----
-
-# Key questions we'll explore this term
-
-<div class="important-box" data-title="Questions to Keep in Mind">
+<div class="important-box" data-title="Key questions we'll explore this term">
 
 - How do we turn curiosity into a testable hypothesis?
 - What makes evidence convincing (or misleading)?

@@ -16,9 +16,9 @@ term: Spring 2026
 | Role | Name | Email | Office Location | Office Hours |
 |-|-|-|-|-|
 | Instructor | Dr. Jeremy R. Manning | jeremy@dartmouth.edu | Moore 349 | By appointment ([schedule here](https://context-lab.com/scheduler)) |
-| Teaching Assistant | Yifan Fang | TBD | TBD | TBD |
-| Teaching Assistant | Yuqi Zhang | TBD | TBD | TBD |
-| Teaching Assistant | Eunhye Choe | TBD | TBD | TBD |
+| Teaching Assistant | Yifan Fang | [Yifan.Fang.GR@dartmouth.edu](mailto:Yifan.Fang.GR@dartmouth.edu) | By appointment (email to schedule) | TBD |
+| Teaching Assistant | Yuqi Zhang | [Yuqi.Zhang.GR@dartmouth.edu](mailto:Yuqi.Zhang.GR@dartmouth.edu) | By appointment (email to schedule) | TBD |
+| Teaching Assistant | Eunhye Choe | [Eunhye.Choe.GR@dartmouth.edu](mailto:Eunhye.Choe.GR@dartmouth.edu) | By appointment (email to schedule) | TBD |
 
 ## Course Description
 
@@ -50,70 +50,45 @@ The design of this course is substantially different from other more traditional
 
 ## Course Schedule
 
-### Week 1 (Mar 30 -- Apr 4): Survey Lab
-
-- **M 3/30:** Intro + Survey Lab + Data collection
-- **W 4/2:** Statistical building blocks
-- **F 4/4:** *No class (instructor away)*
-
-### Week 2 (Apr 7 -- 11): Pitch Lab
-
-- **M 4/7:** Motivating science intro + Pitch lab starts
-- **W 4/9:** Present pitches + fill out evals
-- **Th 4/10 (X-hour):** Data wrangling + Vibe coding tutorial
-- **F 4/11:** How far can you get with data and stats?
-
-### Week 3 (Apr 14 -- 18): Drawing Lab
-
-- **M 4/14:** Effective explaining + Drawing lab starts
-- **W 4/16:** Data collection -- reproduce drawings
-- **Th 4/17 (X-hour):** Stats refresher
-- **F 4/18:** Analyzing drawing lab data
-
-### Week 4 (Apr 21 -- 25): Data Sleuthing Lab
-
-- **M 4/21:** Creating data + Data sleuthing lab starts
-- **W 4/23:** Exploring and understanding data
-- **Th 4/24 (X-hour):** Additional office hours (sign up)
-- **F 4/25:** Quick start guide to digging into data
-
-### Week 5 (Apr 28 -- May 2): Literature Review Lab
-
-- **M 4/28:** Searching and reviewing the literature + Lit review lab starts
-- **W 4/30:** Synthesizing across studies/findings
-- **Th 5/1 (X-hour):** Additional office hours (sign up)
-- **F 5/2:** Logistics + announcements for weeks 6--10, then group work on lit review lab wrap up
-
-### Week 6 (May 5 -- 9): Final Projects Begin
-
-- **M 5/5:** Getting started with final projects: find a group, brainstorm idea
-- **W 5/7:** Design your study
-- **Th 5/8 (X-hour):** Additional office hours (sign up)
-- **F 5/9:** Experiment implementation tips + Human subjects training (complete at home over the weekend)
-
-### Week 7 (May 12 -- 16): Human Subjects Training + Data Collection
-
-- No formal class sessions. Run instructor through your study and confirm human subjects training was completed. TAs and instructor available to help.
-- **Th 5/15 (X-hour):** Additional office hours (sign up)
-
-### Week 8 (May 19 -- 23): Data Analysis + Interpretation
-
-- **M 5/19:** Groups work on data analysis ideas (no formal lecture)
-- **W 5/21:** Introduction to poster presentations + analysis work time
-- **Th 5/22 (X-hour):** Poster creation workshop
-- **F 5/23:** Interpretation + start working on posters
-
-### Week 9 (May 26 -- 30): Posters + Papers
-
-- **M 5/26:** *No class (Memorial Day)*
-- **W 5/28:** Effective scientific writing + continue working on posters/paper
-- **Th 5/29:** *No office hours (instructor away)*
-- **F 5/30:** *No class (instructor away)*
-
-### Week 10 (Jun 2 -- 4): Final Week
-
-- **M 6/2:** Wrap up projects (TAs/instructor available to help)
-- **W 6/4 (last day of class):** Public poster session + final paper/poster/presentation recording due
+| Week | Day | Date | Topic | Notes |
+|-|-|-|-|-|
+| **1: Survey Lab** | M | 3/30 | Intro + Survey Lab + Data collection | |
+| | W | 4/1 | Statistical building blocks | |
+| | F | 4/3 | *No class* | Instructor away |
+| **2: Pitch Lab** | M | 4/6 | Motivating science intro + Pitch lab starts | |
+| | W | 4/8 | Present pitches + fill out evals | No slides |
+| | Th | 4/9 | Data wrangling + Vibe coding tutorial | X-hour |
+| | F | 4/10 | How far can you get with data and stats? | |
+| **3: Drawing Lab** | M | 4/13 | Effective explaining + Drawing lab starts | |
+| | W | 4/15 | Data collection -- reproduce drawings | No slides |
+| | Th | 4/16 | Stats refresher | X-hour |
+| | F | 4/17 | Analyzing drawing lab data | |
+| **4: Data Sleuthing Lab** | M | 4/20 | Creating data + Data sleuthing lab starts | |
+| | W | 4/22 | *No class* | Instructor away |
+| | Th | 4/23 | Exploring and understanding data | X-hour (moved from W) |
+| | F | 4/24 | Quick start guide to digging into data | |
+| **5: Literature Review Lab** | M | 4/27 | Searching the literature + Lit review lab starts | |
+| | W | 4/29 | Synthesizing across studies/findings | |
+| | Th | 4/30 | Additional office hours | X-hour (sign up) |
+| | F | 5/1 | Logistics + group work on lit review lab wrap up | |
+| **6: Final Projects Begin** | M | 5/4 | Getting started: find a group, brainstorm idea | |
+| | W | 5/6 | Design your study | |
+| | Th | 5/7 | Additional office hours | X-hour (sign up) |
+| | F | 5/8 | Experiment implementation tips + Human subjects training | Complete training at home over the weekend |
+| **7: Data Collection** | M | 5/11 | Project work | |
+| | W | 5/13 | Project work | |
+| | Th | 5/14 | Additional office hours | X-hour (sign up) |
+| | F | 5/15 | Project work | |
+| **8: Data Analysis** | M | 5/18 | Groups work on data analysis | No formal lecture |
+| | W | 5/20 | Intro to poster presentations + analysis work | |
+| | Th | 5/21 | Poster creation workshop | X-hour |
+| | F | 5/22 | Interpretation + start working on posters | |
+| **9: Posters + Papers** | M | 5/25 | *No class (Memorial Day)* | |
+| | W | 5/27 | Effective scientific writing + work time | |
+| | Th | 5/28 | *No office hours* | Instructor away |
+| | F | 5/29 | *No class* | Instructor away |
+| **10: Final Week** | M | 6/1 | Wrap up projects | TAs/instructor available |
+| | W | 6/3 | **Public poster session** | Last day of class; final paper/poster/presentation recording due |
 
 *Note: the above schedule is subject to change.*
 
