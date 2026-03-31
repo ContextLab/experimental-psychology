@@ -16,17 +16,38 @@ Spring 2026
 
 ---
 
-<img src="../figs/statistical_building_blocks/pasted-image-14274.png" style="max-height: 450px; width: auto;">
+![bg](../figs/statistical_building_blocks/pasted-image-14274.png)
+
+---
+
+# Today's goal
+
+<div class="note-box" data-title="Connecting Stats to Your Survey Data">
+
+You collected survey data on Monday -- sleep, stress, happiness, screen time, exercise, caffeine, study hours, social activity.
+
+Today we'll build the statistical intuitions you need to **analyze** that data:
+- What kinds of patterns can we look for?
+- How do we know if a pattern is "real" or just noise?
+- Which tools match which questions?
+
+</div>
 
 ---
 
 # What is a distribution?
 
-<div class="note-box" data-title="Core Intuition">
+<div class="definition-box" data-title="Core Intuition">
 
-- A distribution describes what values are likely (or unlikely) when we observe something
-- Different distributions produce different types of data: real numbers, counts, coin flips, etc.
-- Each distribution has **parameters** that control its shape (e.g., mean, variance, probability)
+A distribution describes what values are likely (or unlikely) when we observe something.
+
+</div>
+
+<div class="example-box" data-title="Think About Your Survey Data">
+
+- If you plotted everyone's sleep hours, what shape would you expect? A bell curve? Skewed?
+- What about stress ratings (1--10)? Would they cluster in the middle or spread out?
+- **Discussion**: sketch what you think the sleep distribution looks like. Compare with a neighbor.
 
 </div>
 
@@ -34,23 +55,48 @@ Spring 2026
 
 # What is a p-value, really?
 
-<div class="important-box" data-title="Key Idea">
+<div class="important-box" data-title="The Key Idea">
 
-- A p-value answers: "If nothing interesting were happening, how surprised should I be by this data?"
-- Low p-value = the data would be very unlikely under the "boring" (null) explanation
+A p-value answers: *"If there were NO relationship between these variables, how surprised should I be by what I see in the data?"*
+
+- Low p-value → the pattern would be very unlikely to occur by chance
 - It does **not** tell you the probability that your hypothesis is true!
+- It does **not** tell you how strong or important the effect is!
 
 </div>
 
 ---
 
-# Discussion: Hypotheses
+# Discussion: Your survey hypotheses
 
-<div class="example-box" data-title="Your Turn">
+<div class="example-box" data-title="Think-Pair-Share">
 
-- Give an example of a hypothesis you could test with data from this class
-- What would your "null" hypothesis be? What outcome would make you reject it?
-- Share with a neighbor and compare
+- You formed hypotheses on Monday about relationships in the survey data
+- For one of your hypotheses: what would the "null" hypothesis be?
+- What would you expect to see in the data if there really is NO relationship?
+- What result would surprise you enough to reject the null?
+
+</div>
+
+---
+
+<!-- _class: scale-80 -->
+
+# Which test for which question?
+
+<div class="tip-box" data-title="Matching Your Question to a Test">
+
+| Your question | Test | Example from our survey |
+|-|-|-|
+| Do two groups differ? | **t-test** | Do high-sleepers (≥7 hrs) have lower stress than low-sleepers? |
+| Are two continuous variables related? | **Correlation** | Is screen time associated with happiness? |
+| Are two categories associated? | **Chi-square** | Is exercise level (high/low) related to caffeine level (high/low)? |
+
+</div>
+
+<div class="warning-box" data-title="Watch Out">
+
+Choosing the wrong test for your data type is one of the most common mistakes. When in doubt, ask!
 
 </div>
 
@@ -58,43 +104,71 @@ Spring 2026
 
 # The recipe for any statistical test
 
-<div class="tip-box" data-title="How Tests Work">
+<div class="note-box" data-title="Four Steps">
 
-1. Pick a distribution that matches your data type
-2. Choose "null" parameters (e.g., mean = 0, coin is fair)
-3. Simulate many draws from that null distribution
-4. Compare your actual data to those simulations -- how unusual is it?
-
-</div>
-
----
-
-# Example: Is a coin fair?
-
-<div class="example-box" data-title="Worked Example">
-
-- You flip a coin 12 times and get 3 heads
-- Null hypothesis: p(heads) = 0.5
-- Simulate 1,000,000 sets of 12 flips with a fair coin
-- What fraction give 3 or fewer heads? That fraction is your p-value!
+1. **State your hypothesis** clearly (and what the null alternative is)
+2. **Pick the right test** based on your data type and question
+3. **Run the test** and get a test statistic + p-value
+4. **Interpret honestly** -- what can you conclude? What can't you?
 
 </div>
 
 ---
 
-<!-- _class: scale-78 -->
+# Beyond p-values: effect sizes
 
-# Common distributions (reference)
+<div class="warning-box" data-title="Why p-values Aren't Enough">
 
-| **Distribution** | **Parameter(s)** | **What you get out** |
-|-|-|-|
-| **Gaussian (Normal)** | Mean, variance | Real numbers |
-| **Bernoulli** | Probability that x = 1 | Coin flips (0 or 1) |
-| **Binomial** | N observations, probability | Count of successes |
-| **Uniform** | Start and end points | Number in that range |
+- A *tiny* effect can be "significant" with enough data
+- A *large* effect might not be "significant" with too little data
+- Always ask: **how big** is the effect, not just "is it significant?"
+- For correlations: r = 0.1 is small, r = 0.3 is medium, r = 0.5 is large
+
+</div>
 
 ---
 
-# Demo
+# Let's look at some analysis tools
 
-<img src="../figs/statistical_building_blocks/binomial_demo_qr-14834.png" width="500">
+<div class="tip-box" data-title="Survey Analysis Notebook">
+
+This notebook has templates for all the tests we discussed -- t-tests, correlations, chi-square -- pre-loaded with column names from our class survey.
+
+Open it in Google Colab and start exploring!
+
+</div>
+
+<div style="text-align: center;">
+
+<img src="../figs/statistical_building_blocks/survey_analysis_qr.png" width="350">
+
+Survey analysis notebook
+
+</div>
+
+---
+
+# Questions? Want to chat more?
+
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://psyc11.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
+
+<div class="note-box" data-title="Up next...">
+
+- **Today**: start thinking about your hypotheses and analysis plan
+- **Thursday and Friday**: no class this week (instructor away)
+- **Next Monday**: Motivating your science + Pitch lab starts
+
+</div>
