@@ -2135,8 +2135,14 @@ def build_assignment_hub():
     print(f"Built: {dest}")
 
 
-def build_individual_assignments():
-    """Build individual assignment/lab pages from markdown files."""
+def build_individual_assignments(changed_files=None):
+    """Build individual assignment/lab pages from markdown files.
+
+    Args:
+        changed_files: If provided, a set of file paths. Only generate PDFs
+            for files in this set. HTML is always rebuilt (fast). If None,
+            rebuild everything.
+    """
     for md_dir in ["assignments", "labs"]:
         source_dir = REPO_ROOT / md_dir
         if not source_dir.exists():
@@ -2168,13 +2174,38 @@ def build_individual_assignments():
             dest.write_text(html)
             print(f"Built: {dest}")
 
-            # Generate PDF
+            # Generate PDF only if file changed (or no filter specified)
+            rel_path = str(md_file.relative_to(REPO_ROOT))
+            if changed_files is not None and rel_path not in changed_files:
+                print(f"Skip PDF (unchanged): {name}")
+                continue
+
             pdf_dest = output_base / f"{name}.pdf"
             build_assignment_pdf(md_file, pdf_dest)
 
 
 def main():
-    """Main build function."""
+    """Main build function.
+
+    Supports --changed flag to only generate PDFs for specified files.
+    HTML pages are always rebuilt (fast). PDFs are only rebuilt for
+    changed files (slow — lualatex takes ~10s per file).
+    """
+    import sys
+
+    # Parse --changed flag: list of changed .md file paths
+    changed_files = None
+    if "--changed" in sys.argv:
+        idx = sys.argv.index("--changed")
+        if idx + 1 < len(sys.argv):
+            changed_arg = sys.argv[idx + 1].strip()
+            if changed_arg:
+                changed_files = set(changed_arg.split())
+                print(f"Incremental build: PDFs only for {len(changed_files)} changed file(s)")
+            else:
+                changed_files = set()
+                print("No changed files specified — skipping PDF generation")
+
     print("Building PSYC 11 course pages...")
     print("=" * 50)
 
@@ -2184,7 +2215,7 @@ def main():
     build_outline_page()
     build_syllabus()
     build_assignment_hub()
-    build_individual_assignments()
+    build_individual_assignments(changed_files=changed_files)
 
     print("=" * 50)
     print("Done!")

@@ -27,10 +27,32 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-luatex texlive-latex-extra texlive-fonts-extra fonts-noto-color-emoji
 
+      - name: Detect changed files
+        id: changes
+        run: |
+          CHANGED_MD=$(git diff --name-only HEAD~1 HEAD -- 'assignments/*.md' 'labs/*.md' 'admin/syllabus.md' 2>/dev/null || echo "")
+          FORCE_ALL=$(git diff --name-only HEAD~1 HEAD -- 'scripts/build-pages.py' '.github/workflows/build-pages.yml' 2>/dev/null || echo "")
+          if [ -n "$FORCE_ALL" ]; then
+            echo "force_all=true" >> $GITHUB_OUTPUT
+            echo "Force rebuild: build script or workflow changed"
+          else
+            echo "force_all=false" >> $GITHUB_OUTPUT
+            echo "Changed markdown files: $CHANGED_MD"
+          fi
+          echo "changed_md<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGED_MD" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Build HTML pages and PDFs from markdown
-        run: python scripts/build-pages.py
+        run: |
+          if [ "${{ steps.changes.outputs.force_all }}" = "true" ]; then
+            python scripts/build-pages.py
+          else
+            python scripts/build-pages.py --changed "${{ steps.changes.outputs.changed_md }}"
+          fi
 
       - name: Generate syllabus PDF
+        if: contains(steps.changes.outputs.changed_md, 'syllabus') || steps.changes.outputs.force_all == 'true'
         run: |
           if [ -f admin/syllabus.md ]; then
             echo "Generating syllabus PDF"
