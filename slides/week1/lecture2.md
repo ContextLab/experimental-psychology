@@ -142,6 +142,12 @@ A distribution is a mathematical object that generates data. Different distribut
 
 </div>
 
+<div class="important-box" data-title="You can combine the blocks!">
+
+The distributions "work together" to build more sophisticated distributions and tests. For example we could create a distribution of coin flips of different types of coins by combining the multinomial distribution (which picks a coin) with the Bernoulli distribution (which flips the coin).
+
+</div>
+
 ---
 
 # Let's talk it through: design your own test!
