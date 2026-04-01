@@ -30,7 +30,7 @@ section.title-bg > * {
 }
 </style>
 
-# <!-- fit --> Statistical building blocks
+# Statistical building blocks
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -114,7 +114,18 @@ A distribution is a mathematical object that generates data. Different distribut
 | **Binomial** | N trials, probability | Count of successes | How many days/week do you exercise? |
 | **Uniform** | Start, end | Number in range | If ratings were random |
 
-<img src="../figs/statistical_building_blocks/distributions.svg" style="width: 100%; margin-top: 0.5em;">
+<img src="../figs/statistical_building_blocks/distributions.svg" style="width: 100%; margin-top: 0.5em;" data-marp-transition-id="distplot">
+
+---
+
+<!-- _transition: morph -->
+<!-- _class: scale-80 -->
+
+<div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+
+<img src="../figs/statistical_building_blocks/distributions_full.svg" style="width: 100%;" data-marp-transition-id="distplot">
+
+</div>
 
 ---
 
