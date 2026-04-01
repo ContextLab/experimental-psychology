@@ -181,7 +181,7 @@ Don't worry about getting it "right" — we'll work through this together!
 
 # Let's try it with our actual data
 
-<div class="tip-box" data-title="Survey Analysis Notebook">
+<div class="tip-box" data-title="Survey analysis notebook">
 
 This notebook lets you explore the class survey data and try building your own simulation-based tests!
 
