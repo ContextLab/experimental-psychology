@@ -6,75 +6,57 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Statistical building blocks
+![bg cover](../figs/statistical_building_blocks/pasted-image-14274.png)
+
+# <!-- fit --> Statistical building blocks
 
 ### PSYC 11: Laboratory in Psychological Science
 
-Jeremy R. Manning
-Dartmouth College
-Spring 2026
+Jeremy R. Manning · Dartmouth College · Spring 2026
 
 ---
 
-![bg](../figs/statistical_building_blocks/pasted-image-14274.png)
+# You already know how to *use* statistical tests
 
----
+<div class="note-box" data-title="The intro-to-stats view">
 
-# Today's goal
-
-<div class="note-box" data-title="Connecting Stats to Your Survey Data">
-
-You collected survey data on Monday -- sleep, stress, happiness, screen time, exercise, caffeine, study hours, social activity.
-
-Today we'll build the statistical intuitions you need to **analyze** that data:
-- What kinds of patterns can we look for?
-- How do we know if a pattern is "real" or just noise?
-- Which tools match which questions?
+- Want to compare two group means? → t-test or ANOVA
+- Want to see if two variables are related? → correlation or regression
+- Want to test if categories are associated? → chi-square test
+- ...etc.
 
 </div>
 
----
-
-# What is a distribution?
-
-<div class="definition-box" data-title="Core Intuition">
-
-A distribution describes what values are likely (or unlikely) when we observe something.
-
-</div>
-
-<div class="example-box" data-title="Think About Your Survey Data">
-
-- If you plotted everyone's sleep hours, what shape would you expect? A bell curve? Skewed?
-- What about stress ratings (1--10)? Would they cluster in the middle or spread out?
-- **Discussion**: sketch what you think the sleep distribution looks like. Compare with a neighbor.
-
-</div>
+But where do those tests actually **come from**?
 
 ---
 
-# What is a p-value, really?
+# Today: learn to *make* your own statistical tests
 
 <div class="important-box" data-title="The Key Idea">
 
-A p-value answers: *"If there were NO relationship between these variables, how surprised should I be by what I see in the data?"*
+Every statistical test is built from the same basic recipe:
+1. Pick a **distribution** that matches your data type
+2. Set parameters to represent your **null hypothesis**
+3. **Simulate** many datasets from that null distribution
+4. Compare your **actual data** to the simulations — how unusual is it?
 
-- Low p-value → the pattern would be very unlikely to occur by chance
-- It does **not** tell you the probability that your hypothesis is true!
-- It does **not** tell you how strong or important the effect is!
+That's it. Every test you learned in intro stats follows this exact recipe!
 
 </div>
 
 ---
 
-# Discussion: Your survey hypotheses
+# Discussion: What kind of data did we collect?
 
-<div class="example-box" data-title="Think-Pair-Share">
+<div class="example-box" data-title="Think About Our Survey">
 
-- You formed hypotheses on Monday about relationships in the survey data
-- For one of your hypotheses: what would the "null" hypothesis be?
-- What would you expect to see in the data if there really is NO relationship?
-- What result would surprise you enough to reject the null?
+On Monday you reported: sleep hours, stress (1--10), happiness (1--10), screen time, exercise days, caffeine, study hours, social activity (1--10).
+
+- Which of these are **real numbers** (could be any value)?
+- Which are **counts** (integers only)?
+- Which are **bounded ratings** (e.g., 1--10 scale)?
+- Does the *type* of data matter for which test you can use?
 
 </div>
 
@@ -82,59 +64,72 @@ A p-value answers: *"If there were NO relationship between these variables, how 
 
 <!-- _class: scale-80 -->
 
-# Which test for which question?
+# Distributions: the building blocks
 
-<div class="tip-box" data-title="Matching Your Question to a Test">
+<div class="definition-box" data-title="What is a distribution?">
 
-| Your question | Test | Example from our survey |
-|-|-|-|
-| Do two groups differ? | **t-test** | Do high-sleepers (≥7 hrs) have lower stress than low-sleepers? |
-| Are two continuous variables related? | **Correlation** | Is screen time associated with happiness? |
-| Are two categories associated? | **Chi-square** | Is exercise level (high/low) related to caffeine level (high/low)? |
+A distribution is a mathematical object that generates data. Different distributions produce different types of values.
 
 </div>
 
-<div class="warning-box" data-title="Watch Out">
+| Distribution | Parameters | What you get out | Survey example |
+|-|-|-|-|
+| **Gaussian** | Mean, variance | Real numbers | Sleep hours |
+| **Bernoulli** | Probability | 0 or 1 (coin flips) | "Do you exercise?" (yes/no) |
+| **Binomial** | N trials, probability | Count of successes | How many days/week do you exercise? |
+| **Uniform** | Start, end | Number in range | If ratings were random |
 
-Choosing the wrong test for your data type is one of the most common mistakes. When in doubt, ask!
+---
+
+# So how do we *build* a test?
+
+<div class="tip-box" data-title="The Recipe (Applied to Our Survey)">
+
+**Question**: "Do students who sleep more report less stress?"
+
+1. **Pick a distribution**: If there's no relationship, stress scores for high-sleepers and low-sleepers should come from the **same** distribution
+2. **Set null parameters**: Both groups have the same mean stress
+3. **Simulate**: Randomly shuffle who's in which group 10,000 times, compute the mean difference each time
+4. **Compare**: Is the *actual* difference between groups bigger than what we get from shuffling?
 
 </div>
 
 ---
 
-# The recipe for any statistical test
+# Discussion: Design your own test
 
-<div class="note-box" data-title="Four Steps">
+<div class="example-box" data-title="Breakout Groups (5 min)">
 
-1. **State your hypothesis** clearly (and what the null alternative is)
-2. **Pick the right test** based on your data type and question
-3. **Run the test** and get a test statistic + p-value
-4. **Interpret honestly** -- what can you conclude? What can't you?
+Pick one of your hypotheses from Monday. For that hypothesis:
 
-</div>
+- What **distribution** would your data come from if the null hypothesis were true?
+- What would you **simulate** to build a null distribution?
+- What **statistic** would you compute to compare your actual data to the simulations?
 
----
-
-# Beyond p-values: effect sizes
-
-<div class="warning-box" data-title="Why p-values Aren't Enough">
-
-- A *tiny* effect can be "significant" with enough data
-- A *large* effect might not be "significant" with too little data
-- Always ask: **how big** is the effect, not just "is it significant?"
-- For correlations: r = 0.1 is small, r = 0.3 is medium, r = 0.5 is large
+Don't worry about getting it "right" — we'll work through this together!
 
 </div>
 
 ---
 
-# Let's look at some analysis tools
+# Why does this matter?
+
+<div class="important-box" data-title="Beyond the Cookbook">
+
+- In intro stats, you pick from a menu of pre-made tests
+- In real research, your question might not fit a standard test
+- If you understand the **recipe**, you can build a test for *any* question
+- This is also how modern computational statistics works — simulation-based testing
+
+</div>
+
+---
+
+# Let's try it with our actual data
 
 <div class="tip-box" data-title="Survey Analysis Notebook">
 
-This notebook has templates for all the tests we discussed -- t-tests, correlations, chi-square -- pre-loaded with column names from our class survey.
-
-Open it in Google Colab and start exploring!
+This notebook lets you explore the class survey data and try building your own simulation-based tests!
 
 </div>
 
@@ -142,7 +137,7 @@ Open it in Google Colab and start exploring!
 
 <img src="../figs/statistical_building_blocks/survey_analysis_qr.png" width="350">
 
-Survey analysis notebook
+Survey analysis notebook (Google Colab)
 
 </div>
 
