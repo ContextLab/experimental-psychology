@@ -51,7 +51,7 @@ That's it. Every test you learned in intro stats follows this exact recipe!
 
 ---
 
-# Discussion: what kind of data did we collect?
+# What kind of data did we collect?
 
 <div class="example-box" data-title="Think about our survey...">
 
@@ -107,7 +107,7 @@ A distribution is a mathematical object that generates data. Different distribut
 
 ---
 
-# Discussion: Design your own test
+# Let's talk it through: design your own test!
 
 <div class="example-box" data-title="Breakout Groups (5 min)">
 
@@ -173,8 +173,8 @@ Survey analysis notebook (Google Colab)
 
 <div class="note-box" data-title="Up next...">
 
-- **Today**: start thinking about your hypotheses and analysis plan
-- **Thursday and Friday**: no class this week (instructor away)
-- **Next Monday**: Motivating your science + Pitch lab starts
+- **Today**: play around with the survey data and try building your own tests
+- **Thursday and Friday**: no class this week (I'll be away)
+- **Next Monday**: Pitch lab starts. Read the [lab instructions](https://context-lab.com/experimental-psychology/assignments/pitch_session_lab/) to prepare!
 
 </div>
