@@ -6,13 +6,37 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-![bg cover](../figs/statistical_building_blocks/pasted-image-14274.png)
+<!--
+_class: title-bg
+-->
+
+<style scoped>
+section.title-bg {
+  background-image: url('../figs/statistical_building_blocks/pasted-image-14274.png');
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+section.title-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 0;
+}
+section.title-bg > * {
+  position: relative;
+  z-index: 1;
+}
+</style>
 
 # <!-- fit --> Statistical building blocks
 
 ### PSYC 11: Laboratory in Psychological Science
 
-Jeremy R. Manning · Dartmouth College · Spring 2026
+Jeremy R. Manning
+Dartmouth College
+Spring 2026
 
 ---
 
@@ -89,6 +113,8 @@ A distribution is a mathematical object that generates data. Different distribut
 | **Bernoulli** | Probability | 0 or 1 (coin flips) | "Do you exercise?" (yes/no) |
 | **Binomial** | N trials, probability | Count of successes | How many days/week do you exercise? |
 | **Uniform** | Start, end | Number in range | If ratings were random |
+
+<img src="../figs/statistical_building_blocks/distributions.svg" style="width: 100%; margin-top: 0.5em;">
 
 ---
 
