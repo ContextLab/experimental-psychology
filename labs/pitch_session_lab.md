@@ -47,6 +47,16 @@ Your pitch will comprise the following elements:
 
 Brainstorm each of these elements with your group.
 
+## \emoji{teacher} Step 2.5: pitch diary (individual)
+
+Before the presentations begin, each person should individually write a short "pitch diary" entry (3--4 sentences).  This is *not* a group exercise-- it's your own personal reflection.  Answer the following:
+
+  - What do *you* personally find most compelling about your group's idea?
+  - Why does it matter to *you*?
+  - What are you most excited (or nervous) about in presenting it?
+
+Hold onto this-- you'll add to it after the presentations.
+
 ## \emoji{teacher} Step 3: make your pitch
 
 You'll present your "pitch" in (up to) 5 minutes, to the class.  Your pitch can take any form you choose, including (but not limited to):
@@ -73,11 +83,31 @@ For each group (including your own!), use [this survey](https://forms.gle/eVUf5X
 
 The resulting spreadsheet will contain one row per submitted rating and one column per rating dimension (plus two additional columns: one containing the times the given ratings were submitted and the other containing the group identities-- A, B, C, or D).  The spreadsheet will be available [here](https://docs.google.com/spreadsheets/d/1f4EbN5AtnR53CynJoMfJO2Ydni8-XPb8a4Y7IH0dBZw/edit?usp=sharing), but don't peek until after the presentations!
 
-## \emoji{teacher} Step 5: data wrangling and analysis
+## \emoji{teacher} Step 4.5: pitch diary, part 2 (individual)
 
-Using the ratings data (however you deem appropriate), rank the four groups according to how effective their pitches were.  Create a figure of some sort to display the results in a way that conveys your findings clearly.
+After all presentations are finished, add to your pitch diary (again, individually-- 3--4 sentences):
 
-# \emoji{speaking-head} Using GenAI in this lab
+  - What surprised you most about the other groups' pitches?
+  - Did any pitch change your mind about something, or make you see an idea differently?
+  - How do you feel about your own group's pitch now, compared to before?
+
+## \emoji{teacher} Step 5: predict, then analyze
+
+**Before looking at the data**, discuss with your group and write down your predictions:
+
+  - Which group do you think scored highest on each dimension (clarity, interest, efficiency, format)?  Why?
+  - Which group do you think scored highest *overall*?
+  - Were there any pitches where you think the audience's reaction might differ from your own?
+
+Now open the [spreadsheet](https://docs.google.com/spreadsheets/d/1f4EbN5AtnR53CynJoMfJO2Ydni8-XPb8a4Y7IH0dBZw/edit?usp=sharing) and analyze the data.  Rank the four groups according to how effective their pitches were.  Create a figure of some sort to display the results in a way that conveys your findings clearly.
+
+Then compare your predictions to the actual results:
+
+  - Where were you right?  Where were you wrong?
+  - What explains the gaps between your predictions and the data?
+  - Did the audience value different things than you expected?
+
+# \emoji{robot} Using GenAI in this lab
 
 Generative AI can help you brainstorm, research, flesh out your ideas, and refine your pitch. You can use it in any way you like, but remember that these tools are best used as *assistants* to your creativity, not as a replacement for it.  The goal of this lab is to get you thinking about how to motivate people about your science, and that requires you to engage with the material in a deep and personal way.  Use GenAI to help you with the *mechanics* of your pitch, but make sure that the *heart* of your pitch is authentically yours. Otherwise it's going to be hard for you to connect with your audience and actually get them excited about your idea.
 
@@ -87,13 +117,14 @@ Similarly, don't simply use GenAI to write your report; you won't do well with a
 
 # \emoji{speaking-head} Write up your findings
 
-Write up your results (in roughly 2--3 pages, double spaced) to communicate your findings succinctly and clearly.  You should include (at minimum) the following:
-  
-  - A summary of your pitch
-  - A discussion about which aspects of your group's pitch were successful versus not
-  - Choose the pitch or idea you think was best (it could be your group's, but it doesn't need to be) and discuss why it is better than the other pitches and/or ideas.  Note: this is intentionally ambiguous-- a great *pitch* might sell a mediocre idea, and a brilliant idea might be undermined by a weak presentation.  Reflect on whether you're evaluating the quality of the *idea* or the quality of the *pitch*, and how (or whether) those can be separated.
-  - Use of group feedback (spreadsheet) and rankings to back up any claims.  Figures and/or stats are highly recommended!
-  - A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether the AI's suggestions improved your pitch.
+Write up your results (roughly 2--3 pages, double spaced).  Your write-up should address the following:
+
+  1. **Your pitch diary** (from Steps 2.5 and 4.5): Include your before-and-after diary entries.  How did your perspective shift over the course of the lab?
+  2. **What was hardest?**  What was the most challenging part of creating and delivering your group's pitch?  What would you do differently next time?
+  3. **A moment that changed your mind**: Describe a specific moment during another group's pitch where your opinion shifted-- you became more interested, more skeptical, or saw something in a new way.  What caused that shift?
+  4. **Predictions vs. reality**: What did the data reveal that surprised you?  Where were your predictions wrong, and why do you think you misjudged?  Use the group feedback data and at least one figure to support your analysis.
+  5. **Pitch vs. idea**: Choose the pitch or idea you think was best (it could be your group's, but it doesn't need to be).  Note: this is intentionally ambiguous-- a great *pitch* might sell a mediocre idea, and a brilliant idea might be undermined by a weak presentation.  Reflect on whether you're evaluating the quality of the *idea* or the quality of the *pitch*, and how (or whether) those can be separated.
+  6. **GenAI reflection**: How did you use generative AI during this lab?  What did you learn from the interaction?  Did the AI's suggestions improve your pitch, your analysis, or your write-up?  Where did it fall short?  Do you think you leveraged GenAI to its full potential? What could you use help with in the future in order to use GenAI more effectively?
 
 # \emoji{speaking-head} Closing discussion points
 
