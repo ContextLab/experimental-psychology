@@ -30,6 +30,8 @@ This laboratory exercise is intended to help you:
 
 # \emoji{speaking-head} Procedure
 
+Note: read ALL of the instructions below before you begin working on this lab.
+
 ## \emoji{teacher} Step 1: pick your topic
 
 Together with your group, pick any field, research area, question, or experiment.  It should be something you're not already (very) familiar with, but that you think might be fun or interesting.  It should also be something (at least peripherally) related to psychology or neuroscience-- i.e., something about people's minds, brains, behaviors (how people act individually and/or in groups), etc.
@@ -53,7 +55,7 @@ You'll present your "pitch" in (up to) 5 minutes, to the class.  Your pitch can 
   - A slideshow (e.g., PowerPoint, Keynote, Prezi, etc.)
   - A spoken presentation (with or without visual prompts)
   - A drawing on the chalkboard
-  - An interpretive dance or improve sketch
+  - An interpretive dance or improv sketch
   - A demonstration or stunt (keep it safe, easy to clean up, family friendly, etc.)
   - An artwork (painting, sculpture, song, poem, etc.)
 
@@ -62,7 +64,7 @@ group's (and idea's) personality.  Each presentation will be followed by a discu
 
 ## \emoji{teacher} Step 4: generate data!
 
-For each group (including your own!), use [this survey](https://forms.gle/eVUf5XSZqnruhfVc8) to provide feedback.  You will rate the following on a scale of 1--10:
+For each group (including your own!), use [this survey](https://forms.gle/eVUf5XSZqnruhfVc8) to provide feedback immediately after each presentation.  You will rate the following on a scale of 1--10:
   
   - How CLEAR was the pitch?  E.g., was the main idea/question communicated clearly?
   - How INTERESTING was the pitch?  E.g., did the pitch succeed at capturing your interest?
@@ -75,24 +77,23 @@ The resulting spreadsheet will contain one row per submitted rating and one colu
 
 Using the ratings data (however you deem appropriate), rank the four groups according to how effective their pitches were.  Create a figure of some sort to display the results in a way that conveys your findings clearly.
 
+# \emoji{speaking-head} Using GenAI in this lab
+
+Generative AI can help you brainstorm, research, flesh out your ideas, and refine your pitch. You can use it in any way you like, but remember that these tools are best used as *assistants* to your creativity, not as a replacement for it.  The goal of this lab is to get you thinking about how to motivate people about your science, and that requires you to engage with the material in a deep and personal way.  Use GenAI to help you with the *mechanics* of your pitch, but make sure that the *heart* of your pitch is authentically yours. Otherwise it's going to be hard for you to connect with your audience and actually get them excited about your idea.
+
+You can also use GenAI to help you analyze the data and generate figures. Look out for overly "sycophantic" responses that simply soothe your ego and confirm your biases rather than actually generating rigorous code or analyses. In addition to your common sense, which is your greatest asset here, you can also run ideas by your TAs and/or me to get feedback.
+
+Similarly, don't simply use GenAI to write your report; you won't do well with a one-off "write my report for me" prompt.  You will be much better off if you work *collaboratively* with GenAI to help clarify your own thinking and then flesh out your ideas in a way that is clear and compelling. You can also use GenAI to help you critically evaluate your work (or pitch), play devil's advocate, and brainstorm ways to improve it.  The more you engage with the material and the more *you* think more deeply about your pitch, the better your final product will be. Remember that AI is generally very bad at predicting what human audiences will find interesting, compelling, or authentic. Similarly, GenAI is generally bad at writing authentic-sounding prose that captures your unique voice and perspective (though it's *great* at copyediting tasks like formatting references, fixing grammar and spelling, and helping out with wording tweaks).
+
 # \emoji{speaking-head} Write up your findings
 
 Write up your results (in roughly 2--3 pages, double spaced) to communicate your findings succinctly and clearly.  You should include (at minimum) the following:
   
   - A summary of your pitch
   - A discussion about which aspects of your group's pitch were successful versus not
-  - Choose the pitch or idea you think was best (it could be your group's, but it doesn't need to be) and discuss why it is better than the other pitches and/or ideas.
+  - Choose the pitch or idea you think was best (it could be your group's, but it doesn't need to be) and discuss why it is better than the other pitches and/or ideas.  Note: this is intentionally ambiguous-- a great *pitch* might sell a mediocre idea, and a brilliant idea might be undermined by a weak presentation.  Reflect on whether you're evaluating the quality of the *idea* or the quality of the *pitch*, and how (or whether) those can be separated.
   - Use of group feedback (spreadsheet) and rankings to back up any claims.  Figures and/or stats are highly recommended!
   - A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether the AI's suggestions improved your pitch.
-
-# \emoji{speaking-head} Using GenAI in this lab
-
-Generative AI can help you brainstorm, research, flesh out your ideas, and refine your pitch. You can use it in any way you like, but remember that these tools are best used as *assistants* to your creativity, not as a replacement for it.  The goal of this lab is to get you thinking about how to motivate people about your science, and that requires you to engage with the material in a deep and personal way.  Use GenAI to help you with the *mechanics* of your pitch, but make sure that the *heart* of your pitch is authentically yours. Otherwise it's going to be hard for you to connect with your audience and actually get them excited about your idea.
-
-You can also use GenAI to help you analyze the data and generate figures. Look out for overly "sychopantic" responses that simply sooth your ego and confirm your biases rather than actually generating rigorous code or analyses. In addition to your common sense, which is your greatest asset here, you can also run ideas by your TAs and/or me to get feedback.
-
-Similarly, don't simply use GenAI to write your report; you won't do well with a one-off "write my report for me" prompt.  You will be much better off if you work *colaboratively* with GenAI to help clarify your own thinking and then flesh out your ideas in a way that is clear and compelling. You can also use GenAI to help you critically evaluate your work (or pitch), play devil's advocate, and brainstorm ways to improve it.  The more you engage with the material and the more *you* think more deeply about your pitch, the better your final product will be. Remember that AI is generally very bad at predicting what human audiences will find interesting, compelling, or authentic. Similarly, GenAI is generally bad at writing authentic-sounding prose that capture your unique voice and perspective (though it's *great* at copyediting tasks like formatting references, fixing grammar and spelling, and helping out with wording tweaks).
-
 
 # \emoji{speaking-head} Closing discussion points
 
