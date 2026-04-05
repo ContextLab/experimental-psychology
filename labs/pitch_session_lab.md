@@ -38,11 +38,10 @@ Together with your group, pick any field, research area, question, or experiment
 
 Your pitch will comprise the following elements:
 
-  1. State your idea as clearly and directly as possible
+  1. State (in some form) your idea as clearly and directly as possible
   2. Explain why it's important and why people should care.  Is it a societal problem?  Is it relevant to people's everyday lives?  Is it beneficial to the future of humanity?  Is it fundamentally interesting?  Why?
   3. Explain the key mystery-- e.g., what's already known, what's not known.  If it's challenging to study, explain why.  Or if nobody's solved the mystery before, explain that too.  Has nobody tried?  Has nobody cared?  Has nobody thought of it?
-  4. Propose how you're going to solve the mystery (or make progress towards solving it).
-  What budget, equipment, and/or resources are you going to need?  How long will it take?  How hard is it going to be?
+  4. Propose how you're going to solve the mystery (or make progress towards solving it). What budget, equipment, and/or resources are you going to need?  How long will it take?  How hard is it going to be?
 
 Brainstorm each of these elements with your group.
 
@@ -50,13 +49,14 @@ Brainstorm each of these elements with your group.
 
 You'll present your "pitch" in (up to) 5 minutes, to the class.  Your pitch can take any form you choose, including (but not limited to):
 
-  - A YouTube video that you make
+  - A YouTube video that you make and play for the class
   - A slideshow (e.g., PowerPoint, Keynote, Prezi, etc.)
   - A spoken presentation (with or without visual prompts)
   - A drawing on the chalkboard
   - An interpretive dance or improve sketch
-  - A demonstration
-  
+  - A demonstration or stunt (keep it safe, easy to clean up, family friendly, etc.)
+  - An artwork (painting, sculpture, song, poem, etc.)
+
 The format is totally up to you!  Do whatever feels like the best fit for your
 group's (and idea's) personality.  Each presentation will be followed by a discussion of (up to) 10 minutes.
 
@@ -69,7 +69,7 @@ For each group (including your own!), use [this survey](https://forms.gle/eVUf5X
   - How EFFICIENT was the pitch?  Too long or too short (1)?  Just right (10)?
   - How effective was the chosen FORMAT of the pitch?
 
-The resulting spreadsheet will contain one row per submitted rating and one column per rating dimension (plus two additional columns: one containing the times the given ratings were submitted and the other containing the group identities-- A, B, C, or D).  The spreadsheet will be made available [here](https://docs.google.com/spreadsheets/d/1f4EbN5AtnR53CynJoMfJO2Ydni8-XPb8a4Y7IH0dBZw/edit?usp=sharing).
+The resulting spreadsheet will contain one row per submitted rating and one column per rating dimension (plus two additional columns: one containing the times the given ratings were submitted and the other containing the group identities-- A, B, C, or D).  The spreadsheet will be available [here](https://docs.google.com/spreadsheets/d/1f4EbN5AtnR53CynJoMfJO2Ydni8-XPb8a4Y7IH0dBZw/edit?usp=sharing), but don't peek until after the presentations!
 
 ## \emoji{teacher} Step 5: data wrangling and analysis
 
@@ -87,25 +87,12 @@ Write up your results (in roughly 2--3 pages, double spaced) to communicate your
 
 # \emoji{speaking-head} Using GenAI in this lab
 
-Generative AI can help you think more deeply about science communication.  Here are some ways to leverage AI:
+Generative AI can help you brainstorm, research, flesh out your ideas, and refine your pitch. You can use it in any way you like, but remember that these tools are best used as *assistants* to your creativity, not as a replacement for it.  The goal of this lab is to get you thinking about how to motivate people about your science, and that requires you to engage with the material in a deep and personal way.  Use GenAI to help you with the *mechanics* of your pitch, but make sure that the *heart* of your pitch is authentically yours. Otherwise it's going to be hard for you to connect with your audience and actually get them excited about your idea.
 
-  - **Research your topic's scientific background**: Ask AI to help you find key studies, statistics, and theoretical frameworks related to your chosen mystery.  Go beyond Wikipedia-- use AI to understand the *state of the art*.
-  - **Brainstorm counterarguments**: Ask AI to play devil's advocate.  What are the strongest objections to your proposed approach?
+You can also use GenAI to help you analyze the data and generate figures. Look out for overly "sychopantic" responses that simply sooth your ego and confirm your biases rather than actually generating rigorous code or analyses. In addition to your common sense, which is your greatest asset here, you can also run ideas by your TAs and/or me to get feedback.
 
-## \emoji{teacher} GenAI Challenge: Human vs. AI Pitches
+Similarly, don't simply use GenAI to write your report; you won't do well with a one-off "write my report for me" prompt.  You will be much better off if you work *colaboratively* with GenAI to help clarify your own thinking and then flesh out your ideas in a way that is clear and compelling. You can also use GenAI to help you critically evaluate your work (or pitch), play devil's advocate, and brainstorm ways to improve it.  The more you engage with the material and the more *you* think more deeply about your pitch, the better your final product will be. Remember that AI is generally very bad at predicting what human audiences will find interesting, compelling, or authentic. Similarly, GenAI is generally bad at writing authentic-sounding prose that capture your unique voice and perspective (though it's *great* at copyediting tasks like formatting references, fixing grammar and spelling, and helping out with wording tweaks).
 
-After your group has completed the pitch process manually (Steps 1--3), try this exercise:
-
-  1. **Have GenAI brainstorm**: Give a GenAI tool the same topic your group chose.  Ask it to brainstorm a pitch, including the idea, why it matters, the key mystery, and a proposed approach.
-  2. **Have GenAI execute**: Ask the AI to write out a complete 5-minute pitch script based on its brainstorm.
-  3. **Have GenAI refine**: Share your group's pitch with the AI and ask it to suggest improvements.  Then share the AI's pitch with your group and discuss: what's better about each version?
-  4. **Compare and reflect**:
-     - Is the AI-generated pitch more or less compelling than what your group created?  Why?
-     - What does the AI pitch lack that yours has (or vice versa)?  Think about authenticity, passion, creativity, and audience connection.
-     - Did the AI's suggestions actually improve your pitch, or did they make it more generic?
-     - What aspects of science communication are fundamentally *human* and hard for AI to replicate?
-
-This exercise will help you understand what AI is good at (structure, breadth, polish) versus what humans bring to communication (passion, authenticity, improvisation, genuine curiosity).
 
 # \emoji{speaking-head} Closing discussion points
 
