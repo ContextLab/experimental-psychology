@@ -82,6 +82,7 @@ EMOJI_MAP = {
     "luggage": "\U0001F9F3",
     "framed-picture": "\U0001F5BC\uFE0F",
     "scroll": "\U0001F4DC",
+    "robot": "\U0001F916",
 }
 
 
