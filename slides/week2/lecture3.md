@@ -21,7 +21,7 @@ Spring 2026
 <div class="important-box" data-title="The big questions">
 
 - Science is how we move from "I wonder..." to "Here's evidence that..."
-- But evidence alone isn't enough -- you need to **motivate** people to care
+- But evidence alone isn't enough; you need to **motivate** people to care
 - This is exactly what the *Introduction* section of a paper does!
 
 </div>
@@ -60,8 +60,8 @@ Spring 2026
 <div class="important-box" data-title="Persuasion">
 
 - Good **leaders** get people to follow them; good **ideas** do the same
-- Think about: a time someone changed your mind -- what made their argument effective?
-- A scientific finding that has "stuck with you" -- why?
+- Think about: a time someone changed your mind &mdash; what made their argument effective?
+- A scientific finding that has "stuck with you" &mdash; why?
 
 </div>
 
