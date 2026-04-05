@@ -57,9 +57,11 @@ jobs:
           # If the workflow file, cdl-slides, or CSS changed, recompile everything
           FORCE_ALL=$(git diff --name-only HEAD~1 HEAD -- '.github/workflows/deploy-site.yml' 'css/**' 2>/dev/null || echo "")
 
-          if [ -n "$FORCE_ALL" ] || [ -z "$CHANGED" ]; then
-            echo "Compiling all slides (force rebuild or no specific changes detected)"
+          if [ -n "$FORCE_ALL" ]; then
+            echo "Force rebuild: workflow or CSS changed"
             CHANGED=$(find slides -name 'lecture*.md' -path '*/week*/*')
+          elif [ -z "$CHANGED" ]; then
+            echo "No slide .md files changed — skipping compilation"
           fi
 
           cd slides
