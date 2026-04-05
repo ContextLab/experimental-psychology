@@ -16,25 +16,26 @@ Spring 2026
 
 ---
 
-# Why does science matter?
+# Why does science *matter*?
 
-<div class="important-box" data-title="The Big Questions">
+<div class="important-box" data-title="The big questions">
 
 - Science is how we move from "I wonder..." to "Here's evidence that..."
 - But evidence alone isn't enough -- you need to **motivate** people to care
-- This is exactly what the Introduction section of a paper does
+- This is exactly what the *Introduction* section of a paper does!
 
 </div>
 
 ---
 
-# Discussion: What mystery would you want to solve?
+# Discussion: what's an interesting scientific study you've read or heard about recently?
 
 <div class="example-box" data-title="Think-Pair-Share">
 
-- If you could answer **one** question about the mind or human behavior, what would it be?
-- Why does that question matter to you? Why should it matter to others?
-- Share with a neighbor -- whose question intrigued you most?
+- What's a recent finding that stuck with you?
+- Where did you hear about it? What made it interesting? Why'd you care about it?
+- Did something about it make you want to learn more? Or share it?
+- Do you remember the details of the study? Or just the big idea?
 
 </div>
 
@@ -42,7 +43,7 @@ Spring 2026
 
 # What makes a question interesting?
 
-<div class="note-box" data-title="Qualities of Good Ideas">
+<div class="note-box" data-title="Qualities of good ideas">
 
 - People can relate to it
 - The logic is clear and easy to follow
@@ -66,12 +67,12 @@ Spring 2026
 
 ---
 
-# Want help with stats?
+# Want help with stats and/or analysis?
 
 <div class="tip-box" data-title="Resources Available">
 
 - Stats tutorials on Canvas
-- Stats Q&A session: X-hour this week
+- "Vibe coding" tutorial: X-hour this week!
 - Office hours with me or your TAs
 
 </div>
@@ -82,7 +83,7 @@ Spring 2026
 
 # Pitch session lab
 
-<div class="note-box" data-title="How It Works">
+<div class="note-box" data-title="How it works">
 
 - We'll separate the class into 4 groups
 - Each group's job: come up with a science-related idea to "pitch" to the class
@@ -97,3 +98,31 @@ Spring 2026
 # Pitch lab (link)
 
 <img src="../figs/motivating_people_about_your_science/qr-code-15317.png" width="500">
+
+---
+
+# Questions? Want to chat more?
+
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://psyc11.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
+
+<div class="note-box" data-title="Up next this week...">
+
+- **Today**: create your pitch
+- **Wednesday**: present your pitch and fill out ratings
+- **Thursday (X-hour)**: Data wrangling and vibe coding tutorial
+- **Friday**: analyze the data and discuss
+
+</div>
