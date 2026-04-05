@@ -79,8 +79,6 @@ Spring 2026
 
 ---
 
-<!-- _class: scale-70 -->
-
 # Pitch session lab
 
 <div class="note-box" data-title="How it works">
@@ -93,11 +91,7 @@ Spring 2026
 
 </div>
 
----
-
-# Pitch lab (link)
-
-<img src="../figs/motivating_people_about_your_science/qr-code-15317.png" width="500">
+<img src="../figs/motivating_people_about_your_science/qr-code-15317.png" width="300">
 
 ---
 
