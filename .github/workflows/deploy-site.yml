@@ -49,24 +49,10 @@ jobs:
       - name: Setup cdl-slides (install Marp CLI)
         run: cdl-slides setup
 
-      - name: Compile changed slides
+      - name: Compile all slides
         run: |
-          # Get list of changed slide .md files since the previous commit
-          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'slides/week*/lecture*.md' 2>/dev/null || echo "")
-
-          # If the workflow file, cdl-slides, or CSS changed, recompile everything
-          FORCE_ALL=$(git diff --name-only HEAD~1 HEAD -- '.github/workflows/deploy-site.yml' 'css/**' 2>/dev/null || echo "")
-
-          if [ -n "$FORCE_ALL" ]; then
-            echo "Force rebuild: workflow or CSS changed"
-            CHANGED=$(find slides -name 'lecture*.md' -path '*/week*/*')
-          elif [ -z "$CHANGED" ]; then
-            echo "No slide .md files changed — skipping compilation"
-          fi
-
           cd slides
-          for fullpath in $CHANGED; do
-            md="${fullpath#slides/}"
+          for md in week*/lecture*.md; do
             [ -f "$md" ] || continue
             dir=$(dirname "$md")
             base=$(basename "$md")
