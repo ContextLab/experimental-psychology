@@ -116,12 +116,12 @@ assignments:
 
 ### Wed Apr 8: Present pitches + fill out evals
 
-### Thu Apr 9: Data wrangling + Vibe coding tutorial
+### Thu Apr 9: Vibe coding tips and tricks
 - xhour: true
 - slides: slides/week2/lecture4.html
 - pdf: slides/week2/lecture4.pdf
 
-### Fri Apr 10: How far can you get with data and stats?
+### Fri Apr 10: Data wrangling: how far can you get with data and stats?
 - slides: slides/week2/lecture5.html
 - pdf: slides/week2/lecture5.pdf
 
