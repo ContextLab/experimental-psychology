@@ -23,18 +23,18 @@ Vibe coding means using AI coding agents to rapidly prototype and implement soft
 
 </div>
 
-<div class="note-box" data-title="Topics">
+<div class="note-box" data-title="Topics we'll cover">
 
-1. Free AI coding tools for students
-2. Setting up your environment: VS Code + Claude Code
-3. The spec-kit workflow: from design docs to implementation
-4. Live demo: build something together!
+1. **Free AI coding tools for students:** GitHub Copilot, Google Gemini, [claude.dartmouth.edu](https://claude.dartmouth.edu)
+2. **Setting up your environment:** VS Code, Claude Code, spec-kit
+3. **The spec-kit workflow:** from design docs to implementation
+4. **Live demo:** build something together! (*If there's time!*)
 
 </div>
 
 <div class="tip-box" data-title="Follow along!">
 
-Install the tools (and try using them) as we go — and ask questions as they arise!
+Install the tools (and *try using them*) as we go&mdash; and ask questions as they arise!
 
 </div>
 
@@ -46,6 +46,7 @@ Install the tools (and try using them) as we go — and ask questions as they ar
 - **GitHub Copilot** (free for students): great at code completion, chat assistance
 - **Google Gemini** (free for students): long context, reasoning-heavy tasks
 - **Dartmouth GenAI** ([chat.dartmouth.edu](https://chat.dartmouth.edu)): free access to many models
+- **Dartmouth Claude** ([claude.dartmouth.edu](https://claude.dartmouth.edu)): powerful coding model, free for Dartmouth students, faculty, and staff
 - **Ollama** and **LM Studio**: run LLMs locally
 - **Hugging Face**: open models, useful for integrating into projects
 
@@ -59,38 +60,46 @@ Install the tools (and try using them) as we go — and ask questions as they ar
 
 <div class="note-box" data-title="Student discounts">
 
-Check for student discounts and free tiers — many AI providers offer generous free usage for students with a `.edu` email address.
+Check for student discounts and free tiers; most AI providers offer generous free usage for students with a `.edu` email address.
 
 </div>
 
 ---
+<!-- _class: scale-80 -->
 
-# Setting up your environment
+# Setting up your environment: two(ish) options
 
 Two main options:
 
-1. **IDE**: VS Code with Claude Code extension
-2. **Terminal-based**: Claude Code CLI
+1. **Integrated Development Environment (IDE):** full-featured environment with syntax highlighting, debugging, Git integration, extensions (e.g., VS Code, PyCharm)
+2. **Terminal-based coding agent:** lightweight, fast, scriptable (e.g., Claude Code, ChatGPT Codex CLI, OpenCode)
 
-<div class="note-box" data-title="Other options">
+<div class="note-box" data-title="Some other options to try out">
 
-Claude Code also has a native desktop app. Some IDEs are designed specifically for AI coding (Cursor, Antigravity). Google Colab has built-in AI assistance too.
+- Claude, OpenAI, and OpenCode all have native desktop apps that combine terminal-based coding agents with IDE-like features (file browsing, syntax highlighting, etc.)
+- Some IDEs are explicitly designed for AI coding (e.g., [Antigravity](https://antigravity.google/), [Cursor](https://cursor.com/))
+- Google Colab now builds in AI coding assistance directly into notebooks (similar to VS Code's Copilot extension); no installation required!
 
 </div>
 
 ---
+<!-- _class: scale-60 -->
 
 # Setting up VS Code
 
-<img src="../figs/vibe_coding/vs_code_cc.png" width="900">
+![width:1000px](../figs/vibe_coding/vs_code_cc.png)
 
 ---
 
 # Setting up VS Code (details)
 
-- Download from [code.visualstudio.com](https://code.visualstudio.com)
-- Install essential extensions: **Claude Code**, **GitHub Copilot**, **Jupyter**, **Python**
-- Activate Copilot with your GitHub account
+- Download and install from [code.visualstudio.com](https://code.visualstudio.com)
+- Install essential extensions:
+  - GitHub Copilot
+  - Jupyter
+  - Python
+  - Claude Code
+- Activate Copilot with your GitHub account (click the Accounts icon in bottom left)
 
 ---
 
@@ -104,13 +113,14 @@ npm install -g @anthropic-ai/claude-code
 
 </div>
 
-<img src="../figs/vibe_coding/terminal_launch_cc.png" width="700">
+![width:700px](../figs/vibe_coding/terminal_launch_cc.png)
 
 ---
+<!-- _class: scale-60 -->
 
 # Launch Claude Code
 
-<img src="../figs/vibe_coding/cc_terminal.png" width="700">
+![width:900px](../figs/vibe_coding/cc_terminal.png)
 
 ---
 
@@ -122,18 +132,40 @@ npm install -g @anthropic-ai/claude-code
 - It can read files, write code, run commands, and browse the web
 
 ---
+
+# Spec-kit: a framework for AI-assisted software development
+
+<div class="definition-box" data-title="What is spec-kit?">
+
+A "spec" is a detailed, unambiguous description of what a software project should do. Spec-kit is a workflow for using AI to go from specification to implementation in a structured way.
+
+</div>
+
+<div class="example-box" data-title="Install it!">
+
+```bash
+# Install the spec-kit CLI tool globally
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
+# Set up spec-kit in your project (from within your project folder in Terminal)
+specify init --here --ai claude
+```
+
+</div>
+
+---
 <!-- _class: scale-80 -->
 
-# Initializing a project
+# Orienting Claude Code to your project
 
 <div class="note-box" data-title="Start here!">
 
-Clone your repo and `cd` into it.
+Clone (download) your repo and `cd` into it.
 
 </div>
 
 - Launch Claude Code (run `claude` inside the project folder)
-- Claude Code automatically analyzes the codebase
+- Run `/init` to tell Claude to explore your project folder
 - It maintains a `CLAUDE.md` file to help future sessions understand the project
 
 ---
@@ -141,8 +173,8 @@ Clone your repo and `cd` into it.
 
 # The four-step vibe coding workflow
 
-```
-[Describe] --> [Design] --> [Plan] --> [Implement]
+```flow
+[Describe:green] --> [Design:blue] --> [Plan:bonfire] --> [Implement:purple]
 ```
 
 <div class="example-box" data-title="1. Detailed description">
@@ -201,26 +233,66 @@ Focus on **WHAT** and **WHY**, not **HOW**.
 
 </div>
 
-<div class="example-box" data-title="Spec structure (user story format)">
+<div class="example-box" data-title="Example prompt: build a game that tests my reaction time">
 
-```markdown
-## User Story
-As a [role], I want [feature] so that [benefit].
+Spec out a game that tests the user's reaction time. It should display a stimulus (e.g., a circle) at random intervals, and the user should click as quickly as possible when they see it. The game should record the reaction time for each trial and display the average reaction time at the end of the session. It should run in a web browser and be visually engaging. Support desktop and mobile devices, and all major platforms and browsers. Store results locally without sending data to any servers. Include instructions and feedback for the user. Make it fun!
 
-## Acceptance Criteria
-- Given [context], when [action], then [result]
-- Given [context], when [action], then [result]
+</div>
 
-## Constraints
-- Must work on [platforms]
-- Must handle [edge cases]
-```
+---
+<!-- _class: scale-80 -->
+
+# Writing a good spec
+
+<div class="warning-box" data-title="The golden rule">
+
+Focus on **WHAT** and **WHY**, not **HOW**.
+
+</div>
+
+<div class="example-box" data-title="Notice: what are we building?">
+
+**Spec out a game that tests the user's reaction time.** It should display a stimulus (e.g., a circle) at random intervals, and the user should click as quickly as possible when they see it. The game should record the reaction time for each trial and display the average reaction time at the end of the session. It should run in a web browser and be visually engaging. Support desktop and mobile devices, and all major platforms and browsers. Store results locally without sending data to any servers. Include instructions and feedback for the user. Make it fun!
+
+</div>
+
+---
+<!-- _class: scale-80 -->
+
+# Writing a good spec
+
+<div class="warning-box" data-title="The golden rule">
+
+Focus on **WHAT** and **WHY**, not **HOW**.
+
+</div>
+
+<div class="example-box" data-title="Notice: how should it work?">
+
+Spec out a game that tests the user's reaction time. **It should display a stimulus (e.g., a circle) at random intervals, and the user should click as quickly as possible when they see it. The game should record the reaction time for each trial and display the average reaction time at the end of the session.** It should run in a web browser and be visually engaging. Support desktop and mobile devices, and all major platforms and browsers. Store results locally without sending data to any servers. **Include instructions and feedback for the user.** Make it fun!
+
+</div>
+
+---
+<!-- _class: scale-80 -->
+
+# Writing a good spec
+
+<div class="warning-box" data-title="The golden rule">
+
+Focus on **WHAT** and **WHY**, not **HOW**.
+
+</div>
+
+<div class="example-box" data-title="Notice: what are the design constraints?">
+
+Spec out a game that tests the user's reaction time. It should display a stimulus (e.g., a circle) at random intervals, and the user should click as quickly as possible when they see it. The game should record the reaction time for each trial and display the average reaction time at the end of the session. **It should run in a web browser and be visually engaging. Support desktop and mobile devices, and all major platforms and browsers. Store results locally without sending data to any servers.** Include instructions and feedback for the user. **Make it fun!**
 
 </div>
 
 ---
 
-# Demo — Gamified Cognitive Testing Battery
+# Example: Gamified cognitive testing battery
 
 <div class="note-box" data-title="What we're building">
 
@@ -230,7 +302,7 @@ A single HTML file that runs participants through a battery of quick gamified co
 
 <div class="tip-box" data-title="Real research!">
 
-This is a real experiment you could run in a psychology course!
+You could use something like this in part 2 of this course!
 
 </div>
 
@@ -238,8 +310,8 @@ This is a real experiment you could run in a psychology course!
 
 # The spec-kit workflow for our demo
 
-```
-[Constitution] --> [Specify] --> [Clarify] --> [Plan] --> [Tasks] --> [Implement]
+```flow
+[Constitution] --> [Specify] --> [Clarify] --> [Plan] --> [Tasks] --> [Implement:purple]
 ```
 
 <div class="note-box" data-title="Documents at each step">
@@ -261,17 +333,14 @@ The spec-kit workflow keeps everything grounded in a clear, unambiguous specific
 
 <div class="example-box" data-title="Prompt: /speckit.constitution">
 
-```
 Create a constitution for this project with these principles:
-- Single HTML file (no build tools, no npm, no server)
-- Vanilla JavaScript only (no frameworks)
-- Modern CSS (flexbox, grid, CSS variables)
-- All cognitive tasks must be self-contained
-- Results stored in localStorage
-- Leaderboard uses anonymous class codes
+- Single HTML file (nothing to install or download, runs in any browser)
+- Results are stored locally (no data sent to servers)
+- User delight: smooth animations, clean design, fun feedback
+- Privacy and security: no personally identifiable information collected
+- Leaderboard uses three-letter user-chosen codes
 - Must work on mobile and desktop browsers
 - Accessible design (WCAG 2.1 AA)
-```
 
 </div>
 
@@ -288,7 +357,6 @@ A `constitution.md` file with inviolable rules.
 
 <div class="example-box" data-title="Prompt: /speckit.specify">
 
-```
 Build a gamified cognitive testing battery. Single HTML file.
 
 User Journey:
@@ -299,7 +367,6 @@ User Journey:
 3. Completes each task with animated instructions and feedback
 4. After all tasks, sees a bar chart of their scores
 5. Can view a class leaderboard comparing anonymous scores
-```
 
 </div>
 
@@ -314,7 +381,9 @@ A `spec.md` with user stories, acceptance criteria.
 
 # Clarify
 
-<div class="example-box" data-title="The agent might ask...">
+<div class="example-box" data-title="Prompt: /speckit.clarify">
+
+The agent might ask...
 
 1. How long should each task take?
 2. What scoring metric for each task?
@@ -324,35 +393,32 @@ A `spec.md` with user stories, acceptance criteria.
 
 </div>
 
-<div class="tip-box" data-title="Iterate!">
+<div class="note-box" data-title="Output">
 
-Answer interactively, run `/speckit.clarify` multiple times until the spec is tight.
+An updated `spec.md` with notes about what was clarified or changed.
 
 </div>
 
 ---
 <!-- _class: scale-78 -->
 
-# Plan and Tasks
+# Plan and tasks
 
 <div class="example-box" data-title="Prompt: /speckit.plan">
 
-```
-Generate an implementation plan for the cognitive testing battery.
-```
+Run this to generate a plan for implementing the project and define success criteria for each project milestone.
 
 </div>
 
-<div class="note-box" data-title="Hypothetical task breakdown">
+<div class="example-box" data-title="Prompt: /speckit.tasks">
 
-1. HTML skeleton + CSS variables + task navigation
-2. Stroop task implementation
-3. Free recall task
-4. Go/no-go task
-5. Remaining tasks (N-back, digit span, flanker, visual search, mental rotation)
-6. Scoring engine + bar chart visualization
-7. Leaderboard + localStorage persistence
-8. Mobile responsiveness + accessibility audit
+Run this to break the implementation plan into discrete, ordered tasks with clear acceptance criteria for each task.
+
+</div>
+
+<div class="tip-box" data-title="Optional: /speckit.analyze">
+
+For complex projects, run this to identify any inconsistencies, gaps, or potential issues in the specification or plan before you start implementing.
 
 </div>
 
@@ -363,44 +429,19 @@ Generate an implementation plan for the cognitive testing battery.
 
 <div class="example-box" data-title="Prompt: /speckit.implement">
 
-```
-Execute the implementation plan. Follow the task order in tasks.md.
-Verify each task against the acceptance criteria before moving on.
-```
+Running this command will launch an interactive coding session where the agent will execute the implementation plan task by task, generating code, running tests, and verifying outputs at each step.
 
 </div>
 
 <div class="note-box" data-title="Output">
 
-Commits — one per task, each verified against the spec.
+Whatever each task specifies: functions, classes, tests, documentation, etc. A task is "done" when all its acceptance criteria are met.
 
 </div>
 
-<div class="tip-box" data-title="Go do something else!">
+<div class="tip-box" data-title="Babysitting">
 
-Implementation can take a while. You can do other stuff in the meantime!
-
-</div>
-
----
-
-# Testing and verification
-
-<div class="important-box" data-title="Test rigorously">
-
-Test each piece as you go. Stress-test the final product with edge cases, different browsers, and different screen sizes.
-
-</div>
-
-<div class="tip-box" data-title="Keep the spec in sync">
-
-Don't vibe code fixes without updating the spec — always go back and update the specification when requirements change.
-
-</div>
-
-<div class="note-box" data-title="Let the agent help">
-
-Coding agents can update your spec, plan, and tasks for you. Just ask!
+Claude will prompt you (often very frequently) to ask for permission to run code, execute commands, or change files. Read them carefully the first time you see them, and then once you get used to how it works you can usually just skim and click "yes" to keep things moving.
 
 </div>
 
@@ -427,14 +468,25 @@ Coding agents can update your spec, plan, and tasks for you. Just ask!
 
 ---
 
-# Questions?
+# Questions? Want to chat more?
 
-🧑‍🔬 **Email**: [jeremy@dartmouth.edu](mailto:jeremy@dartmouth.edu)
-💬 **Slack**: [psyc11.slack.com](https://psyc11.slack.com)
-🗓️ **Office hours**: [context-lab.com/scheduler](https://context-lab.com/scheduler)
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://psyc11.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
 
-<div class="note-box" data-title="Up next...">
+<div class="note-box" data-title="Up next this week...">
 
-Friday — data wrangling and how far can you get with stats?
+**Friday**: data wrangling and how far can you get with stats?
 
 </div>
