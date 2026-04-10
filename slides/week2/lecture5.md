@@ -136,7 +136,7 @@ Data wrangling means organizing or transforming your data into a format that is 
 
 <div class="tip-box" data-title="Your task">
 
-- Open the pitch ratings analysis notebook (QR code below)
+- Open the [pitch ratings analysis notebook](https://colab.research.google.com/github/ContextLab/experimental-psychology/blob/main/notebooks/pitch_ratings.ipynb) (also linked via QR code below)
 - Work with your group to wrangle, analyze, and visualize the data
 - Remember your predictions from Step 5 of the lab&mdash; how do the actual results compare?
 - Use GenAI to help you explore different analyses and visualizations
