@@ -1,3 +1,10 @@
+# This workflow is disabled — all page generation now happens in deploy-site.yml.
+# Keeping the file to avoid breaking workflow_run triggers that reference it.
+#
+# Previously, this workflow generated assignment HTML/PDFs and committed them.
+# Since those files are now gitignored, the deploy workflow generates them
+# at deploy time instead.
+
 name: Build Course Pages
 
 on:
@@ -12,63 +19,5 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install pandoc and LaTeX
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc texlive-luatex texlive-latex-extra texlive-fonts-extra fonts-noto-color-emoji
-
-      - name: Detect changed files
-        id: changes
-        run: |
-          CHANGED_MD=$(git diff --name-only HEAD~1 HEAD -- 'assignments/*.md' 'labs/*.md' 'admin/syllabus.md' 2>/dev/null || echo "")
-          FORCE_ALL=$(git diff --name-only HEAD~1 HEAD -- 'scripts/build-pages.py' '.github/workflows/build-pages.yml' 2>/dev/null || echo "")
-          if [ -n "$FORCE_ALL" ]; then
-            echo "force_all=true" >> $GITHUB_OUTPUT
-            echo "Force rebuild: build script or workflow changed"
-          else
-            echo "force_all=false" >> $GITHUB_OUTPUT
-            echo "Changed markdown files: $CHANGED_MD"
-          fi
-          echo "changed_md<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGED_MD" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-
-      - name: Build HTML pages and PDFs from markdown
-        run: |
-          if [ "${{ steps.changes.outputs.force_all }}" = "true" ]; then
-            python scripts/build-pages.py
-          else
-            python scripts/build-pages.py --changed "${{ steps.changes.outputs.changed_md }}"
-          fi
-
-      - name: Generate syllabus PDF
-        if: contains(steps.changes.outputs.changed_md, 'syllabus') || steps.changes.outputs.force_all == 'true'
-        run: |
-          if [ -f admin/syllabus.md ]; then
-            echo "Generating syllabus PDF"
-            pandoc admin/syllabus.md --pdf-engine=lualatex -o admin/syllabus.pdf \
-              -V geometry:margin=1in -V fontsize:12pt -V colorlinks:true -V linkcolor:green \
-              || echo "Warning: Syllabus PDF generation failed"
-          fi
-
-      - name: Commit generated files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "build: auto-generate HTML and PDF from markdown sources"
-            git push
-          fi
+      - run: echo "Page generation now handled by deploy-site.yml"

@@ -4,20 +4,18 @@ on:
   push:
     branches: [main]
     paths:
-      - 'index.html'
+      - 'outline.md'
+      - 'admin/**'
       - 'css/**'
       - 'slides/**'
       - 'assignments/**'
-      - 'syllabus/**'
       - 'labs/**'
       - 'readings/**'
       - 'figures/**'
       - 'fonts/**'
+      - 'notebooks/**'
+      - 'scripts/build-pages.py'
       - '.github/workflows/deploy-site.yml'
-  workflow_run:
-    workflows: ["Build Course Pages"]
-    types: [completed]
-    branches: [main]
 
 permissions:
   contents: read
