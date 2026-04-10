@@ -121,7 +121,7 @@ assignments:
 - slides: slides/week2/lecture4.html
 - pdf: slides/week2/lecture4.pdf
 
-### Fri Apr 10: Data wrangling: how far can you get with data and stats?
+### Fri Apr 10: How far can you get with data and stats?
 - slides: slides/week2/lecture5.html
 - pdf: slides/week2/lecture5.pdf
 

@@ -58,7 +58,7 @@ The design of this course is substantially different from other more traditional
 | [**2: Pitch Lab**](https://context-lab.com/experimental-psychology/#week2) | M | 4/6 | Motivating science intro + Pitch lab starts | [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture3.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture3.pdf) |
 | | W | 4/8 | Present pitches + fill out evals | No slides |
 | | Th | 4/9 | Vibe coding tips and tricks | X-hour · [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture4.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture4.pdf) |
-| | F | 4/10 | Data wrangling: how far can you get with data and stats? | [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture5.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture5.pdf) |
+| | F | 4/10 | How far can you get with data and stats? | [HTML](https://context-lab.com/experimental-psychology/slides/week2/lecture5.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week2/lecture5.pdf) |
 | [**3: Drawing Lab**](https://context-lab.com/experimental-psychology/#week3) | M | 4/13 | Effective explaining + Drawing lab starts | [HTML](https://context-lab.com/experimental-psychology/slides/week3/lecture6.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week3/lecture6.pdf) |
 | | W | 4/15 | Data collection -- reproduce drawings | No slides |
 | | Th | 4/16 | Stats refresher | X-hour · [HTML](https://context-lab.com/experimental-psychology/slides/week3/lecture7.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week3/lecture7.pdf) |
