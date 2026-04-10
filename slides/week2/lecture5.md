@@ -55,9 +55,9 @@ On Wednesday you presented your pitches and filled out your reflections. Let's h
 
 ---
 
-# Think-pair-share: planning your analysis
+# Planning your analysis
 
-<div class="example-box" data-title="Discussion (5 min)">
+<div class="example-box" data-title="Think-Pair-Share">
 
 With a partner, discuss:
 
@@ -71,9 +71,9 @@ Be ready to share one insight with the class.
 
 ---
 
-# What *can* data and stats tell us?
+# The power of data
 
-<div class="note-box" data-title="The power of data">
+<div class="note-box" data-title="What CAN this lab's data and stats tell us?">
 
 - Reveal patterns we might not see on our own
 - Quantify how confident we should be in our conclusions
@@ -82,11 +82,7 @@ Be ready to share one insight with the class.
 
 </div>
 
----
-
-# What *can't* data and stats tell us?
-
-<div class="warning-box" data-title="Limitations">
+<div class="warning-box" data-title="What CAN'T this lab's data and stats tell us?">
 
 - The "truth" about which presentation was *actually* best
 - Specific insights into *why* a pitch was effective (or not)
@@ -99,31 +95,38 @@ Be ready to share one insight with the class.
 
 # Data wrangling: getting the data into shape
 
-<div class="definition-box" data-title="Data wrangling">
+<div class="definition-box" data-title="Definition">
 
 Data wrangling means organizing or transforming your data into a format that is more convenient for you to work with.
 
 </div>
 
-<div class="tip-box" data-title="Discussion">
+<div class="note-box" data-title="Think about it...">
 
 - Are there any **challenges** to analyzing the pitch ratings in their current form?
 - What format do you **want** the data in?
 - How might you "wrangle" the dataset into a more convenient format?
+- How might you use GenAI to help?
 
 </div>
 
 ---
 
-# Trust your intuitions (but verify them)
+# Data + Intuition = ❤️
 
-<div class="important-box" data-title="Data + Intuition">
+<div class="important-box" data-title="Follow your intuitions...">
 
 - Don't throw your intuitions out the window
 - You were *there*&mdash; you saw the pitches, felt the energy, noticed things the data can't capture
 - Use common sense to interpret results and understand limitations
-- The goal is to communicate your best understanding of the **truth**
+
+</div>
+
+<div class="warning-box" data-title="...But don't be blinded by them!">
+
+- At the same time, keep an open mind and be willing to revise your intuitions based on the data
 - Data and intuition work best *together*
+- The goal is to communicate your best understanding of the **truth**
 
 </div>
 
@@ -142,7 +145,7 @@ Data wrangling means organizing or transforming your data into a format that is 
 
 <div style="text-align: center;">
 
-<img src="../figs/limits_of_data/pitch_ratings_qr-14554.png" width="350">
+<img src="../figs/limits_of_data/pitch_ratings_qr-14554.png" width="300px">
 
 Pitch ratings analysis notebook (Google Colab)
 
@@ -169,7 +172,8 @@ Pitch ratings analysis notebook (Google Colab)
 
 <div class="note-box" data-title="Up next...">
 
-- **Next Monday**: Effective explaining + Picture (drawing) lab starts
-- **Next Wednesday**: Data collection&mdash; reproduce each other's drawings!
+- Your written report on the pitch ratings analysis is due on **Monday**!
+- **Next week**: Effective explaining + Picture (drawing) lab starts
+- Please [read the lab instructions](https://context-lab.com/experimental-psychology/assignments/picture_lab/) before Monday
 
 </div>
