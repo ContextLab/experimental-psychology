@@ -49,6 +49,14 @@ jobs:
       - name: Setup cdl-slides (install Marp CLI)
         run: cdl-slides setup
 
+      - name: Install pandoc and LaTeX for PDF generation
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-luatex texlive-latex-extra texlive-fonts-extra fonts-noto-color-emoji
+
+      - name: Build assignment HTML pages and PDFs
+        run: python scripts/build-pages.py
+
       - name: Compile all slides
         run: |
           cd slides
