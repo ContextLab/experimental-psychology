@@ -16,25 +16,35 @@ Spring 2026
 
 ---
 
-# Why do methods matter?
+# Why is explaining hard?
 
-<div class="important-box" data-title="Reproducibility">
+<div class="important-box" data-title="The curse of knowledge">
 
-- Science depends on other people being able to **reproduce** what you did
-- A methods section is your recipe&mdash; if it's unclear, no one can replicate your work
-- The challenge: what details are critical vs. what can you leave out?
+Once you know something, it's surprisingly hard to imagine *not* knowing it. You unconsciously skip over assumptions, use jargon, and leave out steps that feel "obvious"&mdash; but only to you.
+
+</div>
+
+<div class="note-box" data-title="This matters for science">
+
+- Methods sections are instructions for reproducing your work
+- If your explanation is unclear, no one can replicate (or trust) your findings
+- The gap between what you *meant* and what someone *understood* is where science breaks down
 
 </div>
 
 ---
 
-# Discussion: The peanut butter sandwich test
+# Think-pair-share: what makes instructions fail?
 
-<div class="example-box" data-title="Breakout Activity">
+<div class="example-box" data-title="Discussion (3 min)">
 
-- In your group, write step-by-step instructions for making a peanut butter sandwich
-- Be as precise as you think you need to be (2 min)
-- Now trade instructions with another group and follow them **literally** -- what did they leave out? What assumptions did you have to make?
+Think of a time you followed instructions that didn't work&mdash; a recipe, assembly manual, directions, software tutorial, homework problem, etc.
+
+- What went wrong?
+- Was information **missing**, **ambiguous**, or **in the wrong order**?
+- What would have fixed it?
+
+Share with a partner, then we'll hear a few examples.
 
 </div>
 
@@ -42,26 +52,23 @@ Spring 2026
 
 <!-- _class: scale-90 -->
 
-# Know your audience
+# Three principles of effective instructions
 
-<div class="note-box" data-title="Empathy in Explanation">
+<div class="tip-box" data-title="1. Establish a shared frame of reference">
 
-- What does your audience already know vs. need to know?
-- What language will they respond to best?
-- What tools or resources do they need?
-- How much space do you have to explain?
+Before describing *what* to do, make sure your reader is oriented. Define your coordinate system, terminology, and conventions up front. ("Top of the page," "clockwise," "centered"&mdash; these only work if the reader and writer agree on what they mean.)
 
 </div>
 
----
+<div class="warning-box" data-title="2. Distinguish necessary from superfluous">
 
-# Necessary and sufficient details
+Ask yourself: *if someone changed this detail, would the outcome change?* Include what matters. Cut what doesn't. Over-specifying can be just as confusing as under-specifying.
 
-<div class="tip-box" data-title="The Sweet Spot">
+</div>
 
-- Include details that are **critical** to reproducing your procedure
-- Leave out details that don't affect the outcome
-- When in doubt, ask: "If someone changed this detail, would the results change?"
+<div class="note-box" data-title="3. Order matters more than you think">
+
+Build instructions progressively&mdash; each step should make sense given the previous ones. If your reader needs to jump ahead to understand the current step, the order is wrong.
 
 </div>
 
@@ -71,27 +78,29 @@ Spring 2026
 
 <div class="definition-box" data-title="Goal">
 
-Understand and explore how to effectively communicate written procedural instructions (i.e., methods sections)
+Practice writing effective procedural instructions&mdash; and discover what makes them succeed or fail&mdash; by describing drawings that others will try to reproduce from your text alone.
+
+</div>
+
+<div class="note-box" data-title="Schedule">
+
+- **Today**: each group creates a drawing and writes instructions for reproducing it
+- **Wednesday**: follow each others' instructions (without seeing the originals!)
+- **Friday**: analyze how well the instructions worked
 
 </div>
 
 ---
 
-# Drawing lab schedule
+# Drawing lab instructions
 
-<div class="note-box" data-title="Plan">
+<div style="text-align: center;">
 
-- **Today:** each group draws a picture and writes instructions for reproducing it
-- **Wednesday:** follow each others' instructions and evaluate performance
-- **Friday:** analyze data
+<a href="https://context-lab.com/experimental-psychology/assignments/picture_lab/">Lab instructions</a> (also linked via QR code below)
+
+<img src="../figs/effective_explaining/qr-code-14557.png" width="400">
 
 </div>
-
----
-
-# Drawing lab
-
-<img src="../figs/effective_explaining/qr-code-14557.png" width="500">
 
 ---
 
@@ -114,9 +123,9 @@ Understand and explore how to effectively communicate written procedural instruc
 
 <div class="note-box" data-title="Up next...">
 
-- Pitch lab writeup due **Today** at 11:59pm!
-- **Rest of today**: Create your drawings and instructions
-- **Wednesday**: Follow each others' instructions and evaluate performance
-- **Friday**: Analyze the data
+- **Rest of today**: create your drawings and write your instructions
+- **Wednesday**: follow each others' instructions and evaluate
+- **X-hour**: stats refresher
+- **Friday**: analyze the data
 
 </div>
