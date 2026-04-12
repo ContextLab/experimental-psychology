@@ -288,6 +288,37 @@ def convert_table_block(lines):
     return "\n".join(html)
 
 
+def convert_blockquotes(html):
+    """Convert markdown blockquotes (> ...) to styled HTML blockquotes."""
+    lines = html.split("\n")
+    result = []
+    in_blockquote = False
+    bq_lines = []
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith("> "):
+            content = stripped[2:]
+            bq_lines.append(content)
+            if not in_blockquote:
+                in_blockquote = True
+        elif stripped == ">" and in_blockquote:
+            bq_lines.append("")
+        else:
+            if in_blockquote:
+                bq_content = "\n".join(bq_lines)
+                result.append(f'<blockquote class="reflection-callout">{bq_content}</blockquote>')
+                bq_lines = []
+                in_blockquote = False
+            result.append(line)
+
+    if in_blockquote:
+        bq_content = "\n".join(bq_lines)
+        result.append(f'<blockquote class="reflection-callout">{bq_content}</blockquote>')
+
+    return "\n".join(result)
+
+
 def convert_lists(html):
     """Convert markdown lists to HTML with proper nesting support."""
     lines = html.split("\n")
@@ -404,6 +435,8 @@ def wrap_paragraphs(html):
             or p.startswith("</p")
             or p.startswith("<input")
             or p.startswith("<pre")
+            or p.startswith("<blockquote")
+            or p.startswith("</blockquote")
         )
 
         contains_block_html = (
@@ -437,6 +470,7 @@ def parse_markdown_to_html(markdown_text):
     html = convert_inline_formatting(html)
     html = convert_inline_code(html)
     html = convert_tables(html)
+    html = convert_blockquotes(html)
     html = convert_lists(html)
     html = convert_horizontal_rules(html)
     html = convert_links(html)
@@ -538,7 +572,19 @@ def get_page_template(title, nav_active, content, depth=1):
             -webkit-text-fill-color: transparent;
         }}
         /* Content area */
-        .content {{ max-width: 900px; margin: 0 auto; padding: 2rem; }}
+        .content {{ max-width: 900px; margin: 0 auto; padding: 2rem; color: var(--text-secondary); line-height: 1.8; }}
+        .content blockquote.reflection-callout {{
+            background: var(--surface-color);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }}
+        .content blockquote.reflection-callout strong {{
+            color: var(--primary-color);
+        }}
         .content h1 {{ font-size: 2rem; font-weight: 800; color: var(--text-primary); margin: 2rem 0 1rem; }}
         .content h2 {{
             font-size: 1.75rem; font-weight: 700; color: var(--text-primary);

@@ -69,12 +69,13 @@ Write down, as specifically as possible, how to draw the picture. Draft the inst
 
   1. You cannot assign meaningful names to objects or elements of the drawing, outside of their precise geometric descriptions. For example, you can refer to a circle on top of a triangle, but you can't refer to an ice cream scoop on top of an ice cream cone. You could also group objects to make the descriptions more efficient. For example, you could say that the triangle with a circle on top is object A. Then you could say to draw another instance of object A to the right of the first instance. But you cannot say "draw two ice cream cones next to each other."
   2. You cannot include drawings or figures. For example, you cannot simply paste in a photograph of your drawing and say "draw this," or something to that effect. Your descriptions should be entirely text-based and/or math-based.
+  3. Important: **do *not* include the label for your drawing in the instructions**. The label is meant to be a *secret* that other groups will try to guess.
 
 > **\emoji{pencil} Reflection 2 (individual):** After your group finishes drafting instructions but before sharing them, write 2–3 sentences: What tradeoffs did you make? What did you choose to leave out, and why? What are you most worried other groups will get wrong?
 
 ## \emoji{paintbrush} Part 3: Upload your drawing, label, and instructions
 
-Use [this form](https://forms.gle/usF6xx9atafB5Ljr9) to share your group's drawing, image description, and instructions document. Designate just one person per group to upload these files.
+Use [this form](https://forms.gle/usF6xx9atafB5Ljr9) to share your group's drawing (as a `.png`), image description, and instructions document. Designate just one person per group to upload these files.
 
 ## \emoji{paintbrush} Part 4: Follow the instructions!
 
@@ -83,23 +84,23 @@ Once every group has uploaded their data using the above form, we will share (on
 Your next job is to reproduce the drawings from (a) your own group, and (b) all other groups—*using only the descriptions*. For each set of instructions:
 
   - First read through all of the given group's instructions to get a full understanding of the procedure.
-  - Follow the instructions in order, as carefully as possible.
+  - As a group, follow the instructions in order, as carefully as possible.
   - As you follow the procedure, state any assumptions (e.g., in step 3 the pen color wasn't specified; we assume that the pen color should be black).
   - Provide a guess about what the drawing is.
 
 Use [this form](https://forms.gle/2XD2EhnVG8s4rGD67) to upload the following, for each drawing you created in this part of the lab:
 
-  1. An image (photograph or scan) of your reproduced drawing
+  1. An image (photograph or scan) of your reproduced drawing (as a `.png`)
   2. A brief (1–3 word) description of what you think the drawing's label is
   3. A numbered list of any assumptions you had to make in order to follow the given group's instructions
 
 Each group should fill out the form once, designating one group member to upload responses for the entire group.
 
-> **\emoji{pencil} Reflection 3 (individual, before seeing originals):** After completing Part 4 but *before* seeing any group's original drawing, write 2–3 sentences for each set of instructions you followed: How confident are you that your reproduction is accurate? Where did you feel most uncertain? What assumptions did you have to make?
+> **\emoji{pencil} Reflection 3 (individual, before seeing originals):** After completing Part 4 but *before* seeing any group's original drawing, write 2–3 sentences for each set of instructions you followed: How confident are you that your reproduction is accurate? Where did you feel most uncertain? What assumptions did you have to make? Did you disagree with your group members about how to interpret any of the instructions?
 
 ## \emoji{paintbrush} Part 5: Evaluate reconstructions
 
-After every group has uploaded their responses, the full dataset will be made available [here](https://docs.google.com/spreadsheets/d/1fjCyZ3Mfuw_iy4Y-yG5N1pcSH8Z-D8movhPBk0f6Esw/edit?usp=sharing). (Note that the link will only become active after every group's responses have been shared.)
+After every group has uploaded their responses, the full dataset will be made available [here](https://docs.google.com/spreadsheets/d/1fjCyZ3Mfuw_iy4Y-yG5N1pcSH8Z-D8movhPBk0f6Esw/edit?usp=sharing). (Don't peek until you finish Part 4!) This dataset includes all of the original drawings and instructions, as well as all of the reproduced drawings, guesses, and assumptions.
 
 ### \emoji{framed-picture} Evaluate other groups' reconstructions of *your* group's drawing and label
 
