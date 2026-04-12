@@ -91,14 +91,12 @@ following elements:
       - diamond
       - triangle
       - star  
-  2. Up to 10 distinct lines (they can be straight or curved, and the paths can be open or closed).  A "distinct line" means that you draw something with your writing implement,
-  keeping the writing surface in contact with the paper without lifting it, until the
-  line or path has been completed.
+  2. Up to 10 distinct lines (they can be straight or curved, and the paths can be open or closed).  A "distinct line" means that you draw something with your writing implement, keeping the writing surface in contact with the paper without lifting it, until the line or path has been completed.
   
       - Exception: dotted lines are allowed and count as a single "distinct line" even if you left the writing implement between dashes or dots.
   3. Up to 10 shaded areas (i.e., portions of the image that are colored in using a particular color, pattern, etc.).
 
-Next, come up with a label for your image and record it in a safe place.
+Next, come up with a label for your image and record it in a safe place that *only your group* has access to (i.e., *not* in a public slack channel).
 
 ## \emoji{paintbrush} Part 2: Draft your instructions
 
