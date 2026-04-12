@@ -61,12 +61,16 @@ You should draw your picture on a piece of paper. The picture should have the fo
 
 Next, come up with a label for your image and record it in a safe place that *only your group* has access to (i.e., *not* in a public Slack channel).
 
+> **\emoji{pencil} Reflection 1 (individual):** Before moving on to Part 2, each person should individually write 2–3 sentences predicting what will be the hardest part of the drawing to describe clearly, and why. Hold onto this—you'll compare it to reality later.
+
 ## \emoji{paintbrush} Part 2: Draft your instructions
 
 Write down, as specifically as possible, how to draw the picture. Draft the instructions in a Google Doc, Microsoft Word, Pages, Open Office, or similar (you should be able to export the instructions as a `.docx` file). You should organize your instructions as a numbered list, but the precise format of each numbered instruction is up to you. For example, you can use paragraph-formatted text, a precise mathematical formula, or any other written format that will be shareable as a `.docx` file. Your instructions must follow several rules:
 
   1. You cannot assign meaningful names to objects or elements of the drawing, outside of their precise geometric descriptions. For example, you can refer to a circle on top of a triangle, but you can't refer to an ice cream scoop on top of an ice cream cone. You could also group objects to make the descriptions more efficient. For example, you could say that the triangle with a circle on top is object A. Then you could say to draw another instance of object A to the right of the first instance. But you cannot say "draw two ice cream cones next to each other."
   2. You cannot include drawings or figures. For example, you cannot simply paste in a photograph of your drawing and say "draw this," or something to that effect. Your descriptions should be entirely text-based and/or math-based.
+
+> **\emoji{pencil} Reflection 2 (individual):** After your group finishes drafting instructions but before sharing them, write 2–3 sentences: What tradeoffs did you make? What did you choose to leave out, and why? What are you most worried other groups will get wrong?
 
 ## \emoji{paintbrush} Part 3: Upload your drawing, label, and instructions
 
@@ -90,6 +94,8 @@ Use [this form](https://forms.gle/2XD2EhnVG8s4rGD67) to upload the following, fo
   3. A numbered list of any assumptions you had to make in order to follow the given group's instructions
 
 Each group should fill out the form once, designating one group member to upload responses for the entire group.
+
+> **\emoji{pencil} Reflection 3 (individual, before seeing originals):** After completing Part 4 but *before* seeing any group's original drawing, write 2–3 sentences for each set of instructions you followed: How confident are you that your reproduction is accurate? Where did you feel most uncertain? What assumptions did you have to make?
 
 ## \emoji{paintbrush} Part 5: Evaluate reconstructions
 
@@ -115,6 +121,8 @@ You should also include ratings for your own group, based on self-reflection aft
 ### \emoji{framed-picture} Enter evaluation data
 
 Use [this form](https://forms.gle/KJB1qBzivLae386G6) to enter your evaluations of how well other groups followed your group's instructions, and your ratings of other groups' instructions.
+
+> **\emoji{pencil} Reflection 4 (individual):** Now that you've seen how other groups reproduced your drawing *and* seen the originals behind the instructions you followed, write 2–3 sentences: What surprised you most? Did your prediction (from Reflection 1) match reality? Where were you wrong about what would be hard?
 
 # \emoji{artist-palette} Using GenAI in this lab
 
