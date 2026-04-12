@@ -140,25 +140,33 @@ This exercise connects directly to the core lesson of the lab: understanding wha
 
 Your lab report should comprise the following elements:
 
-  1. **Prediction diary** (individual): Before writing your instructions (Part 2), each person should individually write 2–3 sentences predicting what will be the hardest part of the drawing to describe clearly. After seeing how other groups reproduced your drawing (Part 5), write 2–3 sentences about what was *actually* hardest—and whether it matched your prediction. Include both entries in your report.
-  2. **Your original instructions** (as a numbered list of steps, copied in from the document your group shared with the class).
-  3. **Figure 1**:
+  1. **Prediction (individual, before writing instructions)**: Before your group begins drafting instructions (Part 2), each person should individually write 2–3 sentences predicting what will be the hardest part of the drawing to describe clearly, and why.
+  2. **Reflection after writing instructions (individual)**: After your group finishes drafting instructions but before sharing them, write 2–3 sentences: What tradeoffs did you make? What did you choose to leave out, and why? What are you most worried other groups will get wrong?
+  3. **Your original instructions** (as a numbered list of steps, copied in from the document your group shared with the class).
+  4. **Reflection after following other groups' instructions (individual, before seeing originals)**: After completing Part 4 but *before* seeing any group's original drawing, write 2–3 sentences for each set of instructions you followed: How confident are you that your reproduction is accurate? Where did you feel most uncertain? What assumptions did you have to make?
+  5. **Reflection after seeing the originals (individual)**: After seeing how other groups reproduced your drawing *and* seeing the originals behind the instructions you followed, write 2–3 sentences: What surprised you most? Did your prediction (from step 1) match reality? Where were you wrong about what would be hard?
+  6. **Figure 1**:
      - Panel A: your intended drawing
      - Panel B: your own group's reproduced drawing (following your own instructions)
      - Panel C: other groups' attempts at creating your drawing
-  4. **Analysis of effectiveness**: Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to discuss how effective your instructions were. For example:
+  7. **Analysis of effectiveness**: Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to discuss how effective your instructions were. For example:
      - How many groups were able to reproduce your drawing as intended?
      - How many groups accurately followed your instructions?
      - How many assumptions did other groups need to make?
      - How many assumptions did other groups need to make, accounting for how many instructions you had overall?
      - Which aspects of your instructions were particularly effective or ineffective?
-  5. **Create figures** to help illustrate any key points and use statistical tests to support your claims.
-  6. **Most surprising miscommunications**: Describe two specific failures and what you learned from each:
+  8. **Create figures** to help illustrate any key points and use statistical tests to support your claims.
+  9. **Most surprising miscommunications**: Describe two specific failures and what you learned from each:
      - *As an instructor*: Identify one step in your group's instructions that you thought was perfectly clear but that other groups got wrong (or interpreted differently than you intended). What was the gap between what you meant and what they understood? What could you have done differently?
      - *As a follower*: Identify one step in another group's instructions where *you* misinterpreted or made an incorrect assumption. What led you astray? In hindsight, was the instruction actually clear and you missed something, or was it genuinely ambiguous?
      - For each: propose a specific revision that would fix the miscommunication.
-  7. **Revised instructions**: Propose a revised set of instructions for your drawing that addresses any weaknesses you identified through your explorations, analyses, and self-reflections.
-  8. **GenAI reflection**: A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether AI helped you see ambiguities you would have otherwise missed.
+  10. **GenAI reproductions**: For each group's instructions (including your own), feed the instructions to a text-to-image AI model and produce a GenAI-generated reproduction. Include these images in your report and discuss:
+     - How do the AI reproductions compare to the human reproductions?
+     - Did the AI make the same mistakes as humans, or different ones?
+     - Were there cases where the AI did *better* than humans at following instructions? Where it did *worse*?
+     - What does this tell you about the differences between how humans and AI interpret written instructions?
+  11. **Revised instructions**: Propose a revised set of instructions for your drawing that addresses any weaknesses you identified through your explorations, analyses, and self-reflections.
+  12. **GenAI reflection**: A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether AI helped you see ambiguities you would have otherwise missed.
 
 # \emoji{artist-palette} Closing discussion points
 
