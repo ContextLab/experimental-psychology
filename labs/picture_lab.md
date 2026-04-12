@@ -12,39 +12,24 @@ header-includes:
 
 # \emoji{artist-palette} Overview
 
-Suppose your friend tells you excitedly about a new study showing how eating
-massive amounts of chocolate just before a race can make you run twice as fast.
-Sounds great, huh?  But you might also wonder: is this something *I* should do?
-And should I trust this crazy-sounding "discovery" or dismiss it out of hand?
+Suppose your friend tells you excitedly about a new study showing how eating massive amounts of chocolate just before a race can make you run twice as fast. Sounds great, huh? But you might also wonder: is this something *I* should do? And should I trust this crazy-sounding "discovery" or dismiss it out of hand?
 
-The deepest and most reliable way to evaluate a study is to carefully consider
-how it was carried out.  For example:
+The deepest and most reliable way to evaluate a study is to carefully consider how it was carried out. For example:
 
-  - High-level questions:  
-    - Who actually did the work?  You might want to know that the scientists were qualified to carry out the work in the way they described.
-    - Who funded the project?  If you knew that the chocolate study was funded by Hershey's versus by the National Institutes of Health, might that influence your interpretation?
-    - If the study was about people, who was studied and how many people were studied?  Can you generalize the findings to *you*?  Or to "people" in the general sense?
-    - How much data were collected and over what time interval?  Are the conclusions justified given
-    that amount of data and/or timeline of the study?
+  - High-level questions:
+    - Who actually did the work? You might want to know that the scientists were qualified to carry out the work in the way they described.
+    - Who funded the project? If you knew that the chocolate study was funded by Hershey's versus by the National Institutes of Health, might that influence your interpretation?
+    - If the study was about people, who was studied and how many people were studied? Can you generalize the findings to *you*? Or to "people" in the general sense?
+    - How much data were collected and over what time interval? Are the conclusions justified given that amount of data and/or timeline of the study?
   - Implementation-level questions:
-    - What was the experiment like?  What did the participants do?
+    - What was the experiment like? What did the participants do?
     - How did the experimenter measure what happened?
     - How were the data analyzed?
     - How were the figures made?
 
-Understanding *how* a study was carried out (i.e., its **methods**) is perhaps
-the most important part of communicating about it.  If we don't trust the
-underlying methods, how could we trust the results or conclusions?  If
-scientists want to replicate or follow up on your work, a clear and detailed
-explanation of the study's methods is critical.
+Understanding *how* a study was carried out (i.e., its **methods**) is perhaps the most important part of communicating about it. If we don't trust the underlying methods, how could we trust the results or conclusions? If scientists want to replicate or follow up on your work, a clear and detailed explanation of the study's methods is critical.
 
-In this lab, you'll explore different facets of writing effective "methods," in
-the form of instructions for drawing simple pictures.  You'll start by creating
-a simple drawing with your group.  Next, you'll draft a shareable set of
-instructions (i.e., a sort of "methods section" for reproducing the drawing).
-Groups will then follow each set of instructions to recreate their versions of
-each drawing (but without looking at the originals).  Finally, you'll evaluate
-how effective everyone's instructions were, along several dimensions.
+In this lab, you'll explore different facets of writing effective "methods," in the form of instructions for drawing simple pictures. You'll start by creating a simple drawing with your group. Next, you'll draft a shareable set of instructions (i.e., a sort of "methods section" for reproducing the drawing). Groups will then follow each set of instructions to recreate their versions of each drawing (but without looking at the originals). Finally, you'll evaluate how effective everyone's instructions were, along several dimensions.
 
 # \emoji{artist-palette} Learning objectives
 
@@ -56,219 +41,136 @@ This laboratory is intended to help you:
   - Improve your understanding of which procedural details are *not* critical or necessary for replicating a scientific procedure
   - Practice thinking about study design, resources, effort allocation, and time management
 
-
 # \emoji{artist-palette} Procedure
 
-Each group will begin the lab by creating a simple picture, comprised of a
-specific set of geometric shapes and artistic elements.  The "methods" you'll be
-writing will instruct other students to reproduce your drawing from your written
-instructions alone, without seeing the reference image (i.e. the "answer key").
+Each group will begin the lab by creating a simple picture, comprised of a specific set of geometric shapes and artistic elements. The "methods" you'll be writing will instruct other students to reproduce your drawing from your written instructions alone, without seeing the reference image (i.e., the "answer key").
 
-Once every group's instructions are written, you'll distribute the instructions
-to each other group (so that everyone has a copy of every group's instructions).
-Working as a group, you'll produce a drawing based on each set of
-instructions.
+Once every group's instructions are written, you'll distribute the instructions to each other group (so that everyone has a copy of every group's instructions). Working as a group, you'll produce a drawing based on each set of instructions.
 
-Finally, you'll evaluate (a) how well others followed your group's instructions
-and (b) how effective other groups' instructions were.
+Finally, you'll evaluate (a) how well others followed your group's instructions and (b) how effective other groups' instructions were.
 
 ## \emoji{paintbrush} Part 1: Create your drawing
 
-Your first job is to draw your picture.  You'll want your picture to be
-nameable-- you can either come up with a theme or simple description in advance,
-or you can "name" the drawing after it's complete according to what you think it
-looks like.  Also consider that you'll want other groups to be able to follow
-your instructions, so it may help to keep things concrete, simple, etc.
+Your first job is to draw your picture. You'll want your picture to be nameable—you can either come up with a theme or simple description in advance, or you can "name" the drawing after it's complete according to what you think it looks like. Also consider that you'll want other groups to be able to follow your instructions, so it may help to keep things concrete, simple, etc.
 
-You should draw your picture on a piece of paper.  The picture should have the
-following elements:
+You should draw your picture on a piece of paper. The picture should have the following elements:
 
-  1. At least one of each of the following geometric shapes:
-    
-      - circle
-      - square
-      - oval
-      - diamond
-      - triangle
-      - star  
-  2. Up to 10 distinct lines (they can be straight or curved, and the paths can be open or closed).  A "distinct line" means that you draw something with your writing implement, keeping the writing surface in contact with the paper without lifting it, until the line or path has been completed.
-  
-      - Exception: dotted lines are allowed and count as a single "distinct line" even if you left the writing implement between dashes or dots.
+  1. At least one of each of the following geometric shapes: circle, square, oval, diamond, triangle, star
+  2. Up to 10 distinct lines (they can be straight or curved, and the paths can be open or closed). A "distinct line" means that you draw something with your writing implement, keeping the writing surface in contact with the paper without lifting it, until the line or path has been completed. Exception: dotted lines are allowed and count as a single "distinct line" even if you lift the writing implement between dashes or dots.
   3. Up to 10 shaded areas (i.e., portions of the image that are colored in using a particular color, pattern, etc.).
 
-Next, come up with a label for your image and record it in a safe place that *only your group* has access to (i.e., *not* in a public slack channel).
+Next, come up with a label for your image and record it in a safe place that *only your group* has access to (i.e., *not* in a public Slack channel).
 
 ## \emoji{paintbrush} Part 2: Draft your instructions
 
-Write down, as specifically as possible, how to draw the picture.  Draft the
-instructions in a Google Doc, Microsoft Word, Pages, Open Office, or similar
-(you should be able to export the instructions as a `.docx` file). You should
-organize your instructions as a numbered list, but the precise format of each
-numbered instruction is up to you.  For example, you can use paragraph-formatted
-text, a precise mathematical formula, or any other written format that will be
-shareable as a `.docx` file. Your instructions must follow several rules:
+Write down, as specifically as possible, how to draw the picture. Draft the instructions in a Google Doc, Microsoft Word, Pages, Open Office, or similar (you should be able to export the instructions as a `.docx` file). You should organize your instructions as a numbered list, but the precise format of each numbered instruction is up to you. For example, you can use paragraph-formatted text, a precise mathematical formula, or any other written format that will be shareable as a `.docx` file. Your instructions must follow several rules:
 
-  1. You cannot assign meaningful names to objects or elements of the drawing,
-  outside of their precise geometric descriptions.  For example, you can refer to a
-  circle on top of a triangle, but you can't refer to an ice cream scoop on top
-  of an ice cream cone. You could also group objects to make the descriptions
-  more efficient.  For example you could say that the triangle with a circle on top
-  is object A.  Then you could say to draw another instance of object A to the
-  right of the first instance.  But you cannot say "draw two ice cream cones
-  next to each other".
-  2. You cannot include drawings or figures.  For example, you cannot simply paste in a photograph of your drawing and say "draw this," or something to that effect.  Your
-  descriptions should be entirely text-based and/or math-based.
+  1. You cannot assign meaningful names to objects or elements of the drawing, outside of their precise geometric descriptions. For example, you can refer to a circle on top of a triangle, but you can't refer to an ice cream scoop on top of an ice cream cone. You could also group objects to make the descriptions more efficient. For example, you could say that the triangle with a circle on top is object A. Then you could say to draw another instance of object A to the right of the first instance. But you cannot say "draw two ice cream cones next to each other."
+  2. You cannot include drawings or figures. For example, you cannot simply paste in a photograph of your drawing and say "draw this," or something to that effect. Your descriptions should be entirely text-based and/or math-based.
 
 ## \emoji{paintbrush} Part 3: Upload your drawing, label, and instructions
 
-Use [this form](https://forms.gle/usF6xx9atafB5Ljr9) to share your group's drawing, image description, and instructions document.  Designate just one person per group to upload these files.
+Use [this form](https://forms.gle/usF6xx9atafB5Ljr9) to share your group's drawing, image description, and instructions document. Designate just one person per group to upload these files.
 
 ## \emoji{paintbrush} Part 4: Follow the instructions!
 
-Once every group has uploaded their data using the above form, we will share
-(only) the instruction documents with the entire class via the
-[#picture-lab](https://psyc11.slack.com/archives/C03ACRK65QF) Slack channel. You
-should join the channel (click the link and click "join") in order to access the
-instructions.  In total, you should have 4 documents containing instructions: 1
-written by your own group, and 3 written by other groups in the class.
+Once every group has uploaded their data using the above form, we will share (only) the instruction documents with the entire class via the [#picture-lab](https://psyc11.slack.com/archives/C03ACRK65QF) Slack channel. You should join the channel (click the link and click "join") in order to access the instructions. In total, you should have 4 documents containing instructions: 1 written by your own group, and 3 written by other groups in the class.
 
-Your next job is to reproduce the drawings from (a) your own group, and (b) all other groups-- *using only the descriptions*.  For each set of instructions:
+Your next job is to reproduce the drawings from (a) your own group, and (b) all other groups—*using only the descriptions*. For each set of instructions:
 
   - First read through all of the given group's instructions to get a full understanding of the procedure.
   - Follow the instructions in order, as carefully as possible.
-  - As you follow the procedure, state any assumptions (e.g., in step 3 the pen color wasn't specified; we assume that the pen colored should be black).
+  - As you follow the procedure, state any assumptions (e.g., in step 3 the pen color wasn't specified; we assume that the pen color should be black).
   - Provide a guess about what the drawing is.
 
 Use [this form](https://forms.gle/2XD2EhnVG8s4rGD67) to upload the following, for each drawing you created in this part of the lab:
 
   1. An image (photograph or scan) of your reproduced drawing
-  2. A brief (1--3 word) description of what you think the drawing's label is
-  3. A numbered list of any assumptions you had to make in order to follow the given group's instructions.
-  
+  2. A brief (1–3 word) description of what you think the drawing's label is
+  3. A numbered list of any assumptions you had to make in order to follow the given group's instructions
+
 Each group should fill out the form once, designating one group member to upload responses for the entire group.
 
 ## \emoji{paintbrush} Part 5: Evaluate reconstructions
 
-After every group has uploaded their responses, the full dataset will be made available 
-[here](https://docs.google.com/spreadsheets/d/1fjCyZ3Mfuw_iy4Y-yG5N1pcSH8Z-D8movhPBk0f6Esw/edit?usp=sharing).  (Note that the link will only become active after every group's responses have been shared.)
+After every group has uploaded their responses, the full dataset will be made available [here](https://docs.google.com/spreadsheets/d/1fjCyZ3Mfuw_iy4Y-yG5N1pcSH8Z-D8movhPBk0f6Esw/edit?usp=sharing). (Note that the link will only become active after every group's responses have been shared.)
 
 ### \emoji{framed-picture} Evaluate other groups' reconstructions of *your* group's drawing and label
 
-Create a new spreadsheet following [this
-template](https://docs.google.com/spreadsheets/d/1le1E2YaadwZ8Ec2CCU48rC7hBpa170rljv7B-B_1Ww0/edit?usp=sharing)
-to track whether each group did or did not follow each instruction for
-reproducing *your group's* drawing.  You should also include ratings for your
-own group's performance in following your own group's instructions. The
-spreadsheet should have 1 row per group (A, B, C, and D) and 1 column per step
-(plus an additional column for denoting the group labels).  Also include a
-"header" row (first row of the spreadsheet) with the per-row labels, like in the
-template spreadsheet.  You should add a `1` in the given row and column if the
-given step was followed correctly by the given group, and a `0` if the given
-step was not followed correctly by the given group.
+Create a new spreadsheet following [this template](https://docs.google.com/spreadsheets/d/1le1E2YaadwZ8Ec2CCU48rC7hBpa170rljv7B-B_1Ww0/edit?usp=sharing) to track whether each group did or did not follow each instruction for reproducing *your group's* drawing. You should also include ratings for your own group's performance in following your own group's instructions. The spreadsheet should have 1 row per group (A, B, C, and D) and 1 column per step (plus an additional column for denoting the group labels). Also include a "header" row (first row of the spreadsheet) with the per-row labels, like in the template spreadsheet. You should add a `1` in the given row and column if the given step was followed correctly by the given group, and a `0` if the given step was not followed correctly by the given group.
 
-Create a second new spreadsheet following [this
-template](https://docs.google.com/spreadsheets/d/1_OPZtQbV4qzLd91xyuPIHAB61gULwR6vRy7iEvOTaA4/edit?usp=sharing)
-to track the assumptions  different groups made about your group's instructions.
-The spreadsheet should have 1 row per group and 2 columns for reporting the
-assumptions each group made about your instructions.  The first column should
-list the total numbers of assumptions that each group made about your
-instructions.  The second column should report the total number of assumptions
-each group made about your instructions, divided by the total number of steps in
-your instructions.  In other words, the second column reports the "proportion"
-of assumptions other groups made about your instructions, normalized by how
-"complex" your instructions were (as measured by how many steps your
-instructions had).
-
+Create a second new spreadsheet following [this template](https://docs.google.com/spreadsheets/d/1_OPZtQbV4qzLd91xyuPIHAB61gULwR6vRy7iEvOTaA4/edit?usp=sharing) to track the assumptions different groups made about your group's instructions. The spreadsheet should have 1 row per group and 2 columns for reporting the assumptions each group made about your instructions. The first column should list the total number of assumptions that each group made about your instructions. The second column should report the total number of assumptions each group made about your instructions, divided by the total number of steps in your instructions. In other words, the second column reports the "proportion" of assumptions other groups made about your instructions, normalized by how "complex" your instructions were (as measured by how many steps your instructions had).
 
 ### \emoji{framed-picture} Evaluate *other* groups' instructions
 
-Next you'll rate *other* groups' instructions along several dimensions.  After
-examining and comparing your group's reproductions of each other group's
-drawings and labels, evaluate the following on a 1--10 scale (1 = worst, 10 = best):
+Next you'll rate *other* groups' instructions along several dimensions. After examining and comparing your group's reproductions of each other group's drawings and labels, evaluate the following on a 1–10 scale (1 = worst, 10 = best):
 
   1. How closely does your group's reproduced drawing match the **appearance** of each group's intended drawing?
   2. How closely in **meaning** does your group's estimated label match each group's intended labels?
-  3. How **clear** were each group's instructions?  For example, were they easy to follow?  Were they written in plain, easy-to-understand language?  Where there lots of ambiguities in how different steps were described?  Was the language and/or notation consistent across steps?
-  4. How **efficient** were each group's instructions?  For example, could the instructions have been simplified?
+  3. How **clear** were each group's instructions? For example, were they easy to follow? Were they written in plain, easy-to-understand language? Were there lots of ambiguities in how different steps were described? Was the language and/or notation consistent across steps?
+  4. How **efficient** were each group's instructions? For example, could the instructions have been simplified?
 
-You should also include ratings for your own group, based on self reflection
-after considering how well your group reproduced your own drawing.
+You should also include ratings for your own group, based on self-reflection after considering how well your group reproduced your own drawing.
 
 ### \emoji{framed-picture} Enter evaluation data
 
-Use [this form](https://forms.gle/KJB1qBzivLae386G6) to enter your evaluations of
-how well other groups followed your group's instructions, and your ratings of other group's instructions.
-
-
-# \emoji{artist-palette} Writing your lab report
-
-Your lab report should comprise the following elements:
-
-  1. Your original instructions (as a numbered list of steps, copied in from the document your group shared with the class)
-  2. Figure 1:
-  
-      - Panel A: your intended drawing
-      - Panel B: your own group's reproduced drawing (following your own instructions)
-      - Panel C: other group's attempts at creating your drawing
-  3. Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to discuss how effective your instructions were.  For example:
-  
-      - How many groups were able to reproduce your drawing as intended?
-      - How many groups accurately followed your instructions?
-      - How many assumptions did other groups need to make?
-      - How many assumptions did other groups need to make, accounting for how many instructions you had overall?
-      - Which aspects of your instructions were particularly effective or ineffective?
-      - Etc.
-  4. Create figures to help illustrate any key points and use statistical tests to support your claims
-  5.  Propose a revised set of instructions that addresses any weaknesses you identified through your explorations, analyses, and self reflections.
-  6. A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether AI helped you see ambiguities you would have otherwise missed.
+Use [this form](https://forms.gle/KJB1qBzivLae386G6) to enter your evaluations of how well other groups followed your group's instructions, and your ratings of other groups' instructions.
 
 # \emoji{artist-palette} Using GenAI in this lab
 
 Generative AI offers a fascinating way to test the clarity of your instructions from a completely different perspective.
 
-## \emoji{paintbrush} GenAI Challenge: Can AI Follow Your Instructions?
+## \emoji{paintbrush} GenAI challenge: can AI follow your instructions?
 
 After your group has written your drawing instructions (Part 2), try this:
 
-  1. **Have GenAI execute your instructions**: Using a text-to-image model (see the [companion notebook](https://colab.research.google.com/github/ContextLab/experimental-psychology/blob/main/notebooks/drawing_lab_genai.ipynb)), feed your written instructions to an AI image generator.  The notebook will help you run an appropriate model to produce an image from your text description.
-  2. **Compare the AI's drawing to human drawings**: How does the AI-generated image compare to what other groups drew from your instructions?  Is it more or less accurate?
-  3. **Have GenAI guess what the image is**: Show the AI-generated image (or your original drawing) to a multimodal AI (e.g., ChatGPT with vision, Claude) and ask it to describe what it sees.  Does it identify the same label your group chose?
-  4. **Analyze ambiguity**: Ask a text-based AI to read your instructions and identify every ambiguous phrase or unstated assumption.  Compare this list to the assumptions that human groups actually made.
+  1. **Have GenAI execute your instructions**: Using a text-to-image model (see the [companion notebook](https://colab.research.google.com/github/ContextLab/experimental-psychology/blob/main/notebooks/drawing_lab_genai.ipynb)), feed your written instructions to an AI image generator. The notebook will help you run an appropriate model to produce an image from your text description.
+  2. **Compare the AI's drawing to human drawings**: How does the AI-generated image compare to what other groups drew from your instructions? Is it more or less accurate?
+  3. **Have GenAI guess what the image is**: Show the AI-generated image (or your original drawing) to a multimodal AI (e.g., ChatGPT with vision, Claude) and ask it to describe what it sees. Does it identify the same label your group chose?
+  4. **Analyze ambiguity**: Ask a text-based AI to read your instructions and identify every ambiguous phrase or unstated assumption. Compare this list to the assumptions that human groups actually made.
   5. **Reflect**:
      - Where did AI succeed or fail at following your instructions compared to humans?
      - Did AI struggle with the same steps that humans found confusing, or different ones?
      - What does this tell you about the difference between how AI and humans process written instructions?
      - How might these insights apply to writing methods sections for real scientific papers?
 
-This exercise connects directly to the core lesson of the lab: understanding what makes instructions clear enough for *any* reader-- human or machine-- to follow.
+This exercise connects directly to the core lesson of the lab: understanding what makes instructions clear enough for *any* reader—human or machine—to follow.
+
+# \emoji{artist-palette} Writing your lab report
+
+Your lab report should comprise the following elements:
+
+  1. **Prediction diary** (individual): Before writing your instructions (Part 2), each person should individually write 2–3 sentences predicting what will be the hardest part of the drawing to describe clearly. After seeing how other groups reproduced your drawing (Part 5), write 2–3 sentences about what was *actually* hardest—and whether it matched your prediction. Include both entries in your report.
+  2. **Your original instructions** (as a numbered list of steps, copied in from the document your group shared with the class).
+  3. **Figure 1**:
+     - Panel A: your intended drawing
+     - Panel B: your own group's reproduced drawing (following your own instructions)
+     - Panel C: other groups' attempts at creating your drawing
+  4. **Analysis of effectiveness**: Use other groups' evaluations, and your observations of other groups' attempts to create your drawing, to discuss how effective your instructions were. For example:
+     - How many groups were able to reproduce your drawing as intended?
+     - How many groups accurately followed your instructions?
+     - How many assumptions did other groups need to make?
+     - How many assumptions did other groups need to make, accounting for how many instructions you had overall?
+     - Which aspects of your instructions were particularly effective or ineffective?
+  5. **Create figures** to help illustrate any key points and use statistical tests to support your claims.
+  6. **Most surprising miscommunications**: Describe two specific failures and what you learned from each:
+     - *As an instructor*: Identify one step in your group's instructions that you thought was perfectly clear but that other groups got wrong (or interpreted differently than you intended). What was the gap between what you meant and what they understood? What could you have done differently?
+     - *As a follower*: Identify one step in another group's instructions where *you* misinterpreted or made an incorrect assumption. What led you astray? In hindsight, was the instruction actually clear and you missed something, or was it genuinely ambiguous?
+     - For each: propose a specific revision that would fix the miscommunication.
+  7. **Revised instructions**: Propose a revised set of instructions for your drawing that addresses any weaknesses you identified through your explorations, analyses, and self-reflections.
+  8. **GenAI reflection**: A brief paragraph reflecting on how you used generative AI during this lab, what you learned from the interaction, and whether AI helped you see ambiguities you would have otherwise missed.
 
 # \emoji{artist-palette} Closing discussion points
 
-Writing an effective methods section of a scientific article requires striking a
-balance between (a) including sufficient detail for others to reproduce your
-procedure and (b) *not* including irrelevant details that can reduce the
-efficiency (or increase the complexity) of your descriptions.  Finding that
-balance takes practice!
+Writing an effective methods section of a scientific article requires striking a balance between (a) including sufficient detail for others to reproduce your procedure and (b) *not* including irrelevant details that can reduce the efficiency (or increase the complexity) of your descriptions. Finding that balance takes practice!
 
-Fundamentally, effective writing is about *empathy* and *theory of mind* with
-respect to your intended audience.  You need to consider what your intended
-audience is likely to already know, which sorts of descriptions or instructions
-they are likely to respond to, which aspects of your descriptions might require
-additional careful unpacking or attention, and so on.
+Fundamentally, effective writing is about *empathy* and *theory of mind* with respect to your intended audience. You need to consider what your intended audience is likely to already know, which sorts of descriptions or instructions they are likely to respond to, which aspects of your descriptions might require additional careful unpacking or attention, and so on.
 
-Consider how what you've learned in this lab exercise might be applied to
-writing "real" methods sections (e.g., for a formal study). For example: 
+Consider how what you've learned in this lab exercise might be applied to writing "real" methods sections (e.g., for a formal study). For example:
 
   - Which aspects of writing up your group's instructions did you *think* would be most challenging?
   - Which aspects of writing your group's instructions did you *actually* find to be most challenging?
   - Did your perspective about what is "easy" or "hard" about writing instructions change after reading other groups' instructions?
-  - Could you reliably intuit when you were vs. weren't following another group's instructions correctly?  For example, were you ever surprised at how well (or poorly) your drawings matched another group's original?
+  - Could you reliably intuit when you were vs. weren't following another group's instructions correctly? For example, were you ever surprised at how well (or poorly) your drawings matched another group's original?
 
-The most important ideals to strive for in describing methods to other
-scientists are *clarity* and *accuracy*.  If other scientists can easily
-understand or replicate what you did, this will hugely increase the value and
-impact of your work.  Writing careful, clear, accurate, and complete methods
-sections will also help to develop your critical thinking skills as they pertain
-to doing effective science.
-
-  
+The most important ideals to strive for in describing methods to other scientists are *clarity* and *accuracy*. If other scientists can easily understand or replicate what you did, this will hugely increase the value and impact of your work. Writing careful, clear, accurate, and complete methods sections will also help to develop your critical thinking skills as they pertain to doing effective science.
