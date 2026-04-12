@@ -34,9 +34,9 @@ Once you know something, it's surprisingly hard to imagine *not* knowing it. You
 
 ---
 
-# Think-pair-share: what makes instructions fail?
+# What makes instructions fail?
 
-<div class="example-box" data-title="Discussion (3 min)">
+<div class="example-box" data-title="Think-Pair-Share">
 
 Think of a time you followed instructions that didn't work&mdash; a recipe, assembly manual, directions, software tutorial, homework problem, etc.
 
@@ -44,7 +44,7 @@ Think of a time you followed instructions that didn't work&mdash; a recipe, asse
 - Was information **missing**, **ambiguous**, or **in the wrong order**?
 - What would have fixed it?
 
-Share with a partner, then we'll hear a few examples.
+Discuss with a partner, then we'll share a few examples.
 
 </div>
 
@@ -54,19 +54,19 @@ Share with a partner, then we'll hear a few examples.
 
 # Three principles of effective instructions
 
-<div class="tip-box" data-title="1. Establish a shared frame of reference">
+<div class="definition-box" data-title="1. Establish a shared frame of reference">
 
-Before describing *what* to do, make sure your reader is oriented. Define your coordinate system, terminology, and conventions up front. ("Top of the page," "clockwise," "centered"&mdash; these only work if the reader and writer agree on what they mean.)
-
-</div>
-
-<div class="warning-box" data-title="2. Distinguish necessary from superfluous">
-
-Ask yourself: *if someone changed this detail, would the outcome change?* Include what matters. Cut what doesn't. Over-specifying can be just as confusing as under-specifying.
+Before describing *what* to do, make sure your reader is oriented. Define your coordinate system, terminology, and conventions up front. In this lab: "Top of the page," "clockwise," "centered"&mdash; these only work if the reader and writer agree on what they mean.
 
 </div>
 
-<div class="note-box" data-title="3. Order matters more than you think">
+<div class="note-box" data-title="2. Distinguish necessary from superfluous">
+
+Ask yourself: *if someone changed **this** detail, would the outcome change?* Include what matters. Cut what doesn't. Over-specifying can be just as confusing as under-specifying.
+
+</div>
+
+<div class="example-box" data-title="3. Order matters more than you think">
 
 Build instructions progressively&mdash; each step should make sense given the previous ones. If your reader needs to jump ahead to understand the current step, the order is wrong.
 
@@ -78,15 +78,13 @@ Build instructions progressively&mdash; each step should make sense given the pr
 
 <div class="definition-box" data-title="Goal">
 
-Practice writing effective procedural instructions&mdash; and discover what makes them succeed or fail&mdash; by describing drawings that others will try to reproduce from your text alone.
+Practice writing effective procedural instructions &mdash; and discover what makes them succeed or fail &mdash; by describing drawings that others will try to reproduce *from your text alone*.
 
 </div>
 
-<div class="note-box" data-title="Schedule">
+<div class="note-box" data-title="Connection to GenAI">
 
-- **Today**: each group creates a drawing and writes instructions for reproducing it
-- **Wednesday**: follow each others' instructions (without seeing the originals!)
-- **Friday**: analyze how well the instructions worked
+Think about instructing DALL-E or Midjourney to generate a *specific* image. The same principles apply&mdash; you need to establish a shared frame of reference, include necessary details, and order your instructions effectively.
 
 </div>
 
