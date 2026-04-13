@@ -96,7 +96,7 @@ Think about instructing DALL-E or Midjourney to generate a *specific* image. The
 
 <a href="https://context-lab.com/experimental-psychology/assignments/picture_lab/">Lab instructions</a> (also linked via QR code below)
 
-<img src="../figs/effective_explaining/qr-code-14557.png" width="400">
+<img src="../figs/effective_explaining/picture_lab_qr.png" width="400">
 
 </div>
 
