@@ -120,6 +120,8 @@ A **standardized measure** of how large an effect is, independent of sample size
 
 ---
 
+# Effect sizes
+
 <div class="example-box" data-title="Think-pair-share: effect sizes">
 
 A pharmaceutical company tests a new drug on 500,000 patients. They find it reduces headache duration by an average of 0.3 minutes ($p < 0.0001$, $d = 0.01$).
@@ -147,7 +149,11 @@ A 95% CI does **not** mean "there's a 95% probability the true value is in this 
 
 </div>
 
-**Example:** Active recall group scored $M = 77.8$, 95% CI $= [74.4, 81.2]$. This means values between 74.4 and 81.2 are all plausible estimates of the true population mean.
+<div class="example-box" data-title="Example: interpreting a confidence interval">
+
+Active recall group scored $M = 77.8$, 95% CI $= [74.4, 81.2]$. This means values between 74.4 and 81.2 are all plausible estimates of the true population mean.
+
+</div>
 
 ---
 
@@ -172,6 +178,8 @@ Compares the means of **two groups** on a continuous outcome. Asks: is the diffe
 </div>
 
 ---
+
+# T-test
 
 <div class="example-box" data-title="Think-pair-share: choosing a t-test">
 
@@ -208,6 +216,8 @@ Compares the means of **three or more groups**. Instead of asking "are these two
 
 ---
 
+# ANOVA
+
 <div class="example-box" data-title="Think-pair-share: ANOVA">
 
 A sleep researcher assigns participants to sleep 4, 6, or 8 hours per night for a week, then measures reaction time. ANOVA yields $F(2, 57) = 12.4$, $p < 0.001$, $\eta^2 = 0.30$.
@@ -239,6 +249,8 @@ Measures the **strength and direction** of the linear relationship between two c
 </div>
 
 ---
+
+# Correlation
 
 <div class="example-box" data-title="Think-pair-share: correlation traps">
 
@@ -277,9 +289,11 @@ Each coefficient ($b$) tells you how much the outcome changes for a one-unit inc
 
 ---
 
+# Regression
+
 <div class="example-box" data-title="Think-pair-share: regression">
 
-In our sleep study, regression found:
+Suppose a regression predicting exam scores from sleep and caffeine intake gives:
 - Sleep: $\beta = 3.98$ (each extra hour of sleep &rarr; ~4 more exam points)
 - Caffeine: $\beta = 0.01$ (essentially zero)
 
@@ -312,6 +326,8 @@ Tests whether two **categorical variables** are associated (independent). Compar
 
 ---
 
+# Chi-squared test
+
 <div class="example-box" data-title="Think-pair-share: chi-squared">
 
 A university surveys 200 students about their preferred study location (library, dorm, caf&eacute;) and their major (STEM, humanities, social science). They find $\chi^2(4) = 15.3$, $p = 0.004$, $V = 0.20$.
@@ -342,6 +358,8 @@ Tests whether an observed **proportion** differs from a hypothesized value. Used
 </div>
 
 ---
+
+# Binomial test
 
 <div class="example-box" data-title="Think-pair-share: binomial">
 
@@ -376,7 +394,9 @@ A college claims that 85% of its graduates find employment within 6 months. A sk
 
 ---
 
-<div class="example-box" data-title="Practice: which test?">
+# Practice: which test?
+
+<div class="example-box" data-title="Think-pair-share: choosing the right test">
 
 For each scenario, identify the appropriate test and state the null hypothesis:
 
@@ -385,8 +405,6 @@ For each scenario, identify the appropriate test and state the null hypothesis:
 3. A teacher measures test scores before and after switching to a new textbook, for the same 30 students
 4. You want to predict final exam score from GPA, attendance rate, and hours of sleep
 5. In a sample of 50 coin flips by a magician, 34 land on heads
-
-*Discuss with a partner, then we'll share.*
 
 </div>
 
