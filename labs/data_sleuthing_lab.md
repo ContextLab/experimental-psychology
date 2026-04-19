@@ -38,7 +38,7 @@ interpreted.  To that end, you'll:
 
 # \emoji{detective} Procedure
 
-We'll divide the class into three teams: A, B, and C.  Each team will begin by
+We'll divide the class into four teams: A, B, C, and D.  Each team will begin by
 finding or creating a dataset, following some specific guidelines (outlined
 below).  You'll also create some "documentation" for the dataset.  As part of
 putting your dataset's documentation together, you'll come up with a set of
@@ -46,7 +46,7 @@ questions to be explored or answered about your dataset.
 
 In the second phase of the lab, you'll pass your dataset onto another team and
 receive a dataset from a different team (A will give their dataset to B; B to C,
-and C to A).  Using the "sending" team's questions as a guide, the "receiving"
+and C to D; D to A).  Using the "sending" team's questions as a guide, the "receiving"
 team will work with their designated teaching assistant to examine the dataset.
 
 You'll conclude the lab by drafting a "results section" based on the dataset you
@@ -124,25 +124,38 @@ about the dataset you analyzed with your team.  You should include the following
 
 # \emoji{detective} Using GenAI in this lab
 
-Generative AI can be a powerful analytical partner-- but only if you know how to verify its work.
+Generative AI can be a powerful analytical partner-- but only if you understand both its capabilities and its limits.  In this lab, you'll deliberately compare two ways of working with GenAI: a **hands-off** approach (where you let the AI decide everything) and a **hands-on** approach (where you specify exactly what you want).
 
-## \emoji{magnifying-glass-tilted-right} GenAI Challenge: AI-Assisted Analysis with Sanity Checks
+## \emoji{magnifying-glass-tilted-right} Part A: The hands-off prompt
 
-Work through this process with your group:
+Take your dataset and ask your GenAI tool of choice (e.g., ChatGPT, Claude, Gemini) to **analyze it for you**, without providing further clarifications or specifications.  A prompt as simple as *"Here's a dataset.  Please analyze it and tell me what you find."* is fine.  Then reflect carefully on what happened:
 
-  1. **Brainstorm as a group first**: Before involving AI, discuss with your team: which analyses and figures will help you answer each question most directly?  Sketch out your analytical plan on paper or a whiteboard.
-  2. **Use GenAI to help implement**: Open a [Colab notebook](https://colab.research.google.com/) and use a GenAI tool to help you write the code for your planned analyses.  Be specific in your prompts-- describe the dataset structure, the question you're trying to answer, and the type of analysis you want.
-  3. **Develop sanity checks**: This is the critical step.  For every figure and analysis that AI helps you create, develop ways to verify the results are correct:
-     - Do the numbers add up?  (e.g., do group means and the overall mean relate correctly?)
-     - Do the axes and labels match what you expect?
-     - If you change the data slightly, does the output change in the direction you'd predict?
-     - Can you reproduce a simple version of the analysis by hand (e.g., calculate one mean manually)?
-     - Does the statistical test the AI chose actually match the type of data and question?
-  4. **Document what you found**: In your writeup, describe:
-     - Which AI-generated analyses were correct on the first try
-     - Which had errors, and what the errors were
-     - How you caught and fixed them
-     - What you learned about trusting (and verifying) AI-generated code and analyses
+  - **Which analyses did the AI choose?**  Did it run a t-test?  Compute correlations?  Make a histogram?  Do something more complex?
+  - **Were the chosen analyses *appropriate* for the data?**  For example, did it use a t-test on continuous data when chi-squared would have been more appropriate?  Did it compute correlations between variables that don't make sense to correlate?
+  - **Were the analyses implemented correctly?**  If the AI showed you code, does the code actually do what it claims?  If it just gave you results, can you reproduce them?
+  - **Did the AI come to its own conclusions?**  Did it claim to find a "significant effect" or "important pattern"?
+  - **Were those conclusions accurate or hallucinated?**  How can you tell?  Can you verify them against the actual data?
+
+Document what you found.  Be specific: include the exact prompts you used, the AI's responses, and your verification steps.
+
+## \emoji{magnifying-glass-tilted-right} Part B: The hands-on prompt
+
+Now switch modes.  Pick *one specific analysis* you want to perform on your dataset (it can be one of the questions from your dataset's documentation, or something new you noticed in Part A).  Before opening any AI tool:
+
+  1. **Outline the analysis step by step on paper or a whiteboard.**  What are the inputs?  What's the output?  What intermediate steps are needed?  What test or visualization will you use?  How will you interpret the result?
+  2. **Construct a detailed prompt** for your GenAI tool.  Include: the structure of the dataset (column names, types), the specific question you're answering, the analysis steps you've outlined, and the format you want the output in.
+  3. **Run the prompt** with your dataset attached.
+
+Then reflect:
+
+  - Did the AI follow your specification, or did it deviate?
+  - Was the result more accurate, more useful, or easier to verify than what Part A produced?
+  - What was easier?  What was harder?
+  - Were there steps you specified that the AI got wrong?  Were there steps you *didn't* specify that the AI handled well anyway?
+
+## \emoji{magnifying-glass-tilted-right} Reflection
+
+In your writeup, compare the two approaches.  When is the hands-off approach acceptable?  When is it dangerous?  What does the hands-on approach require *you* to bring to the table?  What does this tell you about how (and when) to use GenAI as a scientific collaborator?
 
 The ability to use AI as an analytical tool *while maintaining rigorous verification* is one of the most valuable skills you can develop as a scientist.  AI can do the computational heavy lifting, but *you* must be the one who knows whether the results make sense.
 

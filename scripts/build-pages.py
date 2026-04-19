@@ -2078,6 +2078,10 @@ def prepare_markdown_for_pdf(md_file):
         "",
         text,
     )
+    # Strip mainfont: from YAML frontmatter — the build script sets the font
+    # via a preamble, and Palatino isn't installed on the Linux runner.
+    # Letting it through would override our preamble and break PDF generation.
+    text = re.sub(r"^mainfont:\s*.+\n", "", text, flags=re.MULTILINE)
     return text
 
 
