@@ -458,12 +458,64 @@ def wrap_paragraphs(html):
     return "\n".join(formatted)
 
 
+_MATH_PLACEHOLDER = "\x00MATH{0}\x00"
+
+
+def extract_math(text):
+    """Pull inline ($...$) and display ($$...$$) LaTeX math out of the text
+    so that subsequent markdown/HTML transforms don't mangle them. Returns
+    (text_with_placeholders, list_of_math_strings).
+
+    \\$ is treated as a literal dollar sign and not as a math delimiter.
+    """
+    math_segments = []
+
+    # Temporarily protect escaped dollars
+    text = text.replace(r"\$", "\x01ESCDOLLAR\x01")
+
+    # Display math: $$...$$
+    def repl_display(m):
+        math_segments.append(("display", m.group(1)))
+        return _MATH_PLACEHOLDER.format(len(math_segments) - 1)
+
+    text = re.sub(r"\$\$(.+?)\$\$", repl_display, text, flags=re.DOTALL)
+
+    # Inline math: $...$ (no newline inside)
+    def repl_inline(m):
+        math_segments.append(("inline", m.group(1)))
+        return _MATH_PLACEHOLDER.format(len(math_segments) - 1)
+
+    text = re.sub(r"\$([^\$\n]+?)\$", repl_inline, text)
+
+    return text, math_segments
+
+
+def restore_math(html, math_segments):
+    """Put extracted math back as KaTeX-renderable spans."""
+    for i, (kind, content) in enumerate(math_segments):
+        # Escape HTML special chars in math content (KaTeX will handle LaTeX itself)
+        escaped = (
+            content.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        )
+        if kind == "display":
+            replacement = f'<span class="math-display">\\[{escaped}\\]</span>'
+        else:
+            replacement = f'<span class="math-inline">\\({escaped}\\)</span>'
+        html = html.replace(_MATH_PLACEHOLDER.format(i), replacement)
+    # Restore escaped dollars as literal $
+    html = html.replace("\x01ESCDOLLAR\x01", "$")
+    return html
+
+
 def parse_markdown_to_html(markdown_text):
     """Convert markdown text to HTML."""
     html = strip_latex_preamble(markdown_text)
     html = convert_latex_emoji(html)
     html = convert_latex_href(html)
     html = convert_latex_table(html)
+
+    # Extract LaTeX math before any other transforms touch it
+    html, math_segments = extract_math(html)
 
     html = convert_code_blocks(html)
     html = convert_headers(html)
@@ -475,6 +527,9 @@ def parse_markdown_to_html(markdown_text):
     html = convert_horizontal_rules(html)
     html = convert_links(html)
     html = wrap_paragraphs(html)
+
+    # Restore math as KaTeX-renderable spans
+    html = restore_math(html, math_segments)
 
     return html
 
@@ -524,6 +579,9 @@ def get_page_template(title, nav_active, content, depth=1):
     <title>{title} - PSYC 11</title>
     <meta name="description" content="{title} for PSYC 11: Laboratory in Psychological Science">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '\\\\[', right: '\\\\]', display: true}, {left: '\\\\(', right: '\\\\)', display: false}], throwOnError: false});"></script>
     <link rel="stylesheet" href="{prefix}css/theme.css">
     <style>
         /* Nav — matches index.html .course-nav */
@@ -1081,6 +1139,9 @@ def build_outline_page():
     <title>{fm.get("title", "Laboratory in Psychological Science")} - {fm.get("code", "PSYC 11")}</title>
     <meta name="description" content="Course materials for {fm.get("code", "PSYC 11")}: {fm.get("title", "Laboratory in Psychological Science")} - {fm.get("institution", "Dartmouth College")}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {delimiters: [{left: '\\\\[', right: '\\\\]', display: true}, {left: '\\\\(', right: '\\\\)', display: false}], throwOnError: false});"></script>
     <link rel="stylesheet" href="./css/theme.css">
 
     <style>
