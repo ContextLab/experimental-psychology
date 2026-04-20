@@ -52,53 +52,53 @@
 
 ---
 
-## Criterion 5: Possible vs. impossible judgments (1.5 points)
+## Criterion 5: Possible vs. impossible judgments (1 point)
 
 **Description:** Across your five questions, identify which you judged to be possible vs. impossible to answer with the dataset. Explain *why* you classified each one as you did. For impossible questions, describe what additional data, design, or analyses would be needed to answer them. Reflect on any judgment calls or ambiguous cases.
 
 | Points | Rating | Description |
 |-|-|-|
-| 1.5 | Exceeds | Each of the five questions is explicitly classified (possible / impossible / partial). For impossible questions, the writeup names the *specific* gap — e.g., "this asks about causation but we only have correlational data," or "this asks what would happen *before* the data collection window started, which we have no observations of." For partial cases, the writeup is honest about what *can* be inferred and what can't. The student also engages with whether their classification matches the creating team's intent (or notes that they don't know yet). |
-| 1 | Mastery | All five questions classified with reasons. Reasoning may be less precise — e.g., "this question is too vague to answer" without specifying *what* would make it answerable. |
-| 0.5 | Below | Only some questions classified, OR classifications are stated without explanation. |
+| 1 | Exceeds | Each of the five questions is explicitly classified (possible / impossible / partial). For impossible questions, the writeup names the *specific* gap — e.g., "this asks about causation but we only have correlational data," or "this asks what would happen *before* the data collection window started, which we have no observations of." For partial cases, the writeup is honest about what *can* be inferred and what can't. The student also engages with whether their classification matches the creating team's intent (or notes that they don't know yet). |
+| 0.5 | Mastery | All five questions classified with reasons. Reasoning may be less precise — e.g., "this question is too vague to answer" without specifying *what* would make it answerable. |
+| 0.25 | Below | Only some questions classified, OR classifications are stated without explanation. |
 | 0 | No evidence | No discussion of possibility/impossibility, or all five classified with no reasoning. |
 
 ---
 
-## Criterion 6: Storytelling and structure (1 point)
+## Criterion 6: Storytelling and structure (1.5 points)
 
 **Description:** Organize the report so that the question-paragraphs tell a coherent story about the dataset. Use transition sentences between sections. The order of questions doesn't have to match the original documentation — pick an order that makes the narrative flow.
 
 | Points | Rating | Description |
 |-|-|-|
-| 1 | Exceeds | Sections are clearly organized with transitions that connect findings — e.g., "Having established that group means differ overall, we next asked whether this difference is driven by..." The chosen order makes narrative sense (e.g., descriptive findings before inferential ones; broader before narrower). The report reads as a *story* about the dataset, not a list of disconnected analyses. |
+| 1.5 | Exceeds | Sections are clearly organized with transitions that meaningfully connect findings — e.g., "Having established that group means differ overall, we next asked whether this difference is driven by..." The chosen order makes narrative sense (e.g., descriptive findings before inferential ones; broader before narrower). The report reads as a *story* about the dataset, not a list of disconnected analyses. The opening overview and final reflection bookend the narrative coherently. |
+| 1 | Mastery | Most sections flow logically with reasonable transitions. The order makes sense but transitions may be perfunctory ("Next, we examined...") rather than substantive. The story is mostly there but feels assembled rather than woven. |
 | 0.5 | Below | Sections are present but feel disconnected. No transition sentences, or transitions are mechanical ("Next question."). Order may follow the documentation rigidly without considering what makes narrative sense. |
 | 0 | No evidence | Report is a fragmented list with no organizational logic. |
 
 ---
 
-## Criterion 7: GenAI exploration writeup (1.5 points)
+## Criterion 7: GenAI exploration writeup (1.25 points)
 
 **Description:** Document your two-part GenAI exercise. Part A (hands-off): include the prompt, a summary of the AI's output, and your verification. Identify at least one analysis the AI got right and one it got wrong, with evidence. Part B (hands-on): include your analytic plan, the constructed prompt, and a summary of the output. Compare Part A and Part B. Conclude with a reflection on when each approach is appropriate.
 
 | Points | Rating | Description |
 |-|-|-|
-| 1.5 | Exceeds | Both parts are documented with the actual prompts used (not paraphrased). Part A includes a *verified* example of an AI mistake — e.g., "the AI claimed groups differed significantly with $p = 0.001$, but when we re-ran the test by hand we got $p = 0.18$; the AI used the wrong column." Part B's plan is concrete and step-by-step (not just "I asked for an ANOVA"). The comparison between A and B is substantive — e.g., "Part B caught an issue Part A had silently glossed over." The reflection identifies a *specific* condition under which hands-off is acceptable (e.g., "for quick exploration when the stakes are low and you'll verify before publishing") and a specific danger ("when the AI's confident tone hides errors that look correct on the surface"). |
-| 1 | Mastery | Both parts documented with prompts and outputs. Verification is present but may be informal. The comparison between A and B is reasonable but doesn't go deep. Reflection is present but generic. |
-| 0.5 | Below | Only one part attempted, OR both parts attempted but without specifics — no actual prompts, no verification, no comparison. Reads as if the student went through the motions without engaging. |
+| 1.25 | Exceeds | Both parts are documented with the actual prompts used (not paraphrased). Part A includes a *verified* example of an AI mistake — e.g., "the AI claimed groups differed significantly with $p = 0.001$, but when we re-ran the test by hand we got $p = 0.18$; the AI used the wrong column." Part B's plan is concrete and step-by-step (not just "I asked for an ANOVA"). The comparison between A and B is substantive — e.g., "Part B caught an issue Part A had silently glossed over." The reflection identifies a *specific* condition under which hands-off is acceptable (e.g., "for quick exploration when the stakes are low and you'll verify before publishing") and a specific danger ("when the AI's confident tone hides errors that look correct on the surface"). |
+| 0.75 | Mastery | Both parts documented with prompts and outputs. Verification is present but may be informal. The comparison between A and B is reasonable but doesn't go deep. Reflection is present but generic. |
+| 0.25 | Below | Only one part attempted, OR both parts attempted but without specifics — no actual prompts, no verification, no comparison. Reads as if the student went through the motions without engaging. |
 | 0 | No evidence | GenAI section is missing or a single paragraph with no documentation of what was actually done. |
 
 ---
 
-## Criterion 8: Reflection on the experience (0.5 points)
+## Criterion 8: Reflection on the experience (0.25 points)
 
 **Description:** A brief reflection on the lab as a whole. What was the hardest part of being a "data sleuth"? What do you wish your dataset's creators had done differently? What will you keep in mind the next time you encounter a dataset you didn't create?
 
 | Points | Rating | Description |
 |-|-|-|
-| 0.5 | Complete | Reflection names specific challenges (not just "the data was confusing") and articulates at least one concrete takeaway for future work — e.g., "I'll always check the distribution of every variable before running any test; the dataset we received looked normal until we plotted it and saw a huge outlier that explained our 'significant' result." |
-| 0.25 | Partial | Reflection is present but generic. Mentions that the lab was hard or interesting without saying *what* specifically. |
-| 0 | Missing | No reflection included. |
+| 0.25 | Complete | Reflection names specific challenges (not just "the data was confusing") and articulates at least one concrete takeaway for future work — e.g., "I'll always check the distribution of every variable before running any test; the dataset we received looked normal until we plotted it and saw a huge outlier that explained our 'significant' result." |
+| 0 | Missing | Reflection is generic, missing, or just a sentence saying the lab was hard/interesting. |
 
 ---
 
