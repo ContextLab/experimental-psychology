@@ -109,18 +109,32 @@ Your team can share a common document and set of analyses, figures, stats, etc.
 
 # \emoji{detective} Writing your lab report
 
-Your writeup for this lab will mimic a "results section" of a scientific article,
-about the dataset you analyzed with your team.  You should include the following elements:
+Your writeup for this lab will mimic a "results section" of a scientific article, about the dataset your team analyzed.  Your report should comprise the following elements:
 
-  - For each question:
-    - Create at least one figure
-    - The figure should include a caption describing what the figure is showing
-    - Also write (roughly) a paragraph of text describing the key analyses, results,
-      relevant interpretations, etc.  For example, describe "answers" or "insights" into the question that you gained through your analyses, or describe how the question is impossible to answer given the data, etc.
-  - Organize the questions and paragraphs so that they tell a "story" about the dataset.
-  - Add transition sentences as needed.
-  - Add an "overview" paragraph at the beginning to summarize the dataset, how it was analyzed, and what you found.
-  - Include a brief paragraph reflecting on how you used generative AI during this lab.  What analytical suggestions did AI provide?  Were they useful?  Did AI help you see the data differently?
+  1. **Overview paragraph**: Open with a paragraph (roughly 1/2 page) that summarizes the dataset you analyzed (where it came from, what the observations and features represent, how many of each), the questions you explored, and a high-level preview of what you found.  This sets the stage for the rest of the report.
+
+  2. **Dataset description**: Briefly describe the dataset's structure-- the number of observations, the features, the type of each feature (categorical, continuous, ordinal, etc.), and any quirks or limitations you noticed before running analyses (e.g., missing data, unusual distributions, suspicious values).
+
+  3. **Per-question analyses**: For *each* of the five questions in the dataset's documentation, include:
+
+     - The original question (quoted verbatim from the documentation).
+     - Any **assumptions** you needed to make to attempt the analysis (e.g., "we assumed missing values could be dropped," "we treated the 1--7 ratings as continuous").
+     - A description of the **analytic approach** you took.  Explain *how* what you're trying to discover relates to the analytic tools you used-- e.g., "to test whether X differs across groups, we ran a one-way ANOVA on..."
+     - At least one **figure** with a caption describing what's shown.
+     - Relevant **statistical results** (test statistic, $p$-value, **effect size**, and a 95% confidence interval where appropriate).
+     - A paragraph describing your **conclusions** or **insights**.  If a question is impossible to answer with the dataset, explain *why*-- and what you'd need (additional features, a different study design, more observations, etc.) in order to answer it.  You should still attempt *some* analysis for impossible questions; the goal is to document the gap between what the data can support and what the question is really asking.
+
+  4. **Possible vs. impossible**: Across your five questions, identify which you ultimately judged to be possible vs. impossible to answer.  How confident are you in each judgment?  Were any questions ambiguous (e.g., partially answerable, or only answerable under strong assumptions)?  How does this compare to what the *creating* team had in mind?  (You can ask them, or check after submitting.)
+
+  5. **Storytelling**: Organize the five question-paragraphs so that they tell a coherent "story" about the dataset.  Use transition sentences between sections.  The order doesn't have to match the original documentation-- pick an order that makes the narrative flow.
+
+  6. **GenAI exploration writeup**: Document your two-part GenAI exercise (see "Using GenAI in this lab," below).  This should include:
+
+     - **Part A** (hands-off): The exact prompt you used, a summary of what the AI produced, and your verification steps.  Identify at least one analysis the AI got *right* and at least one it got *wrong* (or did suspiciously).  Explain how you could tell.
+     - **Part B** (hands-on): The analytic plan you sketched out, the prompt you constructed, and a summary of what the AI produced.  Compare it to Part A: which approach gave you more useful, more verifiable, or more accurate results?
+     - **Reflection**: When is the hands-off approach acceptable?  When is it dangerous?  What does GenAI require *you* to bring to the table to be a useful scientific collaborator?
+
+  7. **Reflection on the experience**: A brief paragraph (1/2 page) reflecting on the lab as a whole.  What was the hardest part of being a "data sleuth"?  What did you wish your dataset's *creators* had done differently?  What will you keep in mind the next time you encounter a dataset you didn't create?
 
 # \emoji{detective} Using GenAI in this lab
 
