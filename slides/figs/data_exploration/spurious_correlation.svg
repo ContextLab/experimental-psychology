@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" font-family="Avenir, Helvetica, sans-serif">
+  <!-- Plot area: x from 100 to 620, y from 60 to 340 -->
+  <!-- X axis: 2007 at x=100, 2022 at x=620 (step per year ≈ 34.667) -->
+  <!-- Left Y (xkcd, green): 0..10 maps to y 340..60 (28px per unit) -->
+  <!-- Right Y (robbery, orange): 10..20 maps to y 340..60 (28px per unit) -->
+
+  <!-- Stats line at top -->
+  <text x="360" y="32" text-anchor="middle" font-size="14" fill="#888">r =</text>
+  <text x="395" y="32" text-anchor="middle" font-size="14" font-weight="700" fill="#00693e">0.80</text>
+  <text x="430" y="32" text-anchor="start" font-size="14" fill="#888">p &lt; 0.01,  n = 16 years</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="340" x2="620" y2="340" stroke="#0a2518" stroke-width="2"/>
+  <line x1="100" y1="60" x2="100" y2="340" stroke="#00693e" stroke-width="2"/>
+  <line x1="620" y1="60" x2="620" y2="340" stroke="#d94415" stroke-width="2"/>
+
+  <!-- X-axis ticks and year labels -->
+  <line x1="100" y1="340" x2="100" y2="346" stroke="#0a2518" stroke-width="2"/>
+  <text x="100" y="362" text-anchor="middle" font-size="13" fill="#424141">2007</text>
+  <line x1="204" y1="340" x2="204" y2="346" stroke="#0a2518" stroke-width="2"/>
+  <text x="204" y="362" text-anchor="middle" font-size="13" fill="#424141">2010</text>
+  <line x1="308" y1="340" x2="308" y2="346" stroke="#0a2518" stroke-width="2"/>
+  <text x="308" y="362" text-anchor="middle" font-size="13" fill="#424141">2013</text>
+  <line x1="412" y1="340" x2="412" y2="346" stroke="#0a2518" stroke-width="2"/>
+  <text x="412" y="362" text-anchor="middle" font-size="13" fill="#424141">2016</text>
+  <line x1="516" y1="340" x2="516" y2="346" stroke="#0a2518" stroke-width="2"/>
+  <text x="516" y="362" text-anchor="middle" font-size="13" fill="#424141">2019</text>
+  <line x1="620" y1="340" x2="620" y2="346" stroke="#0a2518" stroke-width="2"/>
+  <text x="620" y="362" text-anchor="middle" font-size="13" fill="#424141">2022</text>
+
+  <text x="360" y="388" text-anchor="middle" font-size="16" fill="#0a2518">Year</text>
+
+  <!-- Left Y ticks (xkcd, green): 0, 2, 4, 6, 8, 10 -->
+  <line x1="94" y1="340" x2="100" y2="340" stroke="#00693e" stroke-width="2"/>
+  <text x="88" y="345" text-anchor="end" font-size="13" fill="#00693e">0</text>
+  <line x1="94" y1="284" x2="100" y2="284" stroke="#00693e" stroke-width="2"/>
+  <text x="88" y="289" text-anchor="end" font-size="13" fill="#00693e">2</text>
+  <line x1="94" y1="228" x2="100" y2="228" stroke="#00693e" stroke-width="2"/>
+  <text x="88" y="233" text-anchor="end" font-size="13" fill="#00693e">4</text>
+  <line x1="94" y1="172" x2="100" y2="172" stroke="#00693e" stroke-width="2"/>
+  <text x="88" y="177" text-anchor="end" font-size="13" fill="#00693e">6</text>
+  <line x1="94" y1="116" x2="100" y2="116" stroke="#00693e" stroke-width="2"/>
+  <text x="88" y="121" text-anchor="end" font-size="13" fill="#00693e">8</text>
+  <line x1="94" y1="60" x2="100" y2="60" stroke="#00693e" stroke-width="2"/>
+  <text x="88" y="65" text-anchor="end" font-size="13" fill="#00693e">10</text>
+
+  <text x="36" y="200" text-anchor="middle" font-size="15" fill="#00693e" font-weight="700" transform="rotate(-90 36 200)">xkcd comics about literature</text>
+
+  <!-- Right Y ticks (robbery, orange): 10, 12, 14, 16, 18, 20 -->
+  <line x1="620" y1="340" x2="626" y2="340" stroke="#d94415" stroke-width="2"/>
+  <text x="632" y="345" text-anchor="start" font-size="13" fill="#d94415">10</text>
+  <line x1="620" y1="284" x2="626" y2="284" stroke="#d94415" stroke-width="2"/>
+  <text x="632" y="289" text-anchor="start" font-size="13" fill="#d94415">12</text>
+  <line x1="620" y1="228" x2="626" y2="228" stroke="#d94415" stroke-width="2"/>
+  <text x="632" y="233" text-anchor="start" font-size="13" fill="#d94415">14</text>
+  <line x1="620" y1="172" x2="626" y2="172" stroke="#d94415" stroke-width="2"/>
+  <text x="632" y="177" text-anchor="start" font-size="13" fill="#d94415">16</text>
+  <line x1="620" y1="116" x2="626" y2="116" stroke="#d94415" stroke-width="2"/>
+  <text x="632" y="121" text-anchor="start" font-size="13" fill="#d94415">18</text>
+  <line x1="620" y1="60" x2="626" y2="60" stroke="#d94415" stroke-width="2"/>
+  <text x="632" y="65" text-anchor="start" font-size="13" fill="#d94415">20</text>
+
+  <text x="684" y="200" text-anchor="middle" font-size="15" fill="#d94415" font-weight="700" transform="rotate(90 684 200)">Vermont robbery rate (per 100k)</text>
+
+  <!-- xkcd series (green, dashed line + circles) -->
+  <polyline fill="none" stroke="#00693e" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.8"
+    points="100,228 134.67,144 169.33,116 204,172 238.67,200 273.34,116 308,256 342.67,228 377.34,144 412,312 446.67,200 481.34,200 516,228 550.67,312 585.34,312 620,256"/>
+  <g fill="#00693e">
+    <circle cx="100" cy="228" r="5"/>
+    <circle cx="134.67" cy="144" r="5"/>
+    <circle cx="169.33" cy="116" r="5"/>
+    <circle cx="204" cy="172" r="5"/>
+    <circle cx="238.67" cy="200" r="5"/>
+    <circle cx="273.34" cy="116" r="5"/>
+    <circle cx="308" cy="256" r="5"/>
+    <circle cx="342.67" cy="228" r="5"/>
+    <circle cx="377.34" cy="144" r="5"/>
+    <circle cx="412" cy="312" r="5"/>
+    <circle cx="446.67" cy="200" r="5"/>
+    <circle cx="481.34" cy="200" r="5"/>
+    <circle cx="516" cy="228" r="5"/>
+    <circle cx="550.67" cy="312" r="5"/>
+    <circle cx="585.34" cy="312" r="5"/>
+    <circle cx="620" cy="256" r="5"/>
+  </g>
+
+  <!-- Robbery series (orange, solid line + circles) -->
+  <polyline fill="none" stroke="#d94415" stroke-width="2.5" opacity="0.8"
+    points="100,264.4 134.67,200 169.33,118.8 204,281.2 238.67,177.6 273.34,110.4 308,284 342.67,298 377.34,149.6 412,270 446.67,172 481.34,292.4 516,300.8 550.67,331.6 585.34,320.4 620,247.6"/>
+  <g fill="#d94415">
+    <circle cx="100" cy="264.4" r="5"/>
+    <circle cx="134.67" cy="200" r="5"/>
+    <circle cx="169.33" cy="118.8" r="5"/>
+    <circle cx="204" cy="281.2" r="5"/>
+    <circle cx="238.67" cy="177.6" r="5"/>
+    <circle cx="273.34" cy="110.4" r="5"/>
+    <circle cx="308" cy="284" r="5"/>
+    <circle cx="342.67" cy="298" r="5"/>
+    <circle cx="377.34" cy="149.6" r="5"/>
+    <circle cx="412" cy="270" r="5"/>
+    <circle cx="446.67" cy="172" r="5"/>
+    <circle cx="481.34" cy="292.4" r="5"/>
+    <circle cx="516" cy="300.8" r="5"/>
+    <circle cx="550.67" cy="331.6" r="5"/>
+    <circle cx="585.34" cy="320.4" r="5"/>
+    <circle cx="620" cy="247.6" r="5"/>
+  </g>
+</svg>
