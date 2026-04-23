@@ -128,11 +128,11 @@ The number of xkcd comics published about literature is strongly positively corr
 
 <div class="note-box" data-title="A real correlation! (r = 0.80, p < 0.01)">
 
-The number of xkcd comics published about literature is strongly positively correlated with the robbery rate in Vermont (2007&ndash;2022).
+The number of xkcd comics published about literature is strongly positively correlated with the robbery rate in Vermont (2007&ndash;2022). [Source](https://www.tylervigen.com/spurious/correlation/1202_xkcd-comics-published-about-literature_correlates-with_robberies-in-vermont)
 
 </div>
 
-<div style="display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 1.5rem; align-items: center !important;">
+<div style="display: grid !important; grid-template-columns: 0.75fr 1.25fr !important; gap: 1.5rem; align-items: center !important;">
 
 <div>
 
@@ -140,9 +140,9 @@ The number of xkcd comics published about literature is strongly positively corr
 
 </div>
 
-<div class="example-box" data-title="AI generated explanation">
+<div class="example-box" data-title="AI-generated explanation">
 
-*"As xkcd published more literature comics, book enthusiasts flocked to Vermont. Caught up in literary intrigue, they sparked a wave of daring heists &mdash; leaving authorities to wonder why Shakespeare and Hemingway inspired the crime spike."*
+*"As the number of xkcd comics about literature increased, so did the number of book enthusiasts flocking to Vermont. These visitors, caught up in the intrigue of literary references, found themselves drawn to the bustling criminal underworld. In their fervor for all things book-related, they inadvertently sparked a wave of daring heists, leaving the authorities scratching their heads as to why Shakespeare and Hemingway seemed to be the unusual inspiration behind the sudden rise in robberies. The increase in xkcd comics published about literature may be positively influencing robberies in Vermont through the unintended consequence of attracting more tourists to the state. Tourists who are coming to Vermont after being drawn in by the literary theme in the comics. More tourists can sometimes lead to more opportunities for theft, which could explain the correlation."*
 
 </div>
 
