@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Quick-start guide to digging into data
+# From brainstorms to analyses
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,91 +16,121 @@ Spring 2026
 
 ---
 
-# Levels of exploration
+# Where we are
 
-<div class="note-box" data-title="From Simple to Advanced">
+<div class="note-box" data-title="What you've done so far">
 
-- **Level 1:** Look at the raw data (tables, spreadsheets)
-- **Level 2:** Visualize the data (histograms, scatter plots, etc.)
-- **Level 3:** Run descriptive and inferential statistics
-- **Level 4:** Build models and test predictions
-- **Level 5:** Compare to other datasets or collect new data
+- Examined your sleuthing dataset
+- Brainstormed how to answer each of the 5 questions
+
+</div>
+
+<div class="important-box" data-title="What's left">
+
+- Actually run the analyses, make the figures, and interpret what you find
+- Write it up
 
 </div>
 
 ---
 
-# Practical tip: Start with the basics
+# Sharing time!
 
-<div class="tip-box" data-title="Your First 10 Minutes with Any Dataset">
+<div class="example-box" data-title="Anything interesting so far?">
 
-- How big is it? (rows x columns)
-- What are the column names? What do they mean?
-- Are there missing values? How are they coded?
-- Pick 2-3 columns and make a quick plot
-
-</div>
-
----
-
-# Common pitfalls
-
-<div class="warning-box" data-title="Things That Trip People Up">
-
-- **Jumping to stats too fast:** always visualize first
-- **Ignoring missing data:** blanks, NaNs, and -999s can break your analysis
-- **Assuming you know what a column means:** always check the documentation or codebook
-- **Not saving your work:** keep a running log of what you tried and what you found
+- What's been surprising about your group's dataset?
+- What's been easier than you expected?
+- What's been harder?
+- Any questions you'd like to bring to the class?
 
 </div>
 
 ---
 
-# Discussion: What would you do first?
+<!-- _class: scale-90 -->
 
-<div class="example-box" data-title="Breakout Groups (8 min)">
+# Handling the "impossible" questions
 
-- You just received a mystery dataset with 10 columns and 1,000 rows
-- No documentation -- just data
-- What are your **first 5 steps** to figure out what's going on?
-- Compare strategies with another group
+<div class="warning-box" data-title="A common pattern">
+
+A few of the "impossible" questions asks about **causation**, when you only have **correlational** data. (Other versions: missing comparison group, no time-ordering, no manipulation, etc.)
+
+</div>
+
+<div class="example-box" data-title='How should you proceed when a question is "impossible" to answer?'>
+
+- Should you just give up?
+- What can you still say that's *interesting*?
+- How can you be honest about the limits of your data, while still making a contribution?
+- How might you turn an "impossible" question into a figure?
 
 </div>
 
 ---
 
-# When you're stuck
+<!-- _class: scale-80 -->
 
-<div class="tip-box" data-title="Debugging Your Analysis">
+# When you can't answer the question, answer a *different* (related) one
 
-- **Confused by a column?** Look at unique values, min/max, and the most common entries
-- **Plot looks weird?** Check for outliers or data entry errors
-- **Stats don't make sense?** Go back to the plot -- does the visual match?
-- **Still stuck?** Ask a TA, check Slack, or try a completely different approach
+<div class="tip-box" data-title="Things you can still do">
+
+- **Describe what you *can* see**: report the correlation, the group difference, the trend &mdash; but be explicit that it's not causal
+- **Show what would be needed**: e.g., "to address this we would need a randomized experiment with X manipulation"
+- **Probe alternative explanations**: are there confounds in the data? Can you rule any of them out?
+- **Reframe the question**: turn "Does X cause Y?" into "Among people who experienced X, what's their Y?" &mdash; that's a real, answerable question
+
+</div>
+
+<div class="note-box" data-title="The point">
+
+Acknowledging a limit is not the same as throwing in the towel. A clear-eyed "here's what we *can* say, and here's what we *can't*" is often the most valuable contribution.
 
 </div>
 
 ---
 
-# Wrapping up data sleuthing
+<!-- _class: scale-90 -->
 
-<div class="important-box" data-title="What to Include in Your Report">
+# Suggested workflow: Colab + your AI of choice
 
-- Describe the dataset: what is it, where did it come from, what does it contain?
-- Show your key visualizations
-- Answer (or explain why you can't answer) the 5 questions
-- Reflect: what was surprising? What would you do differently?
+<div class="tip-box" data-title="Get unstuck fast">
+
+1. Open a [Colab notebook](https://colab.research.google.com/) and share with your group on Slack
+2. Upload or provide a Google Sheets link to your dataset
+3. Pick your favorite GenAI: [Gemini](https://gemini.google.com), [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [chat.dartmouth](https://chat.dartmouth.edu)
+4. Give it: (a) the dataset description document, (b) a sample of the data, (c) the analysis plan you brainstormed yesterday
+5. Ask it to **implement** &mdash; not invent &mdash; the analyses and figures you already designed
+
+</div>
+
+<div class="warning-box" data-title="Trust, but verify">
+
+GenAI is designed to sound confident even when it's wrong. Before you run the analyses, think about (a) what you expect to see, and (b) how you could check that the output is correct.
 
 </div>
 
 ---
 
-# Let's dig in!
+# Questions? Want to chat more?
 
-<div class="note-box" data-title="Today's Goal">
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://psyc11.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
 
-- Continue exploring your sleuthing dataset
-- Focus on generating clear visualizations and answering the 5 questions
-- Wrap up and prepare for the group discussion on Friday
+<div class="note-box" data-title="Up next...">
+
+- Data sleuthing lab writeup due by Monday at 11:59pm
+- Next week: [literature review lab](https://context-lab.com/experimental-psychology/assignments/literature_lab/)!
 
 </div>
