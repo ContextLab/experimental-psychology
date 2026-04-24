@@ -124,6 +124,16 @@ Please do not abuse our re-grading policy. Grading in this course is very labor 
 
 On the other hand, if you have **questions** about your assignments or any other aspect of the course (concepts you don't fully understand, advice on how to approach an assignment before you turn it in, suggestions for how to improve), then the TAs and I are very happy to help! Just send me (or the TAs) an email and we can set up a time to discuss.
 
+## Late Policy
+
+I expect assignments to be submitted on time. Unexcused late submissions will be penalized as follows, with each partial day rounded up to the nearest full day:
+
+- **Lab reports:** 0.5 points (out of 10) deducted per day late
+- **Weekly snippets:** no credit if submitted late
+- **Final paper:** 10 points deducted per day late
+
+If you need an extension due to illness, emergency, or a known scheduling conflict, email me *before* the deadline. See the [Scheduling Conflicts](#scheduling-conflicts) section for more information.
+
 ## Lab Exercises (40%)
 
 We'll do a total of 4 graded in-class labs, which you'll write about in lab reports. Each report will be worth 10% (10 points) of your final grade. The lab exercises are intended to give you hands-on research experience and to help reinforce the concepts from the lectures and readings. Each lab will include a hands-on component and a written component. Some labs will also include data analysis.
