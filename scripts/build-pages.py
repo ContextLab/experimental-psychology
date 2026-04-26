@@ -295,6 +295,24 @@ def convert_blockquotes(html):
     in_blockquote = False
     bq_lines = []
 
+    def render_blockquote(lines):
+        # Group consecutive non-empty lines into paragraphs separated by empty lines
+        paragraphs = []
+        current = []
+        for line in lines:
+            if line == "":
+                if current:
+                    paragraphs.append(" ".join(current))
+                    current = []
+            else:
+                current.append(line)
+        if current:
+            paragraphs.append(" ".join(current))
+        # Wrap each paragraph in <p>; this keeps the entire blockquote as a single
+        # block element so wrap_paragraphs won't split it on blank lines.
+        body = "".join(f"<p>{p}</p>" for p in paragraphs)
+        return f'<blockquote class="reflection-callout">{body}</blockquote>'
+
     for line in lines:
         stripped = line.strip()
         if stripped.startswith("> "):
@@ -306,15 +324,13 @@ def convert_blockquotes(html):
             bq_lines.append("")
         else:
             if in_blockquote:
-                bq_content = "\n".join(bq_lines)
-                result.append(f'<blockquote class="reflection-callout">{bq_content}</blockquote>')
+                result.append(render_blockquote(bq_lines))
                 bq_lines = []
                 in_blockquote = False
             result.append(line)
 
     if in_blockquote:
-        bq_content = "\n".join(bq_lines)
-        result.append(f'<blockquote class="reflection-callout">{bq_content}</blockquote>')
+        result.append(render_blockquote(bq_lines))
 
     return "\n".join(result)
 

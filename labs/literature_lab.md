@@ -12,9 +12,9 @@ header-includes:
 
 # \emoji{stopwatch} Overview
 
->> "The future is not set.  There is no fate but what we make for ourselves"
->>
->> --Kyle Reese, *The Terminator*
+> "The future is not set.  There is no fate but what we make for ourselves"
+>
+> --Kyle Reese, *The Terminator*
 
 Have you ever wished you could go back in time to get a do-over?  How'd that
 work out for you?  Unfortunately this lab probably won't give you the chance for a do-over, either.
@@ -90,7 +90,7 @@ future directions, all with the benefit of knowing the "future" relative to the 
 The first thing you'll need (as a group) is a paper.  To make this lab exercise work, you should find something
 with the following characteristics:
 
-  - The paper should be published sometime in the 1990--2010 range
+  - The paper should be published sometime in the 1996--2015 range
   - The paper should be published in a peer-reviewed journal
   - The paper should have at least 25 citations
   - The paper should not be retracted (i.e., if you go to the publisher's website and click on the paper, it should not have a retraction notice)
@@ -117,6 +117,17 @@ matches the way you search and think.
 A third interesting way to find papers is through the [Elicit](https://elicit.org/) AI Research Assistant tool.
 This is a somewhat new option (and you'll need to sign up for a free account in order to use it).  The idea is that it's based around "questions" rather than keywords.  It's worth trying out!
 
+A fourth approach is to use the **deep research** feature of a general-purpose GenAI model
+(e.g., [ChatGPT](https://chatgpt.com/) deep research, [Claude research](https://claude.ai/), or [Gemini deep research](https://gemini.google.com/)).
+You can ask it to research your topic, find a candidate template paper, summarize the field's
+trajectory, and surface citing and related work.  This can be wonderfully fast-- *but* AI deep research
+also tends to invent plausible-sounding citations, get bibliographic details wrong, misstate findings,
+and generally lack good "taste" about what is seminal vs. peripheral.  Treat the AI's output as a
+starting point, not as truth: download every paper it suggests, verify each citation against the
+actual PDF or publisher page, and read the paper yourself before relying on what the AI claims it says.
+A useful workflow is **multi-pass**: in pass 1 you do the research, and in pass 2 you go back and check
+every claim against its source.  In your writeup, report briefly on what worked well and what didn't.
+
 Ultimately, each group should find a single template paper.  Share a PDF on Slack
 in the [#literature-review-lab](https://psyc11.slack.com/archives/C03CSKEU684)
 channel.  Think of this paper's time of writing as the moment your group is
@@ -131,7 +142,7 @@ approaches to finding citing papers too.)  Try to find a set of 5 papers
 with the following properties:
 
   - All of the papers should explore similar or related questions to the original
-  - All of the papers should be written in 2011 or later
+  - All of the papers should be written in 2016 or later
   - All of the papers should be published in peer-reviewed journals
   - None of the papers should be retracted
   - None of the papers should have overlapping co-authors with the original
@@ -150,10 +161,10 @@ The seventh paper in your collection should be about a similar topic as your
 template paper, but should *not* cite the original template paper.  (It's OK
 if this seventh paper cites one or more of the 5 citing papers you found in Part 2
 of the lab.)  You can use any of the above literature search tools (Google Scholar,
-  Semantic Scholar, Elicit) or others to track down this last paper.  Your paper should
+  Semantic Scholar, GenAI) or others to track down this last paper.  Your paper should
   have the following properties:
 
-  - It should haven been written in 2011 or later
+  - It should haven been written in 2016 or later
   - None of the co-authors should overlap with the original paper
   - The paper should either attempt to answer a similar question to the original paper, or should
 use a similar experimental paradigm
@@ -182,7 +193,7 @@ for your own internal use.)  Some suggestions:
 ## \emoji{luggage} Part 5: Discuss and brainstorm
 
 As a group, think about the set of papers you've added to your collection.
-Using the post-2011 papers as a guide, consider the questions like the following:
+Using the post-2016 papers as a guide, consider the questions like the following:
 
   - Were there follow-up studies to the original?
   - Were there unanswered questions in the original study that have now been explored further?
@@ -193,11 +204,40 @@ Using the post-2011 papers as a guide, consider the questions like the following
   - What do you think it all *means*?  For example, what do you think the *true* answer to the question posted in the original "template" paper is?
   - Also come up with some still-unanswered questions and discuss how they could be studied in future (e.g., post-today) work
 
+# \emoji{stopwatch} GenAI activity: deep reading vs. audio overview (individual)
+
+> **Note:** Unlike the rest of the lab, this activity is to be completed **individually**.
+> Each member of your group should pick their own paper, do their own deep reading, generate
+> their own audio overview, and write their own reflection. Don't divide and conquer-- the point
+> is for *you* to develop a calibrated personal sense of what AI summaries get right and wrong.
+
+GenAI tools are increasingly good at *summarizing* papers for you-- but you should never let that
+replace actually reading the work.  In this activity you'll directly compare a deep, careful read of
+one paper to an AI-generated audio summary of the same paper, and reflect on what each approach
+captures (and misses).
+
+## \emoji{luggage} The activity (do this on your own)
+
+  1. **Pick one paper** from your group's collection (the template, a citing paper, or the non-citing paper-- whichever interests you most).  Different group members can pick different papers, or the same paper if you want to compare notes after.
+  2. **Do a deep reading by yourself**: read the paper end-to-end on your own.  Take notes on the
+  motivation, methods, key findings, interpretations, limitations, and any subtle nuances or caveats.
+  Don't rush-- this is the slow, careful read.
+  3. **Generate an audio overview**: upload the same paper to [NotebookLM](https://notebooklm.google.com/)
+  and use its "audio overview" feature to generate a podcast-style summary.  Listen to the whole thing.
+  4. **Compare the two**, on your own:
+     - What did the audio overview get *right*?  Were the high-level claims accurate?
+     - What did it *miss*?  Were there subtle methodological caveats, important qualifications, or
+     specific numerical results that didn't make it into the summary?
+     - Did the audio overview misstate anything?  Were any of the framings or emphases misleading?
+     - When would an audio overview be enough?  When would it be dangerous to rely on?
+  5. **Document this in your individual writeup** (1--2 paragraphs in your reflection): which paper you picked,
+  what your deep reading revealed, what the audio overview captured well, and what it got wrong or omitted.
+
 # \emoji{stopwatch} Writing your lab report
 
 Your lab report (recommended length: roughly 2--5 pages) should take the form of a formal discussion section in a scientific paper.
 You should write as though *you* had carried out the original study (the one in
-described in your template paper) today, in 2024.  Use the papers you found
+described in your template paper) today, in 2026.  Use the papers you found
 in parts 2 and 3 to situate "your" study within the broader literature.
 Describe strengths and weaknesses of your approach relative to other potential approaches.
 Propose an interpretation of your findings (this can match the original paper's interpretations, but it doesn't *need* to match the original).  Also discuss potential alternative interpretations, and their relative merits and shortcomings.  Your discussion section should take the following form:
@@ -207,34 +247,7 @@ Propose an interpretation of your findings (this can match the original paper's 
   - Draw your conclusions about what you think it all *means* (e.g., what do you think the "true" answer to the key question is?)
   - Describe some still unanswered questions and propose how they might be studied in future work.
   - Make sure to include a bibliography!
-  - Include a brief paragraph reflecting on how you used generative AI during this lab.  Did AI help you find papers or insights you would have missed?  Were there cases where AI-generated summaries were inaccurate or misleading?
-
-# \emoji{stopwatch} Using GenAI in this lab
-
-Generative AI has powerful research capabilities-- but how much can you actually trust it?
-
-## \emoji{luggage} GenAI Challenge: Deep Research Accuracy Audit
-
-After your group has completed the manual literature search (Parts 1--3), try this:
-
-  1. **Use "deep research"**: Use the deep research function of your preferred GenAI model (suggested: ChatGPT's deep research mode or Claude) to research your template paper's topic.  Ask it to find the original paper, summarize its findings, identify papers that cite it, and describe how the field has evolved.
-  2. **Spot-check for accuracy**: Carefully compare the AI's output against the papers you actually read.  For each claim the AI makes:
-     - Did you find the paper it references?  Does the paper actually exist?
-     - Is the AI's summary of the paper accurate?  Did it get the key findings right?
-     - Did the AI miss any important nuances or caveats?
-     - Did it invent any "hallucinated" papers, authors, or findings?
-  3. **Evaluate reliability at different stakes**: Reflect on how much you would trust this AI-generated research summary for different purposes:
-     - A **personal hobby project** (e.g., learning about a topic for fun)?
-     - An **assignment for a course** (where accuracy matters for your grade)?
-     - A **financial decision** (e.g., researching a major purchase)?
-     - A **life-or-death decision** (e.g., evaluating medical treatments)?
-  4. **Reflect on what you learned**:
-     - How many errors or hallucinations did you find?
-     - Were the errors obvious or subtle?
-     - Would you have caught them if you hadn't already read the papers yourself?
-     - What does this tell you about the role of AI in scientific literature review?
-
-This exercise is designed to help you develop a calibrated sense of when and how much to trust AI-generated research summaries-- a skill that will only become more important as these tools improve.
+  - Include a careful (roughly 1 page) reflection on how you used generative AI during this lab.  Address (a) the **deep research** step from Part 1 (what worked, what was wrong, how you verified) and (b) the **individual deep reading vs. audio overview** activity (which paper you picked, what NotebookLM got right, what it missed, when an audio overview would and wouldn't be enough).
 
 # \emoji{stopwatch} Closing discussion points
 
