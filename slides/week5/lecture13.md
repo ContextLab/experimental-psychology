@@ -145,6 +145,6 @@ A genuine disagreement is when both studies measured the same thing the same way
 <div class="note-box" data-title="Up next...">
 
 - Today: Finish finding papers, summarize, and synthesize
-- Friday: Discuss and brainstorm, submit your Literature Review Lab writeup by 11:59pm!
+- Friday: Discuss and brainstorm, submit your Data Sleuthing Lab writeup by 11:59pm!
 
 </div>
