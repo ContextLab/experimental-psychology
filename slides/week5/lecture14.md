@@ -51,6 +51,14 @@ Spring 2026
 
 </div>
 
+<div class="tip-box" data-title="Reminders...">
+
+- Your writeup of the **Data Sleuthing Lab** is due today (11:59 PM)
+- Your **Literature Review Lab** writeup is due Wednesday (also at 11:59 PM)
+
+</div>
+
+
 ---
 # Questions? Want to chat more?
 
