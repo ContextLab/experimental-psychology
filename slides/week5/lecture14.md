@@ -74,7 +74,7 @@ Spring 2026
 - **Week 6:** form groups, implement your experiment
 - **Week 7:** human subjects training, collect data
 - **Week 8:** analyze data
-- **Week 9:** interpreting results + public poster presentation
-- **Week 10:** wrap-up (paper and final poster)
+- **Week 9:** interpreting results
+- **Week 10:** wrap-up (paper + poster)
 
 </div>
