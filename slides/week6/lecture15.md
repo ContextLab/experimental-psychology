@@ -16,15 +16,15 @@ Spring 2026
 
 ---
 
-# Approximate schedule
+# Welcome to part 2 of the course!
 
-<div class="tip-box" data-title="Remaining weeks">
+<div class="tip-box" data-title="Schedule for the rest of this term">
 
-- **This week:** find a group, design your study, start implementing/building
+- **This week (week 6):** find a group, design your study, start implementing/building
 - **Week 7:** human subjects training, collect data
 - **Week 8:** analyze data
-- **Week 9:** interpreting results + public poster presentation
-- **Week 10:** wrap-up (paper and final poster)
+- **Week 9:** interpreting results
+- **Week 10:** wrap-up (paper + poster)
 
 </div>
 
@@ -34,10 +34,11 @@ Spring 2026
 
 <div class="note-box" data-title="Finding your question">
 
-- What **puzzles** you about human behavior or the mind?
-- What do you find yourself arguing about or wondering about in everyday life?
-- Think about topics from this course (or other courses) that stuck with you
 - A good project question is one you genuinely want to know the answer to
+- It should be **interesting** to you and your group
+- It should be **testable** (i.e., you can collect data to answer it)
+- It should be **feasible** (i.e., you can do it in 5 weeks)
+- It should be **ethical** (i.e., it'll pass human subjects testing review)
 
 </div>
 
@@ -47,62 +48,51 @@ Spring 2026
 
 <div class="tip-box" data-title="Team composition tips">
 
-- Ideal group size: **3 students** (2--4 is OK)
+- Ideal group size: **3 students** (1--4 is OK)
 - Look for **complementary skills** (coding, writing, design, stats)
 - Shared curiosity about a topic matters more than shared expertise
-- Create a Slack channel for your group -- invite all members + TA + me
+- Create a Slack channel for your group, invite all members + TAs + me
 
 </div>
 
 ---
 
-# From curiosity to a study
+# Rest of today: pitches and feedback!
 
-<div class="important-box" data-title="The brainstorming funnel">
+<div class="note-box" data-title="Format">
 
-1. Start broad: what **topic area** interests your group?
-2. Narrow down: what **specific question** can you ask?
-3. Get practical: what **evidence** would help answer it?
-4. Scope it: can you realistically do this in **3--4 weeks**?
-
-</div>
-
----
-
-# Discussion: what makes a question "testable"?
-
-<div class="example-box" data-title="Think about this">
-
-- "Why do people procrastinate?" -- is this testable as stated?
-- How would you turn a vague curiosity into something you could actually measure?
-- What is the difference between a **question** and a **hypothesis**?
+- No slides; just talking
+- Each pitch should be no longer than **1 minute** (just a few sentences):
+  - What is your question?
+  - How are you thinking of studying it?
+  - What are you looking for? (New group members? Feedback on the idea?)
+- After each pitch, we'll take a few minutes for questions/feedback from the class/expressions of interest in joining the project
+- We'll get through as many pitches as we can; anything we don't get to you can post on Slack
 
 </div>
 
+
 ---
+# Questions? Want to chat more?
 
-# Breakout group brainstorm
-
-<div class="warning-box" data-title="Activity (20 minutes)">
-
-1. Form your project groups (or temporary groups if still deciding)
-2. Each person shares **one question** they find interesting (2 min each)
-3. As a group, pick **one or two** favorites and sketch out:
-   - What would you **measure**?
-   - Who would your **participants** be?
-   - What would a **result** look like?
-4. Be ready to **pitch** your idea to the class in 1--2 minutes
-
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://psyc11.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
 </div>
 
----
+<div class="note-box" data-title="Up next...">
 
-# Pitches!
-
-<div class="tip-box" data-title="Share your ideas">
-
-- Each group: give a **1--2 minute pitch** of your study idea
-- Class: ask questions, suggest improvements, offer connections to other ideas
-- Remember -- ideas will evolve! This is just the starting point.
-
+- From here on, we'll meet here at the start of class and then break out into project groups for the rest of the class time
+- **Wednesday**: Design your experiment
+- **Friday**: Implement your experiment
 </div>
