@@ -93,6 +93,6 @@ Spring 2026
 <div class="note-box" data-title="Up next...">
 
 - From here on, we'll meet here at the start of class and then break out into project groups for the rest of the class time
-- **Wednesday**: Design your experiment
+- **Wednesday**: Design your experiment. Also: Literature Review Lab writeup *and* Weekly Snippet 1 are due by 11:59PM!
 - **Friday**: Implement your experiment
 </div>
