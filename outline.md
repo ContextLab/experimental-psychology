@@ -34,6 +34,10 @@ resources:
   - section: Human Subjects Research
     icon: fa-solid fa-user-shield
     items:
+      - label: CPHS Training Video
+        url: https://www.youtube.com/watch?v=pkX3qcnPOQs&list=PLjQYT8Fwp987xFZV3HI-EWIb3zeXQUTXw&index=1
+        icon: fa-brands fa-youtube
+        external: true
       - label: CPHS Training (PDF)
         url: slides/CPHS_presentation.pdf
         icon: fa-solid fa-file-pdf
