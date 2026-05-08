@@ -209,7 +209,7 @@ assignments:
 ### Thu May 7: Additional office hours (sign up)
 - xhour: true
 
-### Fri May 8: Experiment implementation tips + Human subjects training
+### Fri May 8: Project management and human subjects training
 - slides: slides/week6/lecture17.html
 - pdf: slides/week6/lecture17.pdf
 

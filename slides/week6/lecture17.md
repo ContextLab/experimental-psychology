@@ -27,6 +27,12 @@ Spring 2026
 
 </div>
 
+<div class="tip-box" data-title="Do a little bit every week!">
+
+Your final project requires you to run a complete scientific study, which is a big task! There is no way to do it (well) all in one week. You will need to carefully manage your (and your teammates') time in order to meet the final deadline. The best way to do this is to prioritize making steady progress *every* week.
+
+</div>
+
 ---
 
 # How do you decide what to work on "next"?
@@ -39,16 +45,22 @@ Spring 2026
 
 </div>
 
+<div class="important-box" data-title="Ask for help when you need it">
+
+If you or your team are feeling stuck or unsure about what to work on next, please reach out to me or your TAs! We are here to help you navigate the project and can provide guidance on how to break down tasks, set interim goals, and troubleshoot any issues that arise.
+
+</div>
+
 ---
 
 # Tips and tricks for implementation
 
-<div class="important-box" data-title="Practical project advice">
+<div class="note-box" data-title="Practical project advice">
 
-- Tasks are associated with **products** -- a task is not "done" until you have something tangible to show for it
+- Tasks are associated with **products**: a task is not "done" until you have something tangible to show for it
 - When you accept or assign a task, make sure it is clear what the **deliverable** will be
 - **Pilot test early:** run through your experiment yourself before collecting real data
-- Life happens -- communicate with your team if expectations shift
+- Life happens; communicate with your team if expectations shift
 
 </div>
 
@@ -73,21 +85,21 @@ Spring 2026
 
 <div class="warning-box" data-title="Required before you can collect data">
 
-Before your group can collect data from human participants, **every member** must complete the human-subjects training materials below and your group must get my written approval of your study (I'm acting as the IRB for this course).
+Before your group can collect data from human participants, **every member** must complete the self-directed human-subjects training course below, and your group must get my written approval of your study (I'm acting as the IRB for this course).
 
 </div>
 
 <div class="tip-box" data-title="Materials to review (over the weekend)">
 
 1. **Watch:** [CPHS training video](https://www.youtube.com/watch?v=pkX3qcnPOQs&list=PLjQYT8Fwp987xFZV3HI-EWIb3zeXQUTXw&index=1) (YouTube, ~30 minutes)
-2. **Review:** [CPHS presentation slides](https://context-lab.com/experimental-psychology/slides/CPHS_presentation.pdf) (PDF)
-3. **Read:** [Belmont Report](https://context-lab.com/experimental-psychology/readings/Belmont_Report.pdf), [Nuremberg Code](https://context-lab.com/experimental-psychology/readings/Nuremburg_Code.pdf), and ["Jesse's Intent"](https://context-lab.com/experimental-psychology/readings/Jesse_Intent.pdf) (all PDFs in the [readings folder](https://context-lab.com/experimental-psychology/#human-subjects-research))
+2. **Review:** [CPHS presentation slides](https://context-lab.com/experimental-psychology/slides/CPHS_presentation.pdf)
+3. **Read:** [Belmont Report](https://context-lab.com/experimental-psychology/readings/Belmont_Report.pdf), [Nuremberg Code](https://context-lab.com/experimental-psychology/readings/Nuremburg_Code.pdf), and ["Jesse's Intent"](https://context-lab.com/experimental-psychology/readings/Jesse_Intent.pdf)
 
 </div>
 
 <div class="important-box" data-title="Deadline">
 
-Complete the materials **before next week's class** so your group can begin data collection on time.
+Complete the training **before Monday** so your group can begin data collection on time.
 
 </div>
 
