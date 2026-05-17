@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 80" width="970" height="80" font-family="Avenir, Helvetica, sans-serif">
+  <rect x="0" y="0" width="970" height="80" fill="#e2e2e2" stroke="#424141" stroke-width="2"/>
+  <text x="15" y="30" font-size="22" font-weight="700" fill="#0a2518">Your title goes here: optional takeaway message</text>
+  <text x="15" y="55" font-size="16" fill="#424141">First Author, Second Author, Third Author</text>
+  <text x="15" y="73" font-size="14" fill="#424141">Affiliation 1, Affiliation 2, Affiliation 3</text>
+</svg>

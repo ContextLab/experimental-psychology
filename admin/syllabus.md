@@ -79,16 +79,16 @@ The design of this course is substantially different from other more traditional
 | | W | 5/13 | Project work | |
 | | Th | 5/14 | Additional office hours | X-hour (sign up) |
 | | F | 5/15 | Project work | |
-| [**8: Data Analysis**](https://context-lab.com/experimental-psychology/#week8) | M | 5/18 | Groups work on data analysis | No formal lecture |
-| | W | 5/20 | Intro to poster presentations + analysis work | [HTML](https://context-lab.com/experimental-psychology/slides/week8/lecture18.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week8/lecture18.pdf) |
-| | Th | 5/21 | Poster creation workshop | X-hour · [HTML](https://context-lab.com/experimental-psychology/slides/week8/lecture19.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week8/lecture19.pdf) |
-| | F | 5/22 | Interpretation + start working on posters | |
-| [**9: Posters + Papers**](https://context-lab.com/experimental-psychology/#week9) | M | 5/25 | *No class (Memorial Day)* | |
-| | W | 5/27 | Effective scientific writing + work time | [HTML](https://context-lab.com/experimental-psychology/slides/week9/lecture20.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week9/lecture20.pdf) |
+| [**8: Data Analysis**](https://context-lab.com/experimental-psychology/#week8) | M | 5/18 | Intro to poster presentations + analysis design | [HTML](https://context-lab.com/experimental-psychology/slides/week8/lecture18.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week8/lecture18.pdf) |
+| | W | 5/20 | Project work | No formal lecture |
+| | Th | 5/21 | Additional office hours | X-hour (sign up) |
+| | F | 5/22 | Effective scientific writing + project work | [HTML](https://context-lab.com/experimental-psychology/slides/week8/lecture19.html) · [PDF](https://context-lab.com/experimental-psychology/slides/week8/lecture19.pdf) |
+| [**9: Project Work**](https://context-lab.com/experimental-psychology/#week9) | M | 5/25 | *No class (Memorial Day)* | |
+| | W | 5/27 | *No class* | Instructor away |
 | | Th | 5/28 | *No office hours* | Instructor away |
 | | F | 5/29 | *No class* | Instructor away |
-| [**10: Final Week**](https://context-lab.com/experimental-psychology/#week10) | M | 6/1 | Wrap up projects | TAs/instructor available |
-| | W | 6/3 | **Public poster session** | Last day of class; final paper/poster/presentation recording due |
+| [**10: Final Week**](https://context-lab.com/experimental-psychology/#week10) | M | 6/1 | Project wrap-up | TAs and instructor available |
+| | W | 6/3 | **Public poster session** | Last day of class; final paper, poster PDF, poster presentation video, and group contribution statements all due by 11:59pm |
 
 *Note: the above schedule is subject to change.*
 
@@ -162,7 +162,7 @@ During weeks 5--9 (while you are working on your project), you'll write a very b
 2. What am I planning to work on next week?
 3. What are the impediments to my progress?
 
-Each snippet will be worth 1 point. To receive credit for a snippet you must answer all three questions and submit the assignment on time, but the specific content will not be graded. Snippets will be due by 11:59PM on Monday of each week.
+Each snippet will be worth 1 point. To receive credit for a snippet you must answer all three questions and submit the assignment on time, but the specific content will not be graded. Snippets will be due by 11:59PM on Wednesday of each week.
 
 ### Group Contribution (not directly graded)
 

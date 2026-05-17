@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 295 600" font-family="Avenir, Helvetica, sans-serif">
+  <rect x="0" y="0" width="295" height="600" fill="#f4b9c4" stroke="#5a0c1a" stroke-width="2"/>
+  <text x="15" y="30" font-size="20" font-weight="700" fill="#5a0c1a">Discussion</text>
+
+  <rect x="20" y="45" width="255" height="135" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="147.5" y="117" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="20" y="190" width="255" height="115" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="147.5" y="252" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
+  <rect x="20" y="315" width="255" height="135" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="147.5" y="387" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="20" y="460" width="255" height="125" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="147.5" y="527" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
+</svg>

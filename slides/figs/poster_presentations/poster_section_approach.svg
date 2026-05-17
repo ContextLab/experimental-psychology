@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 300" font-family="Avenir, Helvetica, sans-serif">
+  <rect x="0" y="0" width="245" height="300" fill="#c4dd88" stroke="#12312b" stroke-width="2"/>
+  <text x="15" y="30" font-size="20" font-weight="700" fill="#12312b">Approach</text>
+  <rect x="20" y="45" width="205" height="125" fill="#00693e" stroke="#12312b" stroke-width="1.5"/>
+  <text x="122.5" y="112" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="20" y="180" width="205" height="105" fill="#00693e" stroke="#12312b" stroke-width="1.5"/>
+  <text x="122.5" y="237" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
+</svg>

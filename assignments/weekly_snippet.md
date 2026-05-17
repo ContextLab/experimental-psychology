@@ -90,5 +90,5 @@ The weekly snippet is a low-stakes opportunity to practice honest self-assessmen
 
 Each student must fill out their own snippet each week (although common elements
 may appear across students, especially within the same group).  Snippets are
-due by 11:59 PM on each Monday during project weeks.  No late snippets will be
+due by 11:59 PM on each Wednesday during project weeks.  No late snippets will be
 accepted.

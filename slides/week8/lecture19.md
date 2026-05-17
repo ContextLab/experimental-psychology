@@ -6,7 +6,7 @@ transition: fade 0.25s
 author: Contextual Dynamics Lab
 ---
 
-# Poster creation workshop
+# Effective scientific writing
 
 ### PSYC 11: Laboratory in Psychological Science
 
@@ -16,134 +16,111 @@ Spring 2026
 
 ---
 
-# Today's plan
+# Pieces of a paper
 
-<div class="note-box" data-title="Workshop schedule (50 minutes)">
+<div class="note-box" data-title="Standard paper sections">
 
-- **15 min:** Poster design principles and best practices
-- **5 min:** Common mistakes to avoid
-- **30 min:** Hands-on activity -- sketch your poster layout with your group
-
-</div>
-
----
-
-<!-- _class: scale-90 -->
-
-# Anatomy of a scientific poster
-
-<div class="definition-box" data-title="Standard poster sections">
-
-- **Title bar:** Title, authors, affiliations, contact info
-- **Abstract:** Brief summary of the work (some posters omit this)
-- **Introduction:** Motivation and research question
-- **Methods:** How you studied the question
-- **Results:** Figures and key findings
-- **Discussion:** Interpretation and future directions
-- **References & Acknowledgments:** Citations and funding/thanks
-
-</div>
-
-Typical layout: 3--4 columns, read left-to-right and top-to-bottom. The viewer's eye should flow naturally through your narrative.
-
----
-
-# Visual design principles
-
-<div class="tip-box" data-title="Less text, more figures">
-
-- Your poster is a **visual aid**, not a paper on a wall
-- Use **visual hierarchy** to guide the reader's eye
-- Recommended font sizes:
-  - Title: **72pt+**
-  - Section headers: **36pt+**
-  - Body text: **24pt+**
-- **White space matters** -- it makes your poster feel clean and approachable
-- Limit each section to 3--5 bullet points or short sentences
+- **Title:** one-line take-home message that attracts interest
+- **Abstract:** 250--500 word summary (question, approach, findings)
+- **Introduction:** your question, why it matters, what is already known
+- **Methods:** what you did (participants, experiment, analyses)
+- **Results:** what you found (figures + stats that tell a story)
+- **Discussion:** what it means, broader context, future directions
 
 </div>
 
 ---
 
-# Figures are the star
+# The common thread
 
-Your poster should be **understandable from the figures alone**.
+<div class="important-box" data-title="Every section tells the same story">
 
-- Each figure needs a **self-contained caption** -- a reader should understand what the figure shows without reading the surrounding text
-- Choose figures that tell the **story** of your project
-- Label all axes, include legends, and use clear titles
-- Think about color choices: accessible, high-contrast, meaningful
-
-<br>
-
-**Discussion:** *If someone walks by your poster and only looks at the figures, what would they learn? Would they understand your main finding?*
-
----
-
-# Common poster mistakes
-
-<div class="warning-box" data-title="Mistakes to avoid">
-
-- **Too much text** -- if your poster looks like a paper, you have too much text
-- **Tiny fonts** -- if you can't read it from 4 feet away, it's too small
-- **No visual hierarchy** -- everything looks the same importance
-- **Figures without labels or captions** -- unlabeled axes, missing legends
-- **Wall of numbers** -- tables of raw statistics without interpretation
-- **Cluttered layout** -- no white space, sections crammed together
+- Every section reminds the reader of the **question**, the **approach**, and the **key findings**
+- Different sections emphasize different aspects
+- A reader should be able to get the gist from **any single section**
 
 </div>
 
 ---
 
-# What makes a poster effective?
+# What makes writing effective?
 
-<div class="example-box" data-title="Good vs. bad posters">
+<div class="tip-box" data-title="Qualities of good scientific writing">
 
-- **Effective poster:** Clear, concise title that states the finding. One or two prominent figures that tell the story. Minimal text organized in logical sections. Readable from 4 feet away. Logical left-to-right, top-to-bottom flow.
-- **Ineffective poster:** Vague title. Walls of text copied from a paper. Tiny, cluttered figures. No clear visual flow. Reader doesn't know where to look first.
-
-</div>
-
-**Rule of thumb:** A good poster can be understood in under 5 minutes. A great poster draws people in from across the room.
-
----
-
-# The "elevator pitch" test
-
-<div class="tip-box" data-title="Can you explain your poster in 2 minutes?">
-
-- Imagine someone stops at your poster and says, *"So, what's this about?"*
-- You should be able to explain:
-  1. **What question** you studied
-  2. **How** you studied it (one sentence)
-  3. **What you found** (the key result)
-  4. **Why it matters**
-- Practice this with your group **right now** -- take turns!
+- **Easy to read:** clear sentences, logical flow
+- **Empathetic:** written for the reader, not the author
+- **Concise:** say what you need to say and then stop
+- **Trustworthy:** claims are supported by evidence
+- **Interesting:** the reader wants to keep going
 
 </div>
 
 ---
 
-# Hands-on activity: sketch your poster
+# How much should you write?
 
-<div class="important-box" data-title="You have 30 minutes -- go!">
+<div class="warning-box" data-title="Less is more">
 
-- Work with your group to **sketch your poster layout on paper**
-- Your sketch should address:
-  - **(a)** Which figures will you include? What do they show?
-  - **(b)** What are your section headings?
-  - **(c)** What is the visual flow? Where does the reader's eye go first, second, third?
-  - **(d)** What text is **essential** vs. **cuttable**?
-- TAs and the instructor will circulate to give feedback
-- Don't worry about making it pretty -- focus on **structure and content**
+- Never write to "fill space"
+- Include something if (and only if) it is:
+  - Directly relevant to your core message
+  - Necessary for someone to reproduce or understand what you did
+  - Adding a specific tangible element to your story
+- When in doubt, cut it
 
 </div>
 
 ---
 
-# Wrapping up
+# Discussion: read this paragraph
 
-- **Before next class:** Refine your poster sketch based on today's feedback
-- **Questions?** Ask your TA, or reach out:
-  - Email: [jeremy.r.manning@dartmouth.edu](mailto:jeremy.r.manning@dartmouth.edu)
-  - Office hours: See Canvas for schedule and location
+<div class="example-box" data-title="Activity (10 minutes)">
+
+> "In this study, we were basically interested in looking at whether or not there might be some kind of relationship between the amount of sleep that college students get and their ability to remember things that they learned in class. We think this is important because sleep is something that affects a lot of people and memory is also very important for students."
+
+- What is **wrong** with this paragraph?
+- How would you **rewrite** it to be clearer and more concise?
+- Discuss with a partner, then we will share revisions as a class
+
+</div>
+
+---
+
+# Principles for revision
+
+<div class="tip-box" data-title="Editing checklist">
+
+- **Cut filler words:** "basically," "some kind of," "whether or not"
+- **Be specific:** replace vague claims with concrete ones
+- **Use active voice:** "we examined" not "it was examined by us"
+- **One idea per sentence:** if a sentence does two things, split it
+- **Read it aloud:** if you stumble, your reader will too
+
+</div>
+
+---
+
+# Empathy as a writing strategy
+
+<div class="definition-box" data-title="Write for your reader">
+
+- Put yourself in the **reader's** position
+- What would **you** want to read about?
+- What would you find interesting, convincing, worth your time?
+- The best scientific writing feels like a **conversation** with a knowledgeable friend
+
+</div>
+
+---
+
+# Your paper: getting started
+
+<div class="important-box" data-title="Next steps">
+
+- Start with an **outline** -- map your story before writing sentences
+- Write the **Methods** section first (you already know what you did)
+- Then **Results**, then **Introduction**, then **Discussion**
+- The **Abstract** comes last
+- Bring a draft to your TA for feedback early and often
+
+</div>

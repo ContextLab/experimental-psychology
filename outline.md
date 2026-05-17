@@ -232,31 +232,30 @@ assignments:
 # Week 8: Data Analysis
 ## May 18 -- 22
 
-### Mon May 18: Groups work on data analysis
-
-### Wed May 20: Intro to poster presentations + analysis work
+### Mon May 18: Intro to poster presentations + analysis design
 - slides: slides/week8/lecture18.html
 - pdf: slides/week8/lecture18.pdf
 
-### Thu May 21: Poster creation workshop
+### Wed May 20: Project work
+
+### Thu May 21: Additional office hours (sign up)
 - xhour: true
+
+### Fri May 22: Effective scientific writing + project work
 - slides: slides/week8/lecture19.html
 - pdf: slides/week8/lecture19.pdf
 
-### Fri May 22: Interpretation + start working on posters
-
 ---
 
-# Week 9: Posters + Papers
+# Week 9: Project Work (Instructor Away)
 ## May 25 -- 29
 
 ### Mon May 25: NO CLASS (Memorial Day)
 - absent: true
 - holiday: true
 
-### Wed May 27: Effective scientific writing + work time
-- slides: slides/week9/lecture20.html
-- pdf: slides/week9/lecture20.pdf
+### Wed May 27: NO CLASS (instructor away)
+- absent: true
 
 ### Thu May 28: No office hours (instructor away)
 - xhour: true
@@ -270,6 +269,6 @@ assignments:
 # Week 10: Final Week
 ## Jun 1 -- 3
 
-### Mon Jun 1: Wrap up projects (TAs/instructor available)
+### Mon Jun 1: Project wrap-up (TAs and instructor available)
 
-### Wed Jun 3: Public poster session + final deliverables due
+### Wed Jun 3: **Public poster session** | Last day of class; final paper, poster PDF, poster presentation video, and group contribution statements due by 11:59pm
