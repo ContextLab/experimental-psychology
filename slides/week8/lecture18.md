@@ -16,6 +16,10 @@ Spring 2026
 
 ---
 
+![bg cover](../figs/poster_presentations/pasted-image-15986.png)
+
+---
+
 # What is a poster presentation?
 
 <div class="note-box" data-title="The basics">
@@ -33,12 +37,13 @@ By the end of a poster session, your goal is for people to walk away knowing (a)
 </div>
 
 ---
+<!-- _class: scale-80 -->
 
 # Anatomy of a poster
 
 <div style="text-align: center;">
 
-<img src="../figs/poster_presentations/poster_anatomy.svg" width="800">
+<img src="../figs/poster_presentations/poster_anatomy.svg" width="750">
 
 </div>
 
@@ -61,6 +66,7 @@ By the end of a poster session, your goal is for people to walk away knowing (a)
 </div>
 
 ---
+<!-- _class: scale-95 -->
 
 # Motivation
 
@@ -84,6 +90,7 @@ By the end of a poster session, your goal is for people to walk away knowing (a)
 </div>
 
 ---
+<!-- _class: scale-95 -->
 
 # Approach
 
@@ -98,7 +105,7 @@ By the end of a poster session, your goal is for people to walk away knowing (a)
 <div class="note-box" data-title="What goes here">
 
 - **How did you study** the question?
-- Major experiment and analysis details &mdash; *not* every detail, just enough that someone could understand and (roughly) replicate
+- Major experiment and analysis details &mdash; *not* every detail, just enough that someone can follow along
 - One or more **figures**: experimental paradigm, analysis pipeline, etc.
 
 </div>
@@ -106,6 +113,7 @@ By the end of a poster session, your goal is for people to walk away knowing (a)
 </div>
 
 ---
+<!-- _class: scale-95 -->
 
 # Results
 
@@ -129,6 +137,7 @@ By the end of a poster session, your goal is for people to walk away knowing (a)
 </div>
 
 ---
+<!-- _class: scale-95 -->
 
 # Discussion
 
@@ -176,6 +185,7 @@ A different layout: one *huge* takeaway message in the center, with supporting d
 
 <div class="important-box" data-title="Less text, more visual">
 
+- **Minimize cognitive load on your audience.** You have thought about your project a lot; your audience hasn't. Make it clear what's important and spell out the logic, interpretations, and takeaways.
 - **Show, don't tell.** Your poster is a visual aid, not a paper on a wall
 - **Visual hierarchy** guides the reader's eye: titles big, body text smaller but still readable
 - **Font sizes:** title 72pt+, section headers 36pt+, body text 24pt+ (readable from 4 feet away)
@@ -204,59 +214,35 @@ A different layout: one *huge* takeaway message in the center, with supporting d
 
 ---
 
-<!-- _class: scale-80 -->
-
-# Examples: what works
-
-<div style="display: grid !important; grid-template-columns: 1fr 1fr 1fr !important; gap: 1rem; align-items: start !important;">
-
-<div>
-
-<img src="../figs/poster_presentations/example_haroz_figures_only.png" style="width: 100%;">
-<p style="font-size: 0.85em; margin-top: 0.5em;"><em>Almost no text. The figures tell the whole story.</em></p>
-
-</div>
-
-<div>
-
-<img src="../figs/poster_presentations/example_topographic.png" style="width: 100%;">
-<p style="font-size: 0.85em; margin-top: 0.5em;"><em>Clean grid, clear sections, balanced text and figures.</em></p>
-
-</div>
-
-<div>
-
-<img src="../figs/poster_presentations/example_mapping.png" style="width: 100%;">
-<p style="font-size: 0.85em; margin-top: 0.5em;"><em>Modern, lots of white space, story-driven figures.</em></p>
-
-</div>
-
-</div>
+# Examples: what do you notice?
 
 ---
 
-<!-- _class: scale-80 -->
+![bg contain](../figs/poster_presentations/example_purrington_pigs_bad.png)
 
-# Examples: what to avoid
+---
 
-<div style="display: grid !important; grid-template-columns: 1.2fr 1fr !important; gap: 1.5rem; align-items: center !important;">
+![bg contain](../figs/poster_presentations/pasted-image-16326.png)
 
-<div>
+---
 
-<img src="../figs/poster_presentations/example_purrington_pigs_bad.png" style="width: 100%;">
+![bg contain](../figs/poster_presentations/example_haroz_figures_only.png)
 
-</div>
+---
 
-<div class="example-box" data-title="Discuss: what's wrong here?">
+![bg contain](../figs/poster_presentations/example_topographic.png)
 
-- What stands out as **bad** about this poster?
-- If you were walking by, would you stop?
-- What would you **change first**?
-- (This poster is intentionally awful &mdash; it's from a "how not to make a poster" guide by Colin Purrington.)
+---
 
-</div>
+![bg contain](../figs/poster_presentations/example_mapping.png)
 
-</div>
+---
+
+![bg contain](../figs/poster_presentations/example_teamdf.png)
+
+---
+
+![bg contain](../figs/poster_presentations/pasted-image-16308.png)
 
 ---
 
@@ -269,13 +255,14 @@ A different layout: one *huge* takeaway message in the center, with supporting d
 - **Slide software:** PowerPoint, Keynote, Google Slides (set custom slide size to 36" &times; 50")
 - **Vector graphics:** Adobe Illustrator, Inkscape, Figma
 - **Text processing:** LaTeX Beamer poster templates, RMarkdown / Quarto
-- Use **vectors** or **300+ DPI** images so the printed poster looks crisp
+- Use **vectors** (preferred) or **300+ DPI images** (if needed) so the printed poster looks crisp
 
 </div>
 
 <div class="note-box" data-title="GenAI as a design partner">
 
-You can ask Claude, ChatGPT, Gemini, etc. to help with poster design &mdash; layouts, color schemes, even draft text. Use it for **style and structure**, but write the actual content yourself and **review for accuracy** (AI loves to hallucinate plausible-sounding facts).
+- You can ask Claude, ChatGPT, Gemini, etc. to help with poster design &mdash; layouts, color schemes, fonts. Use it for **style and structure**, but write the actual content yourself and **review for accuracy**.
+- [Claude Design](https://www.anthropic.com/news/claude-design-anthropic-labs) is pretty good!
 
 </div>
 
@@ -299,12 +286,12 @@ You can ask Claude, ChatGPT, Gemini, etc. to help with poster design &mdash; lay
 
 </div>
 
-<div class="important-box" data-title="What to submit (one per group)">
+<div class="important-box" data-title="What to submit (one per group, due June 3)">
 
 - **PDF** of your poster
-- Link to a **YouTube video** of your group presenting the poster (can be unlisted)
+- Link to a **YouTube video** of your group presenting the poster (can be unlisted, Zoom screencast or similar works great)
 - **Final paper**
-- **Group contribution statements**
+- **Group contribution statements** (this is submitted *individually* by each group member, *not* as a group!)
 
 </div>
 
@@ -314,15 +301,15 @@ You can ask Claude, ChatGPT, Gemini, etc. to help with poster design &mdash; lay
 
 <div class="important-box" data-title="In-class focus">
 
-- **Data collection** can happen any time outside of class &mdash; you don't need us for that
-- **In class**, focus on what's harder to do alone: **designing the analyses** that will go into your poster and paper
+- **Data collection** can happen any time outside of class
+- **In class this week**, focus on what's harder to do alone: **designing the analyses** that will go into your poster and paper
 - For each question your study addresses: what test? what figure? what would the result tell you?
 
 </div>
 
 <div class="tip-box" data-title="The instructor + TAs are here">
 
-We're here in class specifically to help you think through analysis design &mdash; come find us and tell us what you're planning.
+We're here in class specifically to help you think through analysis design and interpretation&mdash; come find us and tell us what you're planning!
 
 </div>
 
@@ -347,10 +334,10 @@ We're here in class specifically to help you think through analysis design &mdas
 
 <div class="note-box" data-title="Up next...">
 
-- **This week:** continue analysis work; start sketching your poster
-- **Friday:** writing your final paper
-- **Next week:** instructor away &mdash; TAs available for help
+- **Today/Wednesday:** work with me and the TAs to talk through your analysis plans
+- **Friday:** some tips and tricks for writing your final paper
+- **Next week:** I'll be away &mdash; TAs available for help during class time
 - **June 1:** project wrap-up
-- **June 3:** public poster session + all final deliverables due
+- **June 3:** public poster session + all final deliverables due (11:59pm)
 
 </div>
