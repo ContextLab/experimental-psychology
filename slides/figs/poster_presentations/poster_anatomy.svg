@@ -2,73 +2,73 @@
   <!-- Outer poster border -->
   <rect x="5" y="5" width="990" height="710" fill="#f7f7f7" stroke="#424141" stroke-width="3"/>
 
-  <!-- Title bar (information bar) -->
+  <!-- Title bar (information bar) - unchanged -->
   <rect x="15" y="15" width="970" height="80" fill="#e2e2e2" stroke="#424141" stroke-width="2"/>
   <text x="30" y="45" font-size="22" font-weight="700" fill="#0a2518">Your title goes here: optional takeaway message</text>
   <text x="30" y="70" font-size="16" fill="#424141">First Author, Second Author, Third Author</text>
   <text x="30" y="88" font-size="14" fill="#424141">Affiliation 1, Affiliation 2, Affiliation 3</text>
 
   <!-- ===== Column 1 (left): Motivation + Approach stacked ===== -->
-  <!-- Motivation (river-blue) -->
-  <rect x="15" y="105" width="245" height="290" fill="#267aba" stroke="#003c73" stroke-width="2"/>
-  <text x="30" y="135" font-size="20" font-weight="700" fill="#ffffff">Motivation</text>
-  <rect x="35" y="150" width="205" height="120" fill="#aed1eb" stroke="#003c73" stroke-width="1.5"/>
-  <text x="137.5" y="215" text-anchor="middle" font-size="18" font-weight="600" fill="#003c73">Figure</text>
-  <rect x="35" y="280" width="205" height="100" fill="#aed1eb" stroke="#003c73" stroke-width="1.5"/>
-  <text x="137.5" y="335" text-anchor="middle" font-size="18" font-weight="600" fill="#003c73">Caption</text>
+  <!-- Motivation: light blue bg, dark blue rectangles -->
+  <rect x="15" y="105" width="245" height="290" fill="#aed1eb" stroke="#003c73" stroke-width="2"/>
+  <text x="30" y="135" font-size="20" font-weight="700" fill="#003c73">Motivation</text>
+  <rect x="35" y="150" width="205" height="120" fill="#267aba" stroke="#003c73" stroke-width="1.5"/>
+  <text x="137.5" y="215" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="35" y="280" width="205" height="100" fill="#267aba" stroke="#003c73" stroke-width="1.5"/>
+  <text x="137.5" y="335" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
 
-  <!-- Approach (dartmouth-green) -->
-  <rect x="15" y="405" width="245" height="300" fill="#00693e" stroke="#12312b" stroke-width="2"/>
-  <text x="30" y="435" font-size="20" font-weight="700" fill="#ffffff">Approach</text>
-  <rect x="35" y="450" width="205" height="125" fill="#c4dd88" stroke="#12312b" stroke-width="1.5"/>
-  <text x="137.5" y="517" text-anchor="middle" font-size="18" font-weight="600" fill="#12312b">Figure</text>
-  <rect x="35" y="585" width="205" height="105" fill="#c4dd88" stroke="#12312b" stroke-width="1.5"/>
-  <text x="137.5" y="642" text-anchor="middle" font-size="18" font-weight="600" fill="#12312b">Caption</text>
+  <!-- Approach: light green bg, dark green rectangles -->
+  <rect x="15" y="405" width="245" height="300" fill="#c4dd88" stroke="#12312b" stroke-width="2"/>
+  <text x="30" y="435" font-size="20" font-weight="700" fill="#12312b">Approach</text>
+  <rect x="35" y="450" width="205" height="125" fill="#00693e" stroke="#12312b" stroke-width="1.5"/>
+  <text x="137.5" y="517" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="35" y="585" width="205" height="105" fill="#00693e" stroke="#12312b" stroke-width="1.5"/>
+  <text x="137.5" y="642" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
 
-  <!-- ===== Column 2 (middle): Results (bonfire-orange) ===== -->
-  <rect x="270" y="105" width="410" height="600" fill="#ffa00f" stroke="#d94415" stroke-width="2"/>
-  <text x="285" y="135" font-size="20" font-weight="700" fill="#ffffff">Results</text>
+  <!-- ===== Column 2 (middle): Results - light orange bg, dark orange rectangles ===== -->
+  <rect x="270" y="105" width="410" height="600" fill="#ffe1ad" stroke="#d94415" stroke-width="2"/>
+  <text x="285" y="135" font-size="20" font-weight="700" fill="#d94415">Results</text>
 
   <!-- Row 1: multi-panel figure -->
-  <rect x="290" y="150" width="120" height="100" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="350" y="205" text-anchor="middle" font-size="13" font-weight="600" fill="#5a2a07">Multi-panel</text>
-  <text x="350" y="221" text-anchor="middle" font-size="13" font-weight="600" fill="#5a2a07">figure</text>
-  <rect x="415" y="150" width="125" height="100" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <rect x="545" y="150" width="125" height="100" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
+  <rect x="290" y="150" width="120" height="100" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="350" y="205" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Multi-panel</text>
+  <text x="350" y="221" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">figure</text>
+  <rect x="415" y="150" width="125" height="100" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <rect x="545" y="150" width="125" height="100" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
   <!-- Row 1 caption -->
-  <rect x="290" y="260" width="380" height="40" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="480" y="287" text-anchor="middle" font-size="15" font-weight="600" fill="#5a2a07">Caption</text>
+  <rect x="290" y="260" width="380" height="40" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="480" y="287" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Caption</text>
 
   <!-- Row 2: figure + caption side by side -->
-  <rect x="290" y="320" width="180" height="115" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="380" y="383" text-anchor="middle" font-size="16" font-weight="600" fill="#5a2a07">Figure</text>
-  <rect x="475" y="320" width="195" height="115" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="572.5" y="383" text-anchor="middle" font-size="16" font-weight="600" fill="#5a2a07">Caption</text>
+  <rect x="290" y="320" width="180" height="115" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="380" y="383" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="475" y="320" width="195" height="115" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="572.5" y="383" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Caption</text>
 
   <!-- Row 3: multi-panel figure -->
-  <rect x="290" y="455" width="120" height="110" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="350" y="513" text-anchor="middle" font-size="13" font-weight="600" fill="#5a2a07">Multi-panel</text>
-  <text x="350" y="529" text-anchor="middle" font-size="13" font-weight="600" fill="#5a2a07">figure</text>
-  <rect x="415" y="455" width="125" height="110" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <rect x="545" y="455" width="125" height="110" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
+  <rect x="290" y="455" width="120" height="110" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="350" y="513" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">Multi-panel</text>
+  <text x="350" y="529" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">figure</text>
+  <rect x="415" y="455" width="125" height="110" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <rect x="545" y="455" width="125" height="110" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
   <!-- Row 3 caption -->
-  <rect x="290" y="575" width="380" height="40" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="480" y="602" text-anchor="middle" font-size="15" font-weight="600" fill="#5a2a07">Caption</text>
+  <rect x="290" y="575" width="380" height="40" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="480" y="602" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Caption</text>
 
   <!-- Row 4: figure -->
-  <rect x="290" y="625" width="380" height="65" fill="#ffe1ad" stroke="#d94415" stroke-width="1.5"/>
-  <text x="480" y="664" text-anchor="middle" font-size="15" font-weight="600" fill="#5a2a07">Figure</text>
+  <rect x="290" y="625" width="380" height="65" fill="#ffa00f" stroke="#d94415" stroke-width="1.5"/>
+  <text x="480" y="664" text-anchor="middle" font-size="15" font-weight="600" fill="#ffffff">Figure</text>
 
-  <!-- ===== Column 3 (right): Discussion (bonfire-red) ===== -->
-  <rect x="690" y="105" width="295" height="600" fill="#9d162e" stroke="#5a0c1a" stroke-width="2"/>
-  <text x="705" y="135" font-size="20" font-weight="700" fill="#ffffff">Discussion</text>
+  <!-- ===== Column 3 (right): Discussion - light pink bg, dark red rectangles ===== -->
+  <rect x="690" y="105" width="295" height="600" fill="#f4b9c4" stroke="#5a0c1a" stroke-width="2"/>
+  <text x="705" y="135" font-size="20" font-weight="700" fill="#5a0c1a">Discussion</text>
 
-  <rect x="710" y="150" width="255" height="135" fill="#f4b9c4" stroke="#5a0c1a" stroke-width="1.5"/>
-  <text x="837.5" y="222" text-anchor="middle" font-size="18" font-weight="600" fill="#5a0c1a">Figure</text>
-  <rect x="710" y="295" width="255" height="115" fill="#f4b9c4" stroke="#5a0c1a" stroke-width="1.5"/>
-  <text x="837.5" y="357" text-anchor="middle" font-size="18" font-weight="600" fill="#5a0c1a">Caption</text>
-  <rect x="710" y="420" width="255" height="135" fill="#f4b9c4" stroke="#5a0c1a" stroke-width="1.5"/>
-  <text x="837.5" y="492" text-anchor="middle" font-size="18" font-weight="600" fill="#5a0c1a">Figure</text>
-  <rect x="710" y="565" width="255" height="125" fill="#f4b9c4" stroke="#5a0c1a" stroke-width="1.5"/>
-  <text x="837.5" y="632" text-anchor="middle" font-size="18" font-weight="600" fill="#5a0c1a">Caption</text>
+  <rect x="710" y="150" width="255" height="135" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="837.5" y="222" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="710" y="295" width="255" height="115" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="837.5" y="357" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
+  <rect x="710" y="420" width="255" height="135" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="837.5" y="492" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Figure</text>
+  <rect x="710" y="565" width="255" height="125" fill="#9d162e" stroke="#5a0c1a" stroke-width="1.5"/>
+  <text x="837.5" y="632" text-anchor="middle" font-size="18" font-weight="600" fill="#ffffff">Caption</text>
 </svg>
