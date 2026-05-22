@@ -124,3 +124,31 @@ Spring 2026
 - Bring a draft to your TA for feedback early and often
 
 </div>
+
+---
+
+# Questions? Want to chat more?
+
+<div class="emoji-figure">
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-navy">&#x1F4E7;</span>
+    <span class="label"><a href="mailto:jeremy@dartmouth.edu">Email</a> me</span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-purple">&#x1F4AC;</span>
+    <span class="label">Join our <a href="https://psyc11.slack.com">Slack</a></span>
+  </div>
+  <div class="emoji-col">
+    <span class="emoji emoji-xl emoji-bg emoji-bg-green">&#x1F481;</span>
+    <span class="label">Come to <a href="https://context-lab.com/scheduler">office hours</a></span>
+  </div>
+</div>
+
+<div class="note-box" data-title="Up next...">
+
+- **Monday:**: No class (Memorial Day)
+- **Wednesday and Friday:** TA-led "work on your projects" time
+- **June 1:** project wrap-up
+- **June 3:** public poster session + all final deliverables due (11:59pm)
+
+</div>
